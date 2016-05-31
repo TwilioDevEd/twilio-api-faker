@@ -1,0 +1,13 @@
+# Miscellaneous
+.DS_Store
+*.*~
+
+#IDEs
+*.idea
+*/target
+*.iml
+.gradle
+*.class
+
+/.env
+build/
