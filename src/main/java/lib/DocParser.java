@@ -18,7 +18,8 @@ public class DocParser {
   private ArrayList<ResourceModel> resourceList;
 
   public DocParser(File basePath) {
-    fileCollection = FileUtils.listFiles(basePath, null, true);
+    String[] allowedExtensions = {"json"};
+    fileCollection = FileUtils.listFiles(basePath, allowedExtensions, true);
     populateResourceList();
   }
 
