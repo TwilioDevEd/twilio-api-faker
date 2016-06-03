@@ -1,0 +1,64 @@
+{
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "https://pricing.twilio.com/v1/Voice"
+            },
+            "response": {
+                "content": null,
+                "status_code": 204
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://pricing.twilio.com/v1/Voice"
+            },
+            "response": {
+                "content": {
+                    "links": {
+                        "countries": "https://pricing.twilio.com/v1/Voice/Countries",
+                        "numbers": "https://pricing.twilio.com/v1/Voice/Numbers"
+                    },
+                    "name": "Voice",
+                    "url": "https://pricing.twilio.com/v1/Voice"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "POST",
+                "query_params": {},
+                "url": "https://pricing.twilio.com/v1/Voice"
+            },
+            "response": {
+                "content": {
+                    "links": {
+                        "countries": "https://pricing.twilio.com/v1/Voice/Countries",
+                        "numbers": "https://pricing.twilio.com/v1/Voice/Numbers"
+                    },
+                    "name": "Voice",
+                    "url": "https://pricing.twilio.com/v1/Voice"
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}

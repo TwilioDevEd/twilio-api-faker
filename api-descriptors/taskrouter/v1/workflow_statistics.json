@@ -1,0 +1,106 @@
+{
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workflows/WFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Statistics"
+            },
+            "response": {
+                "content": null,
+                "status_code": 204
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "EndDate": "2008-01-02",
+                    "Minutes": 1,
+                    "StartDate": "2008-01-02"
+                },
+                "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workflows/WFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Statistics"
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "cumulative": {
+                        "avg_task_acceptance_time": 0.0,
+                        "end_time": "2014-08-06T22:39:00Z",
+                        "reservations_accepted": 0,
+                        "reservations_rejected": 0,
+                        "reservations_timed_out": 0,
+                        "start_time": "2014-08-06T22:24:00Z",
+                        "tasks_canceled": 0,
+                        "tasks_entered": 0,
+                        "tasks_moved": 0,
+                        "tasks_timed_out_in_workflow": 0
+                    },
+                    "realtime": {
+                        "longest_task_waiting_age": 0,
+                        "longest_task_waiting_sid": null,
+                        "tasks_by_status": {
+                            "assigned": 1,
+                            "pending": 0,
+                            "reserved": 0
+                        },
+                        "total_tasks": 1
+                    },
+                    "workflow_sid": "WWaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "workspace_sid": "WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "POST",
+                "query_params": {},
+                "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workflows/WFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Statistics"
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "cumulative": {
+                        "avg_task_acceptance_time": 0.0,
+                        "end_time": "2014-08-06T22:39:00Z",
+                        "reservations_accepted": 0,
+                        "reservations_rejected": 0,
+                        "reservations_timed_out": 0,
+                        "start_time": "2014-08-06T22:24:00Z",
+                        "tasks_canceled": 0,
+                        "tasks_entered": 0,
+                        "tasks_moved": 0,
+                        "tasks_timed_out_in_workflow": 0
+                    },
+                    "realtime": {
+                        "longest_task_waiting_age": 0,
+                        "longest_task_waiting_sid": null,
+                        "tasks_by_status": {
+                            "assigned": 1,
+                            "pending": 0,
+                            "reserved": 0
+                        },
+                        "total_tasks": 1
+                    },
+                    "workflow_sid": "WWaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "workspace_sid": "WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}

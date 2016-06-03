@@ -1,0 +1,175 @@
+{
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "POST",
+                "query_params": {},
+                "url": "https://pricing.twilio.com/v1/PhoneNumbers/Countries"
+            },
+            "response": {
+                "content": {
+                    "country": "Estonia",
+                    "iso_country": "EE",
+                    "phone_number_prices": [
+                        {
+                            "base_price": 3.0,
+                            "current_price": 3.0,
+                            "type": "mobile"
+                        },
+                        {
+                            "base_price": 1.0,
+                            "current_price": 1.0,
+                            "type": "national"
+                        }
+                    ],
+                    "price_unit": "usd",
+                    "url": "https://pricing.twilio.com/v1/PhoneNumbers/Countries/US"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "https://pricing.twilio.com/v1/PhoneNumbers/Countries/US"
+            },
+            "response": {
+                "content": null,
+                "status_code": 204
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://pricing.twilio.com/v1/PhoneNumbers/Countries/US"
+            },
+            "response": {
+                "content": {
+                    "country": "Estonia",
+                    "iso_country": "EE",
+                    "phone_number_prices": [
+                        {
+                            "base_price": 3.0,
+                            "current_price": 3.0,
+                            "type": "mobile"
+                        },
+                        {
+                            "base_price": 1.0,
+                            "current_price": 1.0,
+                            "type": "national"
+                        }
+                    ],
+                    "price_unit": "usd",
+                    "url": "https://pricing.twilio.com/v1/PhoneNumbers/Countries/US"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://pricing.twilio.com/v1/PhoneNumbers/Countries"
+            },
+            "response": {
+                "content": {
+                    "countries": [
+                        {
+                            "country": "Austria",
+                            "iso_country": "AT",
+                            "url": "https://pricing.twilio.com/v1/PhoneNumbers/Countries/AT"
+                        }
+                    ],
+                    "meta": {
+                        "first_page_url": "https://pricing.twilio.com/v1/PhoneNumbers/Countries?PageSize=1&Page=0",
+                        "key": "countries",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 1,
+                        "previous_page_url": null,
+                        "url": "https://pricing.twilio.com/v1/PhoneNumbers/Countries?PageSize=1&Page=0"
+                    }
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://pricing.twilio.com/v1/PhoneNumbers/Countries"
+            },
+            "response": {
+                "content": {
+                    "countries": [],
+                    "meta": {
+                        "first_page_url": "https://pricing.twilio.com/v1/PhoneNumbers/Countries?PageSize=1&Page=0",
+                        "key": "countries",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 1,
+                        "previous_page_url": null,
+                        "url": "https://pricing.twilio.com/v1/PhoneNumbers/Countries?PageSize=1&Page=0"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "POST",
+                "query_params": {},
+                "url": "https://pricing.twilio.com/v1/PhoneNumbers/Countries/US"
+            },
+            "response": {
+                "content": {
+                    "country": "Estonia",
+                    "iso_country": "EE",
+                    "phone_number_prices": [
+                        {
+                            "base_price": 3.0,
+                            "current_price": 3.0,
+                            "type": "mobile"
+                        },
+                        {
+                            "base_price": 1.0,
+                            "current_price": 1.0,
+                            "type": "national"
+                        }
+                    ],
+                    "price_unit": "usd",
+                    "url": "https://pricing.twilio.com/v1/PhoneNumbers/Countries/US"
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}
