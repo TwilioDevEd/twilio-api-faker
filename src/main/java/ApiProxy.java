@@ -11,6 +11,10 @@ import com.github.tomakehurst.wiremock.WireMockServer;
 import com.github.tomakehurst.wiremock.client.MappingBuilder;
 import com.github.tomakehurst.wiremock.client.UrlMatchingStrategy;
 import com.github.tomakehurst.wiremock.client.WireMock;
+import com.github.tomakehurst.wiremock.http.Request;
+import com.github.tomakehurst.wiremock.http.RequestListener;
+import com.github.tomakehurst.wiremock.http.Response;
+import com.github.tomakehurst.wiremock.junit.WireMockRule;
 
 import lib.DocParser;
 import lib.ResourceModel;
@@ -20,6 +24,12 @@ public class ApiProxy {
   public static void main(String[] args) {
     WireMockServer wireMockServer = new WireMockServer(wireMockConfig().port(8089).httpsPort(443)
         .keystorePath("keystore/twilio-store.jks").keystorePassword("twilioFake"));
+    wireMockServer.addMockServiceRequestListener(new RequestListener() {
+      @Override
+      public void requestReceived(Request request, Response response) {
+        System.out.println(request.getMethod() + ": " + request.getUrl());
+      }
+    });
     wireMockServer.start();
     System.out.println("Starting Server. Please wait...");
     WireMock wireMock = new WireMock("localhost", 8089);
