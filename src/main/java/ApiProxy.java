@@ -14,7 +14,6 @@ import com.github.tomakehurst.wiremock.client.WireMock;
 import com.github.tomakehurst.wiremock.http.Request;
 import com.github.tomakehurst.wiremock.http.RequestListener;
 import com.github.tomakehurst.wiremock.http.Response;
-import com.github.tomakehurst.wiremock.junit.WireMockRule;
 
 import lib.DocParser;
 import lib.ResourceModel;
@@ -28,6 +27,11 @@ public class ApiProxy {
       @Override
       public void requestReceived(Request request, Response response) {
         System.out.println(request.getMethod() + ": " + request.getUrl());
+        if (!response.wasConfigured()) {
+          System.out.println(
+              "There is no configured response for this route. Please open a ticket here if you"
+                  + " think this is an error https://github.com/TwilioDevEd/twilio-api-faker/issues");
+        }
       }
     });
     wireMockServer.start();

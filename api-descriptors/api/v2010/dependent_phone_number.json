@@ -69,7 +69,8 @@
                             "phone_number": "+15105551212",
                             "postal_code": "94703",
                             "rate_center": "OKLD TRNID",
-                            "region": "CA"
+                            "region": "CA",
+                            "sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                         }
                     ],
                     "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Addresses/ADaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/DependentPhoneNumbers.json?Page=0&PageSize=50",
