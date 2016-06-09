@@ -49,11 +49,13 @@ public class ApiProxy {
       for (HashMap<String, Object> transactionProperties : resourceTransactions.values()) {
         String resourceUrl = (String) transactionProperties.get(ResourceParser.RESOURCE_URL);
         String anyResourcePattern = "[A-Z]{2,}\\w{32}";
+        String countryPattern = "\\/[A-Z]{2}";
 
-        resourceUrl = resourceUrl.replace(".json", "(.json)?");
-        resourceUrl = resourceUrl.replace(".", "\\.").replace("/", "\\/");
+        resourceUrl = resourceUrl.replace(".json", "");
         resourceUrl = resourceUrl.replaceAll(anyResourcePattern, "\\\\w+");
-        resourceUrl = resourceUrl + ".*";
+        resourceUrl = resourceUrl.replaceAll(countryPattern, "\\/[A-Z]{2}");
+        resourceUrl = resourceUrl.replace("/", "\\/");
+        resourceUrl = resourceUrl + "(\\.json)?(\\?.+)?(\\/$)?";
 
         String methodString = (String) transactionProperties.get(ResourceParser.RESOURCE_METHOD);
         methodString = methodString.toUpperCase();
@@ -61,9 +63,18 @@ public class ApiProxy {
         UrlMatchingStrategy urlMatching = urlMatching(resourceUrl);
         MappingBuilder method = null;
 
+        JSONObject contentJson =
+            (JSONObject) transactionProperties.get(ResourceParser.RESOURCE_CONTENT);
+        String responseContent = "{}";
+        if (contentJson != null) {
+          responseContent = contentJson.toJSONString();
+        }
+
         switch (methodString) {
           case "POST":
             method = post(urlMatching);
+            wireMock.register(put(urlMatching).willReturn(aResponse()
+                .withHeader("Content-Type", "application/json").withBody(responseContent)));
             break;
           case "GET":
             method = get(urlMatching);
@@ -75,12 +86,6 @@ public class ApiProxy {
             System.out.println("No method specified");
         }
 
-        JSONObject contentJson =
-            (JSONObject) transactionProperties.get(ResourceParser.RESOURCE_CONTENT);
-        String responseContent = "{}";
-        if (contentJson != null) {
-          responseContent = contentJson.toJSONString();
-        }
         wireMock.register(method.willReturn(
             aResponse().withHeader("Content-Type", "application/json").withBody(responseContent)));
       }
