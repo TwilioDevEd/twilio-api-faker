@@ -1,0 +1,147 @@
+{
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "POST",
+                "query_params": {},
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Keys.json"
+            },
+            "response": {
+                "content": {
+                    "sid": "SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "My new key",
+                    "date_created": "Tue, 14 Jun 2016 20:07:54 +0000",
+                    "date_updated": "Tue, 14 Jun 2016 20:07:54 +0000",
+                    "secret": "super_secret_key"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Keys/SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
+            },
+            "response": {
+                "content": null,
+                "status_code": 204
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Keys/SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
+            },
+            "response": {
+                "content": {
+                    "sid": "SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "Your key name",
+                    "date_created": "Thu, 02 Jun 2016 17:09:21 +0000",
+                    "date_updated": "Thu, 02 Jun 2016 17:09:21 +0000"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "DateCreated": "2008-01-02",
+                    "DateCreated<": "2008-01-01",
+                    "DateCreated>": "2008-01-03"
+                },
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Keys.json"
+            },
+            "response": {
+                "content": {
+                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Keys.json?PageSize=50&Page=0",
+                    "end": 0,
+                    "previous_page_uri": null,
+                    "keys": [
+                        {
+                            "sid": "SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "friendly_name": "Your key name",
+                            "date_created": "Thu, 02 Jun 2016 17:09:21 +0000",
+                            "date_updated": "Thu, 02 Jun 2016 17:09:21 +0000"
+                        }
+                    ],
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Keys.json?PageSize=50&Page=0",
+                    "page_size": 50,
+                    "start": 0,
+                    "next_page_uri": null,
+                    "page": 0
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "DateCreated": "2008-01-02",
+                    "DateCreated<": "2008-01-01",
+                    "DateCreated>": "2008-01-03"
+                },
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Keys.json"
+            },
+            "response": {
+                "content": {
+                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Keys.json?PageSize=50&Page=0",
+                    "end": 0,
+                    "previous_page_uri": null,
+                    "keys": [],
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Keys.json?PageSize=50&Page=0",
+                    "page_size": 50,
+                    "start": 0,
+                    "next_page_uri": null,
+                    "page": 0
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "POST",
+                "query_params": {},
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Keys/SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
+            },
+            "response": {
+                "content": {
+                    "sid": "SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "Your key name",
+                    "date_created": "Thu, 02 Jun 2016 17:09:21 +0000",
+                    "date_updated": "Thu, 02 Jun 2016 17:09:21 +0000"
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}
