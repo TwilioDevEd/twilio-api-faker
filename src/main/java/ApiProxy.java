@@ -21,6 +21,11 @@ import lib.ResourceParser;
 
 public class ApiProxy {
   public static void main(String[] args) {
+    String anyResourcePattern = "[A-Z]{2,}\\w{32}";
+    String countryPattern = "\\/[A-Z]{2}";
+    String phoneNumberPattern = "\\/\\s*(?:\\+?(\\d{1,3}))?[-. (]*(\\d{3})[-. )]*(\\d{3})[-. ]*(\\d{4})(?: *x(\\d+))?\\s*";
+    String escapedPhoneNumberPatter = "\\/\\\\s*(?:\\\\+?(\\\\d{1,3}))?[-. (]*(\\\\d{3})[-. )]*(\\\\d{3})[-. ]*(\\\\d{4})(?: *x(\\\\d+))?\\\\s*";
+
     WireMockServer wireMockServer = new WireMockServer(wireMockConfig().port(8089).httpsPort(443)
         .keystorePath("keystore/twilio-store.jks").keystorePassword("twilioFake"));
     wireMockServer.addMockServiceRequestListener(new RequestListener() {
@@ -48,14 +53,12 @@ public class ApiProxy {
 
       for (HashMap<String, Object> transactionProperties : resourceTransactions.values()) {
         String resourceUrl = (String) transactionProperties.get(ResourceParser.RESOURCE_URL);
-        String anyResourcePattern = "[A-Z]{2,}\\w{32}";
-        String countryPattern = "\\/[A-Z]{2}";
-
         resourceUrl = resourceUrl.replace(".json", "");
         resourceUrl = resourceUrl.replaceAll(anyResourcePattern, "\\\\w+");
         resourceUrl = resourceUrl.replaceAll(countryPattern, "\\/[A-Z]{2}");
+        resourceUrl = resourceUrl.replaceAll(phoneNumberPattern, escapedPhoneNumberPatter);
         resourceUrl = resourceUrl.replace("/", "\\/");
-        resourceUrl = resourceUrl + "(\\.json)?(\\?.+)?(\\/$)?";
+        resourceUrl = resourceUrl + "(\\.json)?(\\/)?(\\?.+)?";
 
         String methodString = (String) transactionProperties.get(ResourceParser.RESOURCE_METHOD);
         methodString = methodString.toUpperCase();

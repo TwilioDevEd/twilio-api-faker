@@ -17,12 +17,12 @@
                         {
                             "base_price": 3.0,
                             "current_price": 3.0,
-                            "type": "mobile"
+                            "number_type": "mobile"
                         },
                         {
                             "base_price": 1.0,
                             "current_price": 1.0,
-                            "type": "national"
+                            "number_type": "national"
                         }
                     ],
                     "price_unit": "usd",
@@ -66,12 +66,12 @@
                         {
                             "base_price": 3.0,
                             "current_price": 3.0,
-                            "type": "mobile"
+                            "number_type": "mobile"
                         },
                         {
                             "base_price": 1.0,
                             "current_price": 1.0,
-                            "type": "national"
+                            "number_type": "national"
                         }
                     ],
                     "price_unit": "usd",
@@ -157,12 +157,12 @@
                         {
                             "base_price": 3.0,
                             "current_price": 3.0,
-                            "type": "mobile"
+                            "number_type": "mobile"
                         },
                         {
                             "base_price": 1.0,
                             "current_price": 1.0,
-                            "type": "national"
+                            "number_type": "national"
                         }
                     ],
                     "price_unit": "usd",

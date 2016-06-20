@@ -7,7 +7,7 @@
                 "form_params": {},
                 "method": "DELETE",
                 "query_params": {},
-                "url": "https://pricing.twilio.com/v1/Voice/Numbers/+987654321"
+                "url": "https://pricing.twilio.com/v1/Voice/Numbers/+15108675309"
             },
             "response": {
                 "content": null,
@@ -23,7 +23,7 @@
                 "form_params": {},
                 "method": "GET",
                 "query_params": {},
-                "url": "https://pricing.twilio.com/v1/Voice/Numbers/+987654321"
+                "url": "https://pricing.twilio.com/v1/Voice/Numbers/+15108675309"
             },
             "response": {
                 "content": {
@@ -40,7 +40,7 @@
                         "current_price": "0.015"
                     },
                     "price_unit": "USD",
-                    "url": "https://pricing.twilio.com/v1/Voice/Numbers/+987654321"
+                    "url": "https://pricing.twilio.com/v1/Voice/Numbers/+15108675309"
                 },
                 "status_code": 200
             }
@@ -71,7 +71,7 @@
                         "current_price": "0.015"
                     },
                     "price_unit": "USD",
-                    "url": "https://pricing.twilio.com/v1/Voice/Numbers/+987654321"
+                    "url": "https://pricing.twilio.com/v1/Voice/Numbers/+15108675309"
                 },
                 "status_code": 200
             }
