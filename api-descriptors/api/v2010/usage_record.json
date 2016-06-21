@@ -90,7 +90,7 @@
                             "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                             "api_version": "2010-04-01",
                             "category": "totalprice",
-                            "count": null,
+                            "count": "1",
                             "count_unit": "",
                             "description": "Total Price",
                             "end_date": "2015-09-04",
