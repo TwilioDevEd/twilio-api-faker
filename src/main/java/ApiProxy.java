@@ -23,15 +23,18 @@ public class ApiProxy {
   public static void main(String[] args) {
     String anyResourcePattern = "[A-Z]{2,}\\w{32}";
     String countryPattern = "\\/[A-Z]{2}";
-    String phoneNumberPattern = "\\/\\s*(?:\\+?(\\d{1,3}))?[-. (]*(\\d{3})[-. )]*(\\d{3})[-. ]*(\\d{4})(?: *x(\\d+))?\\s*";
-    String escapedPhoneNumberPatter = "\\/\\\\s*(?:\\\\+?(\\\\d{1,3}))?[-. (]*(\\\\d{3})[-. )]*(\\\\d{3})[-. ]*(\\\\d{4})(?: *x(\\\\d+))?\\\\s*";
+    String phoneNumberPattern =
+        "\\/\\s*(?:\\+?(\\d{1,3}))?[-. (]*(\\d{3})[-. )]*(\\d{3})[-. ]*(\\d{4})(?: *x(\\d+))?\\s*";
+    String escapedPhoneNumberPatter =
+        "\\/\\\\s*(?:\\\\+?(\\\\d{1,3}))?[-. (]*(\\\\d{3})[-. )]*(\\\\d{3})[-. ]*(\\\\d{4})(?: *x(\\\\d+))?\\\\s*";
 
     WireMockServer wireMockServer = new WireMockServer(wireMockConfig().port(8089).httpsPort(443)
         .keystorePath("keystore/twilio-store.jks").keystorePassword("twilioFake"));
     wireMockServer.addMockServiceRequestListener(new RequestListener() {
       @Override
       public void requestReceived(Request request, Response response) {
-        System.out.println(request.getMethod() + ": " + request.getUrl());
+        System.out
+            .println(request.getMethod() + ": " + request.getHeader("Host") + request.getUrl());
         if (!response.wasConfigured()) {
           System.out.println(
               "There is no configured response for this route. Please open a ticket here if you"
@@ -52,18 +55,19 @@ public class ApiProxy {
           resourceModel.getResourceTransactions();
 
       for (HashMap<String, Object> transactionProperties : resourceTransactions.values()) {
-        String resourceUrl = (String) transactionProperties.get(ResourceParser.RESOURCE_URL);
-        resourceUrl = resourceUrl.replace(".json", "");
-        resourceUrl = resourceUrl.replaceAll(anyResourcePattern, "\\\\w+");
-        resourceUrl = resourceUrl.replaceAll(countryPattern, "\\/[A-Z]{2}");
-        resourceUrl = resourceUrl.replaceAll(phoneNumberPattern, escapedPhoneNumberPatter);
-        resourceUrl = resourceUrl.replace("/", "\\/");
-        resourceUrl = resourceUrl + "(\\.json)?(\\/)?(\\?.+)?";
+        String resourcePath = (String) transactionProperties.get(ResourceParser.RESOURCE_PATH);
+        String resourceHost = (String) transactionProperties.get(ResourceParser.RESOURCE_HOST);
+        resourcePath = resourcePath.replace(".json", "");
+        resourcePath = resourcePath.replaceAll(anyResourcePattern, "\\\\w+");
+        resourcePath = resourcePath.replaceAll(countryPattern, "\\/[A-Z]{2}");
+        resourcePath = resourcePath.replaceAll(phoneNumberPattern, escapedPhoneNumberPatter);
+        resourcePath = resourcePath.replace("/", "\\/");
+        resourcePath = resourcePath + "(\\.json)?(\\/)?(\\?.+)?";
 
         String methodString = (String) transactionProperties.get(ResourceParser.RESOURCE_METHOD);
         methodString = methodString.toUpperCase();
 
-        UrlMatchingStrategy urlMatching = urlMatching(resourceUrl);
+        UrlMatchingStrategy urlMatching = urlMatching(resourcePath);
         MappingBuilder method = null;
 
         JSONObject contentJson =
@@ -76,8 +80,9 @@ public class ApiProxy {
         switch (methodString) {
           case "POST":
             method = post(urlMatching);
-            wireMock.register(put(urlMatching).willReturn(aResponse()
-                .withHeader("Content-Type", "application/json").withBody(responseContent)));
+            wireMock.register(
+                put(urlMatching).withHeader("Host", containing(resourceHost)).willReturn(aResponse()
+                    .withHeader("Content-Type", "application/json").withBody(responseContent)));
             break;
           case "GET":
             method = get(urlMatching);
@@ -89,8 +94,9 @@ public class ApiProxy {
             System.out.println("No method specified");
         }
 
-        wireMock.register(method.willReturn(
+        wireMock.register(method.withHeader("Host", containing(resourceHost)).willReturn(
             aResponse().withHeader("Content-Type", "application/json").withBody(responseContent)));
+
       }
     }
     System.out.println("Server Ready!");
