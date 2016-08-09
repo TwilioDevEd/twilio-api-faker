@@ -12,7 +12,7 @@
                 },
                 "method": "POST",
                 "query_params": {},
-                "url": "https://notifications.stage.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings"
+                "url": "https://notifications.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings"
             },
             "response": {
                 "content": {
@@ -27,7 +27,7 @@
                     "binding_type": "apn",
                     "address": "1234",
                     "tags": [],
-                    "url": "https://notifications.stage.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings/BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    "url": "https://notifications.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings/BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "status_code": 201
             }
@@ -41,7 +41,7 @@
                 "form_params": {},
                 "method": "DELETE",
                 "query_params": {},
-                "url": "https://notifications.stage.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings/BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                "url": "https://notifications.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings/BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
             },
             "response": {
                 "content": null,
@@ -57,7 +57,7 @@
                 "form_params": {},
                 "method": "GET",
                 "query_params": {},
-                "url": "https://notifications.stage.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings/BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                "url": "https://notifications.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings/BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
             },
             "response": {
                 "content": {
@@ -72,7 +72,7 @@
                     "binding_type": "apn",
                     "address": "1234",
                     "tags": [],
-                    "url": "https://notifications.stage.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings/BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    "url": "https://notifications.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings/BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "status_code": 200
             }
@@ -86,16 +86,16 @@
                 "form_params": {},
                 "method": "GET",
                 "query_params": {},
-                "url": "https://notifications.stage.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings"
+                "url": "https://notifications.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings"
             },
             "response": {
                 "content": {
                     "meta": {
                         "page": 0,
                         "page_size": 1,
-                        "first_page_url": "https://notifications.stage.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings?PageSize=1&Page=0",
+                        "first_page_url": "https://notifications.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings?PageSize=1&Page=0",
                         "previous_page_url": null,
-                        "url": "https://notifications.stage.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings?PageSize=1&Page=0",
+                        "url": "https://notifications.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings?PageSize=1&Page=0",
                         "next_page_url": null,
                         "key": "bindings"
                     },
@@ -112,7 +112,7 @@
                             "binding_type": "apn",
                             "address": "1234",
                             "tags": [],
-                            "url": "https://notifications.stage.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings/BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                            "url": "https://notifications.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings/BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                         }
                     ]
                 },
@@ -126,16 +126,16 @@
                 "form_params": {},
                 "method": "GET",
                 "query_params": {},
-                "url": "https://notifications.stage.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings"
+                "url": "https://notifications.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings"
             },
             "response": {
                 "content": {
                     "meta": {
                         "page": 0,
                         "page_size": 1,
-                        "first_page_url": "https://notifications.stage.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings?PageSize=1&Page=0",
+                        "first_page_url": "https://notifications.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings?PageSize=1&Page=0",
                         "previous_page_url": null,
-                        "url": "https://notifications.stage.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings?PageSize=1&Page=0",
+                        "url": "https://notifications.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings?PageSize=1&Page=0",
                         "next_page_url": null,
                         "key": "bindings"
                     },

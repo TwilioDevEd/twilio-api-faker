@@ -12,7 +12,7 @@
                 },
                 "method": "POST",
                 "query_params": {},
-                "url": "https://notifications.stage.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/notifications"
+                "url": "https://notifications.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/notifications"
             },
             "response": {
                 "content": {
