@@ -26,7 +26,7 @@ public class ApiProxy {
     String phoneNumberPattern =
         "\\/\\s*(?:\\+?(\\d{1,3}))?[-. (]*(\\d{3})[-. )]*(\\d{3})[-. ]*(\\d{4})(?: *x(\\d+))?\\s*";
     String escapedPhoneNumberPatter =
-        "\\/\\\\s*(?:((?:%2B)|(?:\\\\+))?(\\\\d{1,3}))?[-. (%20B]*(\\\\d{3})[-. (%20B]*(\\\\d{3})[-. %20B]*(\\\\d{4})(?: *x(\\\\d+))?";
+        "\\/\\\\s*(?:((?:%2B)|(?:\\\\+))?(\\\\d{1,3}))?(?:\\-|\\.| |\\(|(?:%20)|(?:%28)|(?:%2E)|(?:%2D))*(\\\\d{3})(?:\\-|\\.| |\\)|(?:%20)|(?:%29)|(?:%2E)|(?:%2D))*(\\\\d{3})(?:\\-|\\.| |(?:%20)|(?:%2E)|(?:%2D))*(\\\\d{4})";
 
     WireMockServer wireMockServer = new WireMockServer(wireMockConfig().port(8089).httpsPort(443)
         .keystorePath("keystore/twilio-store.jks").keystorePassword("twilioFake"));
