@@ -1,0 +1,31 @@
+{
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "End": "end",
+                    "Start": "start"
+                },
+                "url": "https://preview.twilio.com/wireless/Devices/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage"
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "commands_costs": {},
+                    "commands_usage": {},
+                    "data_costs": {},
+                    "data_usage": {},
+                    "device_alias": "device_alias",
+                    "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "period": {},
+                    "url": "http://www.example.com"
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}

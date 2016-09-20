@@ -1,0 +1,83 @@
+{
+    "read": [
+        {
+            "name": "read_empty", 
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {
+                    "Browser": "browser", 
+                    "Client": "client", 
+                    "Direction": "direction", 
+                    "EndDateTime": "2015-07-30T20:00:00Z", 
+                    "IpAddress": "ip_address", 
+                    "OperatingSystem": "operating_system", 
+                    "Region": "region", 
+                    "StartDateTime": "2015-07-30T20:00:00Z"
+                }, 
+                "url": "https://preview.twilio.com/insights/Calls/Report/Aspects/Clients"
+            }, 
+            "response": {
+                "content": {
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/insights/Calls/Report/Aspects/Clients?Page=0&PageSize=50", 
+                        "key": "response", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 0, 
+                        "previous_page_url": null, 
+                        "url": "https://preview.twilio.com/insights/Calls/Report/Aspects/Clients"
+                    }, 
+                    "response": []
+                }, 
+                "status_code": 200
+            }
+        }, 
+        {
+            "name": "read_empty", 
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {
+                    "Browser": "browser", 
+                    "Client": "client", 
+                    "Direction": "direction", 
+                    "EndDateTime": "2015-07-30T20:00:00Z", 
+                    "IpAddress": "ip_address", 
+                    "OperatingSystem": "operating_system", 
+                    "Region": "region", 
+                    "StartDateTime": "2015-07-30T20:00:00Z"
+                }, 
+                "url": "https://preview.twilio.com/insights/Calls/Report/Aspects/Clients"
+            }, 
+            "response": {
+                "content": {
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/insights/Calls/Report/Aspects/Clients?Page=0&PageSize=50", 
+                        "key": "response", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 1, 
+                        "previous_page_url": null, 
+                        "url": "https://preview.twilio.com/insights/Calls/Report/Aspects/Clients"
+                    }, 
+                    "response": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "call_stats": {}, 
+                            "end_time": "2015-07-30T20:00:00Z", 
+                            "feedback_score_counts": {}, 
+                            "issue_type_counts": {}, 
+                            "key": "key", 
+                            "start_time": "2015-07-30T20:00:00Z", 
+                            "warning_counts": {}
+                        }
+                    ]
+                }, 
+                "status_code": 200
+            }
+        }
+    ]
+}

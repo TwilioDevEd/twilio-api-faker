@@ -1,0 +1,29 @@
+{
+    "fetch": [
+        {
+            "name": "fetch", 
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {
+                    "EndDateTime": "2015-07-30T20:00:00Z", 
+                    "StartDateTime": "2015-07-30T20:00:00Z"
+                }, 
+                "url": "https://preview.twilio.com/insights/Calls/Report"
+            }, 
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "call_stats": {}, 
+                    "end_time": "2015-07-30T20:00:00Z", 
+                    "feedback_score_counts": {}, 
+                    "issue_type_counts": {}, 
+                    "start_time": "2015-07-30T20:00:00Z", 
+                    "warning_counts": {}
+                }, 
+                "status_code": 200
+            }
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "read": [
+        {
+            "name": "read_empty", 
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {
+                    "Group": "group", 
+                    "Level": "level", 
+                    "Name": "name"
+                }, 
+                "url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Events"
+            }, 
+            "response": {
+                "content": {
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Events?Page=0&PageSize=50", 
+                        "key": "response", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 0, 
+                        "previous_page_url": null, 
+                        "url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Events"
+                    }, 
+                    "response": []
+                }, 
+                "status_code": 200
+            }
+        }, 
+        {
+            "name": "read_empty", 
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {
+                    "Group": "group", 
+                    "Level": "level", 
+                    "Name": "name"
+                }, 
+                "url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Events"
+            }, 
+            "response": {
+                "content": {
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Events?Page=0&PageSize=50", 
+                        "key": "response", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 1, 
+                        "previous_page_url": null, 
+                        "url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Events"
+                    }, 
+                    "response": [
+                        {
+                            "account_friendly_name": "account_friendly_name", 
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "group": "group", 
+                            "level": "level", 
+                            "name": "name", 
+                            "parent_account_friendly_name": "parent_account_friendly_name", 
+                            "parent_account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "payload": {}, 
+                            "payload_type": "payload_type", 
+                            "publisher": "publisher", 
+                            "publisher_metadata": {}, 
+                            "sid": "EVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "timestamp": "2015-07-30T20:00:00Z"
+                        }
+                    ]
+                }, 
+                "status_code": 200
+            }
+        }
+    ]
+}

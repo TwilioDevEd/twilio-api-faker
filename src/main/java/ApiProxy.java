@@ -58,7 +58,7 @@ public class ApiProxy {
         String resourcePath = (String) transactionProperties.get(ResourceParser.RESOURCE_PATH);
         String resourceHost = (String) transactionProperties.get(ResourceParser.RESOURCE_HOST);
         resourcePath = resourcePath.replace(".json", "");
-        resourcePath = resourcePath.replaceAll(anyResourcePattern, "\\\\w+");
+        resourcePath = resourcePath.replaceAll(anyResourcePattern, "[a-zA-Z0-9\\-\\_]+");
         resourcePath = resourcePath.replaceAll(countryPattern, "\\/[A-Z]{2}");
         resourcePath = resourcePath.replaceAll(phoneNumberPattern, escapedPhoneNumberPatter);
         resourcePath = resourcePath.replace("/", "\\/");

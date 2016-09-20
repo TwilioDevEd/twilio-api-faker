@@ -1,0 +1,131 @@
+{
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "CallbackMethod": "callback_method",
+                    "CallbackUrl": "http://www.example.com",
+                    "Command": "command",
+                    "Device": "device"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://preview.twilio.com/wireless/Commands"
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "command": "command",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "direction": "direction",
+                    "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "status",
+                    "url": "http://www.example.com"
+                },
+                "status_code": 201
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/wireless/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "command": "command",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "direction": "direction",
+                    "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "status",
+                    "url": "http://www.example.com"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "Device": "device",
+                    "Direction": "direction",
+                    "Status": "status"
+                },
+                "url": "https://preview.twilio.com/wireless/Commands"
+            },
+            "response": {
+                "content": {
+                    "commands": [],
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/wireless/Commands?Page=0&PageSize=50",
+                        "key": "commands",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 0,
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/wireless/Commands"
+                    }
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "Device": "device",
+                    "Direction": "direction",
+                    "Status": "status"
+                },
+                "url": "https://preview.twilio.com/wireless/Commands"
+            },
+            "response": {
+                "content": {
+                    "commands": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "command": "command",
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "date_updated": "2015-07-30T20:00:00Z",
+                            "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "direction": "direction",
+                            "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "status": "status",
+                            "url": "http://www.example.com"
+                        }
+                    ],
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/wireless/Commands?Page=0&PageSize=50",
+                        "key": "commands",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 1,
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/wireless/Commands"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}

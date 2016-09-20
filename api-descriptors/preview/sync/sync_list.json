@@ -1,0 +1,139 @@
+{
+    "create": [
+        {
+            "name": "create", 
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {
+                    "UniqueName": "unique_name"
+                }, 
+                "method": "POST", 
+                "query_params": {}, 
+                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists"
+            }, 
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "created_by": "created_by", 
+                    "date_created": "2015-07-30T20:00:00Z", 
+                    "date_updated": "2015-07-30T20:00:00Z", 
+                    "links": {}, 
+                    "revision": "revision", 
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "unique_name": "unique_name", 
+                    "url": "http://www.example.com"
+                }, 
+                "status_code": 201
+            }
+        }
+    ], 
+    "delete": [
+        {
+            "name": "delete", 
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "DELETE", 
+                "query_params": {}, 
+                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            }, 
+            "response": {
+                "content": null, 
+                "status_code": 204
+            }
+        }
+    ], 
+    "fetch": [
+        {
+            "name": "fetch", 
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
+                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            }, 
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "created_by": "created_by", 
+                    "date_created": "2015-07-30T20:00:00Z", 
+                    "date_updated": "2015-07-30T20:00:00Z", 
+                    "links": {}, 
+                    "revision": "revision", 
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "unique_name": "unique_name", 
+                    "url": "http://www.example.com"
+                }, 
+                "status_code": 200
+            }
+        }
+    ], 
+    "read": [
+        {
+            "name": "read_empty", 
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
+                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists"
+            }, 
+            "response": {
+                "content": {
+                    "lists": [], 
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists?Page=0&PageSize=50", 
+                        "key": "lists", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 0, 
+                        "previous_page_url": null, 
+                        "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists"
+                    }
+                }, 
+                "status_code": 200
+            }
+        }, 
+        {
+            "name": "read_full", 
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
+                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists"
+            }, 
+            "response": {
+                "content": {
+                    "lists": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "created_by": "created_by", 
+                            "date_created": "2015-07-30T20:00:00Z", 
+                            "date_updated": "2015-07-30T20:00:00Z", 
+                            "links": {}, 
+                            "revision": "revision", 
+                            "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "unique_name": "unique_name", 
+                            "url": "http://www.example.com"
+                        }
+                    ], 
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists?Page=0&PageSize=50", 
+                        "key": "lists", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 1, 
+                        "previous_page_url": null, 
+                        "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists"
+                    }
+                }, 
+                "status_code": 200
+            }
+        }
+    ]
+}

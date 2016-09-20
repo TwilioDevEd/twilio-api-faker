@@ -1,0 +1,188 @@
+{
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "Alias": "alias",
+                    "CallbackMethod": "callback_method",
+                    "CallbackUrl": "http://www.example.com",
+                    "CommandsCallbackMethod": "commands_callback_method",
+                    "CommandsCallbackUrl": "http://www.example.com",
+                    "FriendlyName": "friendly_name",
+                    "RatePlan": "rate_plan",
+                    "SimIdentifier": "sim_identifier",
+                    "Status": "status"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://preview.twilio.com/wireless/Devices"
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "alias": "alias",
+                    "commands_callback_method": "commands_callback_method",
+                    "commands_callback_url": "http://www.example.com",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "friendly_name": "friendly_name",
+                    "links": {},
+                    "rate_plan_sid": "WPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sim_identifier": "sim_identifier",
+                    "status": "status",
+                    "url": "http://www.example.com"
+                },
+                "status_code": 201
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/wireless/Devices/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "alias": "alias",
+                    "commands_callback_method": "commands_callback_method",
+                    "commands_callback_url": "http://www.example.com",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "friendly_name": "friendly_name",
+                    "links": {},
+                    "rate_plan_sid": "WPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sim_identifier": "sim_identifier",
+                    "status": "status",
+                    "url": "http://www.example.com"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "RatePlan": "rate_plan",
+                    "SimIdentifier": "sim_identifier",
+                    "Status": "status"
+                },
+                "url": "https://preview.twilio.com/wireless/Devices"
+            },
+            "response": {
+                "content": {
+                    "devices": [],
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/wireless/Devices?Page=0&PageSize=50",
+                        "key": "devices",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 0,
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/wireless/Devices"
+                    }
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "RatePlan": "rate_plan",
+                    "SimIdentifier": "sim_identifier",
+                    "Status": "status"
+                },
+                "url": "https://preview.twilio.com/wireless/Devices"
+            },
+            "response": {
+                "content": {
+                    "devices": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "alias": "alias",
+                            "commands_callback_method": "commands_callback_method",
+                            "commands_callback_url": "http://www.example.com",
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "date_updated": "2015-07-30T20:00:00Z",
+                            "friendly_name": "friendly_name",
+                            "links": {},
+                            "rate_plan_sid": "WPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "sim_identifier": "sim_identifier",
+                            "status": "status",
+                            "url": "http://www.example.com"
+                        }
+                    ],
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/wireless/Devices?Page=0&PageSize=50",
+                        "key": "devices",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 1,
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/wireless/Devices"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "Alias": "alias",
+                    "CallbackMethod": "callback_method",
+                    "CallbackUrl": "http://www.example.com",
+                    "CommandsCallbackMethod": "commands_callback_method",
+                    "CommandsCallbackUrl": "http://www.example.com",
+                    "FriendlyName": "friendly_name",
+                    "RatePlan": "WPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "SimIdentifier": "sim_identifier",
+                    "Status": "status"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://preview.twilio.com/wireless/Devices/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "alias": "alias",
+                    "commands_callback_method": "commands_callback_method",
+                    "commands_callback_url": "http://www.example.com",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "friendly_name": "friendly_name",
+                    "links": {},
+                    "rate_plan_sid": "WPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sim_identifier": "sim_identifier",
+                    "status": "status",
+                    "url": "http://www.example.com"
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}

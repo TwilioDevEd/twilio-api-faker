@@ -1,0 +1,104 @@
+{
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/wireless/RatePlans/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "alias": "alias",
+                    "cap_period": 100,
+                    "cap_unit": "cap_unit",
+                    "capabilities": {},
+                    "commands_cap": 100,
+                    "data_cap": 100,
+                    "data_metering": "data_metering",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "friendly_name": "friendly_name",
+                    "messaging_cap": 100,
+                    "sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "url": "http://www.example.com",
+                    "voice_cap": 100
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/wireless/RatePlans"
+            },
+            "response": {
+                "content": {
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/wireless/RatePlans?Page=0&PageSize=50",
+                        "key": "rate_plans",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 0,
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/wireless/RatePlans"
+                    },
+                    "rate_plans": []
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/wireless/RatePlans"
+            },
+            "response": {
+                "content": {
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/wireless/RatePlans?Page=0&PageSize=50",
+                        "key": "rate_plans",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 1,
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/wireless/RatePlans"
+                    },
+                    "rate_plans": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "alias": "alias",
+                            "cap_period": 100,
+                            "cap_unit": "cap_unit",
+                            "capabilities": {},
+                            "commands_cap": 100,
+                            "data_cap": 100,
+                            "data_metering": "data_metering",
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "date_updated": "2015-07-30T20:00:00Z",
+                            "friendly_name": "friendly_name",
+                            "messaging_cap": 100,
+                            "sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "url": "http://www.example.com",
+                            "voice_cap": 100
+                        }
+                    ]
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}

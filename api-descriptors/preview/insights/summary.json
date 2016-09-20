@@ -1,0 +1,25 @@
+{
+    "fetch": [
+        {
+            "name": "fetch", 
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
+                "url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Summary"
+            }, 
+            "response": {
+                "content": {
+                    "account_friendly_name": "account_friendly_name", 
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "call_sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "parent_account_friendly_name": "parent_account_friendly_name", 
+                    "parent_account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "summary": {}
+                }, 
+                "status_code": 200
+            }
+        }
+    ]
+}
