@@ -6,9 +6,10 @@
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "form_params": {
                     "Attributes": "attributes",
-                    "Priority": 1,
-                    "Timeout": 1,
-                    "WorkflowSid": "WFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    "Priority": 100,
+                    "TaskChannel": "task_channel",
+                    "Timeout": 100,
+                    "WorkflowSid": "TODO"
                 },
                 "method": "POST",
                 "query_params": {},
@@ -17,21 +18,23 @@
             "response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "age": 25200,
+                    "age": 100,
                     "assignment_status": "pending",
-                    "attributes": "{\"body\": \"hello\"}",
-                    "date_created": "2014-05-14T10:50:02Z",
-                    "date_updated": "2014-05-14T23:26:06Z",
-                    "priority": 0,
-                    "reason": "Test Reason",
+                    "attributes": "attributes",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "priority": 100,
+                    "reason": "reason",
                     "sid": "WTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "task_channel_sid": "TCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "task_channel_unique_name": "task_channel_unique_name",
                     "task_queue_sid": "WQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "timeout": 60,
-                    "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Tasks/WTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "timeout": 100,
+                    "url": "http://www.example.com",
                     "workflow_sid": "WFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "workspace_sid": "WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
-                "status_code": 200
+                "status_code": 201
             }
         }
     ],
@@ -64,17 +67,19 @@
             "response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "age": 25200,
+                    "age": 100,
                     "assignment_status": "pending",
-                    "attributes": "{\"body\": \"hello\"}",
-                    "date_created": "2014-05-14T10:50:02Z",
-                    "date_updated": "2014-05-14T23:26:06Z",
-                    "priority": 0,
-                    "reason": "Test Reason",
+                    "attributes": "attributes",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "priority": 100,
+                    "reason": "reason",
                     "sid": "WTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "task_channel_sid": "TCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "task_channel_unique_name": "task_channel_unique_name",
                     "task_queue_sid": "WQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "timeout": 60,
-                    "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Tasks/WTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "timeout": 100,
+                    "url": "http://www.example.com",
                     "workflow_sid": "WFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "workspace_sid": "WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
@@ -91,7 +96,8 @@
                 "method": "GET",
                 "query_params": {
                     "AssignmentStatus": "pending",
-                    "Priority": 1,
+                    "Priority": 100,
+                    "TaskChannel": "task_channel",
                     "TaskQueueName": "task_queue_name",
                     "TaskQueueSid": "WQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "WorkflowName": "workflow_name",
@@ -102,29 +108,30 @@
             "response": {
                 "content": {
                     "meta": {
-                        "first_page_url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Tasks?PageSize=50&Page=0",
+                        "first_page_url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Tasks?Page=0&PageSize=50",
                         "key": "tasks",
-                        "last_page_url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Tasks?PageSize=50&Page=0",
                         "next_page_url": null,
                         "page": 0,
-                        "page_size": 50,
+                        "page_size": 1,
                         "previous_page_url": null,
-                        "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Tasks?PageSize=50&Page=0"
+                        "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Tasks"
                     },
                     "tasks": [
                         {
                             "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "age": 25200,
+                            "age": 100,
                             "assignment_status": "pending",
-                            "attributes": "{\"body\": \"hello\"}",
-                            "date_created": "2014-05-14T14:26:54Z",
-                            "date_updated": "2014-05-15T16:03:42Z",
-                            "priority": 0,
-                            "reason": "Test Reason",
+                            "attributes": "attributes",
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "date_updated": "2015-07-30T20:00:00Z",
+                            "priority": 100,
+                            "reason": "reason",
                             "sid": "WTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "task_channel_sid": "TCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "task_channel_unique_name": "task_channel_unique_name",
                             "task_queue_sid": "WQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "timeout": 60,
-                            "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Tasks/WTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "timeout": 100,
+                            "url": "http://www.example.com",
                             "workflow_sid": "WFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                             "workspace_sid": "WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                         }
@@ -141,7 +148,8 @@
                 "method": "GET",
                 "query_params": {
                     "AssignmentStatus": "pending",
-                    "Priority": 1,
+                    "Priority": 100,
+                    "TaskChannel": "task_channel",
                     "TaskQueueName": "task_queue_name",
                     "TaskQueueSid": "WQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "WorkflowName": "workflow_name",
@@ -152,14 +160,13 @@
             "response": {
                 "content": {
                     "meta": {
-                        "first_page_url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Tasks?PageSize=50&Page=0",
+                        "first_page_url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Tasks?Page=0&PageSize=50",
                         "key": "tasks",
-                        "last_page_url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Tasks?PageSize=50&Page=0",
                         "next_page_url": null,
                         "page": 0,
-                        "page_size": 50,
+                        "page_size": 0,
                         "previous_page_url": null,
-                        "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Tasks?PageSize=50&Page=0"
+                        "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Tasks"
                     },
                     "tasks": []
                 },
@@ -175,8 +182,9 @@
                 "form_params": {
                     "AssignmentStatus": "pending",
                     "Attributes": "attributes",
-                    "Priority": 1,
-                    "Reason": "reason"
+                    "Priority": 100,
+                    "Reason": "reason",
+                    "TaskChannel": "task_channel"
                 },
                 "method": "POST",
                 "query_params": {},
@@ -185,17 +193,19 @@
             "response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "age": 25200,
+                    "age": 100,
                     "assignment_status": "pending",
-                    "attributes": "{\"body\": \"hello\"}",
-                    "date_created": "2014-05-14T10:50:02Z",
-                    "date_updated": "2014-05-14T23:26:06Z",
-                    "priority": 0,
-                    "reason": "Test Reason",
+                    "attributes": "attributes",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "priority": 100,
+                    "reason": "reason",
                     "sid": "WTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "task_channel_sid": "TCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "task_channel_unique_name": "task_channel_unique_name",
                     "task_queue_sid": "WQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "timeout": 60,
-                    "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Tasks/WTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "timeout": 100,
+                    "url": "http://www.example.com",
                     "workflow_sid": "WFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "workspace_sid": "WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
