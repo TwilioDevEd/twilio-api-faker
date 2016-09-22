@@ -8,7 +8,7 @@
                     "Issue": [
                         "audio-latency"
                     ],
-                    "QualityScore": 1
+                    "QualityScore": 100
                 },
                 "method": "POST",
                 "query_params": {},
@@ -17,32 +17,15 @@
             "response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "date_created": "Thu, 20 Aug 2015 21:45:46 +0000",
-                    "date_updated": "Thu, 20 Aug 2015 21:45:46 +0000",
+                    "date_created": "Thu, 30 Jul 2015 20:00:00 +0000",
+                    "date_updated": "Thu, 30 Jul 2015 20:00:00 +0000",
                     "issues": [
-                        "imperfect-audio",
-                        "post-dial-delay"
+                        "audio-latency"
                     ],
-                    "quality_score": 5,
+                    "quality_score": 100,
                     "sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
-                "status_code": 200
-            }
-        }
-    ],
-    "delete": [
-        {
-            "name": "delete",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "DELETE",
-                "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Feedback.json"
-            },
-            "response": {
-                "content": null,
-                "status_code": 204
+                "status_code": 201
             }
         }
     ],
@@ -59,60 +42,12 @@
             "response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "date_created": "Thu, 20 Aug 2015 21:45:46 +0000",
-                    "date_updated": "Thu, 20 Aug 2015 21:45:46 +0000",
+                    "date_created": "Thu, 30 Jul 2015 20:00:00 +0000",
+                    "date_updated": "Thu, 30 Jul 2015 20:00:00 +0000",
                     "issues": [
-                        "imperfect-audio",
-                        "post-dial-delay"
+                        "audio-latency"
                     ],
-                    "quality_score": 5,
-                    "sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                },
-                "status_code": 200
-            }
-        }
-    ],
-    "read": [
-        {
-            "name": "read_full",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Feedback.json"
-            },
-            "response": {
-                "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "date_created": "Thu, 20 Aug 2015 21:45:46 +0000",
-                    "date_updated": "Thu, 20 Aug 2015 21:45:46 +0000",
-                    "issues": [
-                        "imperfect-audio",
-                        "post-dial-delay"
-                    ],
-                    "quality_score": 5,
-                    "sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                },
-                "status_code": 200
-            }
-        },
-        {
-            "name": "read_empty",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Feedback.json"
-            },
-            "response": {
-                "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "date_created": "Thu, 20 Aug 2015 21:45:46 +0000",
-                    "date_updated": "Thu, 20 Aug 2015 21:45:46 +0000",
-                    "issues": [],
-                    "quality_score": 5,
+                    "quality_score": 100,
                     "sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "status_code": 200
@@ -128,7 +63,7 @@
                     "Issue": [
                         "audio-latency"
                     ],
-                    "QualityScored": 1
+                    "QualityScore": 100
                 },
                 "method": "POST",
                 "query_params": {},
@@ -137,13 +72,12 @@
             "response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "date_created": "Thu, 20 Aug 2015 21:45:46 +0000",
-                    "date_updated": "Thu, 20 Aug 2015 21:45:46 +0000",
+                    "date_created": "Thu, 30 Jul 2015 20:00:00 +0000",
+                    "date_updated": "Thu, 30 Jul 2015 20:00:00 +0000",
                     "issues": [
-                        "imperfect-audio",
-                        "post-dial-delay"
+                        "audio-latency"
                     ],
-                    "quality_score": 5,
+                    "quality_score": 100,
                     "sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "status_code": 200
