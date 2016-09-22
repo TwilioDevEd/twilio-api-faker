@@ -21,6 +21,14 @@ import lib.ResourceParser;
 
 public class ApiProxy {
   public static void main(String[] args) {
+    String[] excludedResources = {
+        "FeedbackSummary",
+        "Local",
+        "Mobile",
+        "TollFree"
+    };
+    String sidPattern = "[a-zA-Z0-9\\-\\_]+";
+    String anyResourcePatternReplacement = String.format("(?!%s)%s", String.join("|", excludedResources), sidPattern);
     String anyResourcePattern = "[A-Z]{2,}\\w{32}";
     String countryPattern = "\\/[A-Z]{2}";
     String phoneNumberPattern =
@@ -58,7 +66,7 @@ public class ApiProxy {
         String resourcePath = (String) transactionProperties.get(ResourceParser.RESOURCE_PATH);
         String resourceHost = (String) transactionProperties.get(ResourceParser.RESOURCE_HOST);
         resourcePath = resourcePath.replace(".json", "");
-        resourcePath = resourcePath.replaceAll(anyResourcePattern, "[a-zA-Z0-9\\-\\_]+");
+        resourcePath = resourcePath.replaceAll(anyResourcePattern, anyResourcePatternReplacement);
         resourcePath = resourcePath.replaceAll(countryPattern, "\\/[A-Z]{2}");
         resourcePath = resourcePath.replaceAll(phoneNumberPattern, escapedPhoneNumberPatter);
         resourcePath = resourcePath.replace("/", "\\/");
