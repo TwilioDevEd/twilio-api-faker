@@ -6,9 +6,9 @@
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "form_params": {
                     "EndDate": "2008-01-02",
-                    "IncludeSubaccounts": "true",
+                    "IncludeSubaccounts": false,
                     "StartDate": "2008-01-02",
-                    "StatusCallback": "https://example.com",
+                    "StatusCallback": "http://www.example.com",
                     "StatusCallbackMethod": "GET"
                 },
                 "method": "POST",
@@ -18,9 +18,11 @@
             "response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "call_count": 10200,
-                    "call_feedback_count": 729,
-                    "end_date": "2011-01-01",
+                    "call_count": 100,
+                    "call_feedback_count": 100,
+                    "date_created": "Thu, 30 Jul 2015 20:00:00 +0000",
+                    "date_updated": "Thu, 30 Jul 2015 20:00:00 +0000",
+                    "end_date": "2015-07-30T20:00:00Z",
                     "include_subaccounts": false,
                     "issues": [
                         {
@@ -29,14 +31,12 @@
                             "percentage_of_total_calls": "0.04%"
                         }
                     ],
-                    "quality_score_average": 4.5,
-                    "quality_score_median": 4,
-                    "quality_score_standard_deviation": 1,
+                    "quality_score_average": 0.05,
+                    "quality_score_median": 0.05,
+                    "quality_score_standard_deviation": 0.05,
                     "sid": "FSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "start_date": "2011-01-01",
-                    "status": "completed",
-                    "date_created": "Tue, 31 Aug 2010 20:36:28 +0000",
-                    "date_updated": "Tue, 31 Aug 2010 20:36:44 +0000"
+                    "start_date": "2015-07-30T20:00:00Z",
+                    "status": "queued"
                 },
                 "status_code": 200
             }
@@ -71,9 +71,11 @@
             "response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "call_count": 10200,
-                    "call_feedback_count": 729,
-                    "end_date": "2011-01-01",
+                    "call_count": 100,
+                    "call_feedback_count": 100,
+                    "date_created": "Thu, 30 Jul 2015 20:00:00 +0000",
+                    "date_updated": "Thu, 30 Jul 2015 20:00:00 +0000",
+                    "end_date": "2015-07-30T20:00:00Z",
                     "include_subaccounts": false,
                     "issues": [
                         {
@@ -82,82 +84,12 @@
                             "percentage_of_total_calls": "0.04%"
                         }
                     ],
-                    "quality_score_average": 4.5,
-                    "quality_score_median": 4,
-                    "quality_score_standard_deviation": 1,
+                    "quality_score_average": 0.05,
+                    "quality_score_median": 0.05,
+                    "quality_score_standard_deviation": 0.05,
                     "sid": "FSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "start_date": "2011-01-01",
-                    "status": "completed",
-                    "date_created": "Tue, 31 Aug 2010 20:36:28 +0000",
-                    "date_updated": "Tue, 31 Aug 2010 20:36:44 +0000"
-                },
-                "status_code": 200
-            }
-        }
-    ],
-    "read": [
-        {
-            "name": "read_full",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Calls/FeedbackSummary.json"
-            },
-            "response": {
-                "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "call_count": 0,
-                    "call_feedback_count": 0,
-                    "date_created": "Tue, 18 Aug 2015 17:34:10 +0000",
-                    "date_updated": null,
-                    "end_date": "2011-01-01",
-                    "include_subaccounts": false,
-                    "issues": null,
-                    "quality_score_average": null,
-                    "quality_score_median": null,
-                    "quality_score_standard_deviation": null,
-                    "sid": "FSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "start_date": "2011-01-01",
+                    "start_date": "2015-07-30T20:00:00Z",
                     "status": "queued"
-                },
-                "status_code": 200
-            }
-        }
-    ],
-    "update": [
-        {
-            "name": "update",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "POST",
-                "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Calls/FeedbackSummary/FSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
-            },
-            "response": {
-                "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "call_count": 10200,
-                    "call_feedback_count": 729,
-                    "include_subaccounts": false,
-                    "end_date": "2011-01-01",
-                    "issues": [
-                        {
-                            "count": 45,
-                            "description": "imperfect-audio",
-                            "percentage_of_total_calls": "0.04%"
-                        }
-                    ],
-                    "quality_score_average": 4.5,
-                    "quality_score_median": 4,
-                    "quality_score_standard_deviation": 1,
-                    "sid": "FSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "start_date": "2011-01-01",
-                    "status": "completed",
-                    "date_created": "Tue, 31 Aug 2010 20:36:28 +0000",
-                    "date_updated": "Tue, 31 Aug 2010 20:36:44 +0000"
                 },
                 "status_code": 200
             }
