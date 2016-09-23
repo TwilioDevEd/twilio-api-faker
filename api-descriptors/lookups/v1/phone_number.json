@@ -1,20 +1,4 @@
 {
-    "delete": [
-        {
-            "name": "delete",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "DELETE",
-                "query_params": {},
-                "url": "https://lookups.twilio.com/v1/PhoneNumbers/+15558675309"
-            },
-            "response": {
-                "content": null,
-                "status_code": 204
-            }
-        }
-    ],
     "fetch": [
         {
             "name": "fetch",
@@ -23,13 +7,20 @@
                 "form_params": {},
                 "method": "GET",
                 "query_params": {
+                    "AddOns": [
+                        "add_ons"
+                    ],
                     "CountryCode": "country_code",
-                    "Type": "type"
+                    "Type": [
+                        "type"
+                    ]
                 },
-                "url": "https://lookups.twilio.com/v1/PhoneNumbers/+15558675309"
+                "url": "https://lookups.twilio.com/v1/PhoneNumbers/+18001234567"
             },
             "response": {
                 "content": {
+                    "add_ons": {},
+                    "caller_name": null,
                     "carrier": {
                         "error_code": null,
                         "mobile_country_code": "310",
@@ -37,10 +28,10 @@
                         "name": "verizon",
                         "type": "mobile"
                     },
-                    "country_code": "US",
-                    "national_format": "(510) 867-5309",
-                    "phone_number": "+15108675309",
-                    "url": "https://lookups.twilio.com/v1/PhoneNumbers/phone_number"
+                    "country_code": "country_code",
+                    "national_format": "national_format",
+                    "phone_number": "+18001234567",
+                    "url": "http://www.example.com"
                 },
                 "status_code": 200
             }
