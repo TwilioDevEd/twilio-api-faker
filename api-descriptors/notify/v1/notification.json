@@ -1,0 +1,58 @@
+{
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "Action": "action",
+                    "Apn": "apn",
+                    "Body": "body",
+                    "Data": "data",
+                    "FacebookMessenger": {},
+                    "Gcm": "gcm",
+                    "Identity": [
+                        "identity"
+                    ],
+                    "Priority": "high",
+                    "Sms": "sms",
+                    "Sound": "sound",
+                    "Tag": [
+                        "tag"
+                    ],
+                    "Title": "title",
+                    "Ttl": 100
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Notifications"
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "action": "action",
+                    "apn": {},
+                    "body": "body",
+                    "data": {},
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "facebook_messenger": {},
+                    "gcm": {},
+                    "identities": [
+                        "identities"
+                    ],
+                    "priority": "high",
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "NOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sms": {},
+                    "sound": "sound",
+                    "tags": [
+                        "tags"
+                    ],
+                    "title": "title",
+                    "ttl": 100
+                },
+                "status_code": 201
+            }
+        }
+    ]
+}

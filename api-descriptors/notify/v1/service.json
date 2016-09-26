@@ -1,0 +1,196 @@
+{
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "ApnCredentialSid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "DefaultApnNotificationProtocolVersion": "default_apn_notification_protocol_version",
+                    "DefaultGcmNotificationProtocolVersion": "default_gcm_notification_protocol_version",
+                    "FacebookMessengerPageId": "facebook_messenger_page_id",
+                    "FriendlyName": "friendly_name",
+                    "GcmCredentialSid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "MessagingServiceSid": "MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://notify.twilio.com/v1/Services"
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "apn_credential_sid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "default_apn_notification_protocol_version": "default_apn_notification_protocol_version",
+                    "default_gcm_notification_protocol_version": "default_gcm_notification_protocol_version",
+                    "facebook_messenger_page_id": "facebook_messenger_page_id",
+                    "friendly_name": "friendly_name",
+                    "gcm_credential_sid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "links": {},
+                    "messaging_service_sid": "MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "url": "http://www.example.com"
+                },
+                "status_code": 201
+            }
+        }
+    ],
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "response": {
+                "content": null,
+                "status_code": 204
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "apn_credential_sid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "default_apn_notification_protocol_version": "default_apn_notification_protocol_version",
+                    "default_gcm_notification_protocol_version": "default_gcm_notification_protocol_version",
+                    "facebook_messenger_page_id": "facebook_messenger_page_id",
+                    "friendly_name": "friendly_name",
+                    "gcm_credential_sid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "links": {},
+                    "messaging_service_sid": "MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "url": "http://www.example.com"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "FriendlyName": "friendly_name"
+                },
+                "url": "https://notify.twilio.com/v1/Services"
+            },
+            "response": {
+                "content": {
+                    "meta": {
+                        "first_page_url": "https://notify.twilio.com/v1/Services?Page=0&PageSize=50",
+                        "key": "services",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 1,
+                        "previous_page_url": null,
+                        "url": "https://notify.twilio.com/v1/Services"
+                    },
+                    "services": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "apn_credential_sid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "date_updated": "2015-07-30T20:00:00Z",
+                            "default_apn_notification_protocol_version": "default_apn_notification_protocol_version",
+                            "default_gcm_notification_protocol_version": "default_gcm_notification_protocol_version",
+                            "facebook_messenger_page_id": "facebook_messenger_page_id",
+                            "friendly_name": "friendly_name",
+                            "gcm_credential_sid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "links": {},
+                            "messaging_service_sid": "MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "url": "http://www.example.com"
+                        }
+                    ]
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "FriendlyName": "friendly_name"
+                },
+                "url": "https://notify.twilio.com/v1/Services"
+            },
+            "response": {
+                "content": {
+                    "meta": {
+                        "first_page_url": "https://notify.twilio.com/v1/Services?Page=0&PageSize=50",
+                        "key": "services",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 0,
+                        "previous_page_url": null,
+                        "url": "https://notify.twilio.com/v1/Services"
+                    },
+                    "services": []
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "ApnCredentialSid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "DefaultApnNotificationProtocolVersion": "default_apn_notification_protocol_version",
+                    "DefaultGcmNotificationProtocolVersion": "default_gcm_notification_protocol_version",
+                    "FacebookMessengerPageId": "facebook_messenger_page_id",
+                    "FriendlyName": "friendly_name",
+                    "GcmCredentialSid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "MessagingServiceSid": "MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "apn_credential_sid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "default_apn_notification_protocol_version": "default_apn_notification_protocol_version",
+                    "default_gcm_notification_protocol_version": "default_gcm_notification_protocol_version",
+                    "facebook_messenger_page_id": "facebook_messenger_page_id",
+                    "friendly_name": "friendly_name",
+                    "gcm_credential_sid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "links": {},
+                    "messaging_service_sid": "MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "url": "http://www.example.com"
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}
