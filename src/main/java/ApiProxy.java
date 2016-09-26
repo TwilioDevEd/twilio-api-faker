@@ -30,11 +30,12 @@ public class ApiProxy {
     String sidPattern = "[a-zA-Z0-9\\-\\_]+";
     String anyResourcePatternReplacement = String.format("(?!%s)%s", String.join("|", excludedResources), sidPattern);
     String anyResourcePattern = "[A-Z]{2,}\\w{32}";
-    String countryPattern = "\\/[A-Z]{2}";
+    String countryPattern = "\\/[A-Z]{2}(?![A-Z]+)";
     String phoneNumberPattern =
         "\\/\\s*(?:\\+?(\\d{1,3}))?[-. (]*(\\d{3})[-. )]*(\\d{3})[-. ]*(\\d{4})(?: *x(\\d+))?\\s*";
     String escapedPhoneNumberPatter =
         "\\/\\\\s*(?:((?:%2B)|(?:\\\\+))?(\\\\d{1,3}))?(?:\\-|\\.| |\\(|(?:%20)|(?:%28)|(?:%2E)|(?:%2D))*(\\\\d{3})(?:\\-|\\.| |\\)|(?:%20)|(?:%29)|(?:%2E)|(?:%2D))*(\\\\d{3})(?:\\-|\\.| |(?:%20)|(?:%2E)|(?:%2D))*(\\\\d{4})";
+    String indexPattern = "\\/INDEX";
 
     WireMockServer wireMockServer = new WireMockServer(wireMockConfig().port(8089).httpsPort(443)
         .keystorePath("keystore/twilio-store.jks").keystorePassword("twilioFake"));
@@ -67,7 +68,8 @@ public class ApiProxy {
         String resourceHost = (String) transactionProperties.get(ResourceParser.RESOURCE_HOST);
         resourcePath = resourcePath.replace(".json", "");
         resourcePath = resourcePath.replaceAll(anyResourcePattern, anyResourcePatternReplacement);
-        resourcePath = resourcePath.replaceAll(countryPattern, "\\/[A-Z]{2}");
+        resourcePath = resourcePath.replaceAll(indexPattern, "/\\\\d+");
+        resourcePath = resourcePath.replaceAll(countryPattern, "/[A-Z]{2}");
         resourcePath = resourcePath.replaceAll(phoneNumberPattern, escapedPhoneNumberPatter);
         resourcePath = resourcePath.replace("/", "\\/");
         resourcePath = resourcePath + "(\\.json)?(\\/)?(\\?.+)?";
