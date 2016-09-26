@@ -10,7 +10,7 @@
                     "AddOns": [
                         "add_ons"
                     ],
-                    "CountryCode": "country_code",
+                    "CountryCode": "US",
                     "Type": [
                         "type"
                     ]
@@ -28,8 +28,8 @@
                         "name": "verizon",
                         "type": "mobile"
                     },
-                    "country_code": "country_code",
-                    "national_format": "national_format",
+                    "country_code": "US",
+                    "national_format": "(510) 867-5309",
                     "phone_number": "+18001234567",
                     "url": "http://www.example.com"
                 },
