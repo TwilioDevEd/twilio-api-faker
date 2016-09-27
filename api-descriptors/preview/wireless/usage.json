@@ -17,11 +17,19 @@
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "commands_costs": {},
                     "commands_usage": {},
-                    "data_costs": {},
+                    "data_costs": {
+                        "start": 1,
+                        "end": 2,
+                        "total": 3
+                    },
                     "data_usage": {},
                     "device_alias": "device_alias",
                     "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "period": {},
+                    "period": {
+                        "start": 1,
+                        "end": 2,
+                        "total": 3
+                    },
                     "url": "http://www.example.com"
                 },
                 "status_code": 200
