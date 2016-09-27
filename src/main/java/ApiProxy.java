@@ -36,6 +36,7 @@ public class ApiProxy {
     String escapedPhoneNumberPatter =
         "\\/\\\\s*(?:((?:%2B)|(?:\\\\+))?(\\\\d{1,3}))?(?:\\-|\\.| |\\(|(?:%20)|(?:%28)|(?:%2E)|(?:%2D))*(\\\\d{3})(?:\\-|\\.| |\\)|(?:%20)|(?:%29)|(?:%2E)|(?:%2D))*(\\\\d{3})(?:\\-|\\.| |(?:%20)|(?:%2E)|(?:%2D))*(\\\\d{4})";
     String indexPattern = "\\/INDEX";
+    String mapKeyPattern = "\\/MAPKEY";
 
     WireMockServer wireMockServer = new WireMockServer(wireMockConfig().port(8089).httpsPort(443)
         .keystorePath("keystore/twilio-store.jks").keystorePassword("twilioFake"));
@@ -69,6 +70,7 @@ public class ApiProxy {
         resourcePath = resourcePath.replace(".json", "");
         resourcePath = resourcePath.replaceAll(anyResourcePattern, anyResourcePatternReplacement);
         resourcePath = resourcePath.replaceAll(indexPattern, "/\\\\d+");
+        resourcePath = resourcePath.replaceAll(mapKeyPattern, "\\/" + sidPattern);
         resourcePath = resourcePath.replaceAll(countryPattern, "/[A-Z]{2}");
         resourcePath = resourcePath.replaceAll(phoneNumberPattern, escapedPhoneNumberPatter);
         resourcePath = resourcePath.replace("/", "\\/");

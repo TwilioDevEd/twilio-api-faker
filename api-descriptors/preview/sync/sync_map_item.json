@@ -1,175 +1,175 @@
 {
     "create": [
         {
-            "name": "create", 
+            "name": "create",
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "form_params": {
-                    "Data": {}, 
+                    "Data": {},
                     "Key": "key"
-                }, 
-                "method": "POST", 
-                "query_params": {}, 
+                },
+                "method": "POST",
+                "query_params": {},
                 "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items"
-            }, 
+            },
             "response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
-                    "created_by": "created_by", 
-                    "data": {}, 
-                    "date_created": "2015-07-30T20:00:00Z", 
-                    "date_updated": "2015-07-30T20:00:00Z", 
-                    "key": "key", 
-                    "map_sid": "MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
-                    "revision": "revision", 
-                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "created_by": "created_by",
+                    "data": {},
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "key": "key",
+                    "map_sid": "MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "revision": "revision",
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "url": "http://www.example.com"
-                }, 
+                },
                 "status_code": 201
             }
         }
-    ], 
+    ],
     "delete": [
         {
-            "name": "delete", 
+            "name": "delete",
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
-                "form_params": {}, 
-                "method": "DELETE", 
-                "query_params": {}, 
-                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/key"
-            }, 
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/MAPKEY"
+            },
             "response": {
-                "content": null, 
+                "content": null,
                 "status_code": 204
             }
         }
-    ], 
+    ],
     "fetch": [
         {
-            "name": "fetch", 
+            "name": "fetch",
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
-                "form_params": {}, 
-                "method": "GET", 
-                "query_params": {}, 
-                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/key"
-            }, 
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/MAPKEY"
+            },
             "response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
-                    "created_by": "created_by", 
-                    "data": {}, 
-                    "date_created": "2015-07-30T20:00:00Z", 
-                    "date_updated": "2015-07-30T20:00:00Z", 
-                    "key": "key", 
-                    "map_sid": "MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
-                    "revision": "revision", 
-                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "created_by": "created_by",
+                    "data": {},
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "key": "key",
+                    "map_sid": "MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "revision": "revision",
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "url": "http://www.example.com"
-                }, 
+                },
                 "status_code": 200
             }
         }
-    ], 
+    ],
     "read": [
         {
-            "name": "read_empty", 
+            "name": "read_empty",
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
-                "form_params": {}, 
-                "method": "GET", 
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
                 "query_params": {
-                    "Bounds": "inclusive", 
-                    "From": "from", 
+                    "Bounds": "inclusive",
+                    "From": "from",
                     "Order": "asc"
-                }, 
+                },
                 "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items"
-            }, 
+            },
             "response": {
                 "content": {
-                    "items": [], 
+                    "items": [],
                     "meta": {
-                        "first_page_url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items?Page=0&PageSize=50", 
-                        "key": "items", 
-                        "next_page_url": null, 
-                        "page": 0, 
-                        "page_size": 0, 
-                        "previous_page_url": null, 
+                        "first_page_url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items?Page=0&PageSize=50",
+                        "key": "items",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 0,
+                        "previous_page_url": null,
                         "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items"
                     }
-                }, 
+                },
                 "status_code": 200
             }
-        }, 
+        },
         {
-            "name": "read_full", 
+            "name": "read_full",
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
-                "form_params": {}, 
-                "method": "GET", 
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
                 "query_params": {
-                    "Bounds": "inclusive", 
-                    "From": "from", 
+                    "Bounds": "inclusive",
+                    "From": "from",
                     "Order": "asc"
-                }, 
+                },
                 "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items"
-            }, 
+            },
             "response": {
                 "content": {
                     "items": [
                         {
-                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
-                            "created_by": "created_by", 
-                            "data": {}, 
-                            "date_created": "2015-07-30T20:00:00Z", 
-                            "date_updated": "2015-07-30T20:00:00Z", 
-                            "key": "key", 
-                            "map_sid": "MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
-                            "revision": "revision", 
-                            "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "created_by": "created_by",
+                            "data": {},
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "date_updated": "2015-07-30T20:00:00Z",
+                            "key": "key",
+                            "map_sid": "MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "revision": "revision",
+                            "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                             "url": "http://www.example.com"
                         }
-                    ], 
+                    ],
                     "meta": {
-                        "first_page_url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items?Page=0&PageSize=50", 
-                        "key": "items", 
-                        "next_page_url": null, 
-                        "page": 0, 
-                        "page_size": 1, 
-                        "previous_page_url": null, 
+                        "first_page_url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items?Page=0&PageSize=50",
+                        "key": "items",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 1,
+                        "previous_page_url": null,
                         "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items"
                     }
-                }, 
+                },
                 "status_code": 200
             }
         }
-    ], 
+    ],
     "update": [
         {
-            "name": "update", 
+            "name": "update",
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "form_params": {
                     "Data": {}
-                }, 
-                "method": "POST", 
-                "query_params": {}, 
-                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/key"
-            }, 
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/MAPKEY"
+            },
             "response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
-                    "created_by": "created_by", 
-                    "data": {}, 
-                    "date_created": "2015-07-30T20:00:00Z", 
-                    "date_updated": "2015-07-30T20:00:00Z", 
-                    "key": "key", 
-                    "map_sid": "MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
-                    "revision": "revision", 
-                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "created_by": "created_by",
+                    "data": {},
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "key": "key",
+                    "map_sid": "MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "revision": "revision",
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "url": "http://www.example.com"
-                }, 
+                },
                 "status_code": 200
             }
         }
