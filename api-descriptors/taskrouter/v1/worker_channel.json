@@ -1,0 +1,136 @@
+{
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/WCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "assigned_tasks": 100,
+                    "available": false,
+                    "available_capacity_percentage": 100,
+                    "configured_capacity": 100,
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "links": {},
+                    "sid": "WCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "task_channel_sid": "TCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "task_channel_unique_name": "task_channel_unique_name",
+                    "url": "http://www.example.com",
+                    "worker_sid": "WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "workspace_sid": "WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels"
+            },
+            "response": {
+                "content": {
+                    "channels": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "assigned_tasks": 100,
+                            "available": false,
+                            "available_capacity_percentage": 100,
+                            "configured_capacity": 100,
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "date_updated": "2015-07-30T20:00:00Z",
+                            "links": {},
+                            "sid": "WCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "task_channel_sid": "TCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "task_channel_unique_name": "task_channel_unique_name",
+                            "url": "http://www.example.com",
+                            "worker_sid": "WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "workspace_sid": "WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        }
+                    ],
+                    "meta": {
+                        "first_page_url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels?Page=0&PageSize=50",
+                        "key": "channels",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 1,
+                        "previous_page_url": null,
+                        "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels"
+                    }
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels"
+            },
+            "response": {
+                "content": {
+                    "channels": [],
+                    "meta": {
+                        "first_page_url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels?Page=0&PageSize=50",
+                        "key": "channels",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 0,
+                        "previous_page_url": null,
+                        "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "Available": false,
+                    "Capacity": 100
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/WCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "assigned_tasks": 100,
+                    "available": false,
+                    "available_capacity_percentage": 100,
+                    "configured_capacity": 100,
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "links": {},
+                    "sid": "WCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "task_channel_sid": "TCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "task_channel_unique_name": "task_channel_unique_name",
+                    "url": "http://www.example.com",
+                    "worker_sid": "WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "workspace_sid": "WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}
