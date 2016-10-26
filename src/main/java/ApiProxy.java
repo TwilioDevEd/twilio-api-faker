@@ -20,15 +20,11 @@ import lib.ResourceModel;
 import lib.ResourceParser;
 
 public class ApiProxy {
+
   public static void main(String[] args) {
-    String[] excludedResources = {
-        "FeedbackSummary",
-        "Local",
-        "Mobile",
-        "TollFree"
-    };
+    final String excludedResources = "FeedbackSummary|Local|Mobile|TollFree";
     String sidPattern = "[a-zA-Z0-9\\-\\_]+";
-    String anyResourcePatternReplacement = String.format("(?!%s)%s", String.join("|", excludedResources), sidPattern);
+    String anyResourcePatternReplacement = String.format("(?!%s)%s", excludedResources, sidPattern);
     String anyResourcePattern = "[A-Z]{2,}\\w{32}";
     String countryPattern = "\\/[A-Z]{2}(?![A-Z]+)";
     String phoneNumberPattern =
