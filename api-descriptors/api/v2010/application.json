@@ -48,7 +48,7 @@
                     "voice_method": "GET",
                     "voice_url": "http://example.com"
                 },
-                "status_code": 200
+                "status_code": 201
             }
         }
     ],

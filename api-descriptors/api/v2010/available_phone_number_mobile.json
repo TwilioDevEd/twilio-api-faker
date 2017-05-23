@@ -1,42 +1,4 @@
 {
-    "create": [
-        {
-            "name": "create",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "POST",
-                "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/US/Mobile.json"
-            },
-            "response": {
-                "content": {
-                    "available_phone_numbers": [
-                        {
-                            "address_requirements": "none",
-                            "beta": false,
-                            "capabilities": {
-                                "MMS": false,
-                                "SMS": true,
-                                "voice": false
-                            },
-                            "friendly_name": "+4759440374",
-                            "iso_country": "NO",
-                            "lata": null,
-                            "latitude": null,
-                            "longitude": null,
-                            "phone_number": "+4759440374",
-                            "postal_code": null,
-                            "rate_center": null,
-                            "region": null
-                        }
-                    ],
-                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/US/Mobile.json?PageSize=1"
-                },
-                "status_code": 200
-            }
-        }
-    ],
     "read": [
         {
             "name": "read_full",

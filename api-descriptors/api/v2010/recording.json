@@ -30,16 +30,16 @@
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "api_version": "2010-04-01",
                     "call_sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "channels": 100,
-                    "date_created": "Thu, 30 Jul 2015 20:00:00 +0000",
-                    "date_updated": "Thu, 30 Jul 2015 20:00:00 +0000",
-                    "duration": "duration",
-                    "price": "price",
-                    "price_unit": "price_unit",
+                    "date_created": "Wed, 01 Sep 2010 15:15:41 +0000",
+                    "date_updated": "Wed, 01 Sep 2010 15:15:41 +0000",
+                    "duration": "6",
                     "sid": "REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "source": "DialVerb",
-                    "status": "processing",
-                    "uri": "http://www.example.com"
+                    "price": "0.04",
+                    "price_unit": "USD",
+                    "status": "completed",
+                    "channels": 1,
+                    "source": "Trunking",
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
                 },
                 "status_code": 200
             }
@@ -53,37 +53,42 @@
                 "form_params": {},
                 "method": "GET",
                 "query_params": {
-                    "DateCreated": "2016-01-01"
+                    "DateCreated": "2008-01-02",
+                    "DateCreated<": "2008-01-01",
+                    "DateCreated>": "2008-01-03"
                 },
                 "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings.json"
             },
             "response": {
                 "content": {
                     "end": 0,
-                    "first_page_uri": "/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings.json?Page=0PageSize=50",
+                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings.json?PageSize=1&Page=0",
+                    "last_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings.json?PageSize=1&Page=4",
                     "next_page_uri": null,
+                    "num_pages": 5,
                     "page": 0,
                     "page_size": 1,
                     "previous_page_uri": null,
                     "recordings": [
                         {
                             "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "api_version": "2010-04-01",
+                            "api_version": "2008-08-01",
                             "call_sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "channels": 100,
-                            "date_created": "Thu, 30 Jul 2015 20:00:00 +0000",
-                            "date_updated": "Thu, 30 Jul 2015 20:00:00 +0000",
-                            "duration": "duration",
-                            "price": "price",
-                            "price_unit": "price_unit",
+                            "date_created": "Wed, 22 Aug 2012 20:58:45 +0000",
+                            "date_updated": "Wed, 22 Aug 2012 20:58:45 +0000",
+                            "duration": null,
                             "sid": "REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "source": "DialVerb",
-                            "status": "processing",
-                            "uri": "http://www.example.com"
+                            "price": "0.04",
+                            "price_unit": "USD",
+                            "status": "completed",
+                            "channels": 1,
+                            "source": "Trunking",
+                            "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
                         }
                     ],
                     "start": 0,
-                    "uri": "/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings.json"
+                    "total": 5,
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings.json?PageSize=1&Page=0"
                 },
                 "status_code": 200
             }
@@ -95,21 +100,26 @@
                 "form_params": {},
                 "method": "GET",
                 "query_params": {
-                    "DateCreated": "2016-01-01"
+                    "DateCreated": "2008-01-02",
+                    "DateCreated<": "2008-01-01",
+                    "DateCreated>": "2008-01-03"
                 },
                 "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings.json"
             },
             "response": {
                 "content": {
-                    "end": -1,
-                    "first_page_uri": "/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings.json?Page=0PageSize=50",
+                    "end": 0,
+                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings.json?PageSize=1&Page=0",
+                    "last_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings.json?PageSize=1&Page=4",
                     "next_page_uri": null,
+                    "num_pages": 5,
                     "page": 0,
-                    "page_size": 0,
+                    "page_size": 1,
                     "previous_page_uri": null,
                     "recordings": [],
                     "start": 0,
-                    "uri": "/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings.json"
+                    "total": 5,
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings.json?PageSize=1&Page=0"
                 },
                 "status_code": 200
             }

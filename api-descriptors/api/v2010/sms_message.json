@@ -33,25 +33,10 @@
                     "sid": "SMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "status": "sent",
                     "to": "+141586753096",
+                    "num_segments": "1",
                     "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SMS/Messages/SMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
                 },
-                "status_code": 200
-            }
-        }
-    ],
-    "delete": [
-        {
-            "name": "delete",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "DELETE",
-                "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SMS/Messages/SMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
-            },
-            "response": {
-                "content": null,
-                "status_code": 204
+                "status_code": 201
             }
         }
     ],
@@ -80,6 +65,7 @@
                     "sid": "SMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "status": "sent",
                     "to": "+141586753096",
+                    "num_segments": "1",
                     "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SMS/Messages/SMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
                 },
                 "status_code": 200
@@ -167,39 +153,6 @@
                     "start": 0,
                     "total": 119772,
                     "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SMS/Messages.json?PageSize=1&Page=0"
-                },
-                "status_code": 200
-            }
-        }
-    ],
-    "update": [
-        {
-            "name": "update",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {
-                    "Body": "body"
-                },
-                "method": "POST",
-                "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SMS/Messages/SMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
-            },
-            "response": {
-                "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "api_version": "2008-08-01",
-                    "body": "n",
-                    "date_created": "Mon, 26 Jul 2010 21:46:42 +0000",
-                    "date_sent": "Mon, 26 Jul 2010 21:46:44 +0000",
-                    "date_updated": "Mon, 26 Jul 2010 21:46:44 +0000",
-                    "direction": "outbound-api",
-                    "from": "+141586753093",
-                    "price": "-0.03000",
-                    "price_unit": "USD",
-                    "sid": "SMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "sent",
-                    "to": "+141586753096",
-                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SMS/Messages/SMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
                 },
                 "status_code": 200
             }

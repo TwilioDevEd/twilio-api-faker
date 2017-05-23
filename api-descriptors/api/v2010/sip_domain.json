@@ -6,6 +6,7 @@
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "form_params": {
                     "DomainName": "domain_name",
+                    "AuthType": "auth_type",
                     "FriendlyName": "friendly_name",
                     "VoiceFallbackMethod": "GET",
                     "VoiceFallbackUrl": "https://example.com",
@@ -40,7 +41,7 @@
                     "voice_status_callback_url": null,
                     "voice_url": "https://dundermifflin.example.com/twilio/app.php"
                 },
-                "status_code": 200
+                "status_code": 201
             }
         }
     ],
@@ -170,8 +171,8 @@
             "request": {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "form_params": {
-                    "ApiVersion": "api_version",
                     "FriendlyName": "friendly_name",
+                    "AuthType": "auth_type",
                     "VoiceFallbackMethod": "GET",
                     "VoiceFallbackUrl": "https://example.com",
                     "VoiceMethod": "GET",

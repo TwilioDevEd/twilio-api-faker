@@ -6,9 +6,9 @@
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "form_params": {
                     "EndDate": "2008-01-02",
-                    "IncludeSubaccounts": false,
+                    "IncludeSubaccounts": "true",
                     "StartDate": "2008-01-02",
-                    "StatusCallback": "http://www.example.com",
+                    "StatusCallback": "https://example.com",
                     "StatusCallbackMethod": "GET"
                 },
                 "method": "POST",
@@ -18,11 +18,9 @@
             "response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "call_count": 100,
-                    "call_feedback_count": 100,
-                    "date_created": "Thu, 30 Jul 2015 20:00:00 +0000",
-                    "date_updated": "Thu, 30 Jul 2015 20:00:00 +0000",
-                    "end_date": "2015-07-30T20:00:00Z",
+                    "call_count": 10200,
+                    "call_feedback_count": 729,
+                    "end_date": "2011-01-01",
                     "include_subaccounts": false,
                     "issues": [
                         {
@@ -31,14 +29,16 @@
                             "percentage_of_total_calls": "0.04%"
                         }
                     ],
-                    "quality_score_average": 0.05,
-                    "quality_score_median": 0.05,
-                    "quality_score_standard_deviation": 0.05,
+                    "quality_score_average": 4.5,
+                    "quality_score_median": 4,
+                    "quality_score_standard_deviation": 1,
                     "sid": "FSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "start_date": "2015-07-30T20:00:00Z",
-                    "status": "queued"
+                    "start_date": "2011-01-01",
+                    "status": "completed",
+                    "date_created": "Tue, 31 Aug 2010 20:36:28 +0000",
+                    "date_updated": "Tue, 31 Aug 2010 20:36:44 +0000"
                 },
-                "status_code": 200
+                "status_code": 201
             }
         }
     ],
@@ -71,11 +71,9 @@
             "response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "call_count": 100,
-                    "call_feedback_count": 100,
-                    "date_created": "Thu, 30 Jul 2015 20:00:00 +0000",
-                    "date_updated": "Thu, 30 Jul 2015 20:00:00 +0000",
-                    "end_date": "2015-07-30T20:00:00Z",
+                    "call_count": 10200,
+                    "call_feedback_count": 729,
+                    "end_date": "2011-01-01",
                     "include_subaccounts": false,
                     "issues": [
                         {
@@ -84,12 +82,14 @@
                             "percentage_of_total_calls": "0.04%"
                         }
                     ],
-                    "quality_score_average": 0.05,
-                    "quality_score_median": 0.05,
-                    "quality_score_standard_deviation": 0.05,
+                    "quality_score_average": 4.5,
+                    "quality_score_median": 4,
+                    "quality_score_standard_deviation": 1,
                     "sid": "FSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "start_date": "2015-07-30T20:00:00Z",
-                    "status": "queued"
+                    "start_date": "2011-01-01",
+                    "status": "completed",
+                    "date_created": "Tue, 31 Aug 2010 20:36:28 +0000",
+                    "date_updated": "Tue, 31 Aug 2010 20:36:44 +0000"
                 },
                 "status_code": 200
             }

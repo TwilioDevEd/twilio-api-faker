@@ -1,0 +1,26 @@
+{
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "FriendlyName": "foo"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SigningKeys.json"
+            },
+            "response": {
+                "content": {
+                    "sid": "SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "foo",
+                    "date_created": "Mon, 13 Jun 2016 22:50:08 +0000",
+                    "date_updated": "Mon, 13 Jun 2016 22:50:08 +0000",
+                    "secret": "foobar"
+                },
+                "status_code": 201
+            }
+        }
+    ]
+}

@@ -1,37 +1,4 @@
 {
-    "create": [
-        {
-            "name": "create",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {
-                    "CallDelay": 1,
-                    "Extension": "extension",
-                    "FriendlyName": "friendly_name",
-                    "PhoneNumber": "+987654321",
-                    "StatusCallback": "https://example.com",
-                    "StatusCallbackMethod": "GET"
-                },
-                "method": "POST",
-                "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/OutgoingCallerIds.json"
-            },
-            "response": {
-                "content": {
-                    "validation_code": "123456",
-                    "call_sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "date_created": "Fri, 21 Aug 2009 00:11:24 +0000",
-                    "date_updated": "Fri, 21 Aug 2009 00:11:24 +0000",
-                    "friendly_name": "(415) 867-5309",
-                    "phone_number": "+141586753096",
-                    "sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/OutgoingCallerIds/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
-                },
-                "status_code": 200
-            }
-        }
-    ],
     "delete": [
         {
             "name": "delete",

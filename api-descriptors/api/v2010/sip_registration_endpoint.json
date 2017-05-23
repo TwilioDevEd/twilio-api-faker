@@ -1,0 +1,125 @@
+{
+    "read": [
+        {
+            "name": "read_empty", 
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/Domains/SDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Registrations/region/registrant.json"
+            }, 
+            "downstream_request": {
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
+                "url": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/Domains/SDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Registrations/region/registrant"
+            }, 
+            "downstream_response": {
+                "content": {
+                    "registrations": [], 
+                    "meta": {
+                        "encode_token": true,
+                        "next_token": null,
+                        "previous_token": null
+                    }
+                }, 
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "end": 0, 
+                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/Domains/SDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Registrations/region/registrant.json?PageSize=50&Page=0", 
+                    "next_page_uri": null, 
+                    "page": 0, 
+                    "page_size": 50, 
+                    "previous_page_uri": null, 
+                    "registrations": [], 
+                    "start": 0, 
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/Domains/SDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Registrations/region/registrant.json?PageSize=50&Page=0"
+                }, 
+                "status_code": 200
+            }
+        }, 
+        {
+            "name": "read_full", 
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/Domains/SDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Registrations/region/registrant.json"
+            }, 
+            "downstream_request": {
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
+                "url": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/Domains/SDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Registrations/region/registrant"
+            }, 
+            "downstream_response": {
+                "content": {
+                    "meta": {
+                        "encode_token": true,
+                        "next_token": null,
+                        "previous_token": null
+                    },
+                    "registrations": [
+                        {
+                            "aor": "sip:tor@test.sip.us1.twilio.com",
+                            "channelType": "public-sip",
+                            "creationTime": 1438286400000,
+                            "data": {
+                                "sip": {
+                                    "callId": "sip_call_id",
+                                    "contact": "sip_contact",
+                                    "cseq": 100,
+                                    "display-name": "display_name",
+                                    "path": "sip_path",
+                                    "user-agent": "user_agent",
+                                    "via": "sip_via"
+                                }
+                            },
+                            "endpointId": "sip:tor@123.123.123.123:12345;ob",
+                            "expirationTime": 1438286400000,
+                            "messageTypes": [
+                                "sip-call"
+                            ],
+                            "registrationId": "sip:tor@123.123.123.123:12345;ob",
+                            "tags": []
+                        }
+                    ]
+                }, 
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "end": 0, 
+                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/Domains/SDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Registrations/region/registrant.json?PageSize=50&Page=0", 
+                    "next_page_uri": null, 
+                    "page": 0, 
+                    "page_size": 50, 
+                    "previous_page_uri": null, 
+                    "registrations": [
+                        {
+                            "address_of_record": "sip:tor@test.sip.us1.twilio.com", 
+                            "channel_type": "public-sip", 
+                            "date_created": "Thu, 30 Jul 2015 20:00:00 +0000", 
+                            "date_expires": "Thu, 30 Jul 2015 20:00:00 +0000", 
+                            "date_updated": "Thu, 30 Jul 2015 20:00:00 +0000", 
+                            "display_name": "display_name", 
+                            "sip_call_id": "sip_call_id", 
+                            "sip_contact": "sip_contact", 
+                            "sip_cseq": 100, 
+                            "sip_path": "sip_path", 
+                            "sip_via": "sip_via", 
+                            "user_agent": "user_agent"
+                        }
+                    ], 
+                    "start": 0, 
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/Domains/SDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Registrations/region/registrant.json?PageSize=50&Page=0"
+                }, 
+                "status_code": 200
+            }
+        }
+    ]
+}

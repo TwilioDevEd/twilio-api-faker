@@ -1,0 +1,32 @@
+{
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults/XRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Payloads/XHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Data"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Public/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/References/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults/XRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Content/XHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Data"
+            },
+            "downstream_response": {
+                "content": {
+                    "signed_url": "http://example.com"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "redirect_to": "http://example.com"
+                },
+                "status_code": 307
+            }
+        }
+    ]
+}

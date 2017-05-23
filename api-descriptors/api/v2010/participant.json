@@ -7,7 +7,7 @@
                 "form_params": {},
                 "method": "DELETE",
                 "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants/PAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
             },
             "response": {
                 "content": null,
@@ -23,20 +23,21 @@
                 "form_params": {},
                 "method": "GET",
                 "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants/PAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
             },
             "response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "call_sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "conference_sid": "CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "date_created": "Thu, 30 Jul 2015 20:00:00 +0000",
-                    "date_updated": "Thu, 30 Jul 2015 20:00:00 +0000",
+                    "date_created": "Fri, 18 Feb 2011 21:07:19 +0000",
+                    "date_updated": "Fri, 18 Feb 2011 21:07:19 +0000",
                     "end_conference_on_exit": false,
-                    "hold": false,
                     "muted": false,
-                    "start_conference_on_enter": false,
-                    "uri": "http://www.example.com"
+                    "hold": false,
+                    "status": "complete",
+                    "start_conference_on_enter": true,
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
                 },
                 "status_code": 200
             }
@@ -50,35 +51,35 @@
                 "form_params": {},
                 "method": "GET",
                 "query_params": {
-                    "Hold": false,
-                    "Muted": false
+                    "Muted": "true"
                 },
                 "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants.json"
             },
             "response": {
                 "content": {
                     "end": 0,
-                    "first_page_uri": "/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants.json?Page=0PageSize=50",
+                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants.json?Page=0&PageSize=50",
                     "next_page_uri": null,
                     "page": 0,
-                    "page_size": 1,
+                    "page_size": 50,
                     "participants": [
                         {
                             "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                             "call_sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                             "conference_sid": "CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "date_created": "Thu, 30 Jul 2015 20:00:00 +0000",
-                            "date_updated": "Thu, 30 Jul 2015 20:00:00 +0000",
+                            "date_created": "Fri, 18 Feb 2011 21:07:19 +0000",
+                            "date_updated": "Fri, 18 Feb 2011 21:07:19 +0000",
                             "end_conference_on_exit": false,
-                            "hold": false,
                             "muted": false,
-                            "start_conference_on_enter": false,
-                            "uri": "http://www.example.com"
+                            "hold": false,
+                            "status": "complete",
+                            "start_conference_on_enter": true,
+                            "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
                         }
                     ],
                     "previous_page_uri": null,
                     "start": 0,
-                    "uri": "/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants.json"
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants.json"
                 },
                 "status_code": 200
             }
@@ -90,22 +91,21 @@
                 "form_params": {},
                 "method": "GET",
                 "query_params": {
-                    "Hold": false,
-                    "Muted": false
+                    "Muted": "true"
                 },
                 "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants.json"
             },
             "response": {
                 "content": {
-                    "end": -1,
-                    "first_page_uri": "/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants.json?Page=0PageSize=50",
+                    "end": 0,
+                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants.json?Page=0&PageSize=50",
                     "next_page_uri": null,
                     "page": 0,
-                    "page_size": 0,
+                    "page_size": 50,
                     "participants": [],
                     "previous_page_uri": null,
                     "start": 0,
-                    "uri": "/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants.json"
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants.json"
                 },
                 "status_code": 200
             }
@@ -117,29 +117,163 @@
             "request": {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "form_params": {
-                    "Hold": false,
-                    "HoldMethod": "GET",
-                    "HoldUrl": "http://www.example.com",
-                    "Muted": false
+                    "Muted": "true"
                 },
                 "method": "POST",
                 "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants/PAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
             },
             "response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "call_sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "conference_sid": "CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "date_created": "Thu, 30 Jul 2015 20:00:00 +0000",
-                    "date_updated": "Thu, 30 Jul 2015 20:00:00 +0000",
+                    "date_created": "Fri, 18 Feb 2011 21:07:19 +0000",
+                    "date_updated": "Fri, 18 Feb 2011 21:07:19 +0000",
                     "end_conference_on_exit": false,
-                    "hold": false,
                     "muted": false,
-                    "start_conference_on_enter": false,
-                    "uri": "http://www.example.com"
+                    "hold": false,
+                    "status": "complete",
+                    "start_conference_on_enter": true,
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
                 },
                 "status_code": 200
+            }
+        }
+    ],
+    "create": [
+        {
+            "name": "create_with_sid",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "From": "+17736774757",
+                    "To": "+14157663747",
+                    "EarlyMedia": true,
+                    "Beep": "onEnter",
+                    "Muted": false,
+                    "StatusCallback": "https://myapp.com/events",
+                    "StatusCallbackMethod": "POST",
+                    "StatusCallbackEvent": "ringing",
+                    "Record": true
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants.json"
+            },
+            "downstream_request": {
+                "form_params": {
+                    "From": "+17736774757",
+                    "To": "+14157663747",
+                    "EarlyMedia": true,
+                    "Beep": "onEnter",
+                    "Muted": false,
+                    "StatusCallback": "https://myapp.com/events",
+                    "StatusCallbackMethod": "POST",
+                    "StatusCallbackEvent": ["ringing"],
+                    "Record": true
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v1/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "call_sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "conference_sid": "CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "Fri, 18 Feb 2011 21:07:19 +0000",
+                    "date_updated": "Fri, 18 Feb 2011 21:07:19 +0000",
+                    "end_conference_on_exit": false,
+                    "muted": false,
+                    "hold": false,
+                    "status": "complete",
+                    "start_conference_on_enter": true
+                },
+                "status_code": 201
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "call_sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "conference_sid": "CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "Fri, 18 Feb 2011 21:07:19 +0000",
+                    "date_updated": "Fri, 18 Feb 2011 21:07:19 +0000",
+                    "end_conference_on_exit": false,
+                    "muted": false,
+                    "hold": false,
+                    "status": "complete",
+                    "start_conference_on_enter": true,
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
+                },
+                "status_code": 201
+            }
+        },
+        {
+            "name": "create_with_friendly_name",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "From": "+17736774757",
+                    "To": "+14157663747",
+                    "EarlyMedia": true,
+                    "Beep": "false",
+                    "Muted": false,
+                    "StatusCallback": "https://myapp.com/events",
+                    "StatusCallbackMethod": "POST",
+                    "StatusCallbackEvent": "ringing",
+                    "Record": true
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/FriendlyName/Participants.json"
+            },
+            "downstream_request": {
+                "form_params": {
+                    "From": "+17736774757",
+                    "To": "+14157663747",
+                    "EarlyMedia": true,
+                    "Beep": "false",
+                    "Muted": false,
+                    "StatusCallback": "https://myapp.com/events",
+                    "StatusCallbackMethod": "POST",
+                    "StatusCallbackEvent": ["ringing"],
+                    "Record": true
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v1/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/FriendlyName/Participants"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "call_sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "conference_sid": "CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "Fri, 18 Feb 2011 21:07:19 +0000",
+                    "date_updated": "Fri, 18 Feb 2011 21:07:19 +0000",
+                    "end_conference_on_exit": false,
+                    "muted": false,
+                    "hold": false,
+                    "status": "complete",
+                    "start_conference_on_enter": true
+                },
+                "status_code": 201
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "call_sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "conference_sid": "CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "Fri, 18 Feb 2011 21:07:19 +0000",
+                    "date_updated": "Fri, 18 Feb 2011 21:07:19 +0000",
+                    "end_conference_on_exit": false,
+                    "muted": false,
+                    "hold": false,
+                    "status": "complete",
+                    "start_conference_on_enter": true,
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
+                },
+                "status_code": 201
             }
         }
     ]

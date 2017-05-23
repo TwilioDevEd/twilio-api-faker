@@ -1,48 +1,4 @@
 {
-    "create": [
-        {
-            "name": "create",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "POST",
-                "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences.json"
-            },
-            "response": {
-                "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "api_version": "2008-08-01",
-                    "date_created": "Fri, 18 Feb 2011 19:26:50 +0000",
-                    "date_updated": "Fri, 18 Feb 2011 19:27:33 +0000",
-                    "friendly_name": "AHH YEAH",
-                    "sid": "CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "completed",
-                    "subresource_uris": {
-                        "participants": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants.json"
-                    },
-                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
-                },
-                "status_code": 200
-            }
-        }
-    ],
-    "delete": [
-        {
-            "name": "delete",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "DELETE",
-                "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
-            },
-            "response": {
-                "content": null,
-                "status_code": 204
-            }
-        }
-    ],
     "fetch": [
         {
             "name": "fetch",
@@ -60,6 +16,61 @@
                     "date_created": "Fri, 18 Feb 2011 19:26:50 +0000",
                     "date_updated": "Fri, 18 Feb 2011 19:27:33 +0000",
                     "friendly_name": "AHH YEAH",
+                    "sid": "CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "region": "us1",
+                    "status": "completed",
+                    "subresource_uris": {
+                        "participants": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants.json"
+                    },
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update_end_conference",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "sid": "CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "Status": "completed"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
+            },
+            "downstream_request": {
+                "sid": "CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "Status": "completed"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v1/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/updateConferenceStatus"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "api_version": "2010-04-01",
+                    "date_created": "Mon, 22 Aug 2011 20:58:45 +0000",
+                    "date_updated": "Mon, 22 Aug 2011 20:58:46 +0000",
+                    "friendly_name": null,
+                    "mixer_zones": "US_EAST_VIRGINIA",
+                    "sid": "CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "2"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "api_version": "2010-04-01",
+                    "date_created": "Mon, 22 Aug 2011 20:58:45 +0000",
+                    "date_updated": "Mon, 22 Aug 2011 20:58:46 +0000",
+                    "friendly_name": null,
+                    "region": "us1",
                     "sid": "CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "status": "completed",
                     "subresource_uris": {
@@ -99,6 +110,7 @@
                             "date_created": "Mon, 22 Aug 2011 20:58:45 +0000",
                             "date_updated": "Mon, 22 Aug 2011 20:58:46 +0000",
                             "friendly_name": null,
+                            "region": "us1",
                             "sid": "CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                             "status": "in-progress",
                             "subresource_uris": {
@@ -109,14 +121,11 @@
                     ],
                     "end": 0,
                     "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences.json?PageSize=1&Page=0",
-                    "last_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences.json?PageSize=1&Page=2",
                     "next_page_uri": null,
-                    "num_pages": 3,
                     "page": 0,
                     "page_size": 1,
                     "previous_page_uri": null,
                     "start": 0,
-                    "total": 3,
                     "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences.json?PageSize=1"
                 },
                 "status_code": 200
@@ -145,43 +154,12 @@
                     "conferences": [],
                     "end": 0,
                     "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences.json?PageSize=1&Page=0",
-                    "last_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences.json?PageSize=1&Page=2",
                     "next_page_uri": null,
-                    "num_pages": 3,
                     "page": 0,
                     "page_size": 1,
                     "previous_page_uri": null,
                     "start": 0,
-                    "total": 3,
                     "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences.json?PageSize=1"
-                },
-                "status_code": 200
-            }
-        }
-    ],
-    "update": [
-        {
-            "name": "update",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "POST",
-                "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
-            },
-            "response": {
-                "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "api_version": "2008-08-01",
-                    "date_created": "Fri, 18 Feb 2011 19:26:50 +0000",
-                    "date_updated": "Fri, 18 Feb 2011 19:27:33 +0000",
-                    "friendly_name": "AHH YEAH",
-                    "sid": "CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "completed",
-                    "subresource_uris": {
-                        "participants": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants.json"
-                    },
-                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Conferences/CFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
                 },
                 "status_code": 200
             }
