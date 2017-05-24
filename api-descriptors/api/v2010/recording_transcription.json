@@ -1,34 +1,4 @@
 {
-    "create": [
-        {
-            "name": "create",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "POST",
-                "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Transcriptions.json"
-            },
-            "response": {
-                "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "api_version": "2008-08-01",
-                    "date_created": "Mon, 22 Aug 2011 20:58:44 +0000",
-                    "date_updated": "Mon, 22 Aug 2011 20:58:44 +0000",
-                    "duration": "10",
-                    "price": "0.00000",
-                    "price_unit": "USD",
-                    "recording_sid": "REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "sid": "TRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "in-progress",
-                    "transcription_text": "THIS IS A TEST",
-                    "type": "fast",
-                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Transcriptions/TRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
-                },
-                "status_code": 200
-            }
-        }
-    ],
     "delete": [
         {
             "name": "delete",
@@ -142,36 +112,6 @@
                     "total": 1,
                     "transcriptions": [],
                     "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Transcriptions.json?PageSize=50&Page=0"
-                },
-                "status_code": 200
-            }
-        }
-    ],
-    "update": [
-        {
-            "name": "update",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "POST",
-                "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Transcriptions/TRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
-            },
-            "response": {
-                "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "api_version": "2008-08-01",
-                    "date_created": "Mon, 22 Aug 2011 20:58:44 +0000",
-                    "date_updated": "Mon, 22 Aug 2011 20:58:44 +0000",
-                    "duration": "10",
-                    "price": "0.00000",
-                    "price_unit": "USD",
-                    "recording_sid": "REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "sid": "TRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "in-progress",
-                    "transcription_text": "THIS IS A TEST",
-                    "type": "fast",
-                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Transcriptions/TRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
                 },
                 "status_code": 200
             }

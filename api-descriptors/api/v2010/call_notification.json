@@ -1,38 +1,4 @@
 {
-    "create": [
-        {
-            "name": "create",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "POST",
-                "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Notifications.json"
-            },
-            "response": {
-                "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "api_version": "2008-08-01",
-                    "call_sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "date_created": "Tue, 18 Aug 2015 08:46:56 +0000",
-                    "date_updated": "Tue, 18 Aug 2015 08:46:57 +0000",
-                    "error_code": "15003",
-                    "log": "1",
-                    "message_date": "Tue, 18 Aug 2015 08:46:56 +0000",
-                    "message_text": "statusCallback=http%3A%2F%2Fexample.com%2Ffoo.xml&ErrorCode=15003&LogLevel=WARN&Msg=Got+HTTP+404+response+to+http%3A%2F%2Fexample.com%2Ffoo.xml",
-                    "more_info": "https://www.twilio.com/docs/errors/15003",
-                    "request_method": null,
-                    "request_url": "",
-                    "request_variables": "",
-                    "response_body": "",
-                    "response_headers": "",
-                    "sid": "NOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Notifications/NOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
-                },
-                "status_code": 200
-            }
-        }
-    ],
     "delete": [
         {
             "name": "delete",
@@ -161,40 +127,6 @@
                     "start": 0,
                     "total": 1,
                     "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Notifications.json"
-                },
-                "status_code": 200
-            }
-        }
-    ],
-    "update": [
-        {
-            "name": "update",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "POST",
-                "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Notifications/NOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
-            },
-            "response": {
-                "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "api_version": "2008-08-01",
-                    "call_sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "date_created": "Tue, 18 Aug 2015 08:46:56 +0000",
-                    "date_updated": "Tue, 18 Aug 2015 08:46:57 +0000",
-                    "error_code": "15003",
-                    "log": "1",
-                    "message_date": "Tue, 18 Aug 2015 08:46:56 +0000",
-                    "message_text": "statusCallback=http%3A%2F%2Fexample.com%2Ffoo.xml&ErrorCode=15003&LogLevel=WARN&Msg=Got+HTTP+404+response+to+http%3A%2F%2Fexample.com%2Ffoo.xml",
-                    "more_info": "https://www.twilio.com/docs/errors/15003",
-                    "request_method": null,
-                    "request_url": "",
-                    "request_variables": "",
-                    "response_body": "",
-                    "response_headers": "",
-                    "sid": "NOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Notifications/NOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
                 },
                 "status_code": 200
             }

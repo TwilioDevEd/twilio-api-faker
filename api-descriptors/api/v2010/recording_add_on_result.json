@@ -1,0 +1,192 @@
+{
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults/XRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Public/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/References/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults/XRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "add_on_configuration_sid": "XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "add_on_sid": "XBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2010-09-01T15:15:41.000Z",
+                    "date_updated": "2010-09-01T15:15:41.000Z",
+                    "date_completed": "2010-09-01T15:15:41.000Z",
+                    "links": {
+                        "add_on_result": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults/XRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "payloads": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults/XRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Payloads",
+                        "recording": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    },
+                    "reference_sid": "REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "XRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "completed"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "sid": "XRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "reference_sid": "REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "completed",
+                    "add_on_sid": "XBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "add_on_configuration_sid": "XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "Wed, 01 Sep 2010 15:15:41 +0000",
+                    "date_updated": "Wed, 01 Sep 2010 15:15:41 +0000",
+                    "date_completed": "Wed, 01 Sep 2010 15:15:41 +0000",
+                    "subresource_uris": {
+                        "payloads": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults/XRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Payloads.json"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults.json"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Public/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/References/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults"
+            },
+            "downstream_response": {
+                "content": {
+                    "add_on_results": [{
+                        "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "add_on_configuration_sid": "XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "add_on_sid": "XBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "date_created": "2010-09-01T15:15:41.000Z",
+                        "date_updated": "2010-09-01T15:15:41.000Z",
+                        "date_completed": "2010-09-01T15:15:41.000Z",
+                        "links": {
+                            "add_on_result": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults/XRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "payloads": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults/XRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Payloads",
+                            "recording": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        },
+                        "reference_sid": "REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "sid": "XRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "status": "completed"
+                    }],
+                    "after_sid": null,
+                    "before_sid": null,
+                    "reference_sid": "REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "end": 0,
+                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults.json?PageSize=50&Page=0",
+                    "next_page_uri": null,
+                    "page": 0,
+                    "page_size": 50,
+                    "previous_page_uri": null,
+                    "add_on_results": [
+                        {
+                            "sid": "XRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "reference_sid": "REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "status": "completed",
+                            "add_on_sid": "XBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "add_on_configuration_sid": "XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "date_created": "Wed, 01 Sep 2010 15:15:41 +0000",
+                            "date_updated": "Wed, 01 Sep 2010 15:15:41 +0000",
+                            "date_completed": "Wed, 01 Sep 2010 15:15:41 +0000",
+                            "subresource_uris": {
+                                "payloads": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults/XRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Payloads.json"
+                            }
+                        }
+                    ],
+                    "start": 0,
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults.json?PageSize=50&Page=0"
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults.json"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Public/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/References/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults"
+            },
+            "downstream_response": {
+                "content": {
+                    "add_on_results": [],
+                    "after_sid": null,
+                    "before_sid": null,
+                    "reference_sid": "REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "end": 0,
+                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults.json?PageSize=50&Page=0",
+                    "next_page_uri": null,
+                    "page": 0,
+                    "page_size": 50,
+                    "previous_page_uri": null,
+                    "add_on_results": [],
+                    "start": 0,
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults.json?PageSize=50&Page=0"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults/XRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "/v1/Public/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/References/REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AddOnResults/XRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": null,  
+                "status_code": 204
+            },
+            "response": {
+                "content": null,  
+                "status_code": 204
+            }
+        }
+    ]
+}

@@ -1,0 +1,255 @@
+{
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "InstalledAddOnSid": "XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/IncomingPhoneNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns.json"
+            },
+            "downstream_request": {
+                "form_params": {
+                    "InstalledAddOnSid": "XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v1/Public/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Resources/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns"
+            },
+            "downstream_response": {
+                "content": {
+                    "sid": "XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "resource_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "available_add_on_sid": "XBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "VoiceBase High Accuracy Transcription",
+                    "description": "Automatic Transcription and Keyword Extract...",
+                    "configuration": {
+                        "bad_words": true
+                    },
+                    "unique_name": "voicebase_high_accuracy_transcription",
+                    "date_created": "2016-04-07T23:52:28.000Z",
+                    "date_updated": "2016-04-07T23:52:28.000Z"
+                },
+                "status_code": 201
+            },
+            "response": {
+                "content": {
+                    "sid": "XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "resource_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "VoiceBase High Accuracy Transcription",
+                    "description": "Automatic Transcription and Keyword Extract...",
+                    "configuration": {
+                        "bad_words": true
+                    },
+                    "unique_name": "voicebase_high_accuracy_transcription",
+                    "date_created": "Thu, 07 Apr 2016 23:52:28 +0000",
+                    "date_updated": "Thu, 07 Apr 2016 23:52:28 +0000",
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/IncomingPhoneNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json",
+                    "subresource_uris": {
+                        "extensions": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/IncomingPhoneNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions.json"
+                    }
+                },
+                "status_code": 201
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/IncomingPhoneNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Public/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Resources/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "sid": "XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "resource_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "available_add_on_sid": "XBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "VoiceBase High Accuracy Transcription",
+                    "description": "Automatic Transcription and Keyword Extract...",
+                    "configuration": {
+                        "bad_words": true
+                    },
+                    "unique_name": "voicebase_high_accuracy_transcription",
+                    "date_created": "2016-04-07T23:52:28.000Z",
+                    "date_updated": "2016-04-07T23:52:28.000Z"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "sid": "XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "resource_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "VoiceBase High Accuracy Transcription",
+                    "description": "Automatic Transcription and Keyword Extract...",
+                    "configuration": {
+                        "bad_words": true
+                    },
+                    "unique_name": "voicebase_high_accuracy_transcription",
+                    "date_created": "Thu, 07 Apr 2016 23:52:28 +0000",
+                    "date_updated": "Thu, 07 Apr 2016 23:52:28 +0000",
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/IncomingPhoneNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json",
+                    "subresource_uris": {
+                        "extensions": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/IncomingPhoneNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions.json"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/IncomingPhoneNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns.json"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Public/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Resources/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns"
+            },
+            "downstream_response": {
+                "content": {
+                    "assigned_add_ons": [
+                        {
+                            "sid": "XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "resource_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "available_add_on_sid": "XBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "friendly_name": "VoiceBase High Accuracy Transcription",
+                            "description": "Automatic Transcription and Keyword Extract...",
+                            "configuration": {
+                                "bad_words": true
+                            },
+                            "unique_name": "voicebase_high_accuracy_transcription",
+                            "date_created": "2016-04-07T23:52:28.000Z",
+                            "date_updated": "2016-04-07T23:52:28.000Z"
+                        }
+                    ],
+                    "after_sid": null,
+                    "before_sid": null,
+                    "resource_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "end": 0,
+                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/IncomingPhoneNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns.json?PageSize=50&Page=0",
+                    "next_page_uri": null,
+                    "page": 0,
+                    "page_size": 50,
+                    "previous_page_uri": null,
+                    "assigned_add_ons": [
+                        {
+                            "sid": "XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "resource_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "friendly_name": "VoiceBase High Accuracy Transcription",
+                            "description": "Automatic Transcription and Keyword Extract...",
+                            "configuration": {
+                                "bad_words": true
+                            },
+                            "unique_name": "voicebase_high_accuracy_transcription",
+                            "date_created": "Thu, 07 Apr 2016 23:52:28 +0000",
+                            "date_updated": "Thu, 07 Apr 2016 23:52:28 +0000",
+                            "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/IncomingPhoneNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json",
+                            "subresource_uris": {
+                                "extensions": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/IncomingPhoneNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions.json"
+                            }
+                        }
+                    ],
+                    "start": 0,
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/IncomingPhoneNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns.json?PageSize=50&Page=0"
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/IncomingPhoneNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns.json"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Public/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Resources/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns"
+            },
+            "downstream_response": {
+                "content": {
+                    "assigned_add_ons": [],
+                    "after_sid": null,
+                    "before_sid": null,
+                    "resource_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "end": 0,
+                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/IncomingPhoneNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns.json?PageSize=50&Page=0",
+                    "next_page_uri": null,
+                    "page": 0,
+                    "page_size": 50,
+                    "previous_page_uri": null,
+                    "assigned_add_ons": [],
+                    "start": 0,
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/IncomingPhoneNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns.json?PageSize=50&Page=0"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/IncomingPhoneNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "/v1/Public/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Resources/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AssignedAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": null,
+                "status_code": 204
+            },
+            "response": {
+                "content": null,
+                "status_code": 204
+            }
+        }
+    ]
+}

@@ -1,42 +1,4 @@
 {
-    "create": [
-        {
-            "name": "create",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "POST",
-                "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/US/Local.json"
-            },
-            "response": {
-                "content": {
-                    "available_phone_numbers": [
-                        {
-                            "address_requirements": "none",
-                            "beta": false,
-                            "capabilities": {
-                                "MMS": true,
-                                "SMS": false,
-                                "voice": true
-                            },
-                            "friendly_name": "(808) 925-1571",
-                            "iso_country": "US",
-                            "lata": "834",
-                            "latitude": "19.720000",
-                            "longitude": "-155.090000",
-                            "phone_number": "+18089251571",
-                            "postal_code": "96720",
-                            "rate_center": "HILO",
-                            "region": "HI"
-                        }
-                    ],
-                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/US/Local.json?PageSize=1"
-                },
-                "status_code": 200
-            }
-        }
-    ],
     "read": [
         {
             "name": "read_full",

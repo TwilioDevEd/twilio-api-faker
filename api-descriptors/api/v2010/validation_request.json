@@ -1,0 +1,31 @@
+{
+    "create": [
+        {
+            "name": "create", 
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {
+                    "CallDelay": 100, 
+                    "Extension": "extension", 
+                    "FriendlyName": "friendly_name", 
+                    "PhoneNumber": "+18001234567", 
+                    "StatusCallback": "http://www.example.com", 
+                    "StatusCallbackMethod": "GET"
+                }, 
+                "method": "POST", 
+                "query_params": {}, 
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/OutgoingCallerIds.json"
+            }, 
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "call_sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "friendly_name": "friendly_name", 
+                    "phone_number": "+18001234567", 
+                    "validation_code": 100
+                }, 
+                "status_code": 201
+            }
+        }
+    ]
+}

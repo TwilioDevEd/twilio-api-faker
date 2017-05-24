@@ -1,0 +1,99 @@
+{
+    "read": [
+        {
+            "name": "read_empty", 
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {
+                    "Feature": "feature"
+                }, 
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/Regions.json"
+            }, 
+            "downstream_request": {
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {
+                    "feature": "feature"
+                }, 
+                "url": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/Regions"
+            }, 
+            "downstream_response": {
+                "content": [], 
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "end": 0, 
+                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/Regions.json?PageSize=50&Page=0", 
+                    "next_page_uri": null, 
+                    "page": 0, 
+                    "page_size": 50, 
+                    "previous_page_uri": null, 
+                    "regions": [], 
+                    "start": 0, 
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/Regions.json?PageSize=50&Page=0"
+                }, 
+                "status_code": 200
+            }
+        }, 
+        {
+            "name": "read_full", 
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {
+                    "Feature": "feature"
+                }, 
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/Regions.json"
+            }, 
+            "downstream_request": {
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {
+                    "feature": "feature"
+                }, 
+                "url": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/Regions"
+            },
+            "downstream_response": {
+                "content": [
+                    {
+                        "autoId": 1,
+                        "dateCreated": 1425070288,
+                        "dateUpdated": 1425070288,
+                        "featureEnabled": 7,
+                        "friendlyName": "North America Virginia",
+                        "region": "stage-us1"
+                    }
+                ], 
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "end": 0, 
+                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/Regions.json?PageSize=50&Page=0", 
+                    "next_page_uri": null, 
+                    "page": 0, 
+                    "page_size": 50, 
+                    "previous_page_uri": null, 
+                    "regions": [
+                        {
+                            "features": [
+                                "trunking",
+                                "sip-domain",
+                                "sip-domain-registration"
+                            ], 
+                            "friendly_name": "North America Virginia", 
+                            "region": "stage-us1"
+                        }
+                    ], 
+                    "start": 0, 
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/Regions.json?PageSize=50&Page=0"
+                }, 
+                "status_code": 200
+            }
+        }
+    ]
+}

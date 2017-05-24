@@ -8,7 +8,7 @@
                     "Issue": [
                         "audio-latency"
                     ],
-                    "QualityScore": 100
+                    "QualityScore": 1
                 },
                 "method": "POST",
                 "query_params": {},
@@ -17,12 +17,13 @@
             "response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "date_created": "Thu, 30 Jul 2015 20:00:00 +0000",
-                    "date_updated": "Thu, 30 Jul 2015 20:00:00 +0000",
+                    "date_created": "Thu, 20 Aug 2015 21:45:46 +0000",
+                    "date_updated": "Thu, 20 Aug 2015 21:45:46 +0000",
                     "issues": [
-                        "audio-latency"
+                        "imperfect-audio",
+                        "post-dial-delay"
                     ],
-                    "quality_score": 100,
+                    "quality_score": 5,
                     "sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "status_code": 201
@@ -42,12 +43,13 @@
             "response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "date_created": "Thu, 30 Jul 2015 20:00:00 +0000",
-                    "date_updated": "Thu, 30 Jul 2015 20:00:00 +0000",
+                    "date_created": "Thu, 20 Aug 2015 21:45:46 +0000",
+                    "date_updated": "Thu, 20 Aug 2015 21:45:46 +0000",
                     "issues": [
-                        "audio-latency"
+                        "imperfect-audio",
+                        "post-dial-delay"
                     ],
-                    "quality_score": 100,
+                    "quality_score": 5,
                     "sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "status_code": 200
@@ -63,7 +65,7 @@
                     "Issue": [
                         "audio-latency"
                     ],
-                    "QualityScore": 100
+                    "QualityScore": 1
                 },
                 "method": "POST",
                 "query_params": {},
@@ -72,12 +74,13 @@
             "response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "date_created": "Thu, 30 Jul 2015 20:00:00 +0000",
-                    "date_updated": "Thu, 30 Jul 2015 20:00:00 +0000",
+                    "date_created": "Thu, 20 Aug 2015 21:45:46 +0000",
+                    "date_updated": "Thu, 20 Aug 2015 21:45:46 +0000",
                     "issues": [
-                        "audio-latency"
+                        "imperfect-audio",
+                        "post-dial-delay"
                     ],
-                    "quality_score": 100,
+                    "quality_score": 5,
                     "sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "status_code": 200

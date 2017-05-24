@@ -24,7 +24,7 @@
                     "sid": "QUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queues/QUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
                 },
-                "status_code": 200
+                "status_code": 201
             }
         }
     ],

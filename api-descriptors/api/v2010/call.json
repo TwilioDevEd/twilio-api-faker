@@ -10,6 +10,8 @@
                     "FallbackUrl": "https://example.com",
                     "From": "+987654321",
                     "IfMachine": "if_machine",
+                    "MachineDetection": "enable",
+                    "MachineDetectionTimeout": "15",
                     "Method": "GET",
                     "Record": "true",
                     "SendDigits": "send_digits",
@@ -54,7 +56,7 @@
                     "to_formatted": "(415) 867-5309",
                     "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
                 },
-                "status_code": 200
+                "status_code": 201
             }
         }
     ],

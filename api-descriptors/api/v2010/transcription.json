@@ -1,34 +1,4 @@
 {
-    "create": [
-        {
-            "name": "create",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "POST",
-                "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Transcriptions.json"
-            },
-            "response": {
-                "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "api_version": "2008-08-01",
-                    "date_created": "Sun, 13 Feb 2011 02:12:08 +0000",
-                    "date_updated": "Sun, 13 Feb 2011 02:30:01 +0000",
-                    "duration": "1",
-                    "price": "-0.05000",
-                    "price_unit": "USD",
-                    "recording_sid": "REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "sid": "TRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "failed",
-                    "transcription_text": "(blank)",
-                    "type": "fast",
-                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Transcriptions/TRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
-                },
-                "status_code": 200
-            }
-        }
-    ],
     "delete": [
         {
             "name": "delete",
@@ -142,36 +112,6 @@
                     "total": 4,
                     "transcriptions": [],
                     "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Transcriptions.json?PageSize=1&Page=0"
-                },
-                "status_code": 200
-            }
-        }
-    ],
-    "update": [
-        {
-            "name": "update",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "POST",
-                "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Transcriptions/TRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
-            },
-            "response": {
-                "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "api_version": "2008-08-01",
-                    "date_created": "Sun, 13 Feb 2011 02:12:08 +0000",
-                    "date_updated": "Sun, 13 Feb 2011 02:30:01 +0000",
-                    "duration": "1",
-                    "price": "-0.05000",
-                    "price_unit": "USD",
-                    "recording_sid": "REaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "sid": "TRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "failed",
-                    "transcription_text": "(blank)",
-                    "type": "fast",
-                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Transcriptions/TRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
                 },
                 "status_code": 200
             }
