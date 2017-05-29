@@ -1,0 +1,387 @@
+{
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "FriendlyName": "My Service!",
+                    "StickySender": true,
+                    "MmsConverter": true,
+                    "SmartEncoding": false,
+                    "FallbackToLongCode": true,
+                    "InboundRequestUrl": "https://www.example.com",
+                    "InboundMethod": "POST",
+                    "FallbackMethod": "GET",
+                    "FallbackUrl": "https://www.example.com",
+                    "StatusCallback": "https://www.example.com",
+                    "ScanMessageContent": "inherit",
+                    "AreaCodeGeomatch": true,
+                    "ValidityPeriod": 600
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://messaging.twilio.com/v1/Services"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "json_params": {
+                    "friendly_name": "My Service!",
+                    "stable_sender": true,
+                    "use_mms_converter": true,
+                    "inbound_request_url": "https://www.example.com",
+                    "inbound_request_method": "POST",
+                    "fallback_url": "https://www.example.com",
+                    "fallback_method": "GET",
+                    "strict_gsm_body": false,
+                    "shortcode_fallback": true,
+                    "status_callback": "https://www.example.com",
+                    "scan_message_content": "inherit",
+                    "area_code_geomatch": true,
+                    "validity_period": 600
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v2/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Services"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "My Service!",
+                    "messaging_service_sid": "MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "Thu, 30 Jul 2015 20:12:31 +0000",
+                    "date_updated": "Thu, 30 Jul 2015 20:12:33 +0000",
+                    "stable_sender": true,
+                    "stable_sender_inactivity_lifetime": 0,
+                    "use_local_numbers": true,
+                    "use_mms_converter": true,
+                    "use_alpha_sender_id": false,
+                    "inbound_request_url": "https://www.example.com/",
+                    "inbound_request_method": "POST",
+                    "fallback_url": "https://www.example.com",
+                    "fallback_method": "GET",
+                    "use_number_config": false,
+                    "status_callback": "https://www.example.com",
+                    "strict_gsm_body": false,
+                    "shortcode_fallback": true,
+                    "number_pool_sid": "NPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "active": true,
+                    "label": null,
+                    "scan_message_content": "inherit",
+                    "area_code_geomatch": true,
+                    "validity_period": 600
+                },
+                "status_code": 201
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:12:31Z",
+                    "date_updated": "2015-07-30T20:12:33Z",
+                    "friendly_name": "My Service!",
+                    "inbound_request_url": "https://www.example.com/",
+                    "inbound_method": "POST",
+                    "fallback_url": "https://www.example.com",
+                    "fallback_method": "GET",
+                    "status_callback": "https://www.example.com",
+                    "sticky_sender": true,
+                    "smart_encoding": false,
+                    "mms_converter": true,
+                    "fallback_to_long_code": true,
+                    "scan_message_content": "inherit",
+                    "area_code_geomatch": true,
+                    "validity_period": 600,
+                    "links": {
+                        "phone_numbers": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/PhoneNumbers",
+                        "short_codes": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ShortCodes",
+                        "alpha_senders": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AlphaSenders"
+                    },
+                    "url": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 201
+            }
+        }
+    ],
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "url": "/v1/Account/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/App/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {}
+            },
+            "downstream_response": {
+                "content": {},
+                "status_code": 201
+            },
+            "response": {
+                "content": null,
+                "status_code": 204
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v2/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "My Service!",
+                    "messaging_service_sid": "MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "Thu, 30 Jul 2015 20:12:31 +0000",
+                    "date_updated": "Thu, 30 Jul 2015 20:12:33 +0000",
+                    "stable_sender": true,
+                    "stable_sender_inactivity_lifetime": 0,
+                    "use_local_numbers": true,
+                    "use_mms_converter": true,
+                    "use_alpha_sender_id": false,
+                    "strict_gsm_body": false,
+                    "shortcode_fallback": true,
+                    "area_code_geomatch": true,
+                    "validity_period": 600,
+                    "inbound_request_url": "https://www.example.com/",
+                    "inbound_request_method": "POST",
+                    "fallback_url": null,
+                    "fallback_method": "POST",
+                    "use_number_config": false,
+                    "scan_message_content": "inherit",
+                    "status_callback": "https://www.example.com",
+                    "number_pool_sid": "NPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "active": true,
+                    "label": null
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:12:31Z",
+                    "date_updated": "2015-07-30T20:12:33Z",
+                    "friendly_name": "My Service!",
+                    "inbound_request_url": "https://www.example.com/",
+                    "inbound_method": "POST",
+                    "fallback_url": null,
+                    "fallback_method": "POST",
+                    "status_callback": "https://www.example.com",
+                    "sticky_sender": true,
+                    "mms_converter": true,
+                    "smart_encoding": false,
+                    "fallback_to_long_code": true,
+                    "area_code_geomatch": true,
+                    "validity_period": 600,
+                    "scan_message_content": "inherit",
+                    "links": {
+                        "phone_numbers": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/PhoneNumbers",
+                        "short_codes": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ShortCodes",
+                        "alpha_senders": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AlphaSenders"
+                    },
+                    "url": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://messaging.twilio.com/v1/Services"
+            },
+            "downstream_request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v2/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Services"
+            },
+            "downstream_response": {
+                "content": {
+                    "meta": {
+                        "direct_token": true,
+                        "next_token": null,
+                        "page_token": null,
+                        "previous_token": null
+                    },
+                    "services": [
+                        {
+                        "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "friendly_name": "My Service!",
+                        "messaging_service_sid": "MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "date_created": "Thu, 30 Jul 2015 20:12:31 +0000",
+                        "date_updated": "Thu, 30 Jul 2015 20:12:33 +0000",
+                        "stable_sender": true,
+                        "stable_sender_inactivity_lifetime": 0,
+                        "use_local_numbers": true,
+                        "use_mms_converter": true,
+                        "use_alpha_sender_id": false,
+                        "strict_gsm_body": false,
+                        "shortcode_fallback": true,
+                        "area_code_geomatch": true,
+                        "validity_period": 600,
+                        "scan_message_content": "inherit",
+                        "inbound_request_url": "https://www.example.com/",
+                        "inbound_request_method": "POST",
+                        "fallback_url": null,
+                        "fallback_method": "POST",
+                        "use_number_config": false,
+                        "status_callback": "https://www.example.com",
+                        "number_pool_sid": "NPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "active": true,
+                        "label": null
+                        }
+                    ]
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "meta": {
+                        "page": 0,
+                        "page_size": 50,
+                        "first_page_url": "https://messaging.twilio.com/v1/Services?PageSize=50&Page=0",
+                        "previous_page_url": null,
+                        "next_page_url": null,
+                        "key": "services",
+                        "url": "https://messaging.twilio.com/v1/Services?PageSize=50&Page=0"
+                    },
+                    "services": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "friendly_name": "My Service!",
+                            "sid": "MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "date_created": "2015-07-30T20:12:31Z",
+                            "date_updated": "2015-07-30T20:12:33Z",
+                            "sticky_sender": true,
+                            "mms_converter": true,
+                            "smart_encoding": false,
+                            "fallback_to_long_code": true,
+                            "area_code_geomatch": true,
+                            "validity_period": 600,
+                            "scan_message_content": "inherit",
+                            "inbound_request_url": "https://www.example.com/",
+                            "inbound_method": "POST",
+                            "fallback_url": null,
+                            "fallback_method": "POST",
+                            "status_callback": "https://www.example.com",
+                            "links": {
+                                "phone_numbers": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/PhoneNumbers",
+                                "short_codes": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ShortCodes",
+                                "alpha_senders": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AlphaSenders"
+                            },
+                            "url": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        }
+                    ]
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "StickySender": false
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "json_params": {
+                    "stable_sender": false
+                },
+                "method": "PUT",
+                "query_params": {},
+                "url": "/v2/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content" : {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "My Service!",
+                    "messaging_service_sid": "MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "Thu, 30 Jul 2015 20:12:31 +0000",
+                    "date_updated": "Thu, 30 Jul 2015 20:12:33 +0000",
+                    "stable_sender": false,
+                    "stable_sender_inactivity_lifetime": 0,
+                    "use_local_numbers": true,
+                    "use_mms_converter": true,
+                    "use_alpha_sender_id": false,
+                    "strict_gsm_body": false,
+                    "shortcode_fallback": true,
+                    "area_code_geomatch": true,
+                    "validity_period": 600,
+                    "scan_message_content": "inherit",
+                    "inbound_request_url": "https://www.example.com",
+                    "inbound_request_method": "POST",
+                    "fallback_url": null,
+                    "fallback_method": "POST",
+                    "use_number_config": false,
+                    "status_callback": "https://www.example.com",
+                    "number_pool_sid": "NPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "active": true,
+                    "label": ""
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "My Service!",
+                    "sid": "MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:12:31Z",
+                    "date_updated": "2015-07-30T20:12:33Z",
+                    "sticky_sender": false,
+                    "mms_converter": true,
+                    "smart_encoding": false,
+                    "fallback_to_long_code": true,
+                    "scan_message_content": "inherit",
+                    "area_code_geomatch": true,
+                    "validity_period": 600,
+                    "inbound_request_url": "https://www.example.com",
+                    "inbound_method": "POST",
+                    "fallback_url": null,
+                    "fallback_method": "POST",
+                    "status_callback": "https://www.example.com",
+                    "links": {
+                        "phone_numbers": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/PhoneNumbers",
+                        "short_codes": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ShortCodes",
+                        "alpha_senders": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AlphaSenders"
+                    },
+                    "url": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}
