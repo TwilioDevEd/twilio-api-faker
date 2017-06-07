@@ -1,0 +1,307 @@
+{
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "FriendlyName": "friendly_name"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://chat.twilio.com/v1/Services"
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "consumption_report_interval": 100,
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "default_channel_creator_role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "default_channel_role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "default_service_role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "friendly_name",
+                    "limits" : {
+                        "actions_per_second": 20,
+                        "channel_members": 100,
+                        "user_channels": 250
+                    },
+                    "links": {},
+                    "notifications": {},
+                    "post_webhook_url": "post_webhook_url",
+                    "pre_webhook_url": "pre_webhook_url",
+                    "reachability_enabled": false,
+                    "read_status_enabled": false,
+                    "sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "typing_indicator_timeout": 100,
+                    "url": "http://www.example.com",
+                    "webhook_filters": [
+                        "webhook_filters"
+                    ],
+                    "webhook_method": "webhook_method",
+                    "webhooks": {}
+                },
+                "status_code": 201
+            }
+        }
+    ],
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "https://chat.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "response": {
+                "content": null,
+                "status_code": 204
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://chat.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "consumption_report_interval": 100,
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "default_channel_creator_role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "default_channel_role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "default_service_role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "friendly_name",
+                    "limits" : {
+                        "actions_per_second": 20,
+                        "channel_members": 100,
+                        "user_channels": 250
+                    },
+                    "links": {},
+                    "notifications": {},
+                    "post_webhook_url": "post_webhook_url",
+                    "pre_webhook_url": "pre_webhook_url",
+                    "reachability_enabled": false,
+                    "read_status_enabled": false,
+                    "sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "typing_indicator_timeout": 100,
+                    "url": "http://www.example.com",
+                    "webhook_filters": [
+                        "webhook_filters"
+                    ],
+                    "webhook_method": "webhook_method",
+                    "webhooks": {}
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://chat.twilio.com/v1/Services"
+            },
+            "response": {
+                "content": {
+                    "meta": {
+                        "first_page_url": "https://chat.twilio.com/v1/Services?Page=0&PageSize=50",
+                        "key": "services",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 0,
+                        "previous_page_url": null,
+                        "url": "https://chat.twilio.com/v1/Services"
+                    },
+                    "services": []
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://chat.twilio.com/v1/Services"
+            },
+            "response": {
+                "content": {
+                    "meta": {
+                        "first_page_url": "https://chat.twilio.com/v1/Services?Page=0&PageSize=50",
+                        "key": "services",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 1,
+                        "previous_page_url": null,
+                        "url": "https://chat.twilio.com/v1/Services"
+                    },
+                    "services": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "consumption_report_interval": 100,
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "date_updated": "2015-07-30T20:00:00Z",
+                            "default_channel_creator_role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "default_channel_role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "default_service_role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "friendly_name": "friendly_name",
+                            "limits" : {
+                                "actions_per_second": 20,
+                                "channel_members": 100,
+                                "user_channels": 250
+                            },
+                            "links": {},
+                            "notifications": {},
+                            "post_webhook_url": "post_webhook_url",
+                            "pre_webhook_url": "pre_webhook_url",
+                            "reachability_enabled": false,
+                            "read_status_enabled": false,
+                            "sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "typing_indicator_timeout": 100,
+                            "url": "http://www.example.com",
+                            "webhook_filters": [
+                                "webhook_filters"
+                            ],
+                            "webhook_method": "webhook_method",
+                            "webhooks": {}
+                        }
+                    ]
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "ConsumptionReportInterval": 100,
+                    "DefaultChannelCreatorRoleSid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "DefaultChannelRoleSid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "DefaultServiceRoleSid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "FriendlyName": "friendly_name",
+                    "Notifications.AddedToChannel.Enabled": false,
+                    "Notifications.AddedToChannel.Template": "notifications.added_to_channel.template",
+                    "Notifications.InvitedToChannel.Enabled": false,
+                    "Notifications.InvitedToChannel.Template": "notifications.invited_to_channel.template",
+                    "Notifications.NewMessage.Enabled": false,
+                    "Notifications.NewMessage.Template": "notifications.new_message.template",
+                    "Notifications.RemovedFromChannel.Enabled": false,
+                    "Notifications.RemovedFromChannel.Template": "notifications.removed_from_channel.template",
+                    "Limits.ChannelMembers": 600,
+                    "Limits.UserChannels": 500,
+                    "PostWebhookUrl": "post_webhook_url",
+                    "PreWebhookUrl": "pre_webhook_url",
+                    "ReachabilityEnabled": false,
+                    "ReadStatusEnabled": false,
+                    "TypingIndicatorTimeout": 100,
+                    "WebhookFilters": [
+                        "webhook_filters"
+                    ],
+                    "WebhookMethod": "webhook_method",
+                    "Webhooks.OnChannelAdd.Format": "webhooks.on_channel_add.format",
+                    "Webhooks.OnChannelAdd.Method": "webhooks.on_channel_add.method",
+                    "Webhooks.OnChannelAdd.Url": "webhooks.on_channel_add.url",
+                    "Webhooks.OnChannelAdded.Format": "webhooks.on_channel_added.format",
+                    "Webhooks.OnChannelAdded.Method": "webhooks.on_channel_added.method",
+                    "Webhooks.OnChannelAdded.Url": "webhooks.on_channel_added.url",
+                    "Webhooks.OnChannelDestroy.Format": "webhooks.on_channel_destroy.format",
+                    "Webhooks.OnChannelDestroy.Method": "webhooks.on_channel_destroy.method",
+                    "Webhooks.OnChannelDestroy.Url": "webhooks.on_channel_destroy.url",
+                    "Webhooks.OnChannelDestroyed.Format": "webhooks.on_channel_destroyed.format",
+                    "Webhooks.OnChannelDestroyed.Method": "webhooks.on_channel_destroyed.method",
+                    "Webhooks.OnChannelDestroyed.Url": "webhooks.on_channel_destroyed.url",
+                    "Webhooks.OnChannelUpdate.Format": "webhooks.on_channel_update.format",
+                    "Webhooks.OnChannelUpdate.Method": "webhooks.on_channel_update.method",
+                    "Webhooks.OnChannelUpdate.Url": "webhooks.on_channel_update.url",
+                    "Webhooks.OnChannelUpdated.Format": "webhooks.on_channel_updated.format",
+                    "Webhooks.OnChannelUpdated.Method": "webhooks.on_channel_updated.method",
+                    "Webhooks.OnChannelUpdated.Url": "webhooks.on_channel_updated.url",
+                    "Webhooks.OnMemberAdd.Format": "webhooks.on_member_add.format",
+                    "Webhooks.OnMemberAdd.Method": "webhooks.on_member_add.method",
+                    "Webhooks.OnMemberAdd.Url": "webhooks.on_member_add.url",
+                    "Webhooks.OnMemberAdded.Format": "webhooks.on_member_added.format",
+                    "Webhooks.OnMemberAdded.Method": "webhooks.on_member_added.method",
+                    "Webhooks.OnMemberAdded.Url": "webhooks.on_member_added.url",
+                    "Webhooks.OnMemberRemove.Format": "webhooks.on_member_remove.format",
+                    "Webhooks.OnMemberRemove.Method": "webhooks.on_member_remove.method",
+                    "Webhooks.OnMemberRemove.Url": "webhooks.on_member_remove.url",
+                    "Webhooks.OnMemberRemoved.Format": "webhooks.on_member_removed.format",
+                    "Webhooks.OnMemberRemoved.Method": "webhooks.on_member_removed.method",
+                    "Webhooks.OnMemberRemoved.Url": "webhooks.on_member_removed.url",
+                    "Webhooks.OnMessageRemove.Format": "webhooks.on_message_remove.format",
+                    "Webhooks.OnMessageRemove.Method": "webhooks.on_message_remove.method",
+                    "Webhooks.OnMessageRemove.Url": "webhooks.on_message_remove.url",
+                    "Webhooks.OnMessageRemoved.Format": "webhooks.on_message_removed.format",
+                    "Webhooks.OnMessageRemoved.Method": "webhooks.on_message_removed.method",
+                    "Webhooks.OnMessageRemoved.Url": "webhooks.on_message_removed.url",
+                    "Webhooks.OnMessageSend.Format": "webhooks.on_message_send.format",
+                    "Webhooks.OnMessageSend.Method": "webhooks.on_message_send.method",
+                    "Webhooks.OnMessageSend.Url": "webhooks.on_message_send.url",
+                    "Webhooks.OnMessageSent.Format": "webhooks.on_message_sent.format",
+                    "Webhooks.OnMessageSent.Method": "webhooks.on_message_sent.method",
+                    "Webhooks.OnMessageSent.Url": "webhooks.on_message_sent.url",
+                    "Webhooks.OnMessageUpdate.Format": "webhooks.on_message_update.format",
+                    "Webhooks.OnMessageUpdate.Method": "webhooks.on_message_update.method",
+                    "Webhooks.OnMessageUpdate.Url": "webhooks.on_message_update.url",
+                    "Webhooks.OnMessageUpdated.Format": "webhooks.on_message_updated.format",
+                    "Webhooks.OnMessageUpdated.Method": "webhooks.on_message_updated.method",
+                    "Webhooks.OnMessageUpdated.Url": "webhooks.on_message_updated.url"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://chat.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "consumption_report_interval": 100,
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "default_channel_creator_role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "default_channel_role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "default_service_role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "friendly_name",
+                    "limits" : {
+                        "actions_per_second": 20,
+                        "channel_members": 500,
+                        "user_channels": 600
+                    },
+                    "links": {},
+                    "notifications": {},
+                    "post_webhook_url": "post_webhook_url",
+                    "pre_webhook_url": "pre_webhook_url",
+                    "reachability_enabled": false,
+                    "read_status_enabled": false,
+                    "sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "typing_indicator_timeout": 100,
+                    "url": "http://www.example.com",
+                    "webhook_filters": [
+                        "webhook_filters"
+                    ],
+                    "webhook_method": "webhook_method",
+                    "webhooks": {}
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}

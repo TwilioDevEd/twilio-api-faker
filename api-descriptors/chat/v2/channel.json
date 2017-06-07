@@ -1,0 +1,365 @@
+{
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "Type": "public",
+                    "FriendlyName": "friendly_name",
+                    "UniqueName": "unique_name",
+                    "Attributes": "{ \"foo\": \"bar\" }"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels"
+            },
+            "downstream_request": {
+                "form_params": {
+                    "Type": "public",
+                    "FriendlyName": "friendly_name",
+                    "UniqueName": "unique_name",
+                    "Attributes": "{ \"foo\": \"bar\" }"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels"
+            },
+            "downstream_response": {
+                "status_code": 201,
+                "content": {
+                    "sid": "CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "instance_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "friendly_name",
+                    "unique_name": "unique_name",
+                    "attributes": "{ \"foo\": \"bar\" }",
+                    "date_created": "2015-12-16T22:18:37Z",
+                    "date_updated": "2015-12-16T22:18:37Z",
+                    "last_message_sid": null,
+                    "members_count": 0,
+                    "messages_count": 0,
+                    "created_by": "system",
+                    "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "links": {
+                        "messages": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages",
+                        "members": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Members",
+                        "invites": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Invites"
+                    },
+                    "type": "public"
+                }
+            },
+            "response": {
+                "content": {
+                    "sid": "CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "friendly_name",
+                    "unique_name": "unique_name",
+                    "attributes": "{ \"foo\": \"bar\" }",
+                    "type": "public",
+                    "date_created": "2015-12-16T22:18:37Z",
+                    "date_updated": "2015-12-16T22:18:37Z",
+                    "created_by": "system",
+                    "members_count": 0,
+                    "messages_count": 0,
+                    "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "links": {
+                        "members": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Members",
+                        "messages": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages",
+                        "invites": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Invites",
+                        "last_message": null
+                    }
+                },
+                "status_code": 201
+            }
+        }
+    ],
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": null,
+                "status_code": 204
+            },
+            "response": {
+                "content": null,
+                "status_code": 204
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "sid": "CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "instance_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "friendly_name",
+                    "unique_name": "unique_name",
+                    "attributes": "{ \"foo\": \"bar\" }",
+                    "date_created": "2015-12-16T22:18:37Z",
+                    "date_updated": "2015-12-16T22:18:37Z",
+                    "last_message_sid": null,
+                    "members_count": 0,
+                    "messages_count": 0,
+                    "created_by": "system",
+                    "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "links": {
+                        "messages": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages",
+                        "members": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Members",
+                        "invites": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Invites"
+                    },
+                    "type": "public"
+                }
+            },
+            "response": {
+                "content": {
+                    "sid": "CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "friendly_name",
+                    "unique_name": "unique_name",
+                    "attributes": "{ \"foo\": \"bar\" }",
+                    "type": "public",
+                    "date_created": "2015-12-16T22:18:37Z",
+                    "date_updated": "2015-12-16T22:18:37Z",
+                    "created_by": "system",
+                    "members_count": 0,
+                    "messages_count": 0,
+                    "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "links": {
+                        "members": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Members",
+                        "messages": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages",
+                        "invites": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Invites",
+                        "last_message": null
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels"
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "channels": [
+                        {
+                            "sid": "CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "instance_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "friendly_name": "friendly_name",
+                            "unique_name": "unique_name",
+                            "attributes": "{ \"foo\": \"bar\" }",
+                            "date_created": "2015-12-16T22:18:37Z",
+                            "date_updated": "2015-12-16T22:18:37Z",
+                            "last_message_sid": null,
+                            "members_count": 0,
+                            "messages_count": 0,
+                            "created_by": "system",
+                            "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "links": {
+                                "messages": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages",
+                                "members": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Members",
+                                "invites": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Invites"
+                            },
+                            "type": "public"
+                        }
+                    ]
+                }
+            },
+            "response": {
+                "content": {
+                    "channels": [
+                        {
+                            "sid": "CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "friendly_name": "friendly_name",
+                            "unique_name": "unique_name",
+                            "attributes": "{ \"foo\": \"bar\" }",
+                            "type": "public",
+                            "date_created": "2015-12-16T22:18:37Z",
+                            "date_updated": "2015-12-16T22:18:37Z",
+                            "created_by": "system",
+                            "members_count": 0,
+                            "messages_count": 0,
+                            "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "links": {
+                                "members": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Members",
+                                "messages": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages",
+                                "invites": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Invites",
+                                "last_message": null
+                            }
+                        }
+                    ],
+                    "meta": {
+                        "page": 0,
+                        "page_size": 50,
+                        "first_page_url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels?PageSize=50&Page=0",
+                        "previous_page_url": null,
+                        "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels?PageSize=50&Page=0",
+                        "next_page_url": null,
+                        "key": "channels"
+                    }
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels"
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "channels": []
+                }
+            },
+            "response": {
+                "content": {
+                    "channels": [],
+                    "meta": {
+                        "page": 0,
+                        "page_size": 50,
+                        "first_page_url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels?PageSize=50&Page=0",
+                        "previous_page_url": null,
+                        "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels?PageSize=50&Page=0",
+                        "next_page_url": null,
+                        "key": "channels"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "Type": "channel",
+                    "FriendlyName": "friendly_name",
+                    "UniqueName": "unique_name",
+                    "Attributes": "{ \"foo\": \"bar\" }"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {
+                    "FriendlyName": "friendly_name",
+                    "UniqueName": "unique_name",
+                    "Attributes": "{ \"foo\": \"bar\" }"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "sid": "CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "instance_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "friendly_name",
+                    "unique_name": "unique_name",
+                    "attributes": "{ \"foo\": \"bar\" }",
+                    "date_created": "2015-12-16T22:18:37Z",
+                    "date_updated": "2015-12-16T22:18:37Z",
+                    "last_message_sid": null,
+                    "members_count": 0,
+                    "messages_count": 0,
+                    "created_by": "system",
+                    "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "links": {
+                        "messages": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages",
+                        "members": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Members",
+                        "invites": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Invites"
+                    },
+                    "type": "public"
+                }
+            },
+            "response": {
+                "status_code": 200,
+                "content": {
+                    "sid": "CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "friendly_name",
+                    "unique_name": "unique_name",
+                    "attributes": "{ \"foo\": \"bar\" }",
+                    "type": "public",
+                    "date_created": "2015-12-16T22:18:37Z",
+                    "date_updated": "2015-12-16T22:18:37Z",
+                    "created_by": "system",
+                    "members_count": 0,
+                    "messages_count": 0,
+                    "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "links": {
+                        "members": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Members",
+                        "messages": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages",
+                        "invites": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Invites",
+                        "last_message": null
+                    }
+                }
+            }
+        }
+    ]
+}

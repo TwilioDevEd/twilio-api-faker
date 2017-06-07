@@ -1,0 +1,328 @@
+{
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "Identity": "jing",
+                    "RoleSid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "Attributes": "{\"test\":\"test\"}",
+                    "FriendlyName": "friendly_name"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users"
+            },
+            "downstream_request": {
+                "form_params": {
+                    "Identity": "jing",
+                    "RoleSid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "Attributes": "{\"test\":\"test\"}",
+                    "FriendlyName": "friendly_name"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users"
+            },
+            "downstream_response": {
+                "status_code": 201,
+                "content": {
+                    "sid": "USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "profile_url": "https://cds.stage-us1.twilio.com/v1/instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/entities/test.profile",
+                    "identity": "jing",
+                    "date_created": "2016-03-24T21:05:19Z",
+                    "date_updated": "2016-03-24T21:05:19Z",
+                    "friendly_name": null,
+                    "attributes": null,
+                    "role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "instance_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "is_online": true,
+                    "joined_channels_count": 0,
+                    "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                }
+            },
+            "response": {
+                "content": {
+                    "sid": "USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "identity": "jing",
+                    "attributes": null,
+                    "is_online": true,
+                    "is_notifiable": null,
+                    "friendly_name": null,
+                    "joined_channels_count": 0,
+                    "date_created": "2016-03-24T21:05:19Z",
+                    "date_updated": "2016-03-24T21:05:19Z",
+                    "links": {
+                        "user_channels": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels"
+                    },
+                    "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },  
+                "status_code": 201
+            }
+        }
+    ],
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "status_code": 204,
+                "content": null
+            },
+            "response": {
+                "content": null,  
+                "status_code": 204
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "sid": "USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "profile_url": "https://cds.stage-us1.twilio.com/v1/instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/entities/test.profile",
+                    "identity": "jing",
+                    "date_created": "2016-03-24T21:05:19Z",
+                    "date_updated": "2016-03-24T21:05:19Z",
+                    "friendly_name": null,
+                    "attributes": null,
+                    "role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "instance_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "is_online": true,
+                    "joined_channels_count": 0,
+                    "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                }
+            },
+            "response": {
+                "content": {
+                    "sid": "USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "identity": "jing",
+                    "attributes": null,
+                    "is_online": true,
+                    "is_notifiable": null,
+                    "friendly_name": null,
+                    "joined_channels_count": 0,
+                    "date_created": "2016-03-24T21:05:19Z",
+                    "date_updated": "2016-03-24T21:05:19Z",
+                    "links": {
+                        "user_channels": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels"
+                    },
+                    "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },  
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users"
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "users": [
+                        {
+                            "sid": "USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "profile_url": "https://cds.stage-us1.twilio.com/v1/instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/entities/test.profile",
+                            "identity": "jing",
+                            "date_created": "2016-03-24T21:05:19Z",
+                            "date_updated": "2016-03-24T21:05:19Z",
+                            "friendly_name": null,
+                            "attributes": null,
+                            "role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "instance_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "is_online": true,
+                            "joined_channels_count": 0,
+                            "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        }
+                    ]
+                }
+            },
+            "response": {
+                "content": {
+                    "meta": {
+                        "page": 0,
+                        "page_size": 50,
+                        "first_page_url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users?PageSize=50&Page=0",
+                        "previous_page_url": null,
+                        "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users?PageSize=50&Page=0",
+                        "next_page_url": null,
+                        "key": "users"
+                    },
+                    "users": [
+                        {
+                            "sid": "USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "identity": "jing",
+                            "attributes": null,
+                            "is_online": true,
+                            "is_notifiable": null,
+                            "friendly_name": null,
+                            "date_created": "2016-03-24T21:05:19Z",
+                            "date_updated": "2016-03-24T21:05:19Z",
+                            "joined_channels_count": 0,
+                            "links": {
+                                "user_channels": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels"
+                            },
+                            "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        }
+                    ]
+                },  
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users"
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "users": []
+                }
+            },
+            "response": {
+                "status_code": 200,
+                "content": {
+                    "meta": {
+                        "page": 0,
+                        "page_size": 50,
+                        "first_page_url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users?PageSize=50&Page=0",
+                        "previous_page_url": null,
+                        "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users?PageSize=50&Page=0",
+                        "next_page_url": null,
+                        "key": "users"
+                    },
+                    "users": []
+                }
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "RoleSid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "Attributes": "{\"test\":\"test\"}",
+                    "FriendlyName": "friendly_name"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {
+                    "RoleSid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "Attributes": "{\"test\":\"test\"}",
+                    "FriendlyName": "friendly_name"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "sid": "USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "profile_url": "https://cds.stage-us1.twilio.com/v1/instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/entities/test.profile",
+                    "identity": "jing",
+                    "date_created": "2016-03-24T21:05:19Z",
+                    "date_updated": "2016-03-24T21:05:19Z",
+                    "friendly_name": null,
+                    "attributes": null,
+                    "role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "instance_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "is_online": true,
+                    "joined_channels_count": 0,
+                    "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                }
+            },
+            "response": {
+                "content": {
+                    "sid": "USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "identity": "jing",
+                    "attributes": null,
+                    "is_online": true,
+                    "is_notifiable": null,
+                    "friendly_name": null,
+                    "joined_channels_count": 0,
+                    "date_created": "2016-03-24T21:05:19Z",
+                    "date_updated": "2016-03-24T21:05:19Z",
+                    "links": {
+                        "user_channels": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels"
+                    },
+                    "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/USaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },  
+                "status_code": 200
+            }
+        }
+    ]
+}
