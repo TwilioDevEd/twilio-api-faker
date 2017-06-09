@@ -1,0 +1,273 @@
+{
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "form_params": {},
+                "query_params": {},
+                "method": "DELETE",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "url": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "query_params": {},
+                "method": "DELETE",
+                "url": "/v1/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": null,
+                "status_code": 204
+            },
+            "response": {
+                "content": null,
+                "status_code": 204
+            }
+        }
+    ],
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "form_params": {
+                    "Ttl": 100,
+                    "Status": "in-progess",
+                    "UniqueName": "unique_name"
+                },
+                "query_params": {},
+                "method": "POST",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "url": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions"
+            },
+            "downstream_request": {
+                "form_params": {
+                    "Ttl": 100,
+                    "Status": "in-progess",
+                    "UniqueName": "unique_name"
+                },
+                "query_params": {},
+                "method": "POST",
+                "url": "/v1/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions"
+            },
+            "downstream_response": {
+                "content": {
+                    "service_sid": "KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "in-progess",
+                    "unique_name": "unique_name",
+                    "start_time": "2015-07-30T20:00:00Z",
+                    "links": {
+                        "interactions": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Interactions",
+                        "participants": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants"
+                    },
+                    "ttl": 100,
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "end_time": "2015-07-30T20:00:00Z",
+                    "url": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 201
+            },
+            "response": {
+                "content": {
+                    "service_sid": "KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "in-progess",
+                    "unique_name": "unique_name",
+                    "start_time": "2015-07-30T20:00:00Z",
+                    "links": {
+                        "interactions": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Interactions",
+                        "participants": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants"
+                    },
+                    "ttl": 100,
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "end_time": "2015-07-30T20:00:00Z",
+                    "url": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 201
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "form_params": {},
+                "query_params": {},
+                "method": "GET",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "url": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "query_params": {},
+                "method": "GET",
+                "url": "/v1/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "service_sid": "KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "in-progess",
+                    "unique_name": "unique_name",
+                    "start_time": "2015-07-30T20:00:00Z",
+                    "links": {
+                        "interactions": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Interactions",
+                        "participants": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants"
+                    },
+                    "ttl": 100,
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "end_time": "2015-07-30T20:00:00Z",
+                    "url": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "service_sid": "KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "in-progess",
+                    "unique_name": "unique_name",
+                    "start_time": "2015-07-30T20:00:00Z",
+                    "links": {
+                        "interactions": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Interactions",
+                        "participants": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants"
+                    },
+                    "ttl": 100,
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "end_time": "2015-07-30T20:00:00Z",
+                    "url": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "form_params": {
+                    "Ttl": 100,
+                    "Status": "in-progess",
+                    "UniqueName": "unique_name"
+                },
+                "query_params": {},
+                "method": "POST",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "url": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {
+                    "Ttl": 100,
+                    "Status": "in-progess",
+                    "UniqueName": "unique_name"
+                },
+                "query_params": {},
+                "method": "POST",
+                "url": "/v1/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "service_sid": "KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "in-progess",
+                    "unique_name": "unique_name",
+                    "start_time": "2015-07-30T20:00:00Z",
+                    "links": {
+                        "interactions": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Interactions",
+                        "participants": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants"
+                    },
+                    "ttl": 100,
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "end_time": "2015-07-30T20:00:00Z",
+                    "url": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "service_sid": "KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "in-progess",
+                    "unique_name": "unique_name",
+                    "start_time": "2015-07-30T20:00:00Z",
+                    "links": {
+                        "interactions": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Interactions",
+                        "participants": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Participants"
+                    },
+                    "ttl": 100,
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "end_time": "2015-07-30T20:00:00Z",
+                    "url": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions/KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "KCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_empty",
+            "request": {
+                "form_params": {},
+                "query_params": {
+                    "Status": "in-progess",
+                    "UniqueName": "unique_name"
+                },
+                "method": "GET",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "url": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "query_params": {
+                    "Status": "in-progess",
+                    "UniqueName": "unique_name"
+                },
+                "method": "GET",
+                "url": "/v1/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions"
+            },
+            "downstream_response": {
+                "content": {
+                    "sessions": [],
+                    "meta": {
+                        "previous_page_url": null,
+                        "next_page_url": null,
+                        "url": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions?PageSize=50&Page=0",
+                        "page": 0,
+                        "first_page_url": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions?PageSize=50&Page=0",
+                        "page_size": 50,
+                        "key": "sessions"
+                    }
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "sessions": [],
+                    "meta": {
+                        "previous_page_url": null,
+                        "next_page_url": null,
+                        "url": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions?PageSize=50&Page=0",
+                        "page": 0,
+                        "count": 0,
+                        "first_page_url": "https://preview.twilio.com/Proxy/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions?PageSize=50&Page=0",
+                        "page_size": 50,
+                        "key": "sessions"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}
