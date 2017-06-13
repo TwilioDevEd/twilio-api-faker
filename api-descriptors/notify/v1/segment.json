@@ -1,0 +1,113 @@
+{
+    "read": [
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Segments"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "query_params": {},
+                "method": "GET",
+                "url": "/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Segments"
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "content": [],
+                    "meta": {
+                        "direct_token": true,
+                        "list_key": "content",
+                        "next_token": null,
+                        "page_size": 0,
+                        "previous_token": null
+                    }
+                }
+            },
+            "response": {
+                "content": {
+                    "meta": {
+                        "first_page_url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Segments?PageSize=50&Page=0",
+                        "key": "segments",
+                        "next_page_url": null,
+                        "page": 0,
+                        "count": 0,
+                        "page_size": 50,
+                        "previous_page_url": null,
+                        "url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Segments?PageSize=50&Page=0"
+                    },
+                    "segments": []
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Segments"
+            },
+            "downstream_request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "query_params": {},
+                "method": "GET",
+                "url": "/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Segments"
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "content": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "date_created": "2017-02-14T14:36:41Z",
+                            "date_updated": "2017-02-14T14:36:41Z",
+                            "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "sid": "GSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "unique_name": "segment"
+                        }
+                    ],
+                    "meta": {
+                        "previous_token": null,
+                        "next_token": null,
+                        "direct_token": true,
+                        "page_size": 1,
+                        "list_key": "content"
+                    }
+                }
+            },
+            "response": {
+                "content": {
+                    "segments": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "date_created": "2017-02-14T14:36:41Z",
+                            "date_updated": "2017-02-14T14:36:41Z",
+                            "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "sid": "GSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "unique_name": "segment"
+                        }
+                    ],
+                    "meta": {
+                        "first_page_url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Segments?PageSize=50&Page=0",
+                        "key": "segments",
+                        "next_page_url": null,
+                        "page": 0,
+                        "count": 1,
+                        "page_size": 50,
+                        "previous_page_url": null,
+                        "url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Segments?PageSize=50&Page=0"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+]
+}
