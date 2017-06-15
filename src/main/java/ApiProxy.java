@@ -95,6 +95,9 @@ public class ApiProxy {
           case "GET":
             method = get(urlMatching);
             break;
+          case "PUT":
+            method = put(urlMatching);
+            break;
           case "DELETE":
             method = delete(urlMatching);
             break;
