@@ -8,22 +8,20 @@
                     "CallbackMethod": "callback_method",
                     "CallbackUrl": "http://www.example.com",
                     "Command": "command",
-                    "CommandMode": "command_mode",
-                    "Device": "device",
+                    "CommandMode": "text",
                     "Sim": "sim",
                     "IncludeSid": "include_sid"
                 },
                 "method": "POST",
                 "query_params": {},
-                "url": "https://preview.twilio.com/wireless/Commands"
+                "url": "https://wireless.twilio.com/v1/Commands"
             },
             "downstream_request": {
                 "form_params": {
                     "CallbackMethod": "callback_method",
                     "CallbackUrl": "http://www.example.com",
                     "Command": "command",
-                    "CommandMode": "command_mode",
-                    "Device": "device",
+                    "CommandMode": "text",
                     "Sim": "sim",
                     "IncludeSid": "include_sid"
                 },
@@ -38,16 +36,15 @@
                     "callback_method": "POST",
                     "callback_url": null,
                     "command": "command",
-                    "command_mode": "command_mode",
+                    "command_mode": "text",
                     "date_created": "2015-07-30T20:00:00Z",
                     "date_updated": "2015-07-30T20:00:00Z",
-                    "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "direction": "direction",
+                    "direction": "from_sim",
                     "message_sid": "SM0b3cb68a14161ea4825663120476d911",
                     "price": null,
                     "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "status",
+                    "status": "queued",
                     "uri": "/v1/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "status_code": 201
@@ -56,15 +53,14 @@
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "command": "command",
-                    "command_mode": "command_mode",
+                    "command_mode": "text",
                     "date_created": "2015-07-30T20:00:00Z",
                     "date_updated": "2015-07-30T20:00:00Z",
-                    "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "direction": "direction",
+                    "direction": "from_sim",
                     "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "status",
-                    "url": "https://preview.twilio.com/wireless/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    "status": "queued",
+                    "url": "https://wireless.twilio.com/v1/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "status_code": 201
             }
@@ -78,7 +74,7 @@
                 "form_params": {},
                 "method": "GET",
                 "query_params": {},
-                "url": "https://preview.twilio.com/wireless/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                "url": "https://wireless.twilio.com/v1/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
             },
             "downstream_request": {
                 "form_params": {},
@@ -93,16 +89,15 @@
                     "callback_method": "POST",
                     "callback_url": null,
                     "command": "command",
-                    "command_mode": "command_mode",
+                    "command_mode": "text",
                     "date_created": "2015-07-30T20:00:00Z",
                     "date_updated": "2015-07-30T20:00:00Z",
-                    "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "direction": "direction",
+                    "direction": "from_sim",
                     "message_sid": "SM0b3cb68a14161ea4825663120476d911",
                     "price": null,
                     "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "status",
+                    "status": "queued",
                     "uri": "/v1/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "status_code": 200
@@ -111,15 +106,14 @@
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "command": "command",
-                    "command_mode": "command_mode",
+                    "command_mode": "text",
                     "date_created": "2015-07-30T20:00:00Z",
                     "date_updated": "2015-07-30T20:00:00Z",
-                    "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "direction": "direction",
+                    "direction": "from_sim",
                     "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "status",
-                    "url": "https://preview.twilio.com/wireless/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    "status": "queued",
+                    "url": "https://wireless.twilio.com/v1/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "status_code": 200
             }
@@ -133,21 +127,19 @@
                 "form_params": {},
                 "method": "GET",
                 "query_params": {
-                    "Device": "device",
                     "Sim": "sim",
-                    "Direction": "direction",
-                    "Status": "status"
+                    "Direction": "from_sim",
+                    "Status": "queued"
                 },
-                "url": "https://preview.twilio.com/wireless/Commands"
+                "url": "https://wireless.twilio.com/v1/Commands"
             },
             "downstream_request": {
                 "form_params": {},
                 "method": "GET",
                 "query_params": {
-                    "Device": "device",
                     "Sim": "sim",
-                    "Direction": "direction",
-                    "Status": "status"
+                    "Direction": "from_sim",
+                    "Status": "queued"
                 },
                 "url": "/v1/Commands"
             },
@@ -170,14 +162,14 @@
                 "content": {
                     "commands": [],
                     "meta": {
-                        "first_page_url": "https://preview.twilio.com/wireless/Commands?PageSize=50&Page=0",
+                        "first_page_url": "https://wireless.twilio.com/v1/Commands?PageSize=50&Page=0",
                         "key": "commands",
                         "next_page_url": null,
                         "page": 0,
                         "count": 0,
                         "page_size": 50,
                         "previous_page_url": null,
-                        "url": "https://preview.twilio.com/wireless/Commands?PageSize=50&Page=0"
+                        "url": "https://wireless.twilio.com/v1/Commands?PageSize=50&Page=0"
                     }
                 },
                 "status_code": 200
@@ -190,21 +182,19 @@
                 "form_params": {},
                 "method": "GET",
                 "query_params": {
-                    "Device": "device",
                     "Sim": "sim",
-                    "Direction": "direction",
-                    "Status": "status"
+                    "Direction": "from_sim",
+                    "Status": "queued"
                 },
-                "url": "https://preview.twilio.com/wireless/Commands"
+                "url": "https://wireless.twilio.com/v1/Commands"
             },
             "downstream_request": {
                 "form_params": {},
                 "method": "GET",
                 "query_params": {
-                    "Device": "device",
                     "Sim": "sim",
-                    "Direction": "direction",
-                    "Status": "status"
+                    "Direction": "from_sim",
+                    "Status": "queued"
                 },
                 "url": "/v1/Commands"
             },
@@ -216,16 +206,15 @@
                         "callback_method": "POST",
                         "callback_url": null,
                         "command": "command",
-                        "command_mode": "command_mode",
+                        "command_mode": "text",
                         "date_created": "2015-07-30T20:00:00Z",
                         "date_updated": "2015-07-30T20:00:00Z",
-                        "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "direction": "direction",
+                        "direction": "from_sim",
                         "message_sid": "SM0b3cb68a14161ea4825663120476d911",
                         "price": null,
                         "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "status": "status",
+                        "status": "queued",
                         "uri": "/v1/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                     }],
                     "meta": {
@@ -246,26 +235,25 @@
                         {
                             "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                             "command": "command",
-                            "command_mode": "command_mode",
+                            "command_mode": "text",
                             "date_created": "2015-07-30T20:00:00Z",
                             "date_updated": "2015-07-30T20:00:00Z",
-                            "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                             "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "direction": "direction",
+                            "direction": "from_sim",
                             "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "status": "status",
-                            "url": "https://preview.twilio.com/wireless/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                            "status": "queued",
+                            "url": "https://wireless.twilio.com/v1/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                         }
                     ],
                     "meta": {
-                        "first_page_url": "https://preview.twilio.com/wireless/Commands?PageSize=50&Page=0",
+                        "first_page_url": "https://wireless.twilio.com/v1/Commands?PageSize=50&Page=0",
                         "key": "commands",
                         "next_page_url": null,
                         "page": 0,
                         "count": 1,
                         "page_size": 50,
                         "previous_page_url": null,
-                        "url": "https://preview.twilio.com/wireless/Commands?PageSize=50&Page=0"
+                        "url": "https://wireless.twilio.com/v1/Commands?PageSize=50&Page=0"
                     }
                 },
                 "status_code": 200

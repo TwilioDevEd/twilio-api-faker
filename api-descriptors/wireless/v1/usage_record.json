@@ -1,0 +1,88 @@
+{
+    "read": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "End": "2015-07-30T20:00:00Z",
+                    "Start": "2015-07-30T20:00:00Z"
+                },
+                "url": "https://wireless.twilio.com/v1/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/UsageRecords"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "End": "2015-07-30T20:00:00Z",
+                    "Start": "2015-07-30T20:00:00Z",
+                    "Sim": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "url": "/v1/Usage"
+            },
+            "downstream_response": {
+                "content": {
+                    "usage_records": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "commands": {},
+                            "data": {},
+                            "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "period": {}
+                        },
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "commands": {},
+                            "data": {},
+                            "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "period": {}
+                        }
+                    ],
+                    "meta": {
+                        "direct_token": true,
+                        "list_key": "usage_records",
+                        "next_token": null,
+                        "page": 0,
+                        "page_size": 0,
+                        "page_token": null,
+                        "previous_token": null
+                    }
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "usage_records": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "commands": {},
+                            "data": {},
+                            "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "period": {}
+                        },
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "commands": {},
+                            "data": {},
+                            "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "period": {}
+                        }
+                    ],
+                    "meta": {
+                        "first_page_url": "https://wireless.twilio.com/v1/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/UsageRecords?PageSize=50&Page=0",
+                        "key": "usage_records",
+                        "next_page_url": null,
+                        "page": 0,
+                        "count": 2,
+                        "page_size": 50,
+                        "previous_page_url": null,
+                        "url": "https://wireless.twilio.com/v1/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/UsageRecords?PageSize=50&Page=0"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}

@@ -1,0 +1,189 @@
+{
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/marketplace/InstalledAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions/XFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Public/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/InstalledAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions/XFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "sid": "XFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "installed_add_on_sid": "XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "Incoming Voice Call",
+                    "product_name": "Programmable Voice",
+                    "unique_name": "voice-incoming",
+                    "enabled": true
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "sid": "XFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "installed_add_on_sid": "XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "Incoming Voice Call",
+                    "product_name": "Programmable Voice",
+                    "unique_name": "voice-incoming",
+                    "enabled": true,
+                    "url": "https://preview.twilio.com/marketplace/InstalledAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions/XFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/marketplace/InstalledAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Public/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/InstalledAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions"
+            },
+            "downstream_response": {
+                "content": {
+                    "extensions": [
+                        {
+                            "sid": "XFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "installed_add_on_sid": "XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "friendly_name": "Incoming Voice Call",
+                            "product_name": "Programmable Voice",
+                            "unique_name": "voice-incoming",
+                            "enabled": true
+                        }
+                    ],
+                    "after_sid": null,
+                    "before_sid": null
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "extensions": [
+                        {
+                            "sid": "XFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "installed_add_on_sid": "XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "friendly_name": "Incoming Voice Call",
+                            "product_name": "Programmable Voice",
+                            "unique_name": "voice-incoming",
+                            "enabled": true,
+                            "url": "https://preview.twilio.com/marketplace/InstalledAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions/XFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        }
+                    ],
+                    "meta": {
+                        "page": 0,
+                        "count": 1,
+                        "page_size": 50,
+                        "first_page_url": "https://preview.twilio.com/marketplace/InstalledAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions?PageSize=50&Page=0",
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/marketplace/InstalledAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions?PageSize=50&Page=0",
+                        "next_page_url": null,
+                        "key": "extensions"
+                    }
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/marketplace/InstalledAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Public/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/InstalledAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions"
+            },
+            "downstream_response": {
+                "content": {
+                    "extensions": [],
+                    "after_sid": null,
+                    "before_sid": null
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "extensions": [],
+                    "meta": {
+                        "page": 0,
+                        "count": 0,
+                        "page_size": 50,
+                        "first_page_url": "https://preview.twilio.com/marketplace/InstalledAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions?PageSize=50&Page=0",
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/marketplace/InstalledAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions?PageSize=50&Page=0",
+                        "next_page_url": null,
+                        "key": "extensions"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "Enabled": false
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://preview.twilio.com/marketplace/InstalledAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions/XFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {
+                    "Enabled": false
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v1/Public/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/InstalledAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions/XFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "sid": "XFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "installed_add_on_sid": "XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "Incoming Voice Call",
+                    "product_name": "Programmable Voice",
+                    "unique_name": "voice-incoming",
+                    "enabled": false
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "sid": "XFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "installed_add_on_sid": "XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "Incoming Voice Call",
+                    "product_name": "Programmable Voice",
+                    "unique_name": "voice-incoming",
+                    "enabled": false,
+                    "url": "https://preview.twilio.com/marketplace/InstalledAddOns/XEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions/XFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}

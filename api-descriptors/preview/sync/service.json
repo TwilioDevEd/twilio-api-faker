@@ -6,12 +6,42 @@
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "form_params": {
                     "FriendlyName": "friendly_name",
-                    "ReachabilityWebhooksEnabled": false,
-                    "WebhookUrl": "http://www.example.com"
+                    "WebhookUrl": "http://www.example.com",
+                    "AclEnabled": true
                 },
                 "method": "POST",
                 "query_params": {},
                 "url": "https://preview.twilio.com/Sync/Services"
+            },
+            "downstream_request": {
+                "form_params": {
+                    "FriendlyName": "friendly_name",
+                    "WebhookUrl": "http://www.example.com",
+                    "AclEnabled": true
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v3/Services"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00.000Z",
+                    "date_updated": "2015-07-30T20:00:00.000Z",
+                    "friendly_name": "friendly_name",
+                    "links": {
+                        "documents": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Documents",
+                        "lists": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists",
+                        "maps": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps"
+                    },
+                    "sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "url": "http://www.example.com",
+                    "webhook_url": "http://www.example.com",
+                    "reachability_webhooks_enabled": false,
+                    "webhooks_from_rest_enabled": false,
+                    "acl_enabled": true
+                },
+                "status_code": 201
             },
             "response": {
                 "content": {
@@ -19,11 +49,16 @@
                     "date_created": "2015-07-30T20:00:00Z",
                     "date_updated": "2015-07-30T20:00:00Z",
                     "friendly_name": "friendly_name",
-                    "links": {},
-                    "reachability_webhooks_enabled": false,
+                    "links": {
+                        "documents": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Documents",
+                        "lists": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists",
+                        "maps": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps"
+                    },
                     "sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "url": "http://www.example.com",
-                    "webhook_url": "http://www.example.com"
+                    "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "webhook_url": "http://www.example.com",
+                    "reachability_webhooks_enabled": false,
+                    "acl_enabled": true
                 },
                 "status_code": 201
             }
@@ -38,6 +73,16 @@
                 "method": "DELETE",
                 "query_params": {},
                 "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": null,
+                "status_code": 204
             },
             "response": {
                 "content": null,
@@ -55,60 +100,54 @@
                 "query_params": {},
                 "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
             },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00.000Z",
+                    "date_updated": "2015-07-30T20:00:00.000Z",
+                    "friendly_name": "friendly_name",
+                    "links": {
+                        "documents": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Documents",
+                        "lists": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists",
+                        "maps": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps"
+                    },
+                    "sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "url": "http://www.example.com",
+                    "webhook_url": "http://www.example.com",
+                    "reachability_webhooks_enabled": false,
+                    "webhooks_from_rest_enabled": false,
+                    "acl_enabled": false
+                },
+                "status_code": 200
+            },
             "response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "date_created": "2015-07-30T20:00:00Z",
                     "date_updated": "2015-07-30T20:00:00Z",
                     "friendly_name": "friendly_name",
-                    "links": {},
-                    "reachability_webhooks_enabled": false,
+                    "links": {
+                        "documents": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Documents",
+                        "lists": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists",
+                        "maps": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps"
+                    },
                     "sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "url": "http://www.example.com",
-                    "webhook_url": "http://www.example.com"
+                    "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "webhook_url": "http://www.example.com",
+                    "reachability_webhooks_enabled": false,
+                    "acl_enabled": false
                 },
                 "status_code": 200
             }
         }
     ],
     "read": [
-        {
-            "name": "read_full",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
-                "url": "https://preview.twilio.com/Sync/Services"
-            },
-            "response": {
-                "content": {
-                    "meta": {
-                        "first_page_url": "https://preview.twilio.com/Sync/Services?Page=0&PageSize=50",
-                        "key": "services",
-                        "next_page_url": null,
-                        "page": 0,
-                        "page_size": 1,
-                        "previous_page_url": null,
-                        "url": "https://preview.twilio.com/Sync/Services"
-                    },
-                    "services": [
-                        {
-                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "date_created": "2015-07-30T20:00:00Z",
-                            "date_updated": "2015-07-30T20:00:00Z",
-                            "friendly_name": "friendly_name",
-                            "links": {},
-                            "reachability_webhooks_enabled": false,
-                            "sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "url": "http://www.example.com",
-                            "webhook_url": "http://www.example.com"
-                        }
-                    ]
-                },
-                "status_code": 200
-            }
-        },
         {
             "name": "read_empty",
             "request": {
@@ -118,18 +157,114 @@
                 "query_params": {},
                 "url": "https://preview.twilio.com/Sync/Services"
             },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v3/Services"
+            },
+            "downstream_response": {
+                "content": {
+                    "meta": {
+                        "direct_token": true,
+                        "encode_token": false,
+                        "next_token": null,
+                        "previous_token": null
+                    },
+                    "services": []
+                },
+                "status_code": 200
+            },
             "response": {
                 "content": {
                     "meta": {
-                        "first_page_url": "https://preview.twilio.com/Sync/Services?Page=0&PageSize=50",
+                        "first_page_url": "https://preview.twilio.com/Sync/Services?PageSize=50&Page=0",
                         "key": "services",
                         "next_page_url": null,
                         "page": 0,
-                        "page_size": 0,
+                        "count": 0,
+                        "page_size": 50,
                         "previous_page_url": null,
-                        "url": "https://preview.twilio.com/Sync/Services"
+                        "url": "https://preview.twilio.com/Sync/Services?PageSize=50&Page=0"
                     },
                     "services": []
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/Sync/Services"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v3/Services"
+            },
+            "downstream_response": {
+                "content": {
+                    "meta": {
+                        "direct_token": true,
+                        "encode_token": false,
+                        "next_token": null,
+                        "previous_token": null
+                    },
+                    "services": [{
+                        "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "date_created": "2015-07-30T20:00:00.000Z",
+                        "date_updated": "2015-07-30T20:00:00.000Z",
+                        "friendly_name": "friendly_name",
+                        "links": {
+                            "documents": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Documents",
+                            "lists": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists",
+                            "maps": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps"
+                        },
+                        "sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "url": "http://www.example.com",
+                        "webhook_url": "http://www.example.com",
+                        "reachability_webhooks_enabled": false,
+                        "webhooks_from_rest_enabled": false,
+                        "acl_enabled": false
+                    }]
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/Sync/Services?PageSize=50&Page=0",
+                        "key": "services",
+                        "next_page_url": null,
+                        "page": 0,
+                        "count": 1,
+                        "page_size": 50,
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/Sync/Services?PageSize=50&Page=0"
+                    },
+                    "services": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "date_updated": "2015-07-30T20:00:00Z",
+                            "friendly_name": "friendly_name",
+                            "links": {
+                                "documents": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Documents",
+                                "lists": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists",
+                                "maps": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps"
+                            },
+                            "sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "webhook_url": "http://www.example.com",
+                            "reachability_webhooks_enabled": false,
+                            "acl_enabled": false
+                        }
+                    ]
                 },
                 "status_code": 200
             }
@@ -142,12 +277,42 @@
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "form_params": {
                     "FriendlyName": "friendly_name",
-                    "ReachabilityWebhooksEnabled": false,
-                    "WebhookUrl": "http://www.example.com"
+                    "WebhookUrl": "http://www.example.com",
+                    "AclEnabled": true
                 },
                 "method": "POST",
                 "query_params": {},
                 "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {
+                    "FriendlyName": "friendly_name",
+                    "WebhookUrl": "http://www.example.com",
+                    "AclEnabled": true
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00.000Z",
+                    "date_updated": "2015-07-30T20:00:00.000Z",
+                    "friendly_name": "friendly_name",
+                    "links": {
+                        "documents": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Documents",
+                        "lists": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists",
+                        "maps": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps"
+                    },
+                    "sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "url": "http://www.example.com",
+                    "webhook_url": "http://www.example.com",
+                    "reachability_webhooks_enabled": false,
+                    "webhooks_from_rest_enabled": false,
+                    "acl_enabled": true
+                },
+                "status_code": 200
             },
             "response": {
                 "content": {
@@ -155,11 +320,16 @@
                     "date_created": "2015-07-30T20:00:00Z",
                     "date_updated": "2015-07-30T20:00:00Z",
                     "friendly_name": "friendly_name",
-                    "links": {},
-                    "reachability_webhooks_enabled": false,
+                    "links": {
+                        "documents": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Documents",
+                        "lists": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists",
+                        "maps": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps"
+                    },
                     "sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "url": "http://www.example.com",
-                    "webhook_url": "http://www.example.com"
+                    "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "webhook_url": "http://www.example.com",
+                    "reachability_webhooks_enabled": false,
+                    "acl_enabled": true
                 },
                 "status_code": 200
             }

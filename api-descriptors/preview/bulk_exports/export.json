@@ -1,0 +1,25 @@
+{
+    "fetch": [
+        {
+            "name" : "fetch",
+            "request" : {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method" : "GET",
+                "query_params": {},
+                "json_params" : {},
+                "form_params" : {},
+                "url" : "https://preview.twilio.com/BulkExports/Exports/Calls"
+            },
+            "response" : {
+                "status_code": 200,
+                "content": {
+                    "resource_type" : "Calls",
+                    "url" : "https://preview.twilio.com/BulkExports/Exports/Calls",
+                    "links": {
+                        "days": "https://preview.twilio.com/BulkExports/Exports/Calls/Days"
+                    }
+                }
+            }
+        }
+    ]
+}

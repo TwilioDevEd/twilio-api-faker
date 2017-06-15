@@ -1,0 +1,236 @@
+{
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/sidOrUniqueName/Permissions/identity"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/sidOrUniqueName/Permissions/identity"
+            },
+            "downstream_response": {
+                "content": null,
+                "status_code": 204
+            },
+            "response": {
+                "content": null,
+                "status_code": 204
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/sidOrUniqueName/Permissions/identity"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/sidOrUniqueName/Permissions/identity"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "identity": "identity",
+                    "read": true,
+                    "write": true,
+                    "manage": true,
+                    "url": "http://www.example.com"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "identity": "identity",
+                    "read": true,
+                    "write": true,
+                    "manage": true,
+                    "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Permissions/identity"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/sidOrUniqueName/Permissions"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/sidOrUniqueName/Permissions"
+            },
+            "downstream_response": {
+                "content": {
+                    "permissions": [],
+                    "permissions_count": 0,
+                    "meta": {
+                        "direct_token": true,
+                        "encode_token": false,
+                        "next_token": null,
+                        "previous_token": null
+                    }
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "permissions": [],
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/sidOrUniqueName/Permissions?PageSize=50&Page=0",
+                        "key": "permissions",
+                        "next_page_url": null,
+                        "page": 0,
+                        "count": 0,
+                        "page_size": 50,
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/sidOrUniqueName/Permissions?PageSize=50&Page=0"
+                    }
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/sidOrUniqueName/Permissions"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/sidOrUniqueName/Permissions"
+            },
+            "downstream_response": {
+                "content": {
+                    "permissions": [{
+                        "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "identity": "identity",
+                        "read": true,
+                        "write": true,
+                        "manage": true,
+                        "url": "http://www.example.com"
+                    }],
+                    "permissions_count": 1,
+                    "meta": {
+                        "direct_token": true,
+                        "encode_token": false,
+                        "next_token": null,
+                        "previous_token": null
+                    }
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "permissions": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "identity": "identity",
+                            "read": true,
+                            "write": true,
+                            "manage": true,
+                            "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Permissions/identity"
+                        }
+                    ],
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/sidOrUniqueName/Permissions?PageSize=50&Page=0",
+                        "key": "permissions",
+                        "next_page_url": null,
+                        "page": 0,
+                        "count": 1,
+                        "page_size": 50,
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/sidOrUniqueName/Permissions?PageSize=50&Page=0"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "Read": "true",
+                    "Write": "true",
+                    "Manage": "true"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/sidOrUniqueName/Permissions/identity"
+            },
+            "downstream_request": {
+                "form_params": {
+                    "Read": true,
+                    "Write": true,
+                    "Manage": true
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/sidOrUniqueName/Permissions/identity"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "identity": "identity",
+                    "read": true,
+                    "write": true,
+                    "manage": true,
+                    "url": "https://example.com"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "identity": "identity",
+                    "read": true,
+                    "write": true,
+                    "manage": true,
+                    "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Permissions/identity"
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}

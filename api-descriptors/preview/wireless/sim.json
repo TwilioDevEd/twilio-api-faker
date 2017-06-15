@@ -1,0 +1,371 @@
+{
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/wireless/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "unique_name": "unique_name",
+                    "commands_callback_method": "http_method",
+                    "commands_callback_url": "http://www.example.com",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "friendly_name": "friendly_name",
+                    "links": {
+                        "imsis": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Imsis",
+                        "rate_plan": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/RatePlan",
+                        "usage": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage"
+                    },
+                    "mrc_recurring_billing_item_sid": "RBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "provider_sid": "OTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "rate_plan_sid": "WPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "iccid": "iccid",
+                    "e_id": "e_id",
+                    "sim_registration_code": "sim_registration_code",
+                    "status": "status",
+                    "mo_messaging_twiml_fallback_method": "http_method",
+                    "mo_messaging_twiml_fallback_url": "http://www.example.com",
+                    "mo_messaging_twiml_method": "http_method",
+                    "mo_messaging_twiml_url": "http://www.example.com",
+                    "mo_voice_twiml_fallback_method": "http_method",
+                    "mo_voice_twiml_fallback_url": "http://www.example.com",
+                    "mo_voice_twiml_method": "http_method",
+                    "mo_voice_twiml_url": "http://www.example.com",
+                    "uri": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "unique_name": "unique_name",
+                    "commands_callback_method": "http_method",
+                    "commands_callback_url": "http://www.example.com",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "friendly_name": "friendly_name",
+                    "sms_fallback_method": "http_method",
+                    "sms_fallback_url": "http://www.example.com",
+                    "sms_method": "http_method",
+                    "sms_url": "http://www.example.com",
+                    "voice_fallback_method": "http_method",
+                    "voice_fallback_url": "http://www.example.com",
+                    "voice_method": "http_method",
+                    "voice_url": "http://www.example.com",
+                    "links": {
+                        "usage": "https://preview.twilio.com/wireless/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage",
+                        "rate_plan": "https://preview.twilio.com/wireless/RatePlans/WPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    },
+                    "rate_plan_sid": "WPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "iccid": "iccid",
+                    "e_id": "e_id",
+                    "status": "status",
+                    "url": "https://preview.twilio.com/wireless/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "RatePlan": "rate_plan",
+                    "Iccid": "iccid",
+                    "Status": "status"
+                },
+                "url": "https://preview.twilio.com/wireless/Sims"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "RatePlan": "rate_plan",
+                    "Iccid": "iccid",
+                    "Status": "status"
+                },
+                "url": "/v2/Sims"
+            },
+            "downstream_response": {
+                "content": {
+                    "sims": [],
+                    "meta": {
+                        "direct_token": true,
+                        "key": "sims",
+                        "next_token": null,
+                        "page": 0,
+                        "page_size": 0,
+                        "page_token": null,
+                        "previous_token": null
+                    }
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "sims": [],
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/wireless/Sims?PageSize=50&Page=0",
+                        "key": "sims",
+                        "next_page_url": null,
+                        "page": 0,
+                        "count": 0,
+                        "page_size": 50,
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/wireless/Sims?PageSize=50&Page=0"
+                    }
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "RatePlan": "rate_plan",
+                    "Iccid": "iccid",
+                    "Status": "status"
+                },
+                "url": "https://preview.twilio.com/wireless/Sims"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "RatePlan": "rate_plan",
+                    "Iccid": "iccid",
+                    "Status": "status"
+                },
+                "url": "/v2/Sims"
+            },
+            "downstream_response": {
+                "content": {
+                    "sims": [{
+                        "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "unique_name": "unique_name",
+                        "commands_callback_method": "http_method",
+                        "commands_callback_url": "http://www.example.com",
+                        "date_created": "2015-07-30T20:00:00Z",
+                        "date_updated": "2015-07-30T20:00:00Z",
+                        "friendly_name": "friendly_name",
+                        "links": {
+                            "imsis": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Imsis",
+                            "rate_plan": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/RatePlan",
+                            "usage": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage"
+                        },
+                        "mrc_recurring_billing_item_sid": "RBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "provider_sid": "OTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "rate_plan_sid": "WPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "iccid": "iccid",
+                        "e_id": "e_id",
+                        "sim_registration_code": "sim_registration_code",
+                        "status": "status",
+                        "mo_messaging_twiml_fallback_method": "http_method",
+                        "mo_messaging_twiml_fallback_url": "http://www.example.com",
+                        "mo_messaging_twiml_method": "http_method",
+                        "mo_messaging_twiml_url": "http://www.example.com",
+                        "mo_voice_twiml_fallback_method": "http_method",
+                        "mo_voice_twiml_fallback_url": "http://www.example.com",
+                        "mo_voice_twiml_method": "http_method",
+                        "mo_voice_twiml_url": "http://www.example.com",
+                        "uri": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    }],
+                    "meta": {
+                        "direct_token": true,
+                        "key": "sims",
+                        "next_token": null,
+                        "page": 0,
+                        "page_size": 0,
+                        "page_token": null,
+                        "previous_token": null
+                    }
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "sims": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "unique_name": "unique_name",
+                            "commands_callback_method": "http_method",
+                            "commands_callback_url": "http://www.example.com",
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "date_updated": "2015-07-30T20:00:00Z",
+                            "friendly_name": "friendly_name",
+                            "links": {
+                                "usage": "https://preview.twilio.com/wireless/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage",
+                                "rate_plan": "https://preview.twilio.com/wireless/RatePlans/WPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                            },
+                            "rate_plan_sid": "WPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "iccid": "iccid",
+                            "e_id": "e_id",
+                            "status": "status",
+                            "sms_fallback_method": "http_method",
+                            "sms_fallback_url": "http://www.example.com",
+                            "sms_method": "http_method",
+                            "sms_url": "http://www.example.com",
+                            "voice_fallback_method": "http_method",
+                            "voice_fallback_url": "http://www.example.com",
+                            "voice_method": "http_method",
+                            "voice_url": "http://www.example.com",
+                            "url": "https://preview.twilio.com/wireless/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        }
+                    ],
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/wireless/Sims?PageSize=50&Page=0",
+                        "key": "sims",
+                        "next_page_url": null,
+                        "page": 0,
+                        "count": 1,
+                        "page_size": 50,
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/wireless/Sims?PageSize=50&Page=0"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "UniqueName": "unique_name",
+                    "CallbackMethod": "callback_method",
+                    "CallbackUrl": "http://www.example.com",
+                    "CommandsCallbackMethod": "http_method",
+                    "CommandsCallbackUrl": "http://www.example.com",
+                    "VoiceMethod": "http_method",
+                    "VoiceUrl": "http://www.example.com",
+                    "VoiceFallbackMethod": "http_method",
+                    "VoiceFallbackUrl": "http://www.example.com",
+                    "SmsMethod": "http_method",
+                    "SmsUrl": "http://www.example.com",
+                    "SmsFallbackMethod": "http_method",
+                    "SmsFallbackUrl": "http://www.example.com",
+                    "FriendlyName": "friendly_name",
+                    "RatePlan": "WPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "Status": "status"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://preview.twilio.com/wireless/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "UniqueName": "unique_name",
+                    "CallbackMethod": "callback_method",
+                    "CallbackUrl": "http://www.example.com",
+                    "CommandsCallbackMethod": "http_method",
+                    "CommandsCallbackUrl": "http://www.example.com",
+                    "MoVoiceTwimlMethod": "http_method",
+                    "MoVoiceTwimlUrl": "http://www.example.com",
+                    "MoVoiceTwimlFallbackMethod": "http_method",
+                    "MoVoiceTwimlFallbackUrl": "http://www.example.com",
+                    "MoMessagingTwimlMethod": "http_method",
+                    "MoMessagingTwimlUrl": "http://www.example.com",
+                    "MoMessagingTwimlFallbackMethod": "http_method",
+                    "MoMessagingTwimlFallbackUrl": "http://www.example.com",
+                    "FriendlyName": "friendly_name",
+                    "RatePlan": "WPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "Status": "status"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "unique_name": "unique_name",
+                    "commands_callback_method": "http_method",
+                    "commands_callback_url": "http://www.example.com",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "friendly_name": "friendly_name",
+                    "links": {
+                        "imsis": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Imsis",
+                        "rate_plan": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/RatePlan",
+                        "usage": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage"
+                    },
+                    "mrc_recurring_billing_item_sid": "RBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "provider_sid": "OTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "rate_plan_sid": "WPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "iccid": "iccid",
+                    "e_id": "e_id",
+                    "sim_registration_code": "sim_registration_code",
+                    "mo_messaging_twiml_fallback_method": "http_method",
+                    "mo_messaging_twiml_fallback_url": "http://www.example.com",
+                    "mo_messaging_twiml_method": "http_method",
+                    "mo_messaging_twiml_url": "http://www.example.com",
+                    "mo_voice_twiml_fallback_method": "http_method",
+                    "mo_voice_twiml_fallback_url": "http://www.example.com",
+                    "mo_voice_twiml_method": "http_method",
+                    "mo_voice_twiml_url": "http://www.example.com",
+                    "status": "status",
+                    "uri": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "unique_name": "unique_name",
+                    "commands_callback_method": "http_method",
+                    "commands_callback_url": "http://www.example.com",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "friendly_name": "friendly_name",
+                    "links": {
+                        "usage": "https://preview.twilio.com/wireless/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage",
+                        "rate_plan": "https://preview.twilio.com/wireless/RatePlans/WPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    },
+                    "rate_plan_sid": "WPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "iccid": "iccid",
+                    "e_id": "e_id",
+                    "status": "status",
+                    "sms_fallback_method": "http_method",
+                    "sms_fallback_url": "http://www.example.com",
+                    "sms_method": "http_method",
+                    "sms_url": "http://www.example.com",
+                    "voice_fallback_method": "http_method",
+                    "voice_fallback_url": "http://www.example.com",
+                    "voice_method": "http_method",
+                    "voice_url": "http://www.example.com",
+                    "url": "https://preview.twilio.com/wireless/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}

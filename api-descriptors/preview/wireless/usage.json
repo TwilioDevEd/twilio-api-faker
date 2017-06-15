@@ -1,37 +1,52 @@
 {
     "fetch": [
         {
-            "name": "fetch",
+            "name": "fetch", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
-                    "End": "end",
+                    "End": "end", 
                     "Start": "start"
-                },
-                "url": "https://preview.twilio.com/wireless/Devices/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage"
+                }, 
+                "url": "https://preview.twilio.com/wireless/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage"
+            }, 
+            "downstream_request": {
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {
+                    "End": "end", 
+                    "Start": "start"
+                }, 
+                "url": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage"
+            }, 
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "commands_costs": {}, 
+                    "commands_usage": {}, 
+                    "data_costs": {}, 
+                    "data_usage": {}, 
+                    "sim_unique_name": "sim_unique_name", 
+                    "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "period": {}, 
+                    "uri": "http://www.example.com"
+                }, 
+                "status_code": 200
             },
             "response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "commands_costs": {},
-                    "commands_usage": {},
-                    "data_costs": {
-                        "start": 1,
-                        "end": 2,
-                        "total": 3
-                    },
-                    "data_usage": {},
-                    "device_alias": "device_alias",
-                    "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "period": {
-                        "start": 1,
-                        "end": 2,
-                        "total": 3
-                    },
-                    "url": "http://www.example.com"
-                },
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "commands_costs": {}, 
+                    "commands_usage": {}, 
+                    "data_costs": {}, 
+                    "data_usage": {}, 
+                    "sim_unique_name": "sim_unique_name", 
+                    "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "period": {}, 
+                    "url": "https://preview.twilio.com/wireless/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage"
+                }, 
                 "status_code": 200
             }
         }

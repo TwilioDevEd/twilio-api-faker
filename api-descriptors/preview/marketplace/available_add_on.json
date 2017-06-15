@@ -1,0 +1,178 @@
+{
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/marketplace/AvailableAddOns/XBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Public/AvailableAddOns/XBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "sid": "XBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "VoiceBase High Accuracy Transcription",
+                    "description": "Automatic Transcription and Keyword Extract...",
+                    "pricing_type": "per minute",
+                    "configuration_schema": {
+                       "type": "object",
+                        "properties": {
+                            "bad_words": {
+                                "type": "boolean"
+                            }
+                        },
+                        "required": ["bad_words"]
+                    }
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "sid": "XBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "VoiceBase High Accuracy Transcription",
+                    "description": "Automatic Transcription and Keyword Extract...",
+                    "pricing_type": "per minute",
+                    "configuration_schema": {
+                       "type": "object",
+                        "properties": {
+                            "bad_words": {
+                                "type": "boolean"
+                            }
+                        },
+                        "required": ["bad_words"]
+                    },
+                    "url": "https://preview.twilio.com/marketplace/AvailableAddOns/XBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "links": {
+                        "extensions": "https://preview.twilio.com/marketplace/AvailableAddOns/XBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/marketplace/AvailableAddOns"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Public/AvailableAddOns"
+            },
+            "downstream_response": {
+                "content": {
+                    "available_add_ons": [
+                        {
+                            "sid": "XBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "friendly_name": "VoiceBase High Accuracy Transcription",
+                            "description": "Automatic Transcription and Keyword Extract...",
+                            "pricing_type": "per minute",
+                            "configuration_schema": {
+                               "type": "object",
+                                "properties": {
+                                    "bad_words": {
+                                        "type": "boolean"
+                                    }
+                                },
+                                "required": ["bad_words"]
+                            }
+                        }
+                    ],
+                    "after_sid": null,
+                    "before_sid": null
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "available_add_ons": [
+                        {
+                            "sid": "XBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "friendly_name": "VoiceBase High Accuracy Transcription",
+                            "description": "Automatic Transcription and Keyword Extract...",
+                            "pricing_type": "per minute",
+                            "configuration_schema": {
+                               "type": "object",
+                                "properties": {
+                                    "bad_words": {
+                                        "type": "boolean"
+                                    }
+                                },
+                                "required": ["bad_words"]
+                            },
+                            "url": "https://preview.twilio.com/marketplace/AvailableAddOns/XBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "links": {
+                                "extensions": "https://preview.twilio.com/marketplace/AvailableAddOns/XBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Extensions"
+                            }
+                        }
+                    ],
+                    "meta": {
+                        "page": 0,
+                        "count": 1,
+                        "page_size": 50,
+                        "first_page_url": "https://preview.twilio.com/marketplace/AvailableAddOns?PageSize=50&Page=0",
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/marketplace/AvailableAddOns?PageSize=50&Page=0",
+                        "next_page_url": null,
+                        "key": "available_add_ons"
+                    }
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/marketplace/AvailableAddOns"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Public/AvailableAddOns"
+            },
+            "downstream_response": {
+                "content": {
+                    "available_add_ons": [],
+                    "after_sid": null,
+                    "before_sid": null
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "available_add_ons": [],
+                    "meta": {
+                        "page": 0,
+                        "count": 0,
+                        "page_size": 50,
+                        "first_page_url": "https://preview.twilio.com/marketplace/AvailableAddOns?PageSize=50&Page=0",
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/marketplace/AvailableAddOns?PageSize=50&Page=0",
+                        "next_page_url": null,
+                        "key": "available_add_ons"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}

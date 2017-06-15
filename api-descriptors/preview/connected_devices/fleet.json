@@ -1,0 +1,294 @@
+{
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "FriendlyName": "friendly_name"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://preview.twilio.com/ConnectedDevices/Fleets"
+            },
+            "downstream_request": {
+                "form_params": {
+                    "FriendlyName": "friendly_name"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v2/Fleets"
+            },
+            "downstream_response": {
+                "content": {
+                    "sid": "FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "friendly_name",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "default_deployment_sid": "DLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2016-07-30T20:00:00Z",
+                    "date_updated": null
+                },
+                "status_code": 201
+            },
+            "response": {
+                "content": {
+                    "sid": "FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "friendly_name",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "default_deployment_sid": "DLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2016-07-30T20:00:00Z",
+                    "date_updated": null,
+                    "url": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "links": {
+                        "devices": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Devices",
+                        "deployments": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Deployments",
+                        "certificates": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Certificates",
+                        "keys": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Keys"
+                    }
+                },
+                "status_code": 201
+            }
+        }
+    ],
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "/v2/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": null,
+                "status_code": 204
+            },
+            "response": {
+                "content": null,
+                "status_code": 204
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v2/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "sid": "FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "friendly_name",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "default_deployment_sid": "DLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2016-07-30T20:00:00Z",
+                    "date_updated": "2016-07-30T20:00:00Z"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "sid": "FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "friendly_name",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "default_deployment_sid": "DLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2016-07-30T20:00:00Z",
+                    "date_updated": "2016-07-30T20:00:00Z",
+                    "url": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "links": {
+                        "devices": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Devices",
+                        "deployments": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Deployments",
+                        "certificates": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Certificates",
+                        "keys": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Keys"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/ConnectedDevices/Fleets"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v2/Fleets"
+            },
+            "downstream_response": {
+                "content": {
+                    "meta": {
+                        "previous_token" : null,
+                        "next_token" : null,
+                        "direct_token" : true,
+                        "page_size" : 0
+                    },
+                    "fleets": []
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "fleets": [],
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/ConnectedDevices/Fleets?PageSize=50&Page=0",
+                        "key": "fleets",
+                        "next_page_url": null,
+                        "page": 0,
+                        "count": 0,
+                        "page_size": 50,
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/ConnectedDevices/Fleets?PageSize=50&Page=0"
+                    }
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/ConnectedDevices/Fleets"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v2/Fleets"
+            },
+            "downstream_response": {
+                "content": {
+                    "meta": {
+                            "previous_token" : null,
+                            "next_token" : null,
+                            "direct_token" : true,
+                            "page_size" : 1
+                    },
+                    "fleets": [
+                        {
+                            "sid": "FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "friendly_name": "friendly_name",
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "default_deployment_sid": "DLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "date_created": "2016-07-30T20:00:00Z",
+                            "date_updated": null
+                        }
+                    ]
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "fleets": [
+                        {
+                            "sid": "FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "friendly_name": "friendly_name",
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "default_deployment_sid": "DLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "date_created": "2016-07-30T20:00:00Z",
+                            "date_updated": null,
+                            "url": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "links": {
+                                "devices": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Devices",
+                                "deployments": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Deployments",
+                                "certificates": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Certificates",
+                                "keys": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Keys"
+                            }
+                        }
+                    ],
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/ConnectedDevices/Fleets?PageSize=50&Page=0",
+                        "key": "fleets",
+                        "next_page_url": null,
+                        "page": 0,
+                        "count": 1,
+                        "page_size": 50,
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/ConnectedDevices/Fleets?PageSize=50&Page=0"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "FriendlyName": "friendly_name",
+                    "DefaultDeploymentSid": "DLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {
+                    "FriendlyName": "friendly_name",
+                    "DefaultDeploymentSid": "DLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v2/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "sid": "FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "friendly_name",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "default_deployment_sid": "DLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2016-07-30T20:00:00Z",
+                    "date_updated": "2016-07-30T20:00:00Z"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "sid": "FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "friendly_name",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "default_deployment_sid": "DLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2016-07-30T20:00:00Z",
+                    "date_updated": "2016-07-30T20:00:00Z",
+                    "url": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "links": {
+                        "devices": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Devices",
+                        "deployments": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Deployments",
+                        "certificates": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Certificates",
+                        "keys": "https://preview.twilio.com/ConnectedDevices/Fleets/FLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Keys"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}

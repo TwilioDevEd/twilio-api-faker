@@ -1,0 +1,94 @@
+{
+    "fetch": [
+        {
+            "name" : "fetch",
+            "request" : {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method" : "GET",
+                "query_params": {},
+                "json_params" : {},
+                "form_params" : {},
+                "url" : "https://preview.twilio.com/BulkExports/Exports/Calls/Days/2017-04-01"
+            },
+            "downstream_request" : {
+                "method" : "GET",
+                "query_params": {},
+                "json_params" : {},
+                "form_params" : {},
+                "url" : "/v1/Exports/Calls/Days/2017-04-01"
+            },
+            "downstream_response" : {
+                "status_code": 200,
+                "content": {
+                    "link" : "https://com.twilio.dev.exports.s3.amazonaws.com/slapchop-daily/account%3DACd3142b3ac5ac49b28d1f9f18a72dcd21/start%3D2017-04-15/end%3D%202017-04-15/type%3Dmessage?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20170415T003536Z&X-Amz-SignedHeaders=host&X-Amz-Expires=172799&X-Amz-Credential=AKIAJ7KXS32GUNIVMWHA%2F20170415%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ca36a8c9bf0f78f7270e798095b22009d88ecb3f30262eb3a20831f7b2798c3e"
+                }
+            },
+            "response" : {
+                "status_code": 307,
+                "content": {
+                    "redirect_to" : "https://com.twilio.dev.exports.s3.amazonaws.com/slapchop-daily/account%3DACd3142b3ac5ac49b28d1f9f18a72dcd21/start%3D2017-04-15/end%3D%202017-04-15/type%3Dmessage?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20170415T003536Z&X-Amz-SignedHeaders=host&X-Amz-Expires=172799&X-Amz-Credential=AKIAJ7KXS32GUNIVMWHA%2F20170415%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ca36a8c9bf0f78f7270e798095b22009d88ecb3f30262eb3a20831f7b2798c3e"
+                }
+            }
+        }
+    ],
+    "read": [
+        {
+            "name" : "read",
+            "request" : {
+                "method" : "GET",
+                "query_params": {},
+                "json_params" : {},
+                "form_params" : {},
+                "url" : "https://preview.twilio.com/BulkExports/Exports/Calls/Days"
+            },
+            "downstream_request" : {
+                "method" : "GET",
+                "query_params": {},
+                "json_params" : {},
+                "form_params" : {},
+                "url" : "/v1/Exports/Calls/Days"
+            },
+            "downstream_response" : {
+                "status_code": 200,
+                "content": {
+                    "resource_type" : "Calls",
+                    "days" : [ {
+                        "day" : "2017-05-01",
+                        "size" : 1234,
+                        "resource_type": "Calls",
+                        "url" : "https://preview.twilio.com/BulkExports/Exports/Calls/Days"
+                    } ],
+                    "meta": {
+                        "key": "days",
+                        "page_size" : 50,
+                        "url" : "https://preview.twilio.com/BulkExports/Exports/Calls/Days",
+                        "page" : 0,
+                        "first_page_url": "https://preview.twilio.com/BulkExports/Exports/Calls/Days?PageSize=30&Page=0",
+                        "previous_page_url": null,
+                        "next_page_url": "https://preview.twilio.com/BulkExports/Exports/Calls/Days?PageSize=30&Page=1&PageToken=PAWS8db2911d900860247417d8eb0eea35e4"
+                    }
+                }
+            },
+            "response" : {
+                "status_code": 200,
+                "content": {
+                    "days" : [ {
+                        "day" : "2017-05-01",
+                        "size" : 1234,
+                        "resource_type": "Calls"
+                    }],
+                    "meta": {
+                        "key": "days",
+                        "page_size" : 50,
+                        "url" : "https://preview.twilio.com/BulkExports/Exports/Calls/Days?PageSize=50&Page=0",
+                        "page" : 0,
+                        "count": 1,
+                        "first_page_url": "https://preview.twilio.com/BulkExports/Exports/Calls/Days?PageSize=50&Page=0",
+                        "previous_page_url": null,
+                        "next_page_url": null
+                    }
+                }
+            }
+        }
+    ]
+}

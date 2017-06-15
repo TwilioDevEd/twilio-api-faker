@@ -1,0 +1,88 @@
+{
+    "fetch": [
+        {
+            "name" : "fetch",
+            "request" : {
+                "method" : "GET",
+                "query_params": {},
+                "json_params" : {},
+                "form_params" : {},
+                "url" : "https://preview.twilio.com/BulkExports/Exports/Calls/Configuration"
+            },
+            "downstream_request" : {
+                "method" : "GET",
+                "query_params": {},
+                "json_params" : {},
+                "form_params" : {},
+                "url" : "/v1/Exports/Calls/Configuration"
+            },
+            "downstream_response" : {
+                "status_code": 200,
+                "content": {
+                    "uri" : "v1/Exports/Calls/Configuration",
+                    "enabled" : true,
+                    "webhook_url" : "",
+                    "webhook_method" : "",
+                    "resource_type" : "Calls",
+                    "email" : ""
+                }
+            },
+            "response" : {
+                "status_code": 200,
+                "content": {
+                    "url" : "https://preview.twilio.com/BulkExports/Exports/Calls/Configuration",
+                    "enabled" : true,
+                    "webhook_url" : "",
+                    "webhook_method" : "",
+                    "resource_type" : "Calls",
+                    "email" : ""
+                }
+            }
+        }
+    ],
+    "update" : [
+        {
+            "name" : "update",
+            "request" : {
+                "method" : "POST",
+                "query_params": {},
+                "json_params" : {},
+                "form_params" : {
+                    "Enabled" : true
+                },
+                "url" : "https://preview.twilio.com/BulkExports/Exports/Calls/Configuration"
+            },
+            "downstream_request" : {
+                "method" : "POST",
+                "query_params": {},
+                "json_params" : {
+                    "Enabled" : true
+                },
+                "form_params": {},
+                "url" : "/v1/Exports/Calls/Configuration"
+            },
+            "downstream_response" : {
+                "status_code": 200,
+                "content": {
+                    "uri" : "/v1/Exports/Calls/Configuration",
+                    "enabled" : true,
+                    "webhook_url" : "",
+                    "webhook_method" : "",
+                    "resource_type" : "Calls",
+                    "email" : "bogus@twilio.com"
+                }
+            },
+            "response" : {
+                "status_code": 200,
+                "content": {
+                    "url" : "https://preview.twilio.com/BulkExports/Exports/Calls/Configuration",
+                    "enabled" : true,
+                    "email" : "bogus@twilio.com",
+                    "webhook_url" : "",
+                    "resource_type" : "Calls",
+                    "webhook_method" : ""
+                }
+            }
+        }
+    ]
+}

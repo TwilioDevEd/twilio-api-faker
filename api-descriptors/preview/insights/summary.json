@@ -9,7 +9,13 @@
                 "query_params": {}, 
                 "url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Summary"
             }, 
-            "response": {
+            "downstream_request": {
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
+                "url": "/v1/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Summary"
+            }, 
+            "downstream_response": {
                 "content": {
                     "account_friendly_name": "account_friendly_name", 
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
@@ -17,6 +23,18 @@
                     "parent_account_friendly_name": "parent_account_friendly_name", 
                     "parent_account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                     "summary": {}
+                }, 
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_friendly_name": "account_friendly_name", 
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "call_sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "parent_account_friendly_name": "parent_account_friendly_name", 
+                    "parent_account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "summary": {},
+                    "url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Summary"
                 }, 
                 "status_code": 200
             }

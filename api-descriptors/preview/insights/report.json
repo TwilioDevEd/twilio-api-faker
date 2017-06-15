@@ -12,7 +12,16 @@
                 }, 
                 "url": "https://preview.twilio.com/insights/Calls/Report"
             }, 
-            "response": {
+            "downstream_request": {
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {
+                    "EndDateTime": "2015-07-30T20:00:00Z", 
+                    "StartDateTime": "2015-07-30T20:00:00Z"
+                }, 
+                "url": "/v1/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Calls/Report"
+            }, 
+            "downstream_response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                     "call_stats": {}, 
@@ -21,6 +30,22 @@
                     "issue_type_counts": {}, 
                     "start_time": "2015-07-30T20:00:00Z", 
                     "warning_counts": {}
+                }, 
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "call_stats": {}, 
+                    "end_time": "2015-07-30T20:00:00Z", 
+                    "feedback_score_counts": {}, 
+                    "issue_type_counts": {}, 
+                    "start_time": "2015-07-30T20:00:00Z", 
+                    "warning_counts": {},
+                    "url": "https://preview.twilio.com/insights/Calls/Report",
+                    "links": {
+                        "aspects": "https://preview.twilio.com/insights/Calls/Report/Aspects"
+                    }
                 }, 
                 "status_code": 200
             }
