@@ -1,0 +1,202 @@
+{
+    "fetch": [
+        {
+            "name": "fetch",
+            "request":  {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/RTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Recordings/RTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "processing",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "sid": "RTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "source_sid": "MTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "size": 0,
+                    "uri": "/v1/Recordings/RTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.mka",
+                    "type": "audio",
+                    "duration": 0,
+                    "container_format": "mka",
+                    "codec": "OPUS",
+                    "grouping_sids": {
+                        "room_sid": "RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    }
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "processing",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "sid": "RTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "source_sid": "MTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "size": 0,
+                    "type": "audio",
+                    "duration": 0,
+                    "container_format": "mka",
+                    "codec": "OPUS",
+                    "grouping_sids": {
+                        "room_sid" : "RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    },
+                    "room_sid" : "RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "url": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/RTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "links": {
+                        "media": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/RTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Media"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_empty",
+            "request":  {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "PageSize": 50
+                },
+                "url": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "PageSize": 50,
+                    "GroupingSid": "RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "url": "/v1/Recordings"
+            },
+            "downstream_response": {
+                "content": {
+                    "content": [],
+                    "meta": {
+                        "previous_token": null,
+                        "next_token": null,
+                        "direct_token": true,
+                        "page_size": 0,
+                        "list_key": "content"
+                    }
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "recordings": [],
+                    "meta": {
+                        "page": 0,
+                        "count": 0,
+                        "page_size": 50,
+                        "first_page_url": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings?PageSize=50&Page=0",
+                        "previous_page_url": null,
+                        "url": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings?PageSize=50&Page=0",
+                        "next_page_url": null,
+                        "key": "recordings"
+                    }
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_results",
+            "request":  {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "PageSize": 50
+                },
+                "url": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "PageSize": 50,
+                    "GroupingSid": "RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "url": "/v1/Recordings"
+            },
+            "downstream_response": {
+                "content": {
+                    "content": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "status": "completed",
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "sid": "RTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "source_sid": "MTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "size": 0,
+                            "uri": "/v1/Recordings/RTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.mka",
+                            "type": "audio",
+                            "duration": 0,
+                            "container_format": "mka",
+                            "codec": "OPUS",
+                            "grouping_sids": {
+                                "room_sid" : "RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                            }
+                        }
+                    ],
+                    "meta": {
+                        "previous_token": null,
+                        "next_token": null,
+                        "direct_token": true,
+                        "page_size": 0,
+                        "list_key": "content"
+                    }
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "recordings": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "status": "completed",
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "sid": "RTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "source_sid": "MTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "size": 0,
+                            "type": "audio",
+                            "duration": 0,
+                            "container_format": "mka",
+                            "codec": "OPUS",
+                            "grouping_sids": {
+                                "room_sid" : "RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                            },
+                            "room_sid" : "RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "url": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/RTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "links": {
+                                "media": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings/RTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Media"
+                            }
+                        }
+                    ],
+                    "meta": {
+                        "page": 0,
+                        "count": 1,
+                        "page_size": 50,
+                        "first_page_url": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings?PageSize=50&Page=0",
+                        "previous_page_url": null,
+                        "url": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings?PageSize=50&Page=0",
+                        "next_page_url": null,
+                        "key": "recordings"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}

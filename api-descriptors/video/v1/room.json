@@ -1,0 +1,335 @@
+{
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "POST",
+                "query_params": {},
+                "url": "https://video.twilio.com/v1/Rooms"
+            },
+            "downstream_request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "POST",
+                "query_params": {},
+                "url": "/v1/Rooms"
+            },
+            "downstream_response": {
+                 "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "status": "in-progress",
+                    "type": "peer-to-peer",
+                    "sid": "RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "enable_turn": true,
+                    "unique_name": "RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "max_participants": 10,
+                    "duration": 0,
+                    "status_callback_method": "POST",
+                    "status_callback": "",
+                    "record_participants_on_connect": false,
+                    "end_time": "2015-07-30T20:00:00Z"
+                },
+                "status_code": 201
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "status": "in-progress",
+                    "type": "peer-to-peer",
+                    "sid": "RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "enable_turn": true,
+                    "unique_name": "RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "max_participants": 10,
+                    "duration": 0,
+                    "status_callback_method": "POST",
+                    "status_callback": "",
+                    "record_participants_on_connect": false,
+                    "end_time": "2015-07-30T20:00:00Z",
+                    "url": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "links": {
+                        "recordings": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings"
+                    }
+                },
+                "status_code": 201
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                 "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "status": "in-progress",
+                    "type": "peer-to-peer",
+                    "sid": "RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "enable_turn": true,
+                    "unique_name": "unique_name",
+                    "max_participants": 10,
+                    "duration": 0,
+                    "status_callback_method": "POST",
+                    "status_callback": "",
+                    "record_participants_on_connect": false,
+                    "end_time": "2015-07-30T20:00:00Z"
+                 },
+                  "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "status": "in-progress",
+                    "type": "peer-to-peer",
+                    "sid": "RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "enable_turn": true,
+                    "unique_name": "unique_name",
+                    "max_participants": 10,
+                    "duration": 0,
+                    "status_callback_method": "POST",
+                    "status_callback": "",
+                    "record_participants_on_connect": false,
+                    "end_time": "2015-07-30T20:00:00Z",
+                    "url": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "links": {
+                        "recordings": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings"
+                    }
+                 },
+                  "status_code": 200
+             }
+         }
+    ],
+    "read": [
+        {
+            "name": "read_empty",
+            "request":  {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://video.twilio.com/v1/Rooms"
+            },
+            "downstream_request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Rooms"
+            },
+            "downstream_response": {
+                "content": {
+                    "contents": [],
+                    "end": 0,
+                    "lastPage": 0,
+                    "meta": {
+                        "list_key": "contents"
+                    },
+                    "nextPage": 1,
+                    "page": 0,
+                    "start": 0,
+                    "total": 0
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "rooms": [],
+                    "meta": {
+                        "page": 0,
+                        "count": 0,
+                        "page_size": 50,
+                        "first_page_url": "https://video.twilio.com/v1/Rooms?PageSize=50&Page=0",
+                        "previous_page_url": null,
+                        "url": "https://video.twilio.com/v1/Rooms?PageSize=50&Page=0",
+                        "next_page_url": null,
+                        "key": "rooms"
+                    }
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_with_status",
+            "request":  {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "Status": "completed"
+                },
+                "url": "https://video.twilio.com/v1/Rooms"
+            },
+            "downstream_request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "Status": "completed"
+                },
+                "url": "/v1/Rooms"
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "rooms": [
+                        {
+                            "sid": "RM4070b618362c1682b2385b1f9982833c",
+                            "status": "completed",
+                            "date_created": "2017-04-03T22:21:49.392Z",
+                            "date_updated": "2017-04-03T22:21:51.421Z",
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "type": "peer-to-peer",
+                            "enable_turn": true,
+                            "unique_name": "RM4070b618362c1682b2385b1f9982833c",
+                            "status_callback": null,
+                            "status_callback_method": "POST",
+                            "end_time": "2017-04-03T22:21:51.422Z",
+                            "duration": 2,
+                            "max_participants": 10,
+                            "record_participants_on_connect": false
+                        }
+                    ],
+                    "meta": {
+                        "previous_token": null,
+                        "next_token": {
+                            "startKey": {
+                                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                                "date_created__sid": "2017-04-03T22:21:49.392Z|RM4070b618362c1682b2385b1f9982833c"
+                            },
+                            "direction": {
+                                "enumClass": "com.twilio.postflight.core.dao.PageDirection",
+                                "value": "next"
+                            }
+                        },
+                        "encode_token": true
+                    },
+                    "total": 1
+                }
+            },
+            "response": {
+                "content": {
+                    "rooms": [
+                            {
+                                "sid": "RM4070b618362c1682b2385b1f9982833c",
+                                "status": "completed",
+                                "date_created": "2017-04-03T22:21:49Z",
+                                "date_updated": "2017-04-03T22:21:51Z",
+                                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                                "type": "peer-to-peer",
+                                "enable_turn": true,
+                                "unique_name": "RM4070b618362c1682b2385b1f9982833c",
+                                "status_callback": null,
+                                "status_callback_method": "POST",
+                                "end_time": "2017-04-03T22:21:51Z",
+                                "duration": 2,
+                                "max_participants": 10,
+                                "record_participants_on_connect": false,
+                                "url": "https://video.twilio.com/v1/Rooms/RM4070b618362c1682b2385b1f9982833c",
+                                "links": {
+                                    "recordings": "https://video.twilio.com/v1/Rooms/RM4070b618362c1682b2385b1f9982833c/Recordings"
+                                }
+                            }
+                    ],
+                    "meta": {
+                        "page": 0,
+                        "count": 1,
+                        "page_size": 50,
+                        "first_page_url": "https://video.twilio.com/v1/Rooms?PageSize=50&Page=0",
+                        "previous_page_url": null,
+                        "url": "https://video.twilio.com/v1/Rooms?PageSize=50&Page=0",
+                        "next_page_url": null,
+                        "key": "rooms"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "Status": "completed"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "Status": "completed"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                 "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "status": "completed",
+                    "type": "peer-to-peer",
+                    "sid": "RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "enable_turn": true,
+                    "unique_name": "unique_name",
+                    "max_participants": 10,
+                    "status_callback_method": "POST",
+                    "status_callback": "",
+                    "record_participants_on_connect": false,
+                    "end_time": "2015-07-30T20:00:00Z",
+                    "duration": 10
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "status": "completed",
+                    "type": "peer-to-peer",
+                    "sid": "RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "enable_turn": true,
+                    "unique_name": "unique_name",
+                    "max_participants": 10,
+                    "status_callback_method": "POST",
+                    "status_callback": "",
+                    "record_participants_on_connect": false,
+                    "end_time": "2015-07-30T20:00:00Z",
+                    "duration": 10,
+                    "url": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "links": {
+                        "recordings": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}
