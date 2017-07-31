@@ -17,7 +17,8 @@
                     "StatusCallback": "https://www.example.com",
                     "ScanMessageContent": "inherit",
                     "AreaCodeGeomatch": true,
-                    "ValidityPeriod": 600
+                    "ValidityPeriod": 600,
+                    "SynchronousValidation": true
                 },
                 "method": "POST",
                 "query_params": {},
@@ -38,7 +39,8 @@
                     "status_callback": "https://www.example.com",
                     "scan_message_content": "inherit",
                     "area_code_geomatch": true,
-                    "validity_period": 600
+                    "validity_period": 600,
+                    "synchronous_validation": true
                 },
                 "method": "POST",
                 "query_params": {},
@@ -69,7 +71,8 @@
                     "label": null,
                     "scan_message_content": "inherit",
                     "area_code_geomatch": true,
-                    "validity_period": 600
+                    "validity_period": 600,
+                    "synchronous_validation": true
                 },
                 "status_code": 201
             },
@@ -92,6 +95,7 @@
                     "scan_message_content": "inherit",
                     "area_code_geomatch": true,
                     "validity_period": 600,
+                    "synchronous_validation": true,
                     "links": {
                         "phone_numbers": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/PhoneNumbers",
                         "short_codes": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ShortCodes",
@@ -171,7 +175,8 @@
                     "status_callback": "https://www.example.com",
                     "number_pool_sid": "NPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "active": true,
-                    "label": null
+                    "label": null,
+                    "synchronous_validation": true
                 },
                 "status_code": 200
             },
@@ -194,6 +199,7 @@
                     "area_code_geomatch": true,
                     "validity_period": 600,
                     "scan_message_content": "inherit",
+                    "synchronous_validation": true,
                     "links": {
                         "phone_numbers": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/PhoneNumbers",
                         "short_codes": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ShortCodes",
@@ -255,7 +261,8 @@
                         "status_callback": "https://www.example.com",
                         "number_pool_sid": "NPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "active": true,
-                        "label": null
+                        "label": null,
+                        "synchronous_validation": true
                         }
                     ]
                 },
@@ -286,6 +293,7 @@
                             "area_code_geomatch": true,
                             "validity_period": 600,
                             "scan_message_content": "inherit",
+                            "synchronous_validation": true,
                             "inbound_request_url": "https://www.example.com/",
                             "inbound_method": "POST",
                             "fallback_url": null,
@@ -342,6 +350,7 @@
                     "area_code_geomatch": true,
                     "validity_period": 600,
                     "scan_message_content": "inherit",
+                    "synchronous_validation": true,
                     "inbound_request_url": "https://www.example.com",
                     "inbound_request_method": "POST",
                     "fallback_url": null,
@@ -366,6 +375,7 @@
                     "smart_encoding": false,
                     "fallback_to_long_code": true,
                     "scan_message_content": "inherit",
+                    "synchronous_validation": true,
                     "area_code_geomatch": true,
                     "validity_period": 600,
                     "inbound_request_url": "https://www.example.com",
