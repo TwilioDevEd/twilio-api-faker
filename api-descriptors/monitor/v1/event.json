@@ -1,59 +1,4 @@
 {
-    "create": [
-        {
-            "name": "create",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "POST",
-                "query_params": {},
-                "url": "https://monitor.twilio.com/v1/Events"
-            },
-            "response": {
-                "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "actor_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "actor_type": "account",
-                    "description": null,
-                    "event_data": {
-                        "friendly_name": {
-                            "previous": "SubAccount Created at 2014-10-03 09:48 am",
-                            "updated": "Mr. Friendly"
-                        }
-                    },
-                    "event_date": "2014-10-03T16:48:25Z",
-                    "event_type": "account.updated",
-                    "links": {
-                        "actor": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "resource": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                    },
-                    "resource_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "resource_type": "account",
-                    "sid": "AEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "source": "api",
-                    "source_ip_address": "10.86.6.250",
-                    "url": "https://monitor.twilio.com/v1/Events/AEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                },
-                "status_code": 200
-            }
-        }
-    ],
-    "delete": [
-        {
-            "name": "delete",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "DELETE",
-                "query_params": {},
-                "url": "https://monitor.twilio.com/v1/Events/AEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
-            "response": {
-                "content": null,
-                "status_code": 204
-            }
-        }
-    ],
     "fetch": [
         {
             "name": "fetch",
@@ -187,45 +132,6 @@
                         "previous_page_url": null,
                         "url": "https://monitor.twilio.com/v1/Events?PageSize=50&Page=0"
                     }
-                },
-                "status_code": 200
-            }
-        }
-    ],
-    "update": [
-        {
-            "name": "update",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "POST",
-                "query_params": {},
-                "url": "https://monitor.twilio.com/v1/Events/AEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
-            "response": {
-                "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "actor_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "actor_type": "account",
-                    "description": null,
-                    "event_data": {
-                        "friendly_name": {
-                            "previous": "SubAccount Created at 2014-10-03 09:48 am",
-                            "updated": "Mr. Friendly"
-                        }
-                    },
-                    "event_date": "2014-10-03T16:48:25Z",
-                    "event_type": "account.updated",
-                    "links": {
-                        "actor": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "resource": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                    },
-                    "resource_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "resource_type": "account",
-                    "sid": "AEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "source": "api",
-                    "source_ip_address": "10.86.6.250",
-                    "url": "https://monitor.twilio.com/v1/Events/AEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "status_code": 200
             }

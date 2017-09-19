@@ -8,7 +8,10 @@
                     "Type": "public",
                     "FriendlyName": "friendly_name",
                     "UniqueName": "unique_name",
-                    "Attributes": "{ \"foo\": \"bar\" }"
+                    "Attributes": "{ \"foo\": \"bar\" }",
+                    "DateCreated": "2015-12-16T22:18:37Z",
+                    "DateUpdated": "2015-12-16T22:18:38Z",
+                    "CreatedBy": "username"
                 },
                 "method": "POST",
                 "query_params": {},
@@ -19,7 +22,10 @@
                     "Type": "public",
                     "FriendlyName": "friendly_name",
                     "UniqueName": "unique_name",
-                    "Attributes": "{ \"foo\": \"bar\" }"
+                    "Attributes": "{ \"foo\": \"bar\" }",
+                    "DateCreated": "2015-12-16T22:18:37Z",
+                    "DateUpdated": "2015-12-16T22:18:38Z",
+                    "CreatedBy": "username"
                 },
                 "method": "POST",
                 "query_params": {},
@@ -35,11 +41,11 @@
                     "unique_name": "unique_name",
                     "attributes": "{ \"foo\": \"bar\" }",
                     "date_created": "2015-12-16T22:18:37Z",
-                    "date_updated": "2015-12-16T22:18:37Z",
+                    "date_updated": "2015-12-16T22:18:38Z",
                     "last_message_sid": null,
                     "members_count": 0,
                     "messages_count": 0,
-                    "created_by": "system",
+                    "created_by": "username",
                     "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "links": {
                         "messages": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages",
@@ -59,8 +65,8 @@
                     "attributes": "{ \"foo\": \"bar\" }",
                     "type": "public",
                     "date_created": "2015-12-16T22:18:37Z",
-                    "date_updated": "2015-12-16T22:18:37Z",
-                    "created_by": "system",
+                    "date_updated": "2015-12-16T22:18:38Z",
+                    "created_by": "username",
                     "members_count": 0,
                     "messages_count": 0,
                     "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
@@ -296,7 +302,10 @@
                     "Type": "channel",
                     "FriendlyName": "friendly_name",
                     "UniqueName": "unique_name",
-                    "Attributes": "{ \"foo\": \"bar\" }"
+                    "Attributes": "{ \"foo\": \"bar\" }",
+                    "DateCreated": "2015-12-16T22:18:37Z",
+                    "DateUpdated": "2015-12-16T22:18:38Z",
+                    "CreatedBy": "username"
                 },
                 "method": "POST",
                 "query_params": {},
@@ -306,7 +315,10 @@
                 "form_params": {
                     "FriendlyName": "friendly_name",
                     "UniqueName": "unique_name",
-                    "Attributes": "{ \"foo\": \"bar\" }"
+                    "Attributes": "{ \"foo\": \"bar\" }",
+                    "DateCreated": "2015-12-16T22:18:37Z",
+                    "DateUpdated": "2015-12-16T22:18:38Z",
+                    "CreatedBy": "username"
                 },
                 "method": "POST",
                 "query_params": {},
@@ -322,11 +334,11 @@
                     "unique_name": "unique_name",
                     "attributes": "{ \"foo\": \"bar\" }",
                     "date_created": "2015-12-16T22:18:37Z",
-                    "date_updated": "2015-12-16T22:18:37Z",
+                    "date_updated": "2015-12-16T22:18:38Z",
                     "last_message_sid": null,
                     "members_count": 0,
                     "messages_count": 0,
-                    "created_by": "system",
+                    "created_by": "username",
                     "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "links": {
                         "messages": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages",
@@ -347,8 +359,8 @@
                     "attributes": "{ \"foo\": \"bar\" }",
                     "type": "public",
                     "date_created": "2015-12-16T22:18:37Z",
-                    "date_updated": "2015-12-16T22:18:37Z",
-                    "created_by": "system",
+                    "date_updated": "2015-12-16T22:18:38Z",
+                    "created_by": "username",
                     "members_count": 0,
                     "messages_count": 0,
                     "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",

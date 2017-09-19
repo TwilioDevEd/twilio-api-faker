@@ -1,20 +1,20 @@
 {
     "fetch": [
         {
-            "name": "fetch",
+            "name": "fetch", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "https://preview.twilio.com/porting/Loas/PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "/v1/accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/loas/PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
@@ -27,85 +27,84 @@
                     "loa_url": "https://www.hellosign.com/sign/d7b52787989665dbc424ad40d818752779bf8811",
                     "sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "status": "signing"
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
-                    "email": "email",
-                    "first_name": "first_name",
-                    "last_name": "last_name",
-                    "sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "signing",
+                    "email": "email", 
+                    "first_name": "first_name", 
+                    "last_name": "last_name", 
+                    "sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "status": "signing", 
                     "url": "https://preview.twilio.com/porting/Loas/PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                },
+                }, 
                 "status_code": 200
             }
         }
-    ],
+    ], 
     "read": [
         {
-            "name": "read_empty",
+            "name": "read_empty", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
                     "Status": "signing"
-                },
+                }, 
                 "url": "https://preview.twilio.com/porting/Loas"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
                     "Status": "signing"
-                },
+                }, 
                 "url": "/v1/accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/loas"
-            },
+            }, 
             "downstream_response": {
                 "content": {
-                    "loas": [],
+                    "loas": [], 
                     "page_size": 0
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
-                    "loas": [],
+                    "loas": [], 
                     "meta": {
-                        "first_page_url": "https://preview.twilio.com/porting/Loas?PageSize=50&Page=0",
-                        "key": "loas",
-                        "next_page_url": null,
-                        "page": 0,
-                        "count": 0,
-                        "page_size": 50,
-                        "previous_page_url": null,
+                        "first_page_url": "https://preview.twilio.com/porting/Loas?PageSize=50&Page=0", 
+                        "key": "loas", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 50, 
+                        "previous_page_url": null, 
                         "url": "https://preview.twilio.com/porting/Loas?PageSize=50&Page=0"
                     }
-                },
+                }, 
                 "status_code": 200
             }
-        },
+        }, 
         {
-            "name": "read_full",
+            "name": "read_full", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
                     "Status": "signing"
-                },
+                }, 
                 "url": "https://preview.twilio.com/porting/Loas"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
                     "Status": "signing"
-                },
+                }, 
                 "url": "/v1/accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/loas"
-            },
+            }, 
             "downstream_response": {
                 "content": {
                     "loas": [{
@@ -119,59 +118,58 @@
                         "loa_url": "https://www.hellosign.com/sign/d7b52787989665dbc424ad40d818752779bf8811",
                         "sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "status": "signing"
-                    }],
+                    }], 
                     "page_size": 1
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
                     "loas": [
                         {
-                            "email": "email",
-                            "first_name": "first_name",
-                            "last_name": "last_name",
-                            "sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "status": "signing",
+                            "email": "email", 
+                            "first_name": "first_name", 
+                            "last_name": "last_name", 
+                            "sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "status": "signing", 
                             "url": "https://preview.twilio.com/porting/Loas/PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                         }
-                    ],
+                    ], 
                     "meta": {
-                        "first_page_url": "https://preview.twilio.com/porting/Loas?PageSize=50&Page=0",
-                        "key": "loas",
-                        "next_page_url": null,
-                        "page": 0,
-                        "count": 1,
-                        "page_size": 50,
-                        "previous_page_url": null,
+                        "first_page_url": "https://preview.twilio.com/porting/Loas?PageSize=50&Page=0", 
+                        "key": "loas", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 50, 
+                        "previous_page_url": null, 
                         "url": "https://preview.twilio.com/porting/Loas?PageSize=50&Page=0"
                     }
-                },
+                }, 
                 "status_code": 200
             }
         }
-    ],
+    ], 
     "update": [
         {
-            "name": "update",
+            "name": "update", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
                 "json_params": {
                     "param": "value"
-                },
-                "method": "POST",
-                "query_params": {},
+                }, 
+                "method": "POST", 
+                "query_params": {}, 
                 "url": "https://preview.twilio.com/porting/Loas/PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_request": {
                 "form_params": {
                     "param": "value"
-                },
-                "method": "POST",
-                "query_params": {},
+                }, 
+                "method": "POST", 
+                "query_params": {}, 
                 "url": "/v1/accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/loas/PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
@@ -184,18 +182,18 @@
                     "loa_url": "https://www.hellosign.com/sign/d7b52787989665dbc424ad40d818752779bf8811",
                     "sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "status": "signing"
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
-                    "email": "email",
-                    "first_name": "first_name",
-                    "last_name": "last_name",
-                    "sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "signing",
+                    "email": "email", 
+                    "first_name": "first_name", 
+                    "last_name": "last_name", 
+                    "sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "status": "signing", 
                     "url": "https://preview.twilio.com/porting/Loas/PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                },
+                }, 
                 "status_code": 200
             }
         }

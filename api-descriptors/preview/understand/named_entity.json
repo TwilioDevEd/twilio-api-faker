@@ -1,0 +1,237 @@
+{
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "GET",
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents/UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/NamedEntities/UEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_request": {
+                "method": "GET",
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents/UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/NamedEntities/UEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "unique_name": "unique_name",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "intent_sid": "UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "sid": "UEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "entity_type": "entity_type"
+                }
+            },
+            "response": {
+                "content": {
+                    "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents/UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/NamedEntities/UEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "unique_name": "unique_name",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "intent_sid": "UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "sid": "UEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "entity_type": "entity_type"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "DELETE",
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents/UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/NamedEntities/UFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_request": {
+                "method": "DELETE",
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents/UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/NamedEntities/UFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_response": {
+                "status_code": 204,
+                "content": null
+            },
+            "response": {
+                "content": null,
+                "status_code": 204
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "GET",
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents/UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/NamedEntities",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_request": {
+                "method": "GET",
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents/UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/NamedEntities",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "named_entities": [],
+                    "meta": {
+                        "key": "named_entities",
+                        "previous_token": null,
+                        "next_token": null,
+                        "page_token": null,
+                        "direct_token": true
+                    }
+                }
+            },
+            "response": {
+                "content": {
+                    "named_entities": [],
+                    "meta": {
+                        "page": 0,
+                        "first_page_url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents/UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/NamedEntities?PageSize=50&Page=0",
+                        "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents/UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/NamedEntities?PageSize=50&Page=0",
+                        "key": "named_entities",
+                        "next_page_url": null,
+                        "previous_page_url": null,
+                        "page_size": 50
+                    }
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "GET",
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents/UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/NamedEntities",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_request": {
+                "method": "GET",
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents/UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/NamedEntities",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "named_entities": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "unique_name": "unique_name",
+                            "date_updated": "2015-07-30T20:00:00Z",
+                            "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "intent_sid": "UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "sid": "UEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "entity_type": "entity_type"
+                        }
+                    ],
+                    "meta": {
+                        "key": "named_entities",
+                        "previous_token": null,
+                        "next_token": null,
+                        "page_token": null,
+                        "direct_token": true
+                    }
+                }
+            },
+            "response": {
+                "content": {
+                    "named_entities": [
+                        {
+                            "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents/UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/NamedEntities/UEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "unique_name": "unique_name",
+                            "date_updated": "2015-07-30T20:00:00Z",
+                            "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "intent_sid": "UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "sid": "UEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "entity_type": "entity_type"
+                        }
+                    ],
+                    "meta": {
+                        "page": 0,
+                        "first_page_url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents/UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/NamedEntities?PageSize=50&Page=0",
+                        "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents/UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/NamedEntities?PageSize=50&Page=0",
+                        "key": "named_entities",
+                        "next_page_url": null,
+                        "previous_page_url": null,
+                        "page_size": 50
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "POST",
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents/UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/NamedEntities",
+                "form_params": {
+                    "UniqueName": "unique_name",
+                    "EntityType": "UBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "query_params": {}
+            },
+            "downstream_request": {
+                "method": "POST",
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents/UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/NamedEntities",
+                "form_params": {
+                    "UniqueName": "unique_name",
+                    "EntityType": "UBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "query_params": {}
+            },
+            "downstream_response": {
+                "status_code": 201,
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "unique_name": "unique_name",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "intent_sid": "UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "sid": "UEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "entity_type": "entity_type"
+                }
+            },
+            "response": {
+                "content": {
+                    "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents/UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/NamedEntities/UEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "unique_name": "unique_name",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "intent_sid": "UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "sid": "UEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "entity_type": "entity_type"
+                },
+                "status_code": 201
+            }
+        }
+    ]
+}

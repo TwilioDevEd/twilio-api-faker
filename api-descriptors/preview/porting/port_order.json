@@ -1,468 +1,546 @@
 {
     "create": [
         {
-            "name": "create",
+            "name": "create", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
                 "json_params": {
                     "param": "value"
-                },
-                "method": "POST",
-                "query_params": {},
+                }, 
+                "method": "POST", 
+                "query_params": {}, 
                 "url": "https://preview.twilio.com/porting/PortOrders"
-            },
+            }, 
             "downstream_request": {
                 "form_params": {
                     "param": "value"
-                },
-                "method": "POST",
-                "query_params": {},
+                }, 
+                "method": "POST", 
+                "query_params": {}, 
                 "url": "/v1/accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/portorders"
-            },
+            }, 
             "downstream_response": {
                 "content": {
-                    "account_number": "account_number",
-                    "activation_date": "2015-07-30T20:00:00Z",
-                    "billing_phone_number": "billing_phone_number",
+                    "account_number": "account_number", 
+                    "activation_date": "2015-07-30T20:00:00Z", 
+                    "billing_phone_number": "billing_phone_number", 
                     "cc_emails": [
                         "cc_emails"
                     ],
-                    "city": "city",
-                    "company_name": "company_name",
-                    "current_carrier": "current_carrier",
-                    "date_created": "2015-07-30T20:00:00Z",
+                    "status_updates_email": "example@example.com",
+                    "city": "city", 
+                    "company_name": "company_name", 
+                    "current_carrier": "current_carrier", 
+                    "date_created": "2015-07-30T20:00:00Z", 
                     "date_updated": "2015-07-30T20:00:00Z",
-                    "earliest_activation_date": "2015-07-30T20:00:00Z",
-                    "email": "email",
-                    "first_name": "first_name",
-                    "friendly_name": "friendly_name",
-                    "incoming_phone_number_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "iso_country": "iso_country",
-                    "last_name": "last_name",
-                    "loa_sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "number": "number",
-                    "port_type": "landline",
-                    "postal_code": "postal_code",
-                    "reason": "reason",
-                    "reason_code": "reason_code",
-                    "region": "region",
-                    "sid": "POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "created",
-                    "status_callback": "http://www.example.com",
+                    "email": "email", 
+                    "first_name": "first_name", 
+                    "friendly_name": "friendly_name", 
+                    "incoming_phone_number_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "iso_country": "iso_country", 
+                    "last_name": "last_name", 
+                    "loa_sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "number": "number", 
+                    "port_type": "landline", 
+                    "postal_code": "postal_code", 
+                    "errors": [
+                        {
+                            "code": 42,
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "description": "reason1"
+                        },
+                        {
+                            "code": null,
+                            "date_created": null,
+                            "description": "reason2"
+                        }
+                    ],
+                    "region": "region", 
+                    "sid": "POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "status": "created", 
+                    "status_callback": "http://www.example.com", 
                     "street": "street"
-                },
+                }, 
                 "status_code": 201
             },
             "response": {
                 "content": {
-                    "account_number": "account_number",
-                    "activation_date": "2015-07-30T20:00:00Z",
-                    "billing_phone_number": "billing_phone_number",
+                    "account_number": "account_number", 
+                    "activation_date": "2015-07-30T20:00:00Z", 
+                    "billing_phone_number": "billing_phone_number", 
                     "cc_emails": [
                         "cc_emails"
                     ],
-                    "city": "city",
-                    "company_name": "company_name",
-                    "current_carrier": "current_carrier",
-                    "date_created": "2015-07-30T20:00:00Z",
+                    "status_updates_email": "example@example.com",
+                    "city": "city", 
+                    "company_name": "company_name", 
+                    "current_carrier": "current_carrier", 
+                    "date_created": "2015-07-30T20:00:00Z", 
                     "date_updated": "2015-07-30T20:00:00Z",
-                    "earliest_activation_date": "2015-07-30T20:00:00Z",
-                    "email": "email",
-                    "first_name": "first_name",
-                    "friendly_name": "friendly_name",
-                    "incoming_phone_number_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "iso_country": "iso_country",
-                    "last_name": "last_name",
-                    "loa_sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "number": "number",
-                    "port_type": "landline",
-                    "postal_code": "postal_code",
-                    "reason": "reason",
-                    "reason_code": "reason_code",
-                    "region": "region",
-                    "sid": "POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "created",
-                    "status_callback": "http://www.example.com",
-                    "street": "street",
+                    "email": "email", 
+                    "first_name": "first_name", 
+                    "friendly_name": "friendly_name", 
+                    "incoming_phone_number_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "iso_country": "iso_country", 
+                    "last_name": "last_name", 
+                    "loa_sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "number": "number", 
+                    "port_type": "landline", 
+                    "postal_code": "postal_code", 
+                    "errors": [
+                        {
+                            "code": 42,
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "description": "reason1"
+                        },
+                        {
+                            "code": null,
+                            "date_created": null,
+                            "description": "reason2"
+                        }
+                    ],
+                    "region": "region", 
+                    "sid": "POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "status": "created", 
+                    "status_callback": "http://www.example.com", 
+                    "street": "street", 
                     "url": "https://preview.twilio.com/porting/PortOrders/POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                },
+                }, 
                 "status_code": 201
             }
         }
-    ],
+    ], 
     "delete": [
         {
-            "name": "delete",
+            "name": "delete", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "DELETE",
-                "query_params": {},
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "DELETE", 
+                "query_params": {}, 
                 "url": "https://preview.twilio.com/porting/PortOrders/POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "DELETE",
-                "query_params": {},
+                "form_params": {}, 
+                "method": "DELETE", 
+                "query_params": {}, 
                 "url": "/v1/accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/portorders/POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_response": {
-                "content": null,
+                "content": null, 
                 "status_code": 204
             },
             "response": {
-                "content": null,
+                "content": null, 
                 "status_code": 204
             }
         }
-    ],
+    ], 
     "fetch": [
         {
-            "name": "fetch",
+            "name": "fetch", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "https://preview.twilio.com/porting/PortOrders/POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "/v1/accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/portorders/POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_response": {
                 "content": {
-                    "account_number": "account_number",
-                    "activation_date": "2015-07-30T20:00:00Z",
-                    "billing_phone_number": "billing_phone_number",
+                    "account_number": "account_number", 
+                    "activation_date": "2015-07-30T20:00:00Z", 
+                    "billing_phone_number": "billing_phone_number", 
                     "cc_emails": [
                         "cc_emails"
                     ],
-                    "city": "city",
-                    "company_name": "company_name",
-                    "current_carrier": "current_carrier",
-                    "date_created": "2015-07-30T20:00:00Z",
+                    "status_updates_email": "example@example.com",
+                    "city": "city", 
+                    "company_name": "company_name", 
+                    "current_carrier": "current_carrier", 
+                    "date_created": "2015-07-30T20:00:00Z", 
                     "date_updated": "2015-07-30T20:00:00Z",
-                    "earliest_activation_date": "2015-07-30T20:00:00Z",
-                    "email": "email",
-                    "first_name": "first_name",
-                    "friendly_name": "friendly_name",
-                    "incoming_phone_number_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "iso_country": "iso_country",
-                    "last_name": "last_name",
-                    "loa_sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "number": "number",
-                    "port_type": "landline",
-                    "postal_code": "postal_code",
-                    "reason": "reason",
-                    "reason_code": "reason_code",
-                    "region": "region",
-                    "sid": "POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "created",
-                    "status_callback": "http://www.example.com",
+                    "email": "email", 
+                    "first_name": "first_name", 
+                    "friendly_name": "friendly_name", 
+                    "incoming_phone_number_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "iso_country": "iso_country", 
+                    "last_name": "last_name", 
+                    "loa_sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "number": "number", 
+                    "port_type": "landline", 
+                    "postal_code": "postal_code", 
+                    "errors": [
+                        {
+                            "code": 42,
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "description": "reason1"
+                        },
+                        {
+                            "code": null,
+                            "date_created": null,
+                            "description": "reason2"
+                        }
+                    ],
+                    "region": "region", 
+                    "sid": "POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "status": "created", 
+                    "status_callback": "http://www.example.com", 
                     "street": "street"
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
-                    "account_number": "account_number",
-                    "activation_date": "2015-07-30T20:00:00Z",
-                    "billing_phone_number": "billing_phone_number",
+                    "account_number": "account_number", 
+                    "activation_date": "2015-07-30T20:00:00Z", 
+                    "billing_phone_number": "billing_phone_number", 
                     "cc_emails": [
                         "cc_emails"
                     ],
-                    "city": "city",
-                    "company_name": "company_name",
-                    "current_carrier": "current_carrier",
-                    "date_created": "2015-07-30T20:00:00Z",
+                    "status_updates_email": "example@example.com",
+                    "city": "city", 
+                    "company_name": "company_name", 
+                    "current_carrier": "current_carrier", 
+                    "date_created": "2015-07-30T20:00:00Z", 
                     "date_updated": "2015-07-30T20:00:00Z",
-                    "earliest_activation_date": "2015-07-30T20:00:00Z",
-                    "email": "email",
-                    "first_name": "first_name",
-                    "friendly_name": "friendly_name",
-                    "incoming_phone_number_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "iso_country": "iso_country",
-                    "last_name": "last_name",
-                    "loa_sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "number": "number",
-                    "port_type": "landline",
-                    "postal_code": "postal_code",
-                    "reason": "reason",
-                    "reason_code": "reason_code",
-                    "region": "region",
-                    "sid": "POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "created",
-                    "status_callback": "http://www.example.com",
-                    "street": "street",
+                    "email": "email", 
+                    "first_name": "first_name", 
+                    "friendly_name": "friendly_name", 
+                    "incoming_phone_number_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "iso_country": "iso_country", 
+                    "last_name": "last_name", 
+                    "loa_sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "number": "number", 
+                    "port_type": "landline", 
+                    "postal_code": "postal_code", 
+                    "errors": [
+                        {
+                            "code": 42,
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "description": "reason1"
+                        },
+                        {
+                            "code": null,
+                            "date_created": null,
+                            "description": "reason2"
+                        }
+                    ],
+                    "region": "region", 
+                    "sid": "POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "status": "created", 
+                    "status_callback": "http://www.example.com", 
+                    "street": "street", 
                     "url": "https://preview.twilio.com/porting/PortOrders/POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                },
+                }, 
                 "status_code": 200
             }
         }
-    ],
+    ], 
     "read": [
         {
-            "name": "read_empty",
+            "name": "read_empty", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
-                    "ActivationDate": "2015-07-30T20:00:00Z",
-                    "FriendlyName": "friendly_name",
-                    "IncomingPhoneNumberSid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "LoaSid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "Number": "number",
+                    "ActivationDate": "2015-07-30T20:00:00Z", 
+                    "FriendlyName": "friendly_name", 
+                    "IncomingPhoneNumberSid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "LoaSid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "Number": "number", 
                     "Status": "created"
-                },
+                }, 
                 "url": "https://preview.twilio.com/porting/PortOrders"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
-                    "ActivationDate": "2015-07-30T20:00:00Z",
-                    "FriendlyName": "friendly_name",
-                    "IncomingPhoneNumberSid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "LoaSid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "Number": "number",
+                    "ActivationDate": "2015-07-30T20:00:00Z", 
+                    "FriendlyName": "friendly_name", 
+                    "IncomingPhoneNumberSid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "LoaSid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "Number": "number", 
                     "Status": "created"
-                },
+                }, 
                 "url": "/v1/accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/portorders"
-            },
+            }, 
             "downstream_response": {
                 "content": {
-                    "page_size": 0,
+                    "page_size": 0, 
                     "orders": []
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
                     "meta": {
-                        "first_page_url": "https://preview.twilio.com/porting/PortOrders?PageSize=50&Page=0",
-                        "key": "orders",
-                        "next_page_url": null,
-                        "page": 0,
-                        "count": 0,
-                        "page_size": 50,
-                        "previous_page_url": null,
+                        "first_page_url": "https://preview.twilio.com/porting/PortOrders?PageSize=50&Page=0", 
+                        "key": "orders", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 50, 
+                        "previous_page_url": null, 
                         "url": "https://preview.twilio.com/porting/PortOrders?PageSize=50&Page=0"
-                    },
+                    }, 
                     "orders": []
-                },
+                }, 
                 "status_code": 200
             }
-        },
+        }, 
         {
-            "name": "read_full",
+            "name": "read_full", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
-                    "ActivationDate": "2015-07-30T20:00:00Z",
-                    "FriendlyName": "friendly_name",
-                    "IncomingPhoneNumberSid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "LoaSid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "Number": "number",
+                    "ActivationDate": "2015-07-30T20:00:00Z", 
+                    "FriendlyName": "friendly_name", 
+                    "IncomingPhoneNumberSid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "LoaSid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "Number": "number", 
                     "Status": "created"
-                },
+                }, 
                 "url": "https://preview.twilio.com/porting/PortOrders"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
-                    "ActivationDate": "2015-07-30T20:00:00Z",
-                    "FriendlyName": "friendly_name",
-                    "IncomingPhoneNumberSid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "LoaSid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "Number": "number",
+                    "ActivationDate": "2015-07-30T20:00:00Z", 
+                    "FriendlyName": "friendly_name", 
+                    "IncomingPhoneNumberSid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "LoaSid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "Number": "number", 
                     "Status": "created"
-                },
+                }, 
                 "url": "/v1/accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/portorders"
-            },
+            }, 
             "downstream_response": {
                 "content": {
-                    "page_size": 1,
+                    "page_size": 1, 
                     "orders": [{
-                        "account_number": "account_number",
-                        "activation_date": "2015-07-30T20:00:00Z",
-                        "billing_phone_number": "billing_phone_number",
+                        "account_number": "account_number", 
+                        "activation_date": "2015-07-30T20:00:00Z", 
+                        "billing_phone_number": "billing_phone_number", 
                         "cc_emails": [
                             "cc_emails"
                         ],
-                        "city": "city",
-                        "company_name": "company_name",
-                        "current_carrier": "current_carrier",
-                        "date_created": "2015-07-30T20:00:00Z",
+                        "status_updates_email": "example@example.com",
+                        "city": "city", 
+                        "company_name": "company_name", 
+                        "current_carrier": "current_carrier", 
+                        "date_created": "2015-07-30T20:00:00Z", 
                         "date_updated": "2015-07-30T20:00:00Z",
-                        "earliest_activation_date": "2015-07-30T20:00:00Z",
-                        "email": "email",
-                        "first_name": "first_name",
-                        "friendly_name": "friendly_name",
-                        "incoming_phone_number_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "iso_country": "iso_country",
-                        "last_name": "last_name",
-                        "loa_sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "number": "number",
-                        "port_type": "landline",
-                        "postal_code": "postal_code",
-                        "reason": "reason",
-                        "reason_code": "reason_code",
-                        "region": "region",
-                        "sid": "POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "status": "created",
-                        "status_callback": "http://www.example.com",
+                        "email": "email", 
+                        "first_name": "first_name", 
+                        "friendly_name": "friendly_name", 
+                        "incoming_phone_number_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                        "iso_country": "iso_country", 
+                        "last_name": "last_name", 
+                        "loa_sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                        "number": "number", 
+                        "port_type": "landline", 
+                        "postal_code": "postal_code", 
+                        "errors": [
+                            {
+                                "code": 42,
+                                "date_created": "2015-07-30T20:00:00Z",
+                                "description": "reason1"
+                            },
+                            {
+                                "code": null,
+                                "date_created": null,
+                                "description": "reason2"
+                            }
+                        ],
+                        "region": "region", 
+                        "sid": "POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                        "status": "created", 
+                        "status_callback": "http://www.example.com", 
                         "street": "street"
                     }]
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
                     "meta": {
-                        "first_page_url": "https://preview.twilio.com/porting/PortOrders?PageSize=50&Page=0",
-                        "key": "orders",
-                        "next_page_url": null,
-                        "page": 0,
-                        "count": 1,
-                        "page_size": 50,
-                        "previous_page_url": null,
+                        "first_page_url": "https://preview.twilio.com/porting/PortOrders?PageSize=50&Page=0", 
+                        "key": "orders", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 50, 
+                        "previous_page_url": null, 
                         "url": "https://preview.twilio.com/porting/PortOrders?PageSize=50&Page=0"
-                    },
+                    }, 
                     "orders": [
                         {
-                            "account_number": "account_number",
-                            "activation_date": "2015-07-30T20:00:00Z",
-                            "billing_phone_number": "billing_phone_number",
+                            "account_number": "account_number", 
+                            "activation_date": "2015-07-30T20:00:00Z", 
+                            "billing_phone_number": "billing_phone_number", 
                             "cc_emails": [
                                 "cc_emails"
                             ],
-                            "city": "city",
-                            "company_name": "company_name",
-                            "current_carrier": "current_carrier",
-                            "date_created": "2015-07-30T20:00:00Z",
+                            "status_updates_email": "example@example.com",
+                            "city": "city", 
+                            "company_name": "company_name", 
+                            "current_carrier": "current_carrier", 
+                            "date_created": "2015-07-30T20:00:00Z", 
                             "date_updated": "2015-07-30T20:00:00Z",
-                            "earliest_activation_date": "2015-07-30T20:00:00Z",
-                            "email": "email",
-                            "first_name": "first_name",
-                            "friendly_name": "friendly_name",
-                            "incoming_phone_number_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "iso_country": "iso_country",
-                            "last_name": "last_name",
-                            "loa_sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "number": "number",
-                            "port_type": "landline",
-                            "postal_code": "postal_code",
-                            "reason": "reason",
-                            "reason_code": "reason_code",
-                            "region": "region",
-                            "sid": "POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "status": "created",
-                            "status_callback": "http://www.example.com",
-                            "street": "street",
+                            "email": "email", 
+                            "first_name": "first_name", 
+                            "friendly_name": "friendly_name", 
+                            "incoming_phone_number_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "iso_country": "iso_country", 
+                            "last_name": "last_name", 
+                            "loa_sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "number": "number", 
+                            "port_type": "landline", 
+                            "postal_code": "postal_code", 
+                            "errors": [
+                                {
+                                    "code": 42,
+                                    "date_created": "2015-07-30T20:00:00Z",
+                                    "description": "reason1"
+                                },
+                                {
+                                    "code": null,
+                                    "date_created": null,
+                                    "description": "reason2"
+                                }
+                            ],
+                            "region": "region", 
+                            "sid": "POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "status": "created", 
+                            "status_callback": "http://www.example.com", 
+                            "street": "street", 
                             "url": "https://preview.twilio.com/porting/PortOrders/POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                         }
                     ]
-                },
+                }, 
                 "status_code": 200
             }
         }
-    ],
+    ], 
     "update": [
         {
-            "name": "update",
+            "name": "update", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
                 "json_params": {
                     "param": "value"
-                },
-                "method": "PUT",
-                "query_params": {},
+                }, 
+                "method": "PUT", 
+                "query_params": {}, 
                 "url": "https://preview.twilio.com/porting/PortOrders/POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_request": {
                 "form_params": {
                     "param": "value"
-                },
-                "method": "PUT",
-                "query_params": {},
+                }, 
+                "method": "PUT", 
+                "query_params": {}, 
                 "url": "/v1/accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/portorders/POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_response": {
                 "content": {
-                    "account_number": "account_number",
-                    "activation_date": "2015-07-30T20:00:00Z",
-                    "billing_phone_number": "billing_phone_number",
+                    "account_number": "account_number", 
+                    "activation_date": "2015-07-30T20:00:00Z", 
+                    "billing_phone_number": "billing_phone_number", 
                     "cc_emails": [
                         "cc_emails"
                     ],
-                    "city": "city",
-                    "company_name": "company_name",
-                    "current_carrier": "current_carrier",
-                    "date_created": "2015-07-30T20:00:00Z",
+                    "status_updates_email": "example@example.com",
+                    "city": "city", 
+                    "company_name": "company_name", 
+                    "current_carrier": "current_carrier", 
+                    "date_created": "2015-07-30T20:00:00Z", 
                     "date_updated": "2015-07-30T20:00:00Z",
-                    "earliest_activation_date": "2015-07-30T20:00:00Z",
-                    "email": "email",
-                    "first_name": "first_name",
-                    "friendly_name": "friendly_name",
-                    "incoming_phone_number_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "iso_country": "iso_country",
-                    "last_name": "last_name",
-                    "loa_sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "number": "number",
-                    "port_type": "landline",
-                    "postal_code": "postal_code",
-                    "reason": "reason",
-                    "reason_code": "reason_code",
-                    "region": "region",
-                    "sid": "POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "created",
-                    "status_callback": "http://www.example.com",
+                    "email": "email", 
+                    "first_name": "first_name", 
+                    "friendly_name": "friendly_name", 
+                    "incoming_phone_number_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "iso_country": "iso_country", 
+                    "last_name": "last_name", 
+                    "loa_sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "number": "number", 
+                    "port_type": "landline", 
+                    "postal_code": "postal_code", 
+                    "errors": [
+                        {
+                            "code": 42,
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "description": "reason1"
+                        },
+                        {
+                            "code": null,
+                            "date_created": null,
+                            "description": "reason2"
+                        }
+                    ],
+                    "region": "region", 
+                    "sid": "POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "status": "created", 
+                    "status_callback": "http://www.example.com", 
                     "street": "street"
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
-                    "account_number": "account_number",
-                    "activation_date": "2015-07-30T20:00:00Z",
-                    "billing_phone_number": "billing_phone_number",
+                    "account_number": "account_number", 
+                    "activation_date": "2015-07-30T20:00:00Z", 
+                    "billing_phone_number": "billing_phone_number", 
                     "cc_emails": [
                         "cc_emails"
                     ],
-                    "city": "city",
-                    "company_name": "company_name",
-                    "current_carrier": "current_carrier",
-                    "date_created": "2015-07-30T20:00:00Z",
+                    "status_updates_email": "example@example.com",
+                    "city": "city", 
+                    "company_name": "company_name", 
+                    "current_carrier": "current_carrier", 
+                    "date_created": "2015-07-30T20:00:00Z", 
                     "date_updated": "2015-07-30T20:00:00Z",
-                    "earliest_activation_date": "2015-07-30T20:00:00Z",
-                    "email": "email",
-                    "first_name": "first_name",
-                    "friendly_name": "friendly_name",
-                    "incoming_phone_number_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "iso_country": "iso_country",
-                    "last_name": "last_name",
-                    "loa_sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "number": "number",
-                    "port_type": "landline",
-                    "postal_code": "postal_code",
-                    "reason": "reason",
-                    "reason_code": "reason_code",
-                    "region": "region",
-                    "sid": "POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "created",
-                    "status_callback": "http://www.example.com",
-                    "street": "street",
+                    "email": "email", 
+                    "first_name": "first_name", 
+                    "friendly_name": "friendly_name", 
+                    "incoming_phone_number_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "iso_country": "iso_country", 
+                    "last_name": "last_name", 
+                    "loa_sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "number": "number", 
+                    "port_type": "landline", 
+                    "postal_code": "postal_code", 
+                    "errors": [
+                        {
+                            "code": 42,
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "description": "reason1"
+                        },
+                        {
+                            "code": null,
+                            "date_created": null,
+                            "description": "reason2"
+                        }
+                    ],
+                    "region": "region", 
+                    "sid": "POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "status": "created", 
+                    "status_callback": "http://www.example.com", 
+                    "street": "street", 
                     "url": "https://preview.twilio.com/porting/PortOrders/POaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                },
+                }, 
                 "status_code": 200
             }
         }

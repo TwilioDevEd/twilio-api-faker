@@ -1,0 +1,279 @@
+{
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "POST",
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds",
+                "form_params": {
+                    "UniqueName": "unique_name",
+                    "StatusCallback": "http://www.example.com"
+                },
+                "query_params": {}
+            },
+            "downstream_request": {
+                "method": "POST",
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds",
+                "form_params": {
+                    "UniqueName": "unique_name",
+                    "StatusCallback": "http://www.example.com"
+                },
+                "query_params": {}
+            },
+            "downstream_response": {
+                "status_code": 201,
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "status": "enqueued",
+                    "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "sid": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "unique_name": "unique_name"
+                }
+            },
+            "response": {
+                "status_code": 201,
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds/UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "enqueued",
+                    "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "sid": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "unique_name": "unique_name"
+                }
+            }
+        }
+    ],
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "DELETE",
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds/UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_request": {
+                "method": "DELETE",
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds/UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_response": {
+                "status_code": 204,
+                "content": null
+            },
+            "response": {
+                "status_code": 204,
+                "content": null
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "GET",
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds/UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_request": {
+                "method": "GET",
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds/UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "status": "enqueued",
+                    "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "sid": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "unique_name": "unique_name"
+                }
+            },
+            "response": {
+                "status_code": 200,
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds/UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "enqueued",
+                    "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "sid": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "unique_name": "unique_name"
+                }
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "GET",
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_request": {
+                "method": "GET",
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "model_builds": [],
+                    "meta": {
+                        "key": "model_builds",
+                        "previous_token": null,
+                        "next_token": null,
+                        "page_token": null,
+                        "direct_token": true
+                    }
+                }
+            },
+            "response": {
+                "status_code": 200,
+                "content": {
+                    "meta": {
+                        "page": 0,
+                        "key": "model_builds",
+                        "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds?PageSize=50&Page=0",
+                        "first_page_url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds?PageSize=50&Page=0",
+                        "next_page_url": null,
+                        "previous_page_url": null,
+                        "page_size": 50
+                    },
+                    "model_builds": []
+                }
+            }
+        },
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "GET",
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_request": {
+                "method": "GET",
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "model_builds": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "date_updated": "2015-07-30T20:00:00Z",
+                            "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds/UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "status": "enqueued",
+                            "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "sid": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "unique_name": "unique_name"
+                        }
+                    ],
+                    "meta": {
+                        "key": "model_builds",
+                        "previous_token": null,
+                        "next_token": null,
+                        "page_token": null,
+                        "direct_token": true
+                    }
+                }
+            },
+            "response": {
+                "status_code": 200,
+                "content": {
+                    "meta": {
+                        "page": 0,
+                        "key": "model_builds",
+                        "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds?PageSize=50&Page=0",
+                        "first_page_url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds?PageSize=50&Page=0",
+                        "next_page_url": null,
+                        "previous_page_url": null,
+                        "page_size": 50
+                    },
+                    "model_builds": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "date_updated": "2015-07-30T20:00:00Z",
+                            "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds/UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "status": "enqueued",
+                            "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "sid": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "unique_name": "unique_name"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "POST",
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds/UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "UniqueName": "unique_name"
+                },
+                "query_params": {}
+            },
+            "downstream_request": {
+                "method": "POST",
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds/UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "UniqueName": "unique_name"
+                },
+                "query_params": {}
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "status": "enqueued",
+                    "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "sid": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "unique_name": "unique_name"
+                }
+            },
+            "response": {
+                "status_code": 200,
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds/UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "enqueued",
+                    "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "sid": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "unique_name": "unique_name"
+                }
+            }
+        }
+    ]
+}

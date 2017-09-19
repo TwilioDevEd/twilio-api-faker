@@ -1,0 +1,438 @@
+{
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "DELETE",
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries/UHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_request": {
+                "method": "DELETE",
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries/UHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_response": {
+                "status_code": 204,
+                "content": null
+            },
+            "response": {
+                "content": null,
+                "status_code": 204
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "GET",
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries/UHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_request": {
+                "method": "GET",
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries/UHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "language": "language",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "model_build_sid": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "query": "query",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "status": "status",
+                    "sample_sid": "UFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "results": {
+                        "intent": {
+                            "name": "name",
+                            "intent_sid": "UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "confidence": 0.9
+                        },
+                        "entities": [
+                            {
+                                "name": "name",
+                                "value": "value",
+                                "type": "type"
+                            }
+                        ]
+                    },
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "UHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                }
+            },
+            "response": {
+                "content": {
+                    "language": "language",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "model_build_sid": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "query": "query",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "status": "status",
+                    "sample_sid": "UFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "results": {
+                        "intent": {
+                            "name": "name",
+                            "intent_sid": "UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "confidence": 0.9
+                        },
+                        "entities": [
+                            {
+                                "name": "name",
+                                "value": "value",
+                                "type": "type"
+                            }
+                        ]
+                    },
+                    "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries/UHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "UHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "POST",
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries",
+                "form_params": {
+                    "Language": "language",
+                    "Query": "query",
+                    "Intent": "UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "NamedEntity": "UEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "ModelBuild": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "query_params": {}
+            },
+            "downstream_request": {
+                "method": "POST",
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries",
+                "form_params": {
+                    "Language": "language",
+                    "Query": "query",
+                    "Intent": "UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "NamedEntity": "UEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "ModelBuild": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "query_params": {}
+            },
+            "downstream_response": {
+                "status_code": 201,
+                "content": {
+                    "language": "language",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "model_build_sid": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "query": "query",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "status": "status",
+                    "sample_sid": "UFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "results": {
+                        "intent": {
+                            "name": "name",
+                            "intent_sid": "UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "confidence": 0.9
+                        },
+                        "entities": [
+                            {
+                                "name": "name",
+                                "value": "value",
+                                "type": "type"
+                            }
+                        ]
+                    },
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "UHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                }
+            },
+            "response": {
+                "content": {
+                    "language": "language",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "model_build_sid": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "query": "query",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "status": "status",
+                    "sample_sid": "UFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "results": {
+                        "intent": {
+                            "name": "name",
+                            "intent_sid": "UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "confidence": 0.9
+                        },
+                        "entities": [
+                            {
+                                "name": "name",
+                                "value": "value",
+                                "type": "type"
+                            }
+                        ]
+                    },
+                    "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries/UHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "UHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 201
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "GET",
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries",
+                "form_params": {},
+                "query_params": {
+                    "Language": "language",
+                    "Status": "status",
+                    "ModelBuild": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                }
+            },
+            "downstream_request": {
+                "method": "GET",
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries",
+                "form_params": {},
+                "query_params": {
+                    "Language": "language",
+                    "Status": "status",
+                    "ModelBuild": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                }
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "queries": [],
+                    "meta": {
+                        "key": "queries",
+                        "previous_token": null,
+                        "next_token": null,
+                        "page_token": null,
+                        "direct_token": true
+                    }
+                }
+            },
+            "response": {
+                "content": {
+                    "queries": [],
+                    "meta": {
+                        "previous_page_url": null,
+                        "next_page_url": null,
+                        "first_page_url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries?PageSize=50&Page=0",
+                        "page": 0,
+                        "key": "queries",
+                        "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries?PageSize=50&Page=0",
+                        "page_size": 50
+                    }
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "GET",
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries",
+                "form_params": {},
+                "query_params": {
+                    "Language": "language",
+                    "Status": "status",
+                    "ModelBuild": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                }
+            },
+            "downstream_request": {
+                "method": "GET",
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries",
+                "form_params": {},
+                "query_params": {
+                    "Language": "language",
+                    "Status": "status",
+                    "ModelBuild": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                }
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "queries": [
+                        {
+                            "language": "language",
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "model_build_sid": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "query": "query",
+                            "date_updated": "2015-07-30T20:00:00Z",
+                            "status": "status",
+                            "sample_sid": "UFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "results": {
+                                "intent": {
+                                    "name": "name",
+                                    "intent_sid": "UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                                    "confidence": 0.9
+                                },
+                                "entities": [
+                                    {
+                                        "name": "name",
+                                        "value": "value",
+                                        "type": "type"
+                                    }
+                                ]
+                            },
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "sid": "UHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        }
+                    ],
+                    "meta": {
+                        "key": "queries",
+                        "previous_token": null,
+                        "next_token": null,
+                        "page_token": null,
+                        "direct_token": true
+                    }
+                }
+            },
+            "response": {
+                "content": {
+                    "queries": [
+                        {
+                            "language": "language",
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "model_build_sid": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "query": "query",
+                            "date_updated": "2015-07-30T20:00:00Z",
+                            "status": "status",
+                            "sample_sid": "UFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "results": {
+                                "intent": {
+                                    "name": "name",
+                                    "intent_sid": "UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                                    "confidence": 0.9
+                                },
+                                "entities": [
+                                    {
+                                        "name": "name",
+                                        "value": "value",
+                                        "type": "type"
+                                    }
+                                ]
+                            },
+                            "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries/UHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "sid": "UHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        }
+                    ],
+                    "meta": {
+                        "previous_page_url": null,
+                        "next_page_url": null,
+                        "first_page_url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries?PageSize=50&Page=0",
+                        "page": 0,
+                        "key": "queries",
+                        "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries?PageSize=50&Page=0",
+                        "page_size": 50
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "POST",
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries/UHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "Status": "status",
+                    "SampleSid": "UFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "query_params": {}
+            },
+            "downstream_request": {
+                "method": "POST",
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries/UHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "Status": "status",
+                    "SampleSid": "UFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "query_params": {}
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "language": "language",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "model_build_sid": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "query": "query",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "status": "status",
+                    "sample_sid": "UFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "results": {
+                        "intent": {
+                            "name": "name",
+                            "intent_sid": "UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "confidence": 0.9
+                        },
+                        "entities": [
+                            {
+                                "name": "name",
+                                "value": "value",
+                                "type": "type"
+                            }
+                        ]
+                    },
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "UHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                }
+            },
+            "response": {
+                "content": {
+                    "language": "language",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "model_build_sid": "UGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "query": "query",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "status": "status",
+                    "sample_sid": "UFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "service_sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "results": {
+                        "intent": {
+                            "name": "name",
+                            "intent_sid": "UDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "confidence": 0.9
+                        },
+                        "entities": [
+                            {
+                                "name": "name",
+                                "value": "value",
+                                "type": "type"
+                            }
+                        ]
+                    },
+                    "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries/UHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "UHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}

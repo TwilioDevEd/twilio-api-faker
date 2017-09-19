@@ -1,159 +1,159 @@
 {
     "create": [
         {
-            "name": "create",
+            "name": "create", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                 "form_params": {
-                    "CallbackMethod": "callback_method",
-                    "CallbackUrl": "http://www.example.com",
-                    "Command": "command",
-                    "CommandMode": "command_mode",
-                    "Device": "device",
-                    "Sim": "sim",
+                    "CallbackMethod": "callback_method", 
+                    "CallbackUrl": "http://www.example.com", 
+                    "Command": "command", 
+                    "CommandMode": "command_mode", 
+                    "Device": "device", 
+                    "Sim": "sim", 
                     "IncludeSid": "include_sid"
-                },
-                "method": "POST",
-                "query_params": {},
+                }, 
+                "method": "POST", 
+                "query_params": {}, 
                 "url": "https://preview.twilio.com/wireless/Commands"
-            },
+            }, 
             "downstream_request": {
                 "form_params": {
-                    "CallbackMethod": "callback_method",
-                    "CallbackUrl": "http://www.example.com",
-                    "Command": "command",
+                    "CallbackMethod": "callback_method", 
+                    "CallbackUrl": "http://www.example.com", 
+                    "Command": "command", 
                     "CommandMode": "command_mode",
-                    "Device": "device",
-                    "Sim": "sim",
+                    "Device": "device",  
+                    "Sim": "sim", 
                     "IncludeSid": "include_sid"
-                },
-                "method": "POST",
-                "query_params": {},
+                }, 
+                "method": "POST", 
+                "query_params": {}, 
                 "url": "/v1/Commands"
-            },
+            }, 
             "downstream_response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                     "billable_item_sid": null,
                     "callback_method": "POST",
                     "callback_url": null,
-                    "command": "command",
-                    "command_mode": "command_mode",
-                    "date_created": "2015-07-30T20:00:00Z",
-                    "date_updated": "2015-07-30T20:00:00Z",
-                    "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "direction": "direction",
+                    "command": "command", 
+                    "command_mode": "command_mode", 
+                    "date_created": "2015-07-30T20:00:00Z", 
+                    "date_updated": "2015-07-30T20:00:00Z", 
+                    "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "direction": "direction", 
                     "message_sid": "SM0b3cb68a14161ea4825663120476d911",
                     "price": null,
-                    "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "status",
+                    "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "status": "status", 
                     "uri": "/v1/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                },
+                }, 
                 "status_code": 201
             },
             "response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "command": "command",
-                    "command_mode": "command_mode",
-                    "date_created": "2015-07-30T20:00:00Z",
-                    "date_updated": "2015-07-30T20:00:00Z",
-                    "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "direction": "direction",
-                    "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "status",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "command": "command", 
+                    "command_mode": "command_mode", 
+                    "date_created": "2015-07-30T20:00:00Z", 
+                    "date_updated": "2015-07-30T20:00:00Z", 
+                    "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "direction": "direction", 
+                    "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "status": "status", 
                     "url": "https://preview.twilio.com/wireless/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                },
+                }, 
                 "status_code": 201
             }
         }
-    ],
+    ], 
     "fetch": [
         {
-            "name": "fetch",
+            "name": "fetch", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "https://preview.twilio.com/wireless/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "/v1/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                     "billable_item_sid": null,
                     "callback_method": "POST",
                     "callback_url": null,
-                    "command": "command",
-                    "command_mode": "command_mode",
-                    "date_created": "2015-07-30T20:00:00Z",
-                    "date_updated": "2015-07-30T20:00:00Z",
-                    "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "direction": "direction",
+                    "command": "command", 
+                    "command_mode": "command_mode", 
+                    "date_created": "2015-07-30T20:00:00Z", 
+                    "date_updated": "2015-07-30T20:00:00Z", 
+                    "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "direction": "direction", 
                     "message_sid": "SM0b3cb68a14161ea4825663120476d911",
                     "price": null,
-                    "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "status",
+                    "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "status": "status", 
                     "uri": "/v1/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "command": "command",
-                    "command_mode": "command_mode",
-                    "date_created": "2015-07-30T20:00:00Z",
-                    "date_updated": "2015-07-30T20:00:00Z",
-                    "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "direction": "direction",
-                    "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "status": "status",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "command": "command", 
+                    "command_mode": "command_mode", 
+                    "date_created": "2015-07-30T20:00:00Z", 
+                    "date_updated": "2015-07-30T20:00:00Z", 
+                    "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "direction": "direction", 
+                    "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "status": "status", 
                     "url": "https://preview.twilio.com/wireless/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                },
+                }, 
                 "status_code": 200
             }
         }
-    ],
+    ], 
     "read": [
         {
-            "name": "read_empty",
+            "name": "read_empty", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
-                    "Device": "device",
-                    "Sim": "sim",
-                    "Direction": "direction",
+                    "Device": "device", 
+                    "Sim": "sim", 
+                    "Direction": "direction", 
                     "Status": "status"
-                },
+                }, 
                 "url": "https://preview.twilio.com/wireless/Commands"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
-                    "Device": "device",
+                    "Device": "device", 
                     "Sim": "sim",
                     "Direction": "direction",
                     "Status": "status"
-                },
+                }, 
                 "url": "/v1/Commands"
-            },
+            }, 
             "downstream_response": {
                 "content": {
-                    "commands": [],
+                    "commands": [], 
                     "meta": {
                         "direct_token": true,
                         "key": "commands",
@@ -163,71 +163,70 @@
                         "page_token": null,
                         "previous_token": null
                     }
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
-                    "commands": [],
+                    "commands": [], 
                     "meta": {
-                        "first_page_url": "https://preview.twilio.com/wireless/Commands?PageSize=50&Page=0",
-                        "key": "commands",
-                        "next_page_url": null,
-                        "page": 0,
-                        "count": 0,
-                        "page_size": 50,
-                        "previous_page_url": null,
+                        "first_page_url": "https://preview.twilio.com/wireless/Commands?PageSize=50&Page=0", 
+                        "key": "commands", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 50, 
+                        "previous_page_url": null, 
                         "url": "https://preview.twilio.com/wireless/Commands?PageSize=50&Page=0"
                     }
-                },
+                }, 
                 "status_code": 200
             }
-        },
+        }, 
         {
-            "name": "read_full",
+            "name": "read_full", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
-                    "Device": "device",
-                    "Sim": "sim",
-                    "Direction": "direction",
+                    "Device": "device", 
+                    "Sim": "sim", 
+                    "Direction": "direction", 
                     "Status": "status"
-                },
+                }, 
                 "url": "https://preview.twilio.com/wireless/Commands"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
-                    "Device": "device",
+                    "Device": "device", 
                     "Sim": "sim",
                     "Direction": "direction",
                     "Status": "status"
-                },
+                }, 
                 "url": "/v1/Commands"
-            },
+            }, 
             "downstream_response": {
                 "content": {
                     "commands": [{
-                        "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                         "billable_item_sid": null,
                         "callback_method": "POST",
                         "callback_url": null,
-                        "command": "command",
-                        "command_mode": "command_mode",
-                        "date_created": "2015-07-30T20:00:00Z",
-                        "date_updated": "2015-07-30T20:00:00Z",
-                        "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "direction": "direction",
+                        "command": "command", 
+                        "command_mode": "command_mode", 
+                        "date_created": "2015-07-30T20:00:00Z", 
+                        "date_updated": "2015-07-30T20:00:00Z", 
+                        "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                        "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                        "direction": "direction", 
                         "message_sid": "SM0b3cb68a14161ea4825663120476d911",
                         "price": null,
-                        "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "status": "status",
+                        "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                        "status": "status", 
                         "uri": "/v1/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                    }],
+                    }], 
                     "meta": {
                         "direct_token": true,
                         "key": "commands",
@@ -237,37 +236,36 @@
                         "page_token": null,
                         "previous_token": null
                     }
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
                     "commands": [
                         {
-                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "command": "command",
-                            "command_mode": "command_mode",
-                            "date_created": "2015-07-30T20:00:00Z",
-                            "date_updated": "2015-07-30T20:00:00Z",
-                            "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "direction": "direction",
-                            "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "status": "status",
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "command": "command", 
+                            "command_mode": "command_mode", 
+                            "date_created": "2015-07-30T20:00:00Z", 
+                            "date_updated": "2015-07-30T20:00:00Z", 
+                            "device_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "sim_sid": "DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "direction": "direction", 
+                            "sid": "DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "status": "status", 
                             "url": "https://preview.twilio.com/wireless/Commands/DCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                         }
-                    ],
+                    ], 
                     "meta": {
-                        "first_page_url": "https://preview.twilio.com/wireless/Commands?PageSize=50&Page=0",
-                        "key": "commands",
-                        "next_page_url": null,
-                        "page": 0,
-                        "count": 1,
-                        "page_size": 50,
-                        "previous_page_url": null,
+                        "first_page_url": "https://preview.twilio.com/wireless/Commands?PageSize=50&Page=0", 
+                        "key": "commands", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 50, 
+                        "previous_page_url": null, 
                         "url": "https://preview.twilio.com/wireless/Commands?PageSize=50&Page=0"
                     }
-                },
+                }, 
                 "status_code": 200
             }
         }

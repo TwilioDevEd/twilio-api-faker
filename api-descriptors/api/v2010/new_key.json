@@ -11,6 +11,33 @@
                 "query_params": {},
                 "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Keys.json"
             },
+            "downstream_request": {
+                "json_params": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "foo"
+                },
+                "form_params": {},
+                "method": "POST",
+                "query_params": {},
+                "url": "/v1/ApiKeys"
+            },
+            "downstream_response": {
+                "content": {
+                    "sid": "SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "foo",
+                    "date_created": "Mon, 13 Jun 2016 22:50:08 +0000",
+                    "date_updated": "Mon, 13 Jun 2016 22:50:08 +0000",
+                    "auto_id": 5087641,
+                    "flags": [
+                        "rest_api",
+                        "signing"
+                    ],
+                    "status": 1,
+                    "type": 1,
+                    "secret": "Zm9vYmFy"
+                },
+                "status_code": 201
+            },
             "response": {
                 "content": {
                     "sid": "SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",

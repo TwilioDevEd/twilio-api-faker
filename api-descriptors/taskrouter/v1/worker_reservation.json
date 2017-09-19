@@ -9,6 +9,27 @@
                 "query_params": {},
                 "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Reservations/WRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
             },
+            "downstream_request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Reservations/WRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2014-05-14T10:50:02Z",
+                    "date_updated": "2014-05-15T16:03:42Z",
+                    "reservation_status": "accepted",
+                    "sid": "WRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "task_sid": "WTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "worker_name": "Doug",
+                    "worker_sid": "WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "workspace_sid": "WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            },
             "response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
@@ -19,7 +40,7 @@
                         "worker": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "workspace": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                     },
-                    "reservation_status": "reserved",
+                    "reservation_status": "accepted",
                     "sid": "WRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "task_sid": "WTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Reservations/WRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
@@ -41,6 +62,42 @@
                 "query_params": {},
                 "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Reservations"
             },
+            "downstream_request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Reservations"
+            },
+            "downstream_response": {
+                "content": {
+                    "contents": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "date_created": "2014-05-14T10:50:02Z",
+                            "date_updated": "2014-05-15T16:03:42Z",
+                            "reservation_status": "accepted",
+                            "sid": "WRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "task_sid": "WTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "worker_name": "Doug",
+                            "worker_sid": "WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "workspace_sid": "WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        }
+                    ],
+                    "page": 0,
+                    "total": 1,
+                    "start": 0,
+                    "end": 0,
+                    "meta": {
+                        "list_key": "contents"
+                    },
+                    "nextPage": 0,
+                    "lastPage": 0,
+                    "after_sid": null,
+                    "before_sid": null
+                },
+                "status_code": 200
+            },
             "response": {
                 "content": {
                     "meta": {
@@ -50,7 +107,7 @@
                         "page": 0,
                         "page_size": 50,
                         "previous_page_url": null,
-                        "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Reservations"
+                        "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Reservations?PageSize=50&Page=0"
                     },
                     "reservations": [
                         {
@@ -62,7 +119,7 @@
                                 "worker": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                                 "workspace": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                             },
-                            "reservation_status": "reserved",
+                            "reservation_status": "accepted",
                             "sid": "WRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                             "task_sid": "WTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                             "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Reservations/WRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
@@ -84,6 +141,30 @@
                 "query_params": {},
                 "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Reservations"
             },
+            "downstream_request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Reservations"
+            },
+            "downstream_response": {
+                "content": {
+                    "contents": [],
+                    "page": 0,
+                    "total": 0,
+                    "start": 0,
+                    "end": 0,
+                    "meta": {
+                        "list_key": "contents"
+                    },
+                    "nextPage": 0,
+                    "lastPage": 0,
+                    "after_sid": null,
+                    "before_sid": null
+                },
+                "status_code": 200
+            },
             "response": {
                 "content": {
                     "meta": {
@@ -93,7 +174,7 @@
                         "page": 0,
                         "page_size": 50,
                         "previous_page_url": null,
-                        "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Reservations"
+                        "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Reservations?PageSize=50&Page=0"
                     },
                     "reservations": []
                 },
@@ -107,12 +188,34 @@
             "request": {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "form_params": {
-                    "ReservationStatus": "reservation_status",
-                    "WorkerActivitySid": "WAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    "ReservationStatus": "accepted"
                 },
                 "method": "POST",
                 "query_params": {},
                 "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Reservations/WRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "ReservationStatus": "accepted"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Reservations/WRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2014-05-14T10:50:02Z",
+                    "date_updated": "2014-05-15T16:03:42Z",
+                    "reservation_status": "accepted",
+                    "sid": "WRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "task_sid": "WTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "worker_name": "Doug",
+                    "worker_sid": "WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "workspace_sid": "WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
             },
             "response": {
                 "content": {
@@ -124,7 +227,7 @@
                         "worker": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "workspace": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                     },
-                    "reservation_status": "reserved",
+                    "reservation_status": "accepted",
                     "sid": "WRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "task_sid": "WTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workers/WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Reservations/WRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",

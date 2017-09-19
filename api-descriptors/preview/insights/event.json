@@ -1,28 +1,28 @@
 {
     "read": [
         {
-            "name": "read_empty",
+            "name": "read_empty", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
-                    "Group": "group",
-                    "Level": "level",
+                    "Group": "group", 
+                    "Level": "level", 
                     "Name": "name"
-                },
+                }, 
                 "url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Events"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
-                    "Group": "group",
-                    "Level": "level",
+                    "Group": "group", 
+                    "Level": "level", 
                     "Name": "name"
-                },
+                }, 
                 "url": "/v1/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Events"
-            },
+            }, 
             "downstream_response": {
                 "content": {
                     "meta": {
@@ -30,49 +30,48 @@
                         "previous_token": 0
                     },
                     "response": []
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
                     "meta": {
-                        "first_page_url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Events?PageSize=50&Page=0",
-                        "key": "response",
-                        "next_page_url": null,
-                        "page": 0,
-                        "count": 0,
-                        "page_size": 50,
-                        "previous_page_url": null,
+                        "first_page_url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Events?PageSize=50&Page=0", 
+                        "key": "response", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 50, 
+                        "previous_page_url": null, 
                         "url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Events?PageSize=50&Page=0"
-                    },
+                    }, 
                     "response": []
-                },
+                }, 
                 "status_code": 200
             }
-        },
+        }, 
         {
-            "name": "read_full",
+            "name": "read_full", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
-                    "Group": "group",
-                    "Level": "level",
+                    "Group": "group", 
+                    "Level": "level", 
                     "Name": "name"
-                },
+                }, 
                 "url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Events"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
-                    "Group": "group",
-                    "Level": "level",
+                    "Group": "group", 
+                    "Level": "level", 
                     "Name": "name"
-                },
+                }, 
                 "url": "/v1/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Events"
-            },
+            }, 
             "downstream_response": {
                 "content": {
                     "meta": {
@@ -80,53 +79,52 @@
                         "previous_token": 0
                     },
                     "response": [{
-                        "account_friendly_name": "account_friendly_name",
-                        "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "group": "group",
-                        "level": "level",
-                        "name": "name",
-                        "parent_account_friendly_name": "parent_account_friendly_name",
-                        "parent_account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "payload": {},
-                        "payload_type": "payload_type",
-                        "publisher": "publisher",
-                        "publisher_metadata": {},
-                        "sid": "EVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "account_friendly_name": "account_friendly_name", 
+                        "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                        "group": "group", 
+                        "level": "level", 
+                        "name": "name", 
+                        "parent_account_friendly_name": "parent_account_friendly_name", 
+                        "parent_account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                        "payload": {}, 
+                        "payload_type": "payload_type", 
+                        "publisher": "publisher", 
+                        "publisher_metadata": {}, 
+                        "sid": "EVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                         "timestamp": "2015-07-30T20:00:00Z"
                     }]
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
                     "meta": {
-                        "first_page_url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Events?PageSize=50&Page=0",
-                        "key": "response",
-                        "next_page_url": null,
-                        "page": 0,
-                        "count": 1,
-                        "page_size": 50,
-                        "previous_page_url": null,
+                        "first_page_url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Events?PageSize=50&Page=0", 
+                        "key": "response", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 50, 
+                        "previous_page_url": null, 
                         "url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Events?PageSize=50&Page=0"
-                    },
+                    }, 
                     "response": [
                         {
-                            "account_friendly_name": "account_friendly_name",
-                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "group": "group",
-                            "level": "level",
-                            "name": "name",
-                            "parent_account_friendly_name": "parent_account_friendly_name",
-                            "parent_account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "payload": {},
-                            "payload_type": "payload_type",
-                            "publisher": "publisher",
-                            "publisher_metadata": {},
-                            "sid": "EVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "account_friendly_name": "account_friendly_name", 
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "group": "group", 
+                            "level": "level", 
+                            "name": "name", 
+                            "parent_account_friendly_name": "parent_account_friendly_name", 
+                            "parent_account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "payload": {}, 
+                            "payload_type": "payload_type", 
+                            "publisher": "publisher", 
+                            "publisher_metadata": {}, 
+                            "sid": "EVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                             "timestamp": "2015-07-30T20:00:00Z"
                         }
                     ]
-                },
+                }, 
                 "status_code": 200
             }
         }

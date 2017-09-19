@@ -1,20 +1,20 @@
 {
     "read": [
         {
-            "name": "read_empty",
+            "name": "read_empty", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Metrics"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "/v1/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Metrics"
-            },
+            }, 
             "downstream_response": {
                 "content": {
                     "meta": {
@@ -22,41 +22,40 @@
                         "previous_token": 0
                     },
                     "response": []
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
                     "meta": {
-                        "first_page_url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Metrics?PageSize=50&Page=0",
-                        "key": "response",
-                        "next_page_url": null,
-                        "page": 0,
-                        "count": 0,
-                        "page_size": 50,
-                        "previous_page_url": null,
+                        "first_page_url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Metrics?PageSize=50&Page=0", 
+                        "key": "response", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 50, 
+                        "previous_page_url": null, 
                         "url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Metrics?PageSize=50&Page=0"
-                    },
+                    }, 
                     "response": []
-                },
+                }, 
                 "status_code": 200
             }
-        },
+        }, 
         {
-            "name": "read_full",
+            "name": "read_full", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Metrics"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "/v1/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Metrics"
-            },
+            }, 
             "downstream_response": {
                 "content": {
                     "meta": {
@@ -64,59 +63,58 @@
                         "previous_token": 0
                     },
                     "response": [{
-                        "audio_level_in": 100,
-                        "audio_level_out": 100,
-                        "call_sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "jitter": 100,
-                        "mos": {},
-                        "packets_lost": 100,
-                        "packets_lost_fraction": {},
-                        "packets_received": 100,
-                        "rtt": 100,
-                        "timestamp": "2015-07-30T20:00:00Z",
-                        "timestamp_ms": 50000000,
-                        "total_bytes_received": 100,
-                        "total_bytes_sent": 100,
-                        "total_packets_lost": 100,
-                        "total_packets_received": 100,
+                        "audio_level_in": 100, 
+                        "audio_level_out": 100, 
+                        "call_sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                        "jitter": 100, 
+                        "mos": {}, 
+                        "packets_lost": 100, 
+                        "packets_lost_fraction": {}, 
+                        "packets_received": 100, 
+                        "rtt": 100, 
+                        "timestamp": "2015-07-30T20:00:00Z", 
+                        "timestamp_ms": 50000000, 
+                        "total_bytes_received": 100, 
+                        "total_bytes_sent": 100, 
+                        "total_packets_lost": 100, 
+                        "total_packets_received": 100, 
                         "total_packets_sent": 100
                     }]
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
                     "meta": {
-                        "first_page_url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Metrics?PageSize=50&Page=0",
-                        "key": "response",
-                        "next_page_url": null,
-                        "page": 0,
-                        "count": 1,
-                        "page_size": 50,
-                        "previous_page_url": null,
+                        "first_page_url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Metrics?PageSize=50&Page=0", 
+                        "key": "response", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 50, 
+                        "previous_page_url": null, 
                         "url": "https://preview.twilio.com/insights/Calls/CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Metrics?PageSize=50&Page=0"
-                    },
+                    }, 
                     "response": [
                         {
-                            "audio_level_in": 100,
-                            "audio_level_out": 100,
-                            "call_sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "jitter": 100,
-                            "mos": {},
-                            "packets_lost": 100,
-                            "packets_lost_fraction": {},
-                            "packets_received": 100,
-                            "rtt": 100,
-                            "timestamp": "2015-07-30T20:00:00Z",
-                            "timestamp_ms": 50000000,
-                            "total_bytes_received": 100,
-                            "total_bytes_sent": 100,
-                            "total_packets_lost": 100,
-                            "total_packets_received": 100,
+                            "audio_level_in": 100, 
+                            "audio_level_out": 100, 
+                            "call_sid": "CAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "jitter": 100, 
+                            "mos": {}, 
+                            "packets_lost": 100, 
+                            "packets_lost_fraction": {}, 
+                            "packets_received": 100, 
+                            "rtt": 100, 
+                            "timestamp": "2015-07-30T20:00:00Z", 
+                            "timestamp_ms": 50000000, 
+                            "total_bytes_received": 100, 
+                            "total_bytes_sent": 100, 
+                            "total_packets_lost": 100, 
+                            "total_packets_received": 100, 
                             "total_packets_sent": 100
                         }
                     ]
-                },
+                }, 
                 "status_code": 200
             }
         }

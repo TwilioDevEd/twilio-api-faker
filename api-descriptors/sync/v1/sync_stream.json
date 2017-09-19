@@ -1,30 +1,30 @@
 {
     "create": [
         {
-            "name": "create",
+            "name": "create", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                 "form_params": {
                     "UniqueName": "unique_name"
-                },
-                "method": "POST",
-                "query_params": {},
+                }, 
+                "method": "POST", 
+                "query_params": {}, 
                 "url": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams"
-            },
+            }, 
             "downstream_request": {
                 "form_params": {
                     "UniqueName": "unique_name"
-                },
-                "method": "POST",
-                "query_params": {},
+                }, 
+                "method": "POST", 
+                "query_params": {}, 
                 "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams"
-            },
+            }, 
             "downstream_response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "created_by": "created_by",
-                    "date_created": "2015-07-30T20:00:00.000Z",
-                    "date_updated": "2015-07-30T20:00:00.000Z",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "created_by": "created_by", 
+                    "date_created": "2015-07-30T20:00:00.000Z", 
+                    "date_updated": "2015-07-30T20:00:00.000Z", 
                     "links": {
                         "messages": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages"
                     },
@@ -32,75 +32,75 @@
                     "sid": "TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "unique_name": "unique_name",
                     "url": "http://www.example.com"
-                },
+                }, 
                 "status_code": 201
             },
             "response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "created_by": "created_by",
-                    "date_created": "2015-07-30T20:00:00Z",
-                    "date_updated": "2015-07-30T20:00:00Z",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "created_by": "created_by", 
+                    "date_created": "2015-07-30T20:00:00Z", 
+                    "date_updated": "2015-07-30T20:00:00Z", 
                     "links": {
                         "messages": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages"
                     },
                     "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "sid": "TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "unique_name": "unique_name",
+                    "unique_name": "unique_name", 
                     "url": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                },
+                }, 
                 "status_code": 201
             }
         }
-    ],
+    ], 
     "delete": [
         {
-            "name": "delete",
+            "name": "delete", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "DELETE",
-                "query_params": {},
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "DELETE", 
+                "query_params": {}, 
                 "url": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "DELETE",
-                "query_params": {},
+                "form_params": {}, 
+                "method": "DELETE", 
+                "query_params": {}, 
                 "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_response": {
-                "content": null,
+                "content": null, 
                 "status_code": 204
             },
             "response": {
-                "content": null,
+                "content": null, 
                 "status_code": 204
             }
         }
-    ],
+    ], 
     "fetch": [
         {
-            "name": "fetch",
+            "name": "fetch", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "created_by": "created_by",
-                    "date_created": "2015-07-30T20:00:00.000Z",
-                    "date_updated": "2015-07-30T20:00:00.000Z",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "created_by": "created_by", 
+                    "date_created": "2015-07-30T20:00:00.000Z", 
+                    "date_updated": "2015-07-30T20:00:00.000Z", 
                     "links": {
                         "messages": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages"
                     },
@@ -108,43 +108,43 @@
                     "sid": "TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "unique_name": "unique_name",
                     "url": "http://www.example.com"
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "created_by": "created_by",
-                    "date_created": "2015-07-30T20:00:00Z",
-                    "date_updated": "2015-07-30T20:00:00Z",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "created_by": "created_by", 
+                    "date_created": "2015-07-30T20:00:00Z", 
+                    "date_updated": "2015-07-30T20:00:00Z", 
                     "links": {
                         "messages": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages"
                     },
                     "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "sid": "TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "unique_name": "unique_name",
+                    "unique_name": "unique_name", 
                     "url": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                },
+                }, 
                 "status_code": 200
             }
         }
-    ],
+    ], 
     "read": [
         {
-            "name": "read_empty",
+            "name": "read_empty", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams"
-            },
+            }, 
             "downstream_response": {
                 "content": {
                     "streams": [],
@@ -155,7 +155,7 @@
                         "next_token": null,
                         "previous_token": null
                     }
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
@@ -164,41 +164,40 @@
                     "meta": {
                         "first_page_url": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams?PageSize=50&Page=0",
                         "key": "streams",
-                        "next_page_url": null,
-                        "page": 0,
-                        "count": 0,
-                        "page_size": 50,
-                        "previous_page_url": null,
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 50, 
+                        "previous_page_url": null, 
                         "url": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams?PageSize=50&Page=0"
                     }
-                },
+                }, 
                 "status_code": 200
             }
-        },
+        }, 
         {
-            "name": "read_full",
+            "name": "read_full", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams"
-            },
+            }, 
             "downstream_response": {
                 "content": {
                     "streams": [{
-                        "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "created_by": "created_by",
-                        "date_created": "2015-07-30T20:00:00.000Z",
-                        "date_updated": "2015-07-30T20:00:00.000Z",
+                        "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                        "created_by": "created_by", 
+                        "date_created": "2015-07-30T20:00:00.000Z", 
+                        "date_updated": "2015-07-30T20:00:00.000Z", 
                         "links": {
-                            "messages": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages"
+                            "context": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages"
                         },
                         "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "sid": "TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
@@ -212,37 +211,36 @@
                         "next_token": null,
                         "previous_token": null
                     }
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
                     "streams": [
                         {
-                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "created_by": "created_by",
-                            "date_created": "2015-07-30T20:00:00Z",
-                            "date_updated": "2015-07-30T20:00:00Z",
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "created_by": "created_by", 
+                            "date_created": "2015-07-30T20:00:00Z", 
+                            "date_updated": "2015-07-30T20:00:00Z", 
                             "links": {
                                 "messages": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages"
                             },
                             "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                             "sid": "TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "unique_name": "unique_name",
+                            "unique_name": "unique_name", 
                             "url": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                         }
-                    ],
+                    ], 
                     "meta": {
                         "first_page_url": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams?PageSize=50&Page=0",
                         "key": "streams",
-                        "next_page_url": null,
-                        "page": 0,
-                        "count": 1,
-                        "page_size": 50,
-                        "previous_page_url": null,
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 50, 
+                        "previous_page_url": null, 
                         "url": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams?PageSize=50&Page=0"
                     }
-                },
+                }, 
                 "status_code": 200
             }
         }

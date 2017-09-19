@@ -59,7 +59,7 @@
                         "url" : "https://preview.twilio.com/BulkExports/Exports/Calls/Days"
                     } ],
                     "meta": {
-                        "key": "days",
+                        "key": "days", 
                         "page_size" : 50,
                         "url" : "https://preview.twilio.com/BulkExports/Exports/Calls/Days",
                         "page" : 0,
@@ -82,7 +82,6 @@
                         "page_size" : 50,
                         "url" : "https://preview.twilio.com/BulkExports/Exports/Calls/Days?PageSize=50&Page=0",
                         "page" : 0,
-                        "count": 1,
                         "first_page_url": "https://preview.twilio.com/BulkExports/Exports/Calls/Days?PageSize=50&Page=0",
                         "previous_page_url": null,
                         "next_page_url": null

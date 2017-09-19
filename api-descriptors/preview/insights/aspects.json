@@ -1,64 +1,63 @@
 {
     "read": [
         {
-            "name": "read_empty",
+            "name": "read_empty", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "https://preview.twilio.com/insights/Calls/Report/Aspects"
             },
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "/v1/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Calls/Report/Aspects"
-            },
+            }, 
             "downstream_response": {
                 "content": {
                     "aspects": []
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
-                    "aspects": [],
+                    "aspects": [], 
                     "meta": {
-                        "first_page_url": "https://preview.twilio.com/insights/Calls/Report/Aspects?PageSize=50&Page=0",
-                        "key": "aspects",
-                        "next_page_url": null,
-                        "page": 0,
-                        "count": 0,
-                        "page_size": 50,
-                        "previous_page_url": null,
+                        "first_page_url": "https://preview.twilio.com/insights/Calls/Report/Aspects?PageSize=50&Page=0", 
+                        "key": "aspects", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 50, 
+                        "previous_page_url": null, 
                         "url": "https://preview.twilio.com/insights/Calls/Report/Aspects?PageSize=50&Page=0"
                     }
-                },
+                }, 
                 "status_code": 200
             }
-        },
+        }, 
         {
-            "name": "read_full",
+            "name": "read_full", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "https://preview.twilio.com/insights/Calls/Report/Aspects"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "/v1/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Calls/Report/Aspects"
-            },
+            }, 
             "downstream_response": {
                 "content": {
                     "aspects": [{
                         "name": "Clients"
                     }]
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
@@ -70,18 +69,17 @@
                                 "aspect_reports": "https://preview.twilio.com/insights/Calls/Report/Aspects/Clients"
                             }
                         }
-                    ],
+                    ], 
                     "meta": {
-                        "first_page_url": "https://preview.twilio.com/insights/Calls/Report/Aspects?PageSize=50&Page=0",
-                        "key": "aspects",
-                        "next_page_url": null,
-                        "page": 0,
-                        "count": 1,
-                        "page_size": 50,
-                        "previous_page_url": null,
+                        "first_page_url": "https://preview.twilio.com/insights/Calls/Report/Aspects?PageSize=50&Page=0", 
+                        "key": "aspects", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 50, 
+                        "previous_page_url": null, 
                         "url": "https://preview.twilio.com/insights/Calls/Report/Aspects?PageSize=50&Page=0"
                     }
-                },
+                }, 
                 "status_code": 200
             }
         }

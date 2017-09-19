@@ -1,0 +1,1004 @@
+{
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "GET",
+                "url": "https://preview.twilio.com/Numbers/ActiveNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_request": {
+                "method": "GET",
+                "url": "/v1/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/InventoryNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "capabilities": {
+                        "mms": {
+                            "inbound_connectivity": true,
+                            "inbound_mps": -1,
+                            "inbound_reachability": "global",
+                            "outbound_connectivity": true
+                        },
+                        "sms": {
+                            "gsm7": true,
+                            "inbound_connectivity": true,
+                            "inbound_mps": -1,
+                            "inbound_reachability": "global",
+                            "inbound_sender_id_preservation": "international",
+                            "outbound_connectivity": true,
+                            "ucs2": true
+                        },
+                        "voice": {
+                            "calls_per_second": 30,
+                            "codecs": [
+                                "g711u"
+                            ],
+                            "concurrent_calls_limit": 30,
+                            "e911": true,
+                            "fax": true,
+                            "inbound_called_dtmf": true,
+                            "inbound_caller_dtmf": true,
+                            "inbound_caller_id_preservation": "international",
+                            "inbound_connectivity": true,
+                            "inbound_reachability": "global",
+                            "long_record_length": 30,
+                            "outbound_connectivity": true,
+                            "sip_trunking": true
+                        }
+                    },
+                    "configuration": {
+                        "friendly_name": "(415) 935-0000",
+                        "sms": {
+                            "application_sid": "",
+                            "fallback_method": "POST",
+                            "fallback_url": "",
+                            "method": "POST",
+                            "url": "https://demo.twilio.com/welcome/sms/reply/"
+                        },
+                        "status_callback_method": "POST",
+                        "status_callback_url": "",
+                        "voice": {
+                            "application_sid": null,
+                            "caller_id_lookup": false,
+                            "emergency_address_sid": null,
+                            "emergency_status": "Inactive",
+                            "fallback_method": "POST",
+                            "fallback_url": null,
+                            "method": "POST",
+                            "trunk_sid": null,
+                            "url": "https://demo.twilio.com/welcome/voice/"
+                        }
+                    },
+                    "did": "+14159350000",
+                    "did_sid": "IDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "geography": {
+                        "iso_country": "US",
+                        "lata": "722",
+                        "latitude": 37.762100,
+                        "locality": "San Francisco",
+                        "longitude": -122.397100,
+                        "postal_code": "94107",
+                        "rate_center": "SNFC CNTRL",
+                        "region": "CA"
+                    },
+                    "lifecycle": "generally-available",
+                    "nku_sid": "NKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "regulatory": {
+                        "address_requirements": "none"
+                    },
+                    "sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "in-use",
+                    "type": "local"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "capabilities": {
+                        "mms": {
+                            "inbound_connectivity": true,
+                            "inbound_mps": -1,
+                            "inbound_reachability": "global",
+                            "outbound_connectivity": true
+                        },
+                        "sms": {
+                            "gsm7": true,
+                            "inbound_connectivity": true,
+                            "inbound_mps": -1,
+                            "inbound_reachability": "global",
+                            "inbound_sender_id_preservation": "international",
+                            "outbound_connectivity": true,
+                            "ucs2": true
+                        },
+                        "voice": {
+                            "calls_per_second": 30,
+                            "concurrent_calls_limit": 30,
+                            "e911": true,
+                            "fax": true,
+                            "inbound_called_dtmf": true,
+                            "inbound_caller_dtmf": true,
+                            "inbound_caller_id_preservation": "international",
+                            "inbound_connectivity": true,
+                            "inbound_reachability": "global",
+                            "long_record_length": 30,
+                            "outbound_connectivity": true,
+                            "sip_trunking": true
+                        }
+                    },
+                    "configuration": {
+                        "friendly_name": "(415) 935-0000",
+                        "sms": {
+                            "application_sid": "",
+                            "fallback_method": "POST",
+                            "fallback_url": "",
+                            "method": "POST",
+                            "url": "https://demo.twilio.com/welcome/sms/reply/"
+                        },
+                        "status_callback_method": "POST",
+                        "status_callback_url": "",
+                        "voice": {
+                            "application_sid": null,
+                            "caller_id_lookup": false,
+                            "emergency_address_sid": null,
+                            "emergency_status": "Inactive",
+                            "fallback_method": "POST",
+                            "fallback_url": null,
+                            "method": "POST",
+                            "trunk_sid": null,
+                            "url": "https://demo.twilio.com/welcome/voice/"
+                        }
+                    },
+                    "phone_number": "+14159350000",
+                    "geography": {
+                        "iso_country": "US",
+                        "lata": "722",
+                        "latitude": 37.762100,
+                        "locality": "San Francisco",
+                        "longitude": -122.397100,
+                        "postal_code": "94107",
+                        "rate_center": "SNFC CNTRL",
+                        "region": "CA"
+                    },
+                    "lifecycle": "generally-available",
+                    "regulatory": {
+                        "address_requirements": "none"
+                    },
+                    "sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "type": "local",
+                    "url": "https://preview.twilio.com/Numbers/ActiveNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "GET",
+                "url": "https://preview.twilio.com/Numbers/ActiveNumbers",
+                "form_params": {},
+                "query_params": {
+                    "AccountSid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "PhoneNumber": "+14159350000",
+                    "Type": "local",
+                    "Geography.IsoCountry": "US",
+                    "Geography.Lata": "722",
+                    "Geography.Locality": "San Francisco",
+                    "Geography.PostalCode": "94107",
+                    "Geography.RateCenter": "SNFC CNTRL",
+                    "Geography.Region": "CA",
+                    "Capabilities.Voice.InboundConnectivity": false,
+                    "Capabilities.Voice.OutboundConnectivity": false,
+                    "Capabilities.Voice.E911": false,
+                    "Capabilities.Voice.Fax": false,
+                    "Capabilities.Voice.CallsPerSecond": 100,
+                    "Capabilities.Voice.ConcurrentCallsLimit": 100,
+                    "Capabilities.Voice.LongRecordLength": 100,
+                    "Capabilities.Voice.InboundCalledDtmf": false,
+                    "Capabilities.Voice.InboundCallerDtmf": false,
+                    "Capabilities.Voice.SipTrunking": false,
+                    "Capabilities.Voice.InboundCallerIdPreservation": "none",
+                    "Capabilities.Voice.InboundReachability": "domestic",
+                    "Capabilities.Sms.InboundConnectivity": false,
+                    "Capabilities.Sms.OutboundConnectivity": false,
+                    "Capabilities.Sms.Gsm7": false,
+                    "Capabilities.Sms.Ucs2": false,
+                    "Capabilities.Sms.InboundSenderIdPreservation": "none",
+                    "Capabilities.Sms.InboundReachability": "domestic",
+                    "Capabilities.Sms.InboundMps": 100,
+                    "Capabilities.Mms.InboundConnectivity": false,
+                    "Capabilities.Mms.OutboundConnectivity": false,
+                    "Capabilities.Mms.InboundReachability": "domestic",
+                    "Capabilities.Mms.InboundMps": 100,
+                    "Regulatory.AddressRequirements": "none"
+                }
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "url": "/v1/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/InventoryNumbers",
+                "query_params": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "did": "+14159350000",
+                    "type": "local",
+                    "geography.iso_country": "US",
+                    "geography.lata": "722",
+                    "geography.locality": "San Francisco",
+                    "geography.postal_code": "94107",
+                    "geography.rate_center": "SNFC CNTRL",
+                    "geography.region": "CA",
+                    "capabilities.voice.inbound_connectivity": false,
+                    "capabilities.voice.outbound_connectivity": false,
+                    "capabilities.voice.e911": false,
+                    "capabilities.voice.fax": false,
+                    "capabilities.voice.calls_per_second": 100,
+                    "capabilities.voice.concurrent_calls_limit": 100,
+                    "capabilities.voice.long_record_length": 100,
+                    "capabilities.voice.inbound_called_dtmf": false,
+                    "capabilities.voice.inbound_caller_dtmf": false,
+                    "capabilities.voice.sip_trunking": false,
+                    "capabilities.voice.inbound_caller_id_preservation": "none",
+                    "capabilities.voice.inbound_reachability": "domestic",
+                    "capabilities.sms.inbound_connectivity": false,
+                    "capabilities.sms.outbound_connectivity": false,
+                    "capabilities.sms.gsm7": false,
+                    "capabilities.sms.ucs2": false,
+                    "capabilities.sms.inbound_sender_id_preservation": "none",
+                    "capabilities.sms.inbound_reachability": "domestic",
+                    "capabilities.sms.inbound_mps": 100,
+                    "capabilities.mms.inbound_connectivity": false,
+                    "capabilities.mms.outbound_connectivity": false,
+                    "capabilities.mms.inbound_reachability": "domestic",
+                    "capabilities.mms.inbound_mps": 100,
+                    "regulatory.address_requirements": "none"
+                }
+            },
+            "downstream_response": {
+                "content": {
+                    "items": []
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/Numbers/ActiveNumbers?PageSize=50&Page=0",
+                        "key": "items",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 50,
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/Numbers/ActiveNumbers?PageSize=50&Page=0"
+                    },
+                    "items": []
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "GET",
+                "url": "https://preview.twilio.com/Numbers/ActiveNumbers",
+                "form_params": {},
+                "query_params": {
+                    "AccountSid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "PhoneNumber": "+14159350000",
+                    "Type": "local",
+                    "Geography.IsoCountry": "US",
+                    "Geography.Lata": "722",
+                    "Geography.Locality": "San Francisco",
+                    "Geography.PostalCode": "94107",
+                    "Geography.RateCenter": "SNFC CNTRL",
+                    "Geography.Region": "CA",
+                    "Capabilities.Voice.InboundConnectivity": false,
+                    "Capabilities.Voice.OutboundConnectivity": false,
+                    "Capabilities.Voice.E911": false,
+                    "Capabilities.Voice.Fax": false,
+                    "Capabilities.Voice.CallsPerSecond": 100,
+                    "Capabilities.Voice.ConcurrentCallsLimit": 100,
+                    "Capabilities.Voice.LongRecordLength": 100,
+                    "Capabilities.Voice.InboundCalledDtmf": false,
+                    "Capabilities.Voice.InboundCallerDtmf": false,
+                    "Capabilities.Voice.SipTrunking": false,
+                    "Capabilities.Voice.InboundCallerIdPreservation": "none",
+                    "Capabilities.Voice.InboundReachability": "domestic",
+                    "Capabilities.Sms.InboundConnectivity": false,
+                    "Capabilities.Sms.OutboundConnectivity": false,
+                    "Capabilities.Sms.Gsm7": false,
+                    "Capabilities.Sms.Ucs2": false,
+                    "Capabilities.Sms.InboundSenderIdPreservation": "none",
+                    "Capabilities.Sms.InboundReachability": "domestic",
+                    "Capabilities.Sms.InboundMps": 100,
+                    "Capabilities.Mms.InboundConnectivity": false,
+                    "Capabilities.Mms.OutboundConnectivity": false,
+                    "Capabilities.Mms.InboundReachability": "domestic",
+                    "Capabilities.Mms.InboundMps": 100,
+                    "Regulatory.AddressRequirements": "none"
+                }
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "url": "/v1/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/InventoryNumbers",
+                "query_params": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "did": "+14159350000",
+                    "type": "local",
+                    "geography.iso_country": "US",
+                    "geography.lata": "722",
+                    "geography.locality": "San Francisco",
+                    "geography.postal_code": "94107",
+                    "geography.rate_center": "SNFC CNTRL",
+                    "geography.region": "CA",
+                    "capabilities.voice.inbound_connectivity": false,
+                    "capabilities.voice.outbound_connectivity": false,
+                    "capabilities.voice.e911": false,
+                    "capabilities.voice.fax": false,
+                    "capabilities.voice.calls_per_second": 100,
+                    "capabilities.voice.concurrent_calls_limit": 100,
+                    "capabilities.voice.long_record_length": 100,
+                    "capabilities.voice.inbound_called_dtmf": false,
+                    "capabilities.voice.inbound_caller_dtmf": false,
+                    "capabilities.voice.sip_trunking": false,
+                    "capabilities.voice.inbound_caller_id_preservation": "none",
+                    "capabilities.voice.inbound_reachability": "domestic",
+                    "capabilities.sms.inbound_connectivity": false,
+                    "capabilities.sms.outbound_connectivity": false,
+                    "capabilities.sms.gsm7": false,
+                    "capabilities.sms.ucs2": false,
+                    "capabilities.sms.inbound_sender_id_preservation": "none",
+                    "capabilities.sms.inbound_reachability": "domestic",
+                    "capabilities.sms.inbound_mps": 100,
+                    "capabilities.mms.inbound_connectivity": false,
+                    "capabilities.mms.outbound_connectivity": false,
+                    "capabilities.mms.inbound_reachability": "domestic",
+                    "capabilities.mms.inbound_mps": 100,
+                    "regulatory.address_requirements": "none"
+                }
+            },
+            "downstream_response": {
+                "content": {
+                    "after_sid": "IDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "before_sid": "IDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "items": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "capabilities": {
+                                "mms": {
+                                    "inbound_connectivity": true,
+                                    "inbound_mps": -1,
+                                    "inbound_reachability": "global",
+                                    "outbound_connectivity": true
+                                },
+                                "sms": {
+                                    "gsm7": true,
+                                    "inbound_connectivity": true,
+                                    "inbound_mps": -1,
+                                    "inbound_reachability": "global",
+                                    "inbound_sender_id_preservation": "international",
+                                    "outbound_connectivity": true,
+                                    "ucs2": true
+                                },
+                                "voice": {
+                                    "calls_per_second": 30,
+                                    "codecs": [
+                                        "g711u"
+                                    ],
+                                    "concurrent_calls_limit": 30,
+                                    "e911": true,
+                                    "fax": true,
+                                    "inbound_called_dtmf": true,
+                                    "inbound_caller_dtmf": true,
+                                    "inbound_caller_id_preservation": "international",
+                                    "inbound_connectivity": true,
+                                    "inbound_reachability": "global",
+                                    "long_record_length": 30,
+                                    "outbound_connectivity": true,
+                                    "sip_trunking": true
+                                }
+                            },
+                            "configuration": {
+                                "friendly_name": "(415) 935-0000",
+                                "sms": {
+                                    "application_sid": "",
+                                    "fallback_method": "POST",
+                                    "fallback_url": "",
+                                    "method": "POST",
+                                    "url": "https://demo.twilio.com/welcome/sms/reply/"
+                                },
+                                "status_callback_method": "POST",
+                                "status_callback_url": "",
+                                "voice": {
+                                    "application_sid": null,
+                                    "caller_id_lookup": false,
+                                    "emergency_address_sid": null,
+                                    "emergency_status": "Inactive",
+                                    "fallback_method": "POST",
+                                    "fallback_url": null,
+                                    "method": "POST",
+                                    "trunk_sid": null,
+                                    "url": "https://demo.twilio.com/welcome/voice/"
+                                }
+                            },
+                            "did": "+14159350000",
+                            "did_sid": "IDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "geography": {
+                                "iso_country": "US",
+                                "lata": "722",
+                                "latitude": 37.762100,
+                                "locality": "San Francisco",
+                                "longitude": -122.397100,
+                                "postal_code": "94107",
+                                "rate_center": "SNFC CNTRL",
+                                "region": "CA"
+                            },
+                            "lifecycle": "generally-available",
+                            "nku_sid": "NKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "regulatory": {
+                                "address_requirements": "none"
+                            },
+                            "sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "status": "in-use",
+                            "type": "local"
+                        }
+                    ],
+                    "next_page_uri": "/v1/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/InventoryNumbers?after_sid=IDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&page_size=50",
+                    "page_size": 50,
+                    "previous_page_uri": "/v1/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/InventoryNumbers?page_size=50&before_sid=IDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "uri": "/v1/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/InventoryNumbers?page_size=50"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/Numbers/ActiveNumbers?PageSize=50&Page=0",
+                        "key": "items",
+                        "page": 0,
+                        "page_size": 50,
+                        "next_page_url": null,
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/Numbers/ActiveNumbers?PageSize=50&Page=0"
+                    },
+                    "items": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "capabilities": {
+                                "mms": {
+                                    "inbound_connectivity": true,
+                                    "inbound_mps": -1,
+                                    "inbound_reachability": "global",
+                                    "outbound_connectivity": true
+                                },
+                                "sms": {
+                                    "gsm7": true,
+                                    "inbound_connectivity": true,
+                                    "inbound_mps": -1,
+                                    "inbound_reachability": "global",
+                                    "inbound_sender_id_preservation": "international",
+                                    "outbound_connectivity": true,
+                                    "ucs2": true
+                                },
+                                "voice": {
+                                    "calls_per_second": 30,
+                                    "concurrent_calls_limit": 30,
+                                    "e911": true,
+                                    "fax": true,
+                                    "inbound_called_dtmf": true,
+                                    "inbound_caller_dtmf": true,
+                                    "inbound_caller_id_preservation": "international",
+                                    "inbound_connectivity": true,
+                                    "inbound_reachability": "global",
+                                    "long_record_length": 30,
+                                    "outbound_connectivity": true,
+                                    "sip_trunking": true
+                                }
+                            },
+                            "configuration": {
+                                "friendly_name": "(415) 935-0000",
+                                "sms": {
+                                    "application_sid": "",
+                                    "fallback_method": "POST",
+                                    "fallback_url": "",
+                                    "method": "POST",
+                                    "url": "https://demo.twilio.com/welcome/sms/reply/"
+                                },
+                                "status_callback_method": "POST",
+                                "status_callback_url": "",
+                                "voice": {
+                                    "application_sid": null,
+                                    "caller_id_lookup": false,
+                                    "emergency_address_sid": null,
+                                    "emergency_status": "Inactive",
+                                    "fallback_method": "POST",
+                                    "fallback_url": null,
+                                    "method": "POST",
+                                    "trunk_sid": null,
+                                    "url": "https://demo.twilio.com/welcome/voice/"
+                                }
+                            },
+                            "phone_number": "+14159350000",
+                            "geography": {
+                                "iso_country": "US",
+                                "lata": "722",
+                                "latitude": 37.762100,
+                                "locality": "San Francisco",
+                                "longitude": -122.397100,
+                                "postal_code": "94107",
+                                "rate_center": "SNFC CNTRL",
+                                "region": "CA"
+                            },
+                            "lifecycle": "generally-available",
+                            "regulatory": {
+                                "address_requirements": "none"
+                            },
+                            "sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "type": "local",
+                            "url": "https://preview.twilio.com/Numbers/ActiveNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+                        }
+                    ]
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "POST",
+                "url": "https://preview.twilio.com/Numbers/ActiveNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "FriendlyName": "+14159350000",
+                    "VoiceUrl": "https://demo.twilio.com/welcome/voice/",
+                    "VoiceMethod": "POST",
+                    "VoiceFallbackUrl": "",
+                    "VoiceFallbackMethod": "POST",
+                    "VoiceCallerIdLookup": "false",
+                    "VoiceApplicationSid": "",
+                    "SmsUrl": "https://demo.twilio.com/welcome/sms/reply/",
+                    "SmsMethod": "POST",
+                    "SmsFallbackUrl": "",
+                    "SmsFallbackMethod": "POST",
+                    "SmsApplicationSid": "",
+                    "StatusCallback": "",
+                    "StatusCallbackMethod": "POST"
+                },
+                "query_params": {}
+            },
+            "downstream_request": {
+                "method": "POST",
+                "url": "/v1/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/InventoryNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "friendly_name": "+14159350000",
+                    "voice_url": "https://demo.twilio.com/welcome/voice/",
+                    "voice_method": "POST",
+                    "voice_fallback_url": "",
+                    "voice_fallback_method": "POST",
+                    "voice_caller_id_lookup": "false",
+                    "voice_application_sid": "",
+                    "sms_url": "https://demo.twilio.com/welcome/sms/reply/",
+                    "sms_method": "POST",
+                    "sms_fallback_url": "",
+                    "sms_fallback_method": "POST",
+                    "sms_application_sid": "",
+                    "status_callback": "",
+                    "status_callback_method": "POST"
+                },
+                "query_params": {}
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "capabilities": {
+                        "mms": {
+                            "inbound_connectivity": true,
+                            "inbound_mps": -1,
+                            "inbound_reachability": "global",
+                            "outbound_connectivity": true
+                        },
+                        "sms": {
+                            "gsm7": true,
+                            "inbound_connectivity": true,
+                            "inbound_mps": -1,
+                            "inbound_reachability": "global",
+                            "inbound_sender_id_preservation": "international",
+                            "outbound_connectivity": true,
+                            "ucs2": true
+                        },
+                        "voice": {
+                            "calls_per_second": 30,
+                            "codecs": [
+                                "g711u"
+                            ],
+                            "concurrent_calls_limit": 30,
+                            "e911": true,
+                            "fax": true,
+                            "inbound_called_dtmf": true,
+                            "inbound_caller_dtmf": true,
+                            "inbound_caller_id_preservation": "international",
+                            "inbound_connectivity": true,
+                            "inbound_reachability": "global",
+                            "long_record_length": 30,
+                            "outbound_connectivity": true,
+                            "sip_trunking": true
+                        }
+                    },
+                    "configuration": {
+                        "friendly_name": "(415) 935-0000",
+                        "sms": {
+                            "application_sid": "",
+                            "fallback_method": "POST",
+                            "fallback_url": "",
+                            "method": "POST",
+                            "url": "https://demo.twilio.com/welcome/sms/reply/"
+                        },
+                        "status_callback_method": "POST",
+                        "status_callback_url": "",
+                        "voice": {
+                            "application_sid": null,
+                            "caller_id_lookup": false,
+                            "emergency_address_sid": null,
+                            "emergency_status": "Inactive",
+                            "fallback_method": "POST",
+                            "fallback_url": null,
+                            "method": "POST",
+                            "trunk_sid": null,
+                            "url": "https://demo.twilio.com/welcome/voice/"
+                        }
+                    },
+                    "did": "+14159350000",
+                    "did_sid": "IDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "geography": {
+                        "iso_country": "US",
+                        "lata": "722",
+                        "latitude": 37.762100,
+                        "locality": "San Francisco",
+                        "longitude": -122.397100,
+                        "postal_code": "94107",
+                        "rate_center": "SNFC CNTRL",
+                        "region": "CA"
+                    },
+                    "lifecycle": "generally-available",
+                    "nku_sid": "NKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "regulatory": {
+                        "address_requirements": "none"
+                    },
+                    "sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "in-use",
+                    "type": "local"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "capabilities": {
+                        "mms": {
+                            "inbound_connectivity": true,
+                            "inbound_mps": -1,
+                            "inbound_reachability": "global",
+                            "outbound_connectivity": true
+                        },
+                        "sms": {
+                            "gsm7": true,
+                            "inbound_connectivity": true,
+                            "inbound_mps": -1,
+                            "inbound_reachability": "global",
+                            "inbound_sender_id_preservation": "international",
+                            "outbound_connectivity": true,
+                            "ucs2": true
+                        },
+                        "voice": {
+                            "calls_per_second": 30,
+                            "concurrent_calls_limit": 30,
+                            "e911": true,
+                            "fax": true,
+                            "inbound_called_dtmf": true,
+                            "inbound_caller_dtmf": true,
+                            "inbound_caller_id_preservation": "international",
+                            "inbound_connectivity": true,
+                            "inbound_reachability": "global",
+                            "long_record_length": 30,
+                            "outbound_connectivity": true,
+                            "sip_trunking": true
+                        }
+                    },
+                    "configuration": {
+                        "friendly_name": "(415) 935-0000",
+                        "sms": {
+                            "application_sid": "",
+                            "fallback_method": "POST",
+                            "fallback_url": "",
+                            "method": "POST",
+                            "url": "https://demo.twilio.com/welcome/sms/reply/"
+                        },
+                        "status_callback_method": "POST",
+                        "status_callback_url": "",
+                        "voice": {
+                            "application_sid": null,
+                            "caller_id_lookup": false,
+                            "emergency_address_sid": null,
+                            "emergency_status": "Inactive",
+                            "fallback_method": "POST",
+                            "fallback_url": null,
+                            "method": "POST",
+                            "trunk_sid": null,
+                            "url": "https://demo.twilio.com/welcome/voice/"
+                        }
+                    },
+                    "phone_number": "+14159350000",
+                    "geography": {
+                        "iso_country": "US",
+                        "lata": "722",
+                        "latitude": 37.762100,
+                        "locality": "San Francisco",
+                        "longitude": -122.397100,
+                        "postal_code": "94107",
+                        "rate_center": "SNFC CNTRL",
+                        "region": "CA"
+                    },
+                    "lifecycle": "generally-available",
+                    "regulatory": {
+                        "address_requirements": "none"
+                    },
+                    "sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "type": "local",
+                    "url": "https://preview.twilio.com/Numbers/ActiveNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "POST",
+                "url": "https://preview.twilio.com/Numbers/ActiveNumbers",
+                "form_params": {
+                    "PhoneNumber": "+14159350000",
+                    "FriendlyName": "+14159350000",
+                    "VoiceUrl": "https://demo.twilio.com/welcome/voice/",
+                    "VoiceMethod": "POST",
+                    "VoiceFallbackUrl": "",
+                    "VoiceFallbackMethod": "POST",
+                    "VoiceCallerIdLookup": "false",
+                    "VoiceApplicationSid": "",
+                    "SmsUrl": "https://demo.twilio.com/welcome/sms/reply/",
+                    "SmsMethod": "POST",
+                    "SmsFallbackUrl": "",
+                    "SmsFallbackMethod": "POST",
+                    "SmsApplicationSid": "",
+                    "StatusCallback": "",
+                    "StatusCallbackMethod": "POST"
+                },
+                "query_params": {}
+            },
+            "downstream_request": {
+                "method": "POST",
+                "url": "/v1/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/InventoryNumbers",
+                "form_params": {
+                    "phone_number": "+14159350000",
+                    "friendly_name": "+14159350000",
+                    "voice_url": "https://demo.twilio.com/welcome/voice/",
+                    "voice_method": "POST",
+                    "voice_fallback_url": "",
+                    "voice_fallback_method": "POST",
+                    "voice_caller_id_lookup": "false",
+                    "voice_application_sid": "",
+                    "sms_url": "https://demo.twilio.com/welcome/sms/reply/",
+                    "sms_method": "POST",
+                    "sms_fallback_url": "",
+                    "sms_fallback_method": "POST",
+                    "sms_application_sid": "",
+                    "status_callback": "",
+                    "status_callback_method": "POST"
+                },
+                "query_params": {}
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "capabilities": {
+                        "mms": {
+                            "inbound_connectivity": true,
+                            "inbound_mps": -1,
+                            "inbound_reachability": "global",
+                            "outbound_connectivity": true
+                        },
+                        "sms": {
+                            "gsm7": true,
+                            "inbound_connectivity": true,
+                            "inbound_mps": -1,
+                            "inbound_reachability": "global",
+                            "inbound_sender_id_preservation": "international",
+                            "outbound_connectivity": true,
+                            "ucs2": true
+                        },
+                        "voice": {
+                            "calls_per_second": 30,
+                            "codecs": [
+                                "g711u"
+                            ],
+                            "concurrent_calls_limit": 30,
+                            "e911": true,
+                            "fax": true,
+                            "inbound_called_dtmf": true,
+                            "inbound_caller_dtmf": true,
+                            "inbound_caller_id_preservation": "international",
+                            "inbound_connectivity": true,
+                            "inbound_reachability": "global",
+                            "long_record_length": 30,
+                            "outbound_connectivity": true,
+                            "sip_trunking": true
+                        }
+                    },
+                    "configuration": {
+                        "friendly_name": "(415) 935-0000",
+                        "sms": {
+                            "application_sid": "",
+                            "fallback_method": "POST",
+                            "fallback_url": "",
+                            "method": "POST",
+                            "url": "https://demo.twilio.com/welcome/sms/reply/"
+                        },
+                        "status_callback_method": "POST",
+                        "status_callback_url": "",
+                        "voice": {
+                            "application_sid": null,
+                            "caller_id_lookup": false,
+                            "emergency_address_sid": null,
+                            "emergency_status": "Inactive",
+                            "fallback_method": "POST",
+                            "fallback_url": null,
+                            "method": "POST",
+                            "trunk_sid": null,
+                            "url": "https://demo.twilio.com/welcome/voice/"
+                        }
+                    },
+                    "did": "+14159350000",
+                    "did_sid": "IDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "geography": {
+                        "iso_country": "US",
+                        "lata": "722",
+                        "latitude": 37.762100,
+                        "locality": "San Francisco",
+                        "longitude": -122.397100,
+                        "postal_code": "94107",
+                        "rate_center": "SNFC CNTRL",
+                        "region": "CA"
+                    },
+                    "lifecycle": "generally-available",
+                    "nku_sid": "NKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "regulatory": {
+                        "address_requirements": "none"
+                    },
+                    "sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "in-use",
+                    "type": "local"
+                },
+                "status_code": 201
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "capabilities": {
+                        "mms": {
+                            "inbound_connectivity": true,
+                            "inbound_mps": -1,
+                            "inbound_reachability": "global",
+                            "outbound_connectivity": true
+                        },
+                        "sms": {
+                            "gsm7": true,
+                            "inbound_connectivity": true,
+                            "inbound_mps": -1,
+                            "inbound_reachability": "global",
+                            "inbound_sender_id_preservation": "international",
+                            "outbound_connectivity": true,
+                            "ucs2": true
+                        },
+                        "voice": {
+                            "calls_per_second": 30,
+                            "concurrent_calls_limit": 30,
+                            "e911": true,
+                            "fax": true,
+                            "inbound_called_dtmf": true,
+                            "inbound_caller_dtmf": true,
+                            "inbound_caller_id_preservation": "international",
+                            "inbound_connectivity": true,
+                            "inbound_reachability": "global",
+                            "long_record_length": 30,
+                            "outbound_connectivity": true,
+                            "sip_trunking": true
+                        }
+                    },
+                    "configuration": {
+                        "friendly_name": "(415) 935-0000",
+                        "sms": {
+                            "application_sid": "",
+                            "fallback_method": "POST",
+                            "fallback_url": "",
+                            "method": "POST",
+                            "url": "https://demo.twilio.com/welcome/sms/reply/"
+                        },
+                        "status_callback_method": "POST",
+                        "status_callback_url": "",
+                        "voice": {
+                            "application_sid": null,
+                            "caller_id_lookup": false,
+                            "emergency_address_sid": null,
+                            "emergency_status": "Inactive",
+                            "fallback_method": "POST",
+                            "fallback_url": null,
+                            "method": "POST",
+                            "trunk_sid": null,
+                            "url": "https://demo.twilio.com/welcome/voice/"
+                        }
+                    },
+                    "phone_number": "+14159350000",
+                    "geography": {
+                        "iso_country": "US",
+                        "lata": "722",
+                        "latitude": 37.762100,
+                        "locality": "San Francisco",
+                        "longitude": -122.397100,
+                        "postal_code": "94107",
+                        "rate_center": "SNFC CNTRL",
+                        "region": "CA"
+                    },
+                    "lifecycle": "generally-available",
+                    "regulatory": {
+                        "address_requirements": "none"
+                    },
+                    "sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "type": "local",
+                    "url": "https://preview.twilio.com/Numbers/ActiveNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 201
+            }
+        }
+    ],
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "DELETE",
+                "url": "https://preview.twilio.com/Numbers/ActiveNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_request": {
+                "method": "DELETE",
+                "url": "/v1/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/InventoryNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "query_params": {}
+            },
+            "downstream_response": {
+                "content": null,
+                "status_code": 204
+            },
+            "response": {
+                "content": null,
+                "status_code": 204
+            }
+        }
+    ]
+}

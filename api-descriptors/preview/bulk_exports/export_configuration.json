@@ -23,8 +23,7 @@
                     "enabled" : true,
                     "webhook_url" : "",
                     "webhook_method" : "",
-                    "resource_type" : "Calls",
-                    "email" : ""
+                    "resource_type" : "Calls"
                 }
             },
             "response" : {
@@ -34,8 +33,7 @@
                     "enabled" : true,
                     "webhook_url" : "",
                     "webhook_method" : "",
-                    "resource_type" : "Calls",
-                    "email" : ""
+                    "resource_type" : "Calls"
                 }
             }
         }
@@ -68,8 +66,7 @@
                     "enabled" : true,
                     "webhook_url" : "",
                     "webhook_method" : "",
-                    "resource_type" : "Calls",
-                    "email" : "bogus@twilio.com"
+                    "resource_type" : "Calls"
                 }
             },
             "response" : {
@@ -77,7 +74,6 @@
                 "content": {
                     "url" : "https://preview.twilio.com/BulkExports/Exports/Calls/Configuration",
                     "enabled" : true,
-                    "email" : "bogus@twilio.com",
                     "webhook_url" : "",
                     "resource_type" : "Calls",
                     "webhook_method" : ""

@@ -1,48 +1,48 @@
 {
     "create": [
         {
-            "name": "create",
+            "name": "create", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                 "form_params": {
-                    "Address": "address",
-                    "BindingType": "apn",
-                    "CredentialSid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "Endpoint": "endpoint",
-                    "Identity": "24987039",
-                    "NotificationProtocolVersion": "notification_protocol_version",
+                    "Address": "address", 
+                    "BindingType": "apn", 
+                    "CredentialSid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "Endpoint": "endpoint", 
+                    "Identity": "24987039", 
+                    "NotificationProtocolVersion": "notification_protocol_version", 
                     "Tag": [
                         "tag"
                     ]
-                },
-                "method": "POST",
-                "query_params": {},
+                }, 
+                "method": "POST", 
+                "query_params": {}, 
                 "url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings"
-            },
+            }, 
             "downstream_request": {
                 "form_params": {
-                    "Address": "address",
-                    "BindingType": "apn",
-                    "CredentialSid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "Endpoint": "endpoint",
-                    "Identity": "24987039",
-                    "NotificationProtocolVersion": "notification_protocol_version",
+                    "Address": "address", 
+                    "BindingType": "apn", 
+                    "CredentialSid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "Endpoint": "endpoint", 
+                    "Identity": "24987039", 
+                    "NotificationProtocolVersion": "notification_protocol_version", 
                     "Tag": [
                         "tag"
                     ]
-                },
-                "method": "POST",
-                "query_params": {},
+                }, 
+                "method": "POST", 
+                "query_params": {}, 
                 "url": "/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings"
-            },
+            }, 
             "downstream_response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "address": "a7c658f4111ec4ff5a1a647f9d0edd819025b9f20522d2fae897049f32873e73",
                     "binding_type": "apn",
                     "credential_sid": null,
-                    "date_created": "2015-07-30T20:00:00Z",
-                    "date_updated": "2015-07-30T20:00:00Z",
+                    "date_created": "2015-07-30T20:00:00Z", 
+                    "date_updated": "2015-07-30T20:00:00Z", 
                     "endpoint": "26607274",
                     "identity": "24987039",
                     "message_types": [],
@@ -52,84 +52,84 @@
                     "tags": [
                         "26607274"
                     ]
-                },
+                }, 
                 "status_code": 201
             },
             "response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "address": "a7c658f4111ec4ff5a1a647f9d0edd819025b9f20522d2fae897049f32873e73",
-                    "binding_type": "apn",
-                    "credential_sid": null,
-                    "date_created": "2015-07-30T20:00:00Z",
-                    "date_updated": "2015-07-30T20:00:00Z",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "address": "a7c658f4111ec4ff5a1a647f9d0edd819025b9f20522d2fae897049f32873e73", 
+                    "binding_type": "apn", 
+                    "credential_sid": null, 
+                    "date_created": "2015-07-30T20:00:00Z", 
+                    "date_updated": "2015-07-30T20:00:00Z", 
                     "endpoint": "26607274",
                     "identity": "24987039",
-                    "notification_protocol_version": "3",
-                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "sid": "BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "notification_protocol_version": "3", 
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "sid": "BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                     "tags": [
                         "26607274"
-                    ],
+                    ], 
                     "links": {
                         "user": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/24987039"
                     },
                     "url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings/BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                },
+                }, 
                 "status_code": 201
             }
         }
-    ],
+    ], 
     "delete": [
         {
-            "name": "delete",
+            "name": "delete", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "DELETE",
-                "query_params": {},
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "DELETE", 
+                "query_params": {}, 
                 "url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings/BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "DELETE",
-                "query_params": {},
+                "form_params": {}, 
+                "method": "DELETE", 
+                "query_params": {}, 
                 "url": "/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings/BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_response": {
-                "content": null,
+                "content": null, 
                 "status_code": 204
             },
             "response": {
-                "content": null,
+                "content": null, 
                 "status_code": 204
             }
         }
-    ],
+    ], 
     "fetch": [
         {
-            "name": "fetch",
+            "name": "fetch", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings/BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
                 "url": "/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings/BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
+            }, 
             "downstream_response": {
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "address": "a7c658f4111ec4ff5a1a647f9d0edd819025b9f20522d2fae897049f32873e73",
                     "binding_type": "apn",
                     "credential_sid": null,
-                    "date_created": "2015-07-30T20:00:00Z",
-                    "date_updated": "2015-07-30T20:00:00Z",
+                    "date_created": "2015-07-30T20:00:00Z", 
+                    "date_updated": "2015-07-30T20:00:00Z", 
                     "endpoint": "26607274",
                     "identity": "24987039",
                     "message_types": [],
@@ -139,22 +139,22 @@
                     "tags": [
                         "26607274"
                     ]
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "address": "a7c658f4111ec4ff5a1a647f9d0edd819025b9f20522d2fae897049f32873e73",
-                    "binding_type": "apn",
-                    "credential_sid": null,
-                    "date_created": "2015-07-30T20:00:00Z",
-                    "date_updated": "2015-07-30T20:00:00Z",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "address": "a7c658f4111ec4ff5a1a647f9d0edd819025b9f20522d2fae897049f32873e73", 
+                    "binding_type": "apn", 
+                    "credential_sid": null, 
+                    "date_created": "2015-07-30T20:00:00Z", 
+                    "date_updated": "2015-07-30T20:00:00Z", 
                     "endpoint": "26607274",
                     "identity": "24987039",
-                    "notification_protocol_version": "3",
-                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "sid": "BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "notification_protocol_version": "3", 
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "sid": "BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                     "tags": [
                         "26607274"
                     ],
@@ -162,41 +162,41 @@
                         "user": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/24987039"
                     },
                     "url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings/BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                },
+                }, 
                 "status_code": 200
             }
         }
-    ],
+    ], 
     "read": [
         {
-            "name": "read_empty",
+            "name": "read_empty", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
                     "Identity": [
                         "identity"
-                    ],
+                    ], 
                     "Tag": [
                         "tag"
                     ]
-                },
+                }, 
                 "url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
                     "Identity": [
                         "identity"
-                    ],
+                    ], 
                     "Tag": [
                         "tag"
                     ]
-                },
+                }, 
                 "url": "/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings"
-            },
+            }, 
             "downstream_response": {
                 "status_code": 200,
                 "content": {
@@ -212,48 +212,47 @@
             },
             "response": {
                 "content": {
-                    "bindings": [],
+                    "bindings": [], 
                     "meta": {
-                        "first_page_url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings?PageSize=50&Page=0",
-                        "key": "bindings",
-                        "next_page_url": null,
-                        "page": 0,
-                        "count": 0,
-                        "page_size": 50,
-                        "previous_page_url": null,
+                        "first_page_url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings?PageSize=50&Page=0", 
+                        "key": "bindings", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 50, 
+                        "previous_page_url": null, 
                         "url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings?PageSize=50&Page=0"
                     }
-                },
+                }, 
                 "status_code": 200
             }
-        },
+        }, 
         {
-            "name": "read_full",
+            "name": "read_full", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
                     "Identity": [
                         "identity"
-                    ],
+                    ], 
                     "Tag": [
                         "tag"
                     ]
-                },
+                }, 
                 "url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
                     "Identity": [
                         "identity"
-                    ],
+                    ], 
                     "Tag": [
                         "tag"
                     ]
-                },
+                }, 
                 "url": "/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings"
             },
             "downstream_response": {
@@ -265,8 +264,8 @@
                             "address": "a7c658f4111ec4ff5a1a647f9d0edd819025b9f20522d2fae897049f32873e73",
                             "binding_type": "apn",
                             "credential_sid": null,
-                            "date_created": "2015-07-30T20:00:00Z",
-                            "date_updated": "2015-07-30T20:00:00Z",
+                            "date_created": "2015-07-30T20:00:00Z", 
+                            "date_updated": "2015-07-30T20:00:00Z", 
                             "endpoint": "26607274",
                             "identity": "24987039",
                             "message_types": [],
@@ -291,17 +290,17 @@
                 "content": {
                     "bindings": [
                         {
-                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "address": "a7c658f4111ec4ff5a1a647f9d0edd819025b9f20522d2fae897049f32873e73",
-                            "binding_type": "apn",
-                            "credential_sid": null,
-                            "date_created": "2015-07-30T20:00:00Z",
-                            "date_updated": "2015-07-30T20:00:00Z",
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "address": "a7c658f4111ec4ff5a1a647f9d0edd819025b9f20522d2fae897049f32873e73", 
+                            "binding_type": "apn", 
+                            "credential_sid": null, 
+                            "date_created": "2015-07-30T20:00:00Z", 
+                            "date_updated": "2015-07-30T20:00:00Z", 
                             "endpoint": "26607274",
                             "identity": "24987039",
-                            "notification_protocol_version": "3",
-                            "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "sid": "BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "notification_protocol_version": "3", 
+                            "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "sid": "BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                             "tags": [
                                 "26607274"
                             ],
@@ -310,18 +309,17 @@
                             },
                             "url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings/BSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                         }
-                    ],
+                    ], 
                     "meta": {
-                        "first_page_url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings?PageSize=50&Page=0",
-                        "key": "bindings",
-                        "next_page_url": null,
-                        "page": 0,
-                        "count": 1,
-                        "page_size": 50,
-                        "previous_page_url": null,
+                        "first_page_url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings?PageSize=50&Page=0", 
+                        "key": "bindings", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 50, 
+                        "previous_page_url": null, 
                         "url": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Bindings?PageSize=50&Page=0"
                     }
-                },
+                }, 
                 "status_code": 200
             }
         }

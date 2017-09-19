@@ -1,161 +1,161 @@
 {
     "create": [
         {
-            "name": "create",
+            "name": "create", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                 "form_params": {
                     "Data": "{}"
-                },
-                "method": "POST",
-                "query_params": {},
+                }, 
+                "method": "POST", 
+                "query_params": {}, 
                 "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items"
-            },
+            }, 
             "downstream_request": {
                 "form_params": {
                     "Data": "{}"
-                },
-                "method": "POST",
-                "query_params": {},
+                }, 
+                "method": "POST", 
+                "query_params": {}, 
                 "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items"
-            },
+            }, 
             "downstream_response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "created_by": "created_by",
-                    "data": {},
-                    "date_created": "2015-07-30T20:00:00.000Z",
-                    "date_updated": "2015-07-30T20:00:00.000Z",
-                    "index": 100,
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "created_by": "created_by", 
+                    "data": {}, 
+                    "date_created": "2015-07-30T20:00:00.000Z", 
+                    "date_updated": "2015-07-30T20:00:00.000Z", 
+                    "index": 100, 
                     "last_event_id": 0,
-                    "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "revision": "revision",
-                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "revision": "revision", 
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                     "type": "list_item",
                     "url": "http://www.example.com"
-                },
+                }, 
                 "status_code": 201
             },
             "response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "created_by": "created_by",
-                    "data": {},
-                    "date_created": "2015-07-30T20:00:00Z",
-                    "date_updated": "2015-07-30T20:00:00Z",
-                    "index": 100,
-                    "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "revision": "revision",
-                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/100"
-                },
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "created_by": "created_by", 
+                    "data": {}, 
+                    "date_created": "2015-07-30T20:00:00Z", 
+                    "date_updated": "2015-07-30T20:00:00Z", 
+                    "index": 100, 
+                    "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "revision": "revision", 
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                }, 
                 "status_code": 201
             }
         }
-    ],
+    ], 
     "delete": [
         {
-            "name": "delete",
+            "name": "delete", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "DELETE",
-                "query_params": {},
-                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/100"
-            },
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "DELETE", 
+                "query_params": {}, 
+                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "DELETE",
-                "query_params": {},
-                "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/100"
+                "form_params": {}, 
+                "method": "DELETE", 
+                "query_params": {}, 
+                "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
             },
             "downstream_response": {
-                "content": null,
+                "content": null, 
                 "status_code": 204
             },
             "response": {
-                "content": null,
+                "content": null, 
                 "status_code": 204
             }
         }
-    ],
+    ], 
     "fetch": [
         {
-            "name": "fetch",
+            "name": "fetch", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
-                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/100"
-            },
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
+                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
-                "query_params": {},
-                "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/100"
+                "form_params": {}, 
+                "method": "GET", 
+                "query_params": {}, 
+                "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
             },
             "downstream_response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "created_by": "created_by",
-                    "data": {},
-                    "date_created": "2015-07-30T20:00:00.000Z",
-                    "date_updated": "2015-07-30T20:00:00.000Z",
-                    "index": 100,
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "created_by": "created_by", 
+                    "data": {}, 
+                    "date_created": "2015-07-30T20:00:00.000Z", 
+                    "date_updated": "2015-07-30T20:00:00.000Z", 
+                    "index": 100, 
                     "last_event_id": 0,
-                    "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "revision": "revision",
-                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "revision": "revision", 
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                     "type": "list_item",
                     "url": "http://www.example.com"
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "created_by": "created_by",
-                    "data": {},
-                    "date_created": "2015-07-30T20:00:00Z",
-                    "date_updated": "2015-07-30T20:00:00Z",
-                    "index": 100,
-                    "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "revision": "revision",
-                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/100"
-                },
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "created_by": "created_by", 
+                    "data": {}, 
+                    "date_created": "2015-07-30T20:00:00Z", 
+                    "date_updated": "2015-07-30T20:00:00Z", 
+                    "index": 100, 
+                    "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "revision": "revision", 
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                }, 
                 "status_code": 200
             }
         }
-    ],
+    ], 
     "read": [
         {
-            "name": "read_empty",
+            "name": "read_empty", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
-                    "Bounds": "inclusive",
-                    "From": "from",
+                    "Bounds": "inclusive", 
+                    "From": "from", 
                     "Order": "asc"
-                },
+                }, 
                 "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
-                    "Bounds": "inclusive",
-                    "From": "from",
+                    "Bounds": "inclusive", 
+                    "From": "from", 
                     "Order": "asc"
-                },
+                }, 
                 "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items"
             },
             "downstream_response": {
                 "content": {
-                    "items": [],
+                    "items": [], 
                     "items_count": 0,
                     "meta": {
                         "direct_token": true,
@@ -163,65 +163,64 @@
                         "next_token": "RnJvbT0wJkRpcmVjdGlvbj1mb3J3YXJkJlBhZ2VTaXplPTEmT3JkZXI9YXNjJkJvdW5kcz1leGNsdXNpdmU",
                         "previous_token": null
                     }
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
-                    "items": [],
+                    "items": [], 
                     "meta": {
-                        "first_page_url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items?PageSize=50&Page=0",
-                        "key": "items",
-                        "next_page_url": null,
-                        "page": 0,
-                        "count": 0,
-                        "page_size": 50,
-                        "previous_page_url": null,
+                        "first_page_url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items?PageSize=50&Page=0", 
+                        "key": "items", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 50, 
+                        "previous_page_url": null, 
                         "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items?PageSize=50&Page=0"
                     }
-                },
+                }, 
                 "status_code": 200
             }
-        },
+        }, 
         {
-            "name": "read_full",
+            "name": "read_full", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {},
-                "method": "GET",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
-                    "Bounds": "inclusive",
-                    "From": "from",
+                    "Bounds": "inclusive", 
+                    "From": "from", 
                     "Order": "asc"
-                },
+                }, 
                 "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items"
-            },
+            }, 
             "downstream_request": {
-                "form_params": {},
-                "method": "GET",
+                "form_params": {}, 
+                "method": "GET", 
                 "query_params": {
-                    "Bounds": "inclusive",
-                    "From": "from",
+                    "Bounds": "inclusive", 
+                    "From": "from", 
                     "Order": "asc"
-                },
+                }, 
                 "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items"
             },
             "downstream_response": {
                 "content": {
                     "items": [{
-                        "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "created_by": "created_by",
-                        "data": {},
-                        "date_created": "2015-07-30T20:00:00.000Z",
-                        "date_updated": "2015-07-30T20:00:00.000Z",
-                        "index": 100,
+                        "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                        "created_by": "created_by", 
+                        "data": {}, 
+                        "date_created": "2015-07-30T20:00:00.000Z", 
+                        "date_updated": "2015-07-30T20:00:00.000Z", 
+                        "index": 100, 
                         "last_event_id": 0,
-                        "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "revision": "revision",
-                        "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                        "revision": "revision", 
+                        "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                         "type": "list_item",
                         "url": "http://www.example.com"
-                    }],
+                    }], 
                     "items_count": 1,
                     "meta": {
                         "direct_token": true,
@@ -229,90 +228,89 @@
                         "next_token": "RnJvbT0wJkRpcmVjdGlvbj1mb3J3YXJkJlBhZ2VTaXplPTEmT3JkZXI9YXNjJkJvdW5kcz1leGNsdXNpdmU",
                         "previous_token": null
                     }
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
                     "items": [
                         {
-                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "created_by": "created_by",
-                            "data": {},
-                            "date_created": "2015-07-30T20:00:00Z",
-                            "date_updated": "2015-07-30T20:00:00Z",
-                            "index": 100,
-                            "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "revision": "revision",
-                            "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                            "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/100"
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "created_by": "created_by", 
+                            "data": {}, 
+                            "date_created": "2015-07-30T20:00:00Z", 
+                            "date_updated": "2015-07-30T20:00:00Z", 
+                            "index": 100, 
+                            "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "revision": "revision", 
+                            "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                            "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                         }
-                    ],
+                    ], 
                     "meta": {
-                        "first_page_url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items?PageSize=50&Page=0",
-                        "key": "items",
-                        "next_page_url": null,
-                        "page": 0,
-                        "count": 1,
-                        "page_size": 50,
-                        "previous_page_url": null,
+                        "first_page_url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items?PageSize=50&Page=0", 
+                        "key": "items", 
+                        "next_page_url": null, 
+                        "page": 0, 
+                        "page_size": 50, 
+                        "previous_page_url": null, 
                         "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items?PageSize=50&Page=0"
                     }
-                },
+                }, 
                 "status_code": 200
             }
         }
-    ],
+    ], 
     "update": [
         {
-            "name": "update",
+            "name": "update", 
             "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                 "form_params": {
                     "Data": "{}"
-                },
-                "method": "POST",
-                "query_params": {},
-                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/100"
-            },
+                }, 
+                "method": "POST", 
+                "query_params": {}, 
+                "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            }, 
             "downstream_request": {
                 "form_params": {
                     "Data": "{}"
-                },
-                "method": "POST",
-                "query_params": {},
-                "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/100"
+                }, 
+                "method": "POST", 
+                "query_params": {}, 
+                "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
             },
             "downstream_response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "created_by": "created_by",
-                    "data": {},
-                    "date_created": "2015-07-30T20:00:00.000Z",
-                    "date_updated": "2015-07-30T20:00:00.000Z",
-                    "index": 100,
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "created_by": "created_by", 
+                    "data": {}, 
+                    "date_created": "2015-07-30T20:00:00.000Z", 
+                    "date_updated": "2015-07-30T20:00:00.000Z", 
+                    "index": 100, 
                     "last_event_id": 0,
-                    "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "revision": "revision",
-                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "revision": "revision", 
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                     "type": "list_item",
                     "url": "http://www.example.com"
-                },
+                }, 
                 "status_code": 200
             },
             "response": {
                 "content": {
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "created_by": "created_by",
-                    "data": {},
-                    "date_created": "2015-07-30T20:00:00Z",
-                    "date_updated": "2015-07-30T20:00:00Z",
-                    "index": 100,
-                    "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "revision": "revision",
-                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/100"
-                },
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "created_by": "created_by", 
+                    "data": {}, 
+                    "date_created": "2015-07-30T20:00:00Z", 
+                    "date_updated": "2015-07-30T20:00:00Z", 
+                    "index": 100, 
+                    "list_sid": "ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "revision": "revision", 
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
+                    "url": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Lists/ESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                }, 
                 "status_code": 200
             }
         }

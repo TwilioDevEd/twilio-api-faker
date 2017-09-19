@@ -10,6 +10,28 @@
                 "query_params": {},
                 "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SigningKeys/SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
             },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/SigningKeys/SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "sid": "SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "foo",
+                    "date_created": "Mon, 13 Jun 2016 22:50:08 +0000",
+                    "date_updated": "Mon, 13 Jun 2016 22:50:08 +0000",
+                    "auto_id": 5087641,
+                    "flags": [
+                        "rest_api",
+                        "signing"
+                    ],
+                    "status": 1,
+                    "type": 1
+                },
+                "status_code": 200
+            },
             "response": {
                 "content": {
                     "sid": "SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
@@ -34,6 +56,30 @@
                 "query_params": {},
                 "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SigningKeys/SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
             },
+            "downstream_request": {
+                "form_params": {
+                    "friendly_name": "foo"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v1/SigningKeys/SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "sid": "SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "friendly_name": "foo",
+                    "date_created": "Mon, 13 Jun 2016 22:50:08 +0000",
+                    "date_updated": "Mon, 13 Jun 2016 22:50:08 +0000",
+                    "auto_id": 5087641,
+                    "flags": [
+                        "rest_api",
+                        "signing"
+                    ],
+                    "status": 1,
+                    "type": 1
+                },
+                "status_code": 200
+            },
             "response": {
                 "content": {
                     "sid": "SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
@@ -56,6 +102,16 @@
                 "query_params": {},
                 "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SigningKeys/SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"    
             },
+            "downstream_request": {
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "/v1/SigningKeys/SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": null,
+                "status_code": 204
+            },
             "response": {
                 "content": null,
                 "status_code": 204
@@ -72,6 +128,41 @@
                 "query_params": {},
                 "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SigningKeys.json"
             },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "url": "/v1/SigningKeys"
+            },
+            "downstream_response": {
+                "content": {
+                    "content": [
+                        {
+                            "sid": "SKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "friendly_name": "foo",
+                            "date_created": "Mon, 13 Jun 2016 22:50:08 +0000",
+                            "date_updated": "Mon, 13 Jun 2016 22:50:08 +0000",
+                            "auto_id": 5087641,
+                            "flags": [
+                                "rest_api",
+                                "signing"
+                            ],
+                            "status": 1,
+                            "type": 1
+                        }
+                    ],
+                    "meta": {
+                        "previous_token": null,
+                        "next_token": null,
+                        "direct_token": true,
+                        "page_size": 50,
+                        "list_key": "content"
+                    }
+                },
+                "status_code": 200
+            },
             "response": {
                 "content": {
                     "signing_keys": [
@@ -82,10 +173,10 @@
                             "date_updated": "Mon, 13 Jun 2016 22:50:08 +0000"
                         }
                     ],
-                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Keys.json?PageSize=50&Page=0",
-                    "end": 3,
+                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SigningKeys.json?PageSize=50&Page=0",
+                    "end": 0,
                     "previous_page_uri": null,
-                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Keys.json?PageSize=50&Page=0",
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SigningKeys.json?PageSize=50&Page=0",
                     "page_size": 50,
                     "start": 0,
                     "next_page_uri": null,
@@ -103,13 +194,34 @@
                 "query_params": {},
                 "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SigningKeys.json"
             },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "url": "/v1/SigningKeys"
+            },
+            "downstream_response": {
+                "content": {
+                    "content": [],
+                    "meta": {
+                        "previous_token": null,
+                        "next_token": null,
+                        "direct_token": true,
+                        "page_size": 50,
+                        "list_key": "content"
+                    }
+                },
+                "status_code": 200
+            },
             "response": {
                 "content": {
                     "signing_keys": [],
-                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Keys.json?PageSize=50&Page=0",
-                    "end": 3,
+                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SigningKeys.json?PageSize=50&Page=0",
+                    "end": 0,
                     "previous_page_uri": null,
-                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Keys.json?PageSize=50&Page=0",
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SigningKeys.json?PageSize=50&Page=0",
                     "page_size": 50,
                     "start": 0,
                     "next_page_uri": null,

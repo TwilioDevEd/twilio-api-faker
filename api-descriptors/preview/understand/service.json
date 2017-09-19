@@ -1,0 +1,331 @@
+{
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "FriendlyName": "so so friendly",
+                    "UniqueName": "so-so-unique",
+                    "LogQueries": true,
+                    "Ttl": 3600
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://preview.twilio.com/understand/Services"
+            },
+            "downstream_request": {
+                "form_params": {
+                    "FriendlyName": "so so friendly",
+                    "UniqueName": "so-so-unique",
+                    "LogQueries": true,
+                    "Ttl": 3600
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v1/Services"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2017-07-04T08:34:00Z",
+                    "date_updated": "2017-07-04T08:34:00Z",
+                    "friendly_name": "so so friendly",
+                    "latest_model_build_sid": null,
+                    "log_queries": true,
+                    "sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "ttl": 3600,
+                    "unique_name": "so-so-unique"
+                },
+                "status_code": 201
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2017-07-04T08:34:00Z",
+                    "date_updated": "2017-07-04T08:34:00Z",
+                    "friendly_name": "so so friendly",
+                    "latest_model_build_sid": null,
+                    "log_queries": true,
+                    "sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "ttl": 3600,
+                    "unique_name": "so-so-unique",
+                    "links": {
+                        "entity_types": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/EntityTypes",
+                        "intents": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents",
+                        "model_builds": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds",
+                        "queries": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries"
+                    },
+                    "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 201
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2017-07-04T08:34:00Z",
+                    "date_updated": "2017-07-04T08:34:00Z",
+                    "friendly_name": "so so friendly",
+                    "latest_model_build_sid": null,
+                    "log_queries": true,
+                    "sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "ttl": 3600,
+                    "unique_name": "so-so-unique"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2017-07-04T08:34:00Z",
+                    "date_updated": "2017-07-04T08:34:00Z",
+                    "friendly_name": "so so friendly",
+                    "latest_model_build_sid": null,
+                    "log_queries": true,
+                    "sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "ttl": 3600,
+                    "unique_name": "so-so-unique",
+                    "links": {
+                        "entity_types": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/EntityTypes",
+                        "intents": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents",
+                        "model_builds": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds",
+                        "queries": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries"
+                    },
+                    "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/understand/Services"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Services"
+            },
+            "downstream_response": {
+                "content": {
+                    "services": [],
+                    "meta": {
+                        "direct_token": true,
+                        "key": "services",
+                        "next_token": null,
+                        "page_token": null,
+                        "previous_token": null
+                    }
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "services": [],
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/understand/Services?PageSize=50&Page=0",
+                        "key": "services",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 50,
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/understand/Services?PageSize=50&Page=0"
+                    }
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://preview.twilio.com/understand/Services"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Services"
+            },
+            "downstream_response": {
+                "content": {
+                    "services": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "date_created": "2017-07-04T08:34:00Z",
+                            "date_updated": "2017-07-04T08:34:00Z",
+                            "friendly_name": "so so friendly",
+                            "latest_model_build_sid": null,
+                            "log_queries": true,
+                            "sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "ttl": 3600,
+                            "unique_name": "so-so-unique"
+                        }
+                    ],
+                    "meta": {
+                        "direct_token": true,
+                        "key": "services",
+                        "next_token": null,
+                        "page_token": null,
+                        "previous_token": null
+                    }
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "services": [
+                        {
+                            "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "date_created": "2017-07-04T08:34:00Z",
+                            "date_updated": "2017-07-04T08:34:00Z",
+                            "friendly_name": "so so friendly",
+                            "latest_model_build_sid": null,
+                            "log_queries": true,
+                            "sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "ttl": 3600,
+                            "unique_name": "so-so-unique",
+                            "links": {
+                                "entity_types": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/EntityTypes",
+                                "intents": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents",
+                                "model_builds": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds",
+                                "queries": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries"
+                            },
+                            "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        }
+                    ],
+                    "meta": {
+                        "first_page_url": "https://preview.twilio.com/understand/Services?PageSize=50&Page=0",
+                        "key": "services",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 50,
+                        "previous_page_url": null,
+                        "url": "https://preview.twilio.com/understand/Services?PageSize=50&Page=0"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "FriendlyName": "so so friendly",
+                    "UniqueName": "so-so-unique",
+                    "LogQueries": true,
+                    "Ttl": 3600
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "FriendlyName": "so so friendly",
+                    "UniqueName": "so-so-unique",
+                    "LogQueries": true,
+                    "Ttl": 3600
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2017-07-04T08:34:00Z",
+                    "date_updated": "2017-07-04T08:34:00Z",
+                    "friendly_name": "so so friendly",
+                    "latest_model_build_sid": null,
+                    "log_queries": true,
+                    "sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "ttl": 3600,
+                    "unique_name": "so-so-unique"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2017-07-04T08:34:00Z",
+                    "date_updated": "2017-07-04T08:34:00Z",
+                    "friendly_name": "so so friendly",
+                    "latest_model_build_sid": null,
+                    "log_queries": true,
+                    "sid": "UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "ttl": 3600,
+                    "unique_name": "so-so-unique",
+                    "links": {
+                        "entity_types": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/EntityTypes",
+                        "intents": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Intents",
+                        "model_builds": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ModelBuilds",
+                        "queries": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Queries"
+                    },
+                    "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "https://preview.twilio.com/understand/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "/v1/Services/UAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": null,
+                "status_code": 204
+            },
+            "response": {
+                "content": null,
+                "status_code": 204
+            }
+        }
+    ]
+}
+

@@ -255,7 +255,8 @@
                     "VoiceFallbackMethod": "GET",
                     "VoiceFallbackUrl": "https://example.com",
                     "VoiceMethod": "GET",
-                    "VoiceUrl": "https://example.com"
+                    "VoiceUrl": "https://example.com",
+                    "VoiceReceiveMode": "voice"
                 },
                 "method": "POST",
                 "query_params": {},

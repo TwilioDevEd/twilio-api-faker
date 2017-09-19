@@ -1,0 +1,408 @@
+{
+    "create": [
+        {
+            "name": "create",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "From": "+14155551234",
+                    "To": "+14155554321",
+                    "Quality": "superfine",
+                    "MediaUrl": "https://www.example.com/fax.pdf",
+                    "StatusCallback": "https://www.example.com/callback",
+                    "StoreMedia": true
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://fax.twilio.com/v1/Faxes"
+            },
+            "downstream_request": {
+                "form_params": {
+                    "From": "+14155551234",
+                    "To": "+14155554321",
+                    "Quality": "superfine",
+                    "MediaUrl": "https://www.example.com/fax.pdf",
+                    "StatusCallback": "https://www.example.com/callback",
+                    "StoreMedia": true
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v1/Faxes"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "api_version": "v1",
+                    "billable_item_sid": "BIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "direction": "outbound",
+                    "from": "+14155551234",
+                    "handler_address": null,
+                    "media_url": null,
+                    "media_sid": null,
+                    "num_pages": null,
+                    "price": null,
+                    "price_unit": null,
+                    "provider_sid": "OTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "quality": "superfine",
+                    "sid": "FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "queued",
+                    "to": "+14155554321",
+                    "duration": null,
+                    "uri": "/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 201
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "api_version": "v1",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "direction": "outbound",
+                    "from": "+14155551234",
+                    "media_url": null,
+                    "media_sid": null,
+                    "num_pages": null,
+                    "price": null,
+                    "price_unit": null,
+                    "quality": "superfine",
+                    "sid": "FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "queued",
+                    "to": "+14155554321",
+                    "duration": null,
+                    "links": {
+                        "media": "https://fax.twilio.com/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Media"
+                    },
+                    "url": "https://fax.twilio.com/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 201
+            }
+        }
+    ],
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "https://fax.twilio.com/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {},
+                "url": "/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "api_version": "v1",
+                    "billable_item_sid": "BIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "direction": "outbound",
+                    "from": "+14155551234",
+                    "handler_address": null,
+                    "media_url": "https://www.example.com/fax.pdf",
+                    "media_sid": "MEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "num_pages": null,
+                    "price": null,
+                    "price_unit": null,
+                    "provider_sid": "OTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "quality": null,
+                    "sid": "FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "queued",
+                    "to": "+14155554321",
+                    "duration": null,
+                    "uri": "/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "api_version": "v1",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "direction": "outbound",
+                    "from": "+14155551234",
+                    "media_url": "https://www.example.com/fax.pdf",
+                    "media_sid": "MEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "num_pages": null,
+                    "price": null,
+                    "price_unit": null,
+                    "quality": null,
+                    "sid": "FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "queued",
+                    "to": "+14155554321",
+                    "duration": null,
+                    "links": {
+                        "media": "https://fax.twilio.com/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Media"
+                    },
+                    "url": "https://fax.twilio.com/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "read": [
+        {
+            "name": "read_empty",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "DateCreatedOnOrBefore": "2017-04-01T00:00:00Z",
+                    "DateCreatedAfter": "2017-03-31T00:00:00Z",
+                    "From": "+14155551234",
+                    "To": "+14155554321"
+                },
+                "url": "https://fax.twilio.com/v1/Faxes"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "DateCreatedOnOrBefore": "2017-04-01T00:00:00Z",
+                    "DateCreatedAfter": "2017-03-31T00:00:00Z",
+                    "From": "+14155551234",
+                    "To": "+14155554321"
+                },
+                "url": "/v1/Faxes"
+            },
+            "downstream_response": {
+                "content": {
+                    "faxes": [],
+                    "meta": {
+                        "direct_token": true,
+                        "key": "faxes",
+                        "next_token": null,
+                        "page": 0,
+                        "page_size": 0,
+                        "page_token": null,
+                        "previous_token": null
+                    }
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "faxes": [],
+                    "meta": {
+                        "first_page_url": "https://fax.twilio.com/v1/Faxes?PageSize=50&Page=0",
+                        "key": "faxes",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 50,
+                        "previous_page_url": null,
+                        "url": "https://fax.twilio.com/v1/Faxes?PageSize=50&Page=0"
+                    }
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "From": "+14155551234",
+                    "To": "+14155554321"
+                },
+                "url": "https://fax.twilio.com/v1/Faxes"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "From": "+14155551234",
+                    "To": "+14155554321"
+                },
+                "url": "/v1/Faxes"
+            },
+            "downstream_response": {
+                "content": {
+                    "faxes": [{
+                        "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "api_version": "v1",
+                        "billable_item_sid": "BIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "date_created": "2015-07-30T20:00:00Z",
+                        "date_updated": "2015-07-30T20:00:00Z",
+                        "direction": "outbound",
+                        "from": "+14155551234",
+                        "handler_address": null,
+                        "media_url": "https://www.example.com/fax.pdf",
+                        "media_sid": "MEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "num_pages": null,
+                        "price": null,
+                        "price_unit": null,
+                        "provider_sid": "OTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "quality": null,
+                        "sid": "FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "status": "queued",
+                        "to": "+14155554321",
+                        "duration": null,
+                        "links": {
+                            "media": "/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Media"
+                        },
+                        "uri": "/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    }],
+                    "meta": {
+                        "direct_token": true,
+                        "key": "faxes",
+                        "next_token": null,
+                        "page": 0,
+                        "page_size": 0,
+                        "page_token": null,
+                        "previous_token": null
+                    }
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "faxes": [{
+                        "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "api_version": "v1",
+                        "date_created": "2015-07-30T20:00:00Z",
+                        "date_updated": "2015-07-30T20:00:00Z",
+                        "direction": "outbound",
+                        "from": "+14155551234",
+                        "media_url": "https://www.example.com/fax.pdf",
+                        "media_sid": "MEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "num_pages": null,
+                        "price": null,
+                        "price_unit": null,
+                        "quality": null,
+                        "sid": "FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "status": "queued",
+                        "to": "+14155554321",
+                        "duration": null,
+                        "links": {
+                            "media": "https://fax.twilio.com/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Media"
+                        },
+                        "url": "https://fax.twilio.com/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    }],
+                    "meta": {
+                        "first_page_url": "https://fax.twilio.com/v1/Faxes?PageSize=50&Page=0",
+                        "key": "faxes",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 50,
+                        "previous_page_url": null,
+                        "url": "https://fax.twilio.com/v1/Faxes?PageSize=50&Page=0"
+                    }
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "Status": "canceled"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://fax.twilio.com/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "Status": "canceled"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "api_version": "v1",
+                    "billable_item_sid": "BIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "direction": "outbound",
+                    "from": "+14155551234",
+                    "handler_address": null,
+                    "media_url": null,
+                    "media_sid": null,
+                    "num_pages": null,
+                    "price": null,
+                    "price_unit": null,
+                    "provider_sid": "OTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "quality": null,
+                    "sid": "FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "canceled",
+                    "to": "+14155554321",
+                    "duration": null,
+                    "uri": "/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "api_version": "v1",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "direction": "outbound",
+                    "from": "+14155551234",
+                    "media_url": null,
+                    "media_sid": null,
+                    "num_pages": null,
+                    "price": null,
+                    "price_unit": null,
+                    "quality": null,
+                    "sid": "FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "status": "canceled",
+                    "to": "+14155554321",
+                    "duration": null,
+                    "links": {
+                        "media": "https://fax.twilio.com/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Media"
+
+                    },
+                    "url": "https://fax.twilio.com/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ],
+    "delete": [
+        {
+            "name": "delete",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "https://fax.twilio.com/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {},
+                "method": "DELETE",
+                "query_params": {},
+                "url": "/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": null,
+                "status_code": 204
+            },
+            "response": {
+                "content": null,
+                "status_code": 204
+            }
+        }
+    ]
+}

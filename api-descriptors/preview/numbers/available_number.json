@@ -1,0 +1,355 @@
+{
+    "read": [
+        {
+            "name": "read_empty",
+            "request": {
+                "account_id": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "GET",
+                "url": "https://preview.twilio.com/Numbers/AvailableNumbers",
+                "form_params": {},
+                "query_params": {
+                    "PhoneNumber": "+15555555555",
+                    "Type": "local",
+                    "Lifecycle": ["generally-available", "developer-preview"],
+                    "SavedSearch": ["twilio.usecase.call-center"],
+                    "Geography.IsoCountry": "US",
+                    "Geography.Lata": "358",
+                    "Geography.RateCenter": "WHEELING",
+                    "Geography.Latitude": 0.05,
+                    "Geography.Longitude": 0.05,
+                    "Geography.Region": "IL",
+                    "Geography.Locality": "Wheeling",
+                    "Geography.PostalCode": "60090",
+                    "Capabilities.Voice.InboundConnectivity": false,
+                    "Capabilities.Voice.OutboundConnectivity": false,
+                    "Capabilities.Voice.E911": false,
+                    "Capabilities.Voice.Fax": false,
+                    "Capabilities.Voice.SipTrunking": false,
+                    "Capabilities.Voice.CallsPerSecond": 100,
+                    "Capabilities.Voice.ConcurrentCallsLimit": 100,
+                    "Capabilities.Voice.LongRecordLength": 100,
+                    "Capabilities.Voice.InboundCalledDtmf": false,
+                    "Capabilities.Voice.InboundCallerDtmf": false,
+                    "Capabilities.Voice.InboundCallerIdPreservation": "none",
+                    "Capabilities.Voice.InboundReachability": "domestic",
+                    "Capabilities.Sms.InboundConnectivity": false,
+                    "Capabilities.Sms.OutboundConnectivity": false,
+                    "Capabilities.Sms.Gsm7": false,
+                    "Capabilities.Sms.Ucs2": false,
+                    "Capabilities.Sms.InboundSenderIdPreservation": "none",
+                    "Capabilities.Sms.InboundReachability": "domestic",
+                    "Capabilities.Sms.InboundMps": 100,
+                    "Capabilities.Sms.Gsm7Concatenation": false,
+                    "Capabilities.Sms.Ucs2Concatenation": false,
+                    "Capabilities.Mms.InboundConnectivity": false,
+                    "Capabilities.Mms.OutboundConnectivity": false,
+                    "Capabilities.Mms.InboundReachability": "domestic",
+                    "Capabilities.Mms.InboundMps": 100,
+                    "Regulatory.AddressRequirements": "none",
+                    "MinBaseRecurringPrice": "0.99",
+                    "MaxBaseRecurringPrice": "1.99",
+                    "MinBaseSetupPrice": "3.99",
+                    "MaxBaseSetupPrice": "4.99"
+                }
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "did": "+15555555555",
+                    "lifecycle": ["generally-available", "developer-preview"],
+                    "saved_search": ["twilio.usecase.call-center"],
+                    "type": "local",
+                    "status": "available",
+                    "geography.iso_country": "US",
+                    "geography.lata": "358",
+                    "geography.rate_center": "WHEELING",
+                    "geography.latitude": "0.05",
+                    "geography.longitude": "0.05",
+                    "geography.region": "IL",
+                    "geography.locality": "Wheeling",
+                    "geography.postal_code": "60090",
+                    "capabilities.voice.inbound_connectivity": false,
+                    "capabilities.voice.outbound_connectivity": false,
+                    "capabilities.voice.e911": false,
+                    "capabilities.voice.fax": false,
+                    "capabilities.voice.sip_trunking": false,
+                    "capabilities.voice.calls_per_second": 100,
+                    "capabilities.voice.concurrent_calls_limit": 100,
+                    "capabilities.voice.long_record_length": 100,
+                    "capabilities.voice.inbound_called_dtmf": false,
+                    "capabilities.voice.inbound_caller_dtmf": false,
+                    "capabilities.voice.inbound_caller_id_preservation": "none",
+                    "capabilities.voice.inbound_reachability": "domestic",
+                    "capabilities.sms.inbound_connectivity": false,
+                    "capabilities.sms.outbound_connectivity": false,
+                    "capabilities.sms.gsm7": false,
+                    "capabilities.sms.ucs2": false,
+                    "capabilities.sms.inbound_sender_id_preservation": "none",
+                    "capabilities.sms.inbound_reachability": "domestic",
+                    "capabilities.sms.inbound_mps": 100,
+                    "capabilities.sms.gsm7_concatenation": false,
+                    "capabilities.sms.ucs2_concatenation": false,
+                    "capabilities.mms.inbound_connectivity": false,
+                    "capabilities.mms.outbound_connectivity": false,
+                    "capabilities.mms.inbound_reachability": "domestic",
+                    "capabilities.mms.inbound_mps": 100,
+                    "regulatory.address_requirements": "none",
+                    "min_base_recurring_price": "0.99",
+                    "max_base_recurring_price": "1.99",
+                    "min_base_setup_price": "3.99",
+                    "max_base_setup_price": "4.99"
+                },
+                "url": "/v2/InventoryDids"
+            },
+            "downstream_response": {
+                "content": {
+                    "items": []
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "meta": {
+                        "url": "https://preview.twilio.com/Numbers/AvailableNumbers?PageSize=50&Page=0",
+                        "first_page_url": "https://preview.twilio.com/Numbers/AvailableNumbers?PageSize=50&Page=0",
+                        "key": "items",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 50,
+                        "previous_page_url": null
+                    },
+                    "items": []
+                },
+                "status_code": 200
+            }
+        },
+        {
+            "name": "read_full",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "GET",
+                "url": "https://preview.twilio.com/Numbers/AvailableNumbers",
+                "form_params": {},
+                "query_params": {
+                    "PhoneNumber": "+15555555555",
+                    "Type": "local",
+                    "SavedSearch": ["twilio.usecase.call-center"],
+                    "Geography.IsoCountry": "US",
+                    "Geography.Lata": "358",
+                    "Geography.RateCenter": "WHEELING",
+                    "Geography.Latitude": 0.05,
+                    "Geography.Longitude": 0.05,
+                    "Geography.Region": "IL",
+                    "Geography.Locality": "Wheeling",
+                    "Geography.PostalCode": "60090",
+                    "Capabilities.Voice.InboundConnectivity": true,
+                    "Capabilities.Voice.OutboundConnectivity": true,
+                    "Capabilities.Voice.E911": true,
+                    "Capabilities.Voice.Fax": true,
+                    "Capabilities.Voice.SipTrunking": true,
+                    "Capabilities.Voice.CallsPerSecond": 100,
+                    "Capabilities.Voice.ConcurrentCallsLimit": 100,
+                    "Capabilities.Voice.LongRecordLength": 100,
+                    "Capabilities.Voice.InboundCalledDtmf": true,
+                    "Capabilities.Voice.InboundCallerDtmf": true,
+                    "Capabilities.Voice.InboundCallerIdPreservation": "none",
+                    "Capabilities.Voice.InboundReachability": "domestic",
+                    "Capabilities.Sms.InboundConnectivity": true,
+                    "Capabilities.Sms.OutboundConnectivity": true,
+                    "Capabilities.Sms.Gsm7": true,
+                    "Capabilities.Sms.Ucs2": true,
+                    "Capabilities.Sms.InboundSenderIdPreservation": "none",
+                    "Capabilities.Sms.InboundReachability": "domestic",
+                    "Capabilities.Sms.InboundMps": 100,
+                    "Capabilities.Sms.Gsm7Concatenation": true,
+                    "Capabilities.Sms.Ucs2Concatenation": true,
+                    "Capabilities.Mms.InboundConnectivity": true,
+                    "Capabilities.Mms.OutboundConnectivity": true,
+                    "Capabilities.Mms.InboundReachability": "domestic",
+                    "Capabilities.Mms.InboundMps": 100,
+                    "Regulatory.AddressRequirements": "none",
+                    "MinBaseRecurringPrice": "0.99",
+                    "MaxBaseRecurringPrice": "1.99",
+                    "MinBaseSetupPrice": "3.99",
+                    "MaxBaseSetupPrice": "4.99"
+                }
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "did": "+15555555555",
+                    "type": "local",
+                    "saved_search": ["twilio.usecase.call-center"],
+                    "status": "available",
+                    "geography.iso_country": "US",
+                    "geography.lata": "358",
+                    "geography.rate_center": "WHEELING",
+                    "geography.latitude": "0.05",
+                    "geography.longitude": "0.05",
+                    "geography.region": "IL",
+                    "geography.locality": "Wheeling",
+                    "geography.postal_code": "60090",
+                    "capabilities.voice.inbound_connectivity": true,
+                    "capabilities.voice.outbound_connectivity": true,
+                    "capabilities.voice.e911": true,
+                    "capabilities.voice.fax": true,
+                    "capabilities.voice.sip_trunking": true,
+                    "capabilities.voice.calls_per_second": 100,
+                    "capabilities.voice.concurrent_calls_limit": 100,
+                    "capabilities.voice.long_record_length": 100,
+                    "capabilities.voice.inbound_called_dtmf": true,
+                    "capabilities.voice.inbound_caller_dtmf": true,
+                    "capabilities.voice.inbound_caller_id_preservation": "none",
+                    "capabilities.voice.inbound_reachability": "domestic",
+                    "capabilities.sms.inbound_connectivity": true,
+                    "capabilities.sms.outbound_connectivity": true,
+                    "capabilities.sms.gsm7": true,
+                    "capabilities.sms.ucs2": true,
+                    "capabilities.sms.inbound_sender_id_preservation": "none",
+                    "capabilities.sms.inbound_reachability": "domestic",
+                    "capabilities.sms.inbound_mps": 100,
+                    "capabilities.sms.gsm7_concatenation": true,
+                    "capabilities.sms.ucs2_concatenation": true,
+                    "capabilities.mms.inbound_connectivity": true,
+                    "capabilities.mms.outbound_connectivity": true,
+                    "capabilities.mms.inbound_reachability": "domestic",
+                    "capabilities.mms.inbound_mps": 100,
+                    "regulatory.address_requirements": "none",
+                    "min_base_recurring_price": "0.99",
+                    "max_base_recurring_price": "1.99",
+                    "min_base_setup_price": "3.99",
+                    "max_base_setup_price": "4.99"
+                },
+                "url": "/v2/InventoryDids"
+            },
+            "downstream_response": {
+                "content": {
+                    "items": [
+                        {
+                            "did": "+15555555555",
+                            "sid": "ID4dc1c17d8c7cf99fa0fcc955f9094923",
+                            "lifecycle": "generally-available",
+                            "type": "local",
+                            "geography": {
+                                "iso_country": "US",
+                                "lata": 124,
+                                "rate_center": "WHEELING",
+                                "latitude": 0.05,
+                                "longitude": -0.05,
+                                "region": "IL",
+                                "locality": "WHEELING",
+                                "postal_code": "60090"
+                            },
+                            "capabilities": {
+                                "voice": {
+                                    "inbound_connectivity": true,
+                                    "outbound_connectivity": true,
+                                    "e911": true,
+                                    "fax": true,
+                                    "sip_trunking": true,
+                                    "calls_per_second": 100,
+                                    "concurrent_calls_limit": 100,
+                                    "long_record_length": 100,
+                                    "inbound_called_dtmf": true,
+                                    "inbound_caller_dtmf": true,
+                                    "inbound_caller_id_preservation": "none",
+                                    "inbound_reachability": "domestic",
+                                    "codecs": [
+                                        "g711u"
+                                    ]
+                                },
+                                "sms": {
+                                    "inbound_connectivity": true,
+                                    "outbound_connectivity": true,
+                                    "gsm7": true,
+                                    "ucs2": true,
+                                    "inbound_sender_id_preservation": "none",
+                                    "inbound_reachability": "domestic"
+                                },
+                                "mms": {
+                                    "inbound_connectivity": true,
+                                    "outbound_connectivity": true,
+                                    "inbound_reachability": "domestic"
+                                }
+                            },
+                            "regulatory": {
+                                "address_requirements": "none"
+                            },
+                            "status": "available",
+                            "base_recurring_price": "1.50",
+                            "base_setup_price": "4.50"
+                        }
+                    ]     
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "meta": {
+                        "url": "https://preview.twilio.com/Numbers/AvailableNumbers?PageSize=50&Page=0",
+                        "first_page_url": "https://preview.twilio.com/Numbers/AvailableNumbers?PageSize=50&Page=0",
+                        "key": "items",
+                        "next_page_url": null,
+                        "page": 0,
+                        "page_size": 50,
+                        "previous_page_url": null
+                    },
+                    "items": [
+                        {
+                            "phone_number": "+15555555555",
+                            "lifecycle": "generally-available",
+                            "type": "local",
+                            "geography": {
+                                "iso_country": "US",
+                                "lata": 124,
+                                "rate_center": "WHEELING",
+                                "latitude": 0.05,
+                                "longitude": -0.05,
+                                "region": "IL",
+                                "locality": "WHEELING",
+                                "postal_code": "60090"
+                            },
+                            "capabilities": {
+                                "voice": {
+                                    "inbound_connectivity": true,
+                                    "outbound_connectivity": true,
+                                    "e911": true,
+                                    "fax": true,
+                                    "sip_trunking": true,
+                                    "calls_per_second": 100,
+                                    "concurrent_calls_limit": 100,
+                                    "long_record_length": 100,
+                                    "inbound_called_dtmf": true,
+                                    "inbound_caller_dtmf": true,
+                                    "inbound_caller_id_preservation": "none",
+                                    "inbound_reachability": "domestic"
+                                },
+                                "sms": {
+                                    "inbound_connectivity": true,
+                                    "outbound_connectivity": true,
+                                    "gsm7": true,
+                                    "ucs2": true,
+                                    "inbound_sender_id_preservation": "none",
+                                    "inbound_reachability": "domestic"
+                                },
+                                "mms": {
+                                    "inbound_connectivity": true,
+                                    "outbound_connectivity": true,
+                                    "inbound_reachability": "domestic"
+                                }
+                            },
+                            "regulatory": {
+                                "address_requirements": "none"
+                            },
+                            "base_recurring_price": "1.50",
+                            "base_setup_price": "4.50"
+                        }
+                    ]
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}

@@ -40,7 +40,8 @@
                     "sid": "HRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "signing_document_sid": "PX11111111111111111111111111111111",
                     "status": "received",
-                    "unique_name": "foobar"
+                    "unique_name": "foobar",
+                    "verification_attempts": 0
                 },
                 "status_code": 200
             },
@@ -66,7 +67,8 @@
                     "signing_document_sid": "PX11111111111111111111111111111111",
                     "status": "received",
                     "unique_name": "foobar",
-                    "url": "https://preview.twilio.com/HostedNumbers/HostedNumberOrders/HRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    "url": "https://preview.twilio.com/HostedNumbers/HostedNumberOrders/HRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "verification_attempts": 0
                 },
                 "status_code": 200
             }
@@ -151,7 +153,8 @@
                     "sid": "HRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "signing_document_sid": "PX11111111111111111111111111111111",
                     "status": "pending-loa",
-                    "unique_name": "new unique name"
+                    "unique_name": "new unique name",
+                    "verification_attempts": 1
                 },
                 "status_code": 200
             },
@@ -177,7 +180,8 @@
                     "signing_document_sid": "PX11111111111111111111111111111111",
                     "status": "pending-loa",
                     "unique_name": "new unique name",
-                    "url": "https://preview.twilio.com/HostedNumbers/HostedNumberOrders/HRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    "url": "https://preview.twilio.com/HostedNumbers/HostedNumberOrders/HRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "verification_attempts": 1
                 },
                 "status_code": 200
             }
@@ -224,7 +228,6 @@
                         "key": "items",
                         "next_page_url": null,
                         "page": 0,
-                        "count": 0,
                         "page_size": 50,
                         "previous_page_url": null,
                         "url": "https://preview.twilio.com/HostedNumbers/HostedNumberOrders?PageSize=50&Page=0"
@@ -276,7 +279,8 @@
                             "sid": "HRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                             "signing_document_sid": "PX11111111111111111111111111111111",
                             "status": "received",
-                            "unique_name": "foobar"
+                            "unique_name": "foobar",
+                            "verification_attempts": 0
                         }
                     ]
                 },
@@ -289,7 +293,6 @@
                         "key": "items",
                         "next_page_url": null,
                         "page": 0,
-                        "count": 1,
                         "page_size": 50,
                         "previous_page_url": null,
                         "url": "https://preview.twilio.com/HostedNumbers/HostedNumberOrders?PageSize=50&Page=0"
@@ -316,7 +319,8 @@
                             "signing_document_sid": "PX11111111111111111111111111111111",
                             "status": "received",
                             "unique_name": "foobar",
-                            "url": "https://preview.twilio.com/HostedNumbers/HostedNumberOrders/HRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                            "url": "https://preview.twilio.com/HostedNumbers/HostedNumberOrders/HRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "verification_attempts": 0
                         }
                     ]
                 },
@@ -375,7 +379,8 @@
                     "sid": "HRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "signing_document_sid": null,
                     "status": "received",
-                    "unique_name": null
+                    "unique_name": null,
+                    "verification_attempts": 0
                 },
                 "status_code": 201
             },
@@ -399,7 +404,8 @@
                     "signing_document_sid": null,
                     "status": "received",
                     "unique_name": null,
-                    "url": "https://preview.twilio.com/HostedNumbers/HostedNumberOrders/HRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    "url": "https://preview.twilio.com/HostedNumbers/HostedNumberOrders/HRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "verification_attempts": 0
                 },
                 "status_code": 201
             }

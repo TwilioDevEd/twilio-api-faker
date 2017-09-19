@@ -48,6 +48,55 @@
                 },
                 "status_code": 201
             }
+        },
+        {
+            "name": "create_with_capabilities",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "PhoneNumberSid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/PhoneNumbers"
+            },
+            "downstream_request": {
+                "form_params": {},
+                "json_params": {},
+                "method": "POST",
+                "query_params": {
+                    "PhoneNumberSid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "url": "/v1/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/PhoneNumbers"
+            },
+            "downstream_response": {
+                "content": {
+                    "sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "messaging_service_sid": "MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "Thu, 30 Jul 2015 20:12:31 +0000",
+                    "date_updated": "Thu, 30 Jul 2015 20:12:33 +0000",
+                    "number": "+987654321",
+                    "iso_country_code": "US",
+                    "capabilities": ["MMS", "SMS", "Voice"],
+                    "global_sms_enabled": false
+                },
+                "status_code": 201
+            },
+            "response": {
+                "content": {
+                    "sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "service_sid": "MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "date_created": "2015-07-30T20:12:31Z",
+                    "date_updated": "2015-07-30T20:12:33Z",
+                    "phone_number": "+987654321",
+                    "country_code": "US",
+                    "capabilities": ["MMS", "SMS", "Voice"],
+                    "url": "https://messaging.twilio.com/v1/Services/MGaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/PhoneNumbers/PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 201
+            }
         }
     ],
     "delete": [

@@ -239,7 +239,11 @@
             "request": {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "form_params": {
-                    "RoleSid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    "RoleSid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "DateCreated": "2016-03-24T21:05:50Z",
+                    "DateUpdated": "2016-03-24T21:05:51Z",
+                    "LastConsumedMessageIndex": 20,
+                    "LastConsumptionTimestamp": "2016-03-24T21:05:52Z"
                 },
                 "method": "POST",
                 "query_params": {},
@@ -247,7 +251,11 @@
             },
             "downstream_request": {
                 "form_params": {
-                    "RoleSid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    "RoleSid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "DateCreated": "2016-03-24T21:05:50Z",
+                    "DateUpdated": "2016-03-24T21:05:51Z",
+                    "LastConsumedMessageIndex": 20,
+                    "LastConsumptionTimestamp": "2016-03-24T21:05:52Z"
                 },
                 "method": "POST",
                 "query_params": {},
@@ -263,10 +271,10 @@
                     "identity": "jing",
                     "role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Members/MBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "last_consumed_message_index": null,
-                    "last_consumption_timestamp": null,
+                    "last_consumed_message_index": 20,
+                    "last_consumption_timestamp": "2016-03-24T21:05:52Z",
                     "date_created": "2016-03-24T21:05:50Z",
-                    "date_updated": "2016-03-24T21:05:50Z"
+                    "date_updated": "2016-03-24T21:05:51Z"
                 }
             },
             "response": {
@@ -278,62 +286,10 @@
                     "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                     "identity": "jing",
                     "role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "last_consumed_message_index": null,
-                    "last_consumption_timestamp": null,
+                    "last_consumed_message_index": 20,
+                    "last_consumption_timestamp": "2016-03-24T21:05:52Z",
                     "date_created": "2016-03-24T21:05:50Z",
-                    "date_updated": "2016-03-24T21:05:50Z",
-                    "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Members/MBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-                }
-            }
-        },
-        {
-            "name": "update_last_consumed_message_index",
-            "request": {
-                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "form_params": {
-                    "LastConsumedMessageIndex": 666
-                },
-                "method": "POST",
-                "query_params": {},
-                "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Members/MBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
-            "downstream_request": {
-                "form_params": {
-                    "LastConsumedMessageIndex": 666
-                },
-                "method": "POST",
-                "query_params": {},
-                "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Members/MBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            },
-            "downstream_response": {
-                "status_code": 200,
-                "content": {
-                    "sid": "MBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "instance_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "channel_sid": "CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "identity": "jing",
-                    "role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "url": "/v1/Instances/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Members/MBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "last_consumed_message_index": 666,
-                    "last_consumption_timestamp": null,
-                    "date_created": "2016-03-24T21:05:50Z",
-                    "date_updated": "2016-03-24T21:05:50Z"
-                }
-            },
-            "response": {
-                "status_code": 200,
-                "content": {
-                    "sid": "MBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "channel_sid": "CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "identity": "jing",
-                    "role_sid": "RLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                    "last_consumed_message_index": 666,
-                    "last_consumption_timestamp": null,
-                    "date_created": "2016-03-24T21:05:50Z",
-                    "date_updated": "2016-03-24T21:05:50Z",
+                    "date_updated": "2016-03-24T21:05:51Z",
                     "url": "https://chat.twilio.com/v2/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Channels/CHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Members/MBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 }
             }
