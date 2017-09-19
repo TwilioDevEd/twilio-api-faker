@@ -7,7 +7,7 @@
                 "form_params": {},
                 "method": "GET",
                 "query_params": {},
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/US.json"
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
             },
             "response": {
                 "content": {
@@ -15,10 +15,10 @@
                     "country": "United States",
                     "country_code": "US",
                     "subresource_uris": {
-                        "local": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/US/Local.json",
-                        "toll_free": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/US/TollFree.json"
+                        "local": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Local.json",
+                        "toll_free": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/TollFree.json"
                     },
-                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/US.json"
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
                 },
                 "status_code": 200
             }

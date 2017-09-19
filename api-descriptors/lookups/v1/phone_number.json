@@ -10,7 +10,7 @@
                     "CountryCode": "country_code",
                     "Type": ["carrier", "caller-name"]
                 },
-                "url": "https://lookups.twilio.com/v1/PhoneNumbers/+987654321"
+                "url": "https://lookups.twilio.com/v1/PhoneNumbers/+18001234567"
             },
             "response": {
                 "content": {
@@ -35,7 +35,7 @@
                         "code": null,
                         "results": {}
                     },
-                    "url": "https://lookups.twilio.com/v1/PhoneNumbers/phone_number"
+                    "url": "https://lookups.twilio.com/v1/PhoneNumbers/+18001234567"
                 },
                 "status_code": 200
             }

@@ -7,7 +7,7 @@
                 "form_params": {}, 
                 "method": "GET", 
                 "query_params": {}, 
-                "url": "https://pricing.twilio.com/v1/Messaging/Countries/US"
+                "url": "https://pricing.twilio.com/v1/Messaging/Countries/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
             }, 
             "response": {
                 "content": {

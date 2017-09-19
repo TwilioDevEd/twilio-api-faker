@@ -7,7 +7,7 @@
                 "form_params": {},
                 "method": "GET",
                 "query_params": {},
-                "url": "https://pricing.twilio.com/v1/Voice/Countries/US"
+                "url": "https://pricing.twilio.com/v1/Voice/Countries/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
             },
             "response": {
                 "content": {
@@ -164,7 +164,7 @@
                         }
                     ],
                     "price_unit": "USD",
-                    "url": "https://pricing.twilio.com/v1/Voice/Countries/US"
+                    "url": "https://pricing.twilio.com/v1/Voice/Countries/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
                 "status_code": 200
             }

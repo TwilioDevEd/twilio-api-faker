@@ -7,7 +7,7 @@
                 "form_params": {},
                 "method": "GET",
                 "query_params": {},
-                "url": "https://pricing.twilio.com/v1/Voice/Numbers/+987654321"
+                "url": "https://pricing.twilio.com/v1/Voice/Numbers/+18001234567"
             },
             "response": {
                 "content": {
@@ -24,7 +24,7 @@
                         "current_price": "0.015"
                     },
                     "price_unit": "USD",
-                    "url": "https://pricing.twilio.com/v1/Voice/Numbers/+987654321"
+                    "url": "https://pricing.twilio.com/v1/Voice/Numbers/+18001234567"
                 },
                 "status_code": 200
             }

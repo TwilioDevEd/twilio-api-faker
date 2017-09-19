@@ -9,7 +9,7 @@
                 "query_params": {
                     "Beta": "true"
                 },
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/US/Local.json"
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Local.json"
             },
             "response": {
                 "content": {
@@ -35,8 +35,8 @@
                         }
                     ],
                     "end": 1,
-                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/US/Local.json?PageSize=50&Page=0",
-                    "last_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/US/Local.json?PageSize=50&Page=0",
+                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Local.json?PageSize=50&Page=0",
+                    "last_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Local.json?PageSize=50&Page=0",
                     "next_page_uri": null,
                     "num_pages": 1,
                     "page": 0,
@@ -44,7 +44,7 @@
                     "previous_page_uri": null,
                     "start": 0,
                     "total": 1,
-                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/US/Local.json?PageSize=1"
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Local.json?PageSize=1"
                 },
                 "status_code": 200
             }
@@ -58,13 +58,13 @@
                 "query_params": {
                     "Beta": "true"
                 },
-                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/US/Local.json"
+                "url": "https://api.twilio.com/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Local.json"
             },
             "response": {
                 "content": {
                     "available_phone_numbers": [],
-                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/US/Local.json?PageSize=50&Page=0",
-                    "last_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/US/Local.json?PageSize=50&Page=0",
+                    "first_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Local.json?PageSize=50&Page=0",
+                    "last_page_uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Local.json?PageSize=50&Page=0",
                     "next_page_uri": null,
                     "num_pages": 1,
                     "page": 0,
@@ -72,7 +72,7 @@
                     "previous_page_uri": null,
                     "start": 0,
                     "total": 1,
-                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/US/Local.json?PageSize=1"
+                    "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/AvailablePhoneNumbers/XXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Local.json?PageSize=1"
                 },
                 "status_code": 200
             }
