@@ -11,7 +11,8 @@ Dir.glob('api-descriptors/**/*.json') do |file|
     '100': default,
     'sidOrUniqueName': default,
     'sid': default,
-    'identity': default
+    'identity': default,
+    'segment': default
     }
   values_to_replace.each do |to_be_replaced, replacer|
     content.gsub! /(?!\/#{Regexp.escape(to_be_replaced)}aa)\/#{Regexp.escape(to_be_replaced)}/, '/' + replacer
