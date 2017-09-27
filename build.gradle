@@ -16,3 +16,17 @@ dependencies {
 task wrapper(type: Wrapper) {
     gradleVersion = '2.6'
 }
+
+
+jar {
+  manifest {
+    attributes (
+      "Class-Path": configurations.compile.collect { it.getName() }.join(' '),
+      "Main-Class": "$mainClassName"
+      )
+  }
+
+  from {
+    configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+  }
+}
