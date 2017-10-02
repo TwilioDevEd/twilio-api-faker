@@ -1,0 +1,141 @@
+{
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "GET",
+                "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workflows/WWaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/CumulativeStatistics",
+                "form_params": {},
+                "query_params": {
+                    "EndDate": "2015-07-30T20:00:00Z",
+                    "StartDate": "2015-07-30T20:00:00Z"
+                }
+            },
+            "downstream_request": {
+                "method": "GET",
+                "url": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workflows/WWaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/CumulativeStatistics",
+                "form_params": {},
+                "query_params": {
+                    "EndDate": "2015-07-30T20:00:00Z",
+                    "StartDate": "2015-07-30T20:00:00Z"
+                }
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "reservations_created": 100,
+                    "reservations_accepted": 100,
+                    "reservations_rejected": 100,
+                    "reservations_timed_out": 100,
+                    "reservations_canceled": 100,
+                    "reservations_rescinded": 100,
+                    "tasks_canceled": 100,
+                    "tasks_deleted": 100,
+                    "tasks_completed": 100,
+                    "avg_task_acceptance_time": 100,
+                    "wait_duration_until_canceled": {
+                        "avg": 0,
+                        "min": 0,
+                        "max": 0,
+                        "total": 0
+                    },
+                    "wait_duration_until_accepted": {
+                        "avg": 0,
+                        "min": 0,
+                        "max": 0,
+                        "total": 0
+                    },
+                    "split_by_wait_time": {
+                        "5": {
+                            "above": {
+                                "tasks_canceled": 0,
+                                "reservations_accepted": 0
+                            },
+                            "below": {
+                                "tasks_canceled": 0,
+                                "reservations_accepted": 0
+                            }
+                        },
+                        "10": {
+                            "above": {
+                                "tasks_canceled": 0,
+                                "reservations_accepted": 0
+                            },
+                            "below": {
+                                "tasks_canceled": 0,
+                                "reservations_accepted": 0
+                            }
+                        }
+                    },
+                    "tasks_entered": 100,
+                    "tasks_moved": 100,
+                    "tasks_timed_out_in_workflow": 100,
+                    "workflow_sid": "WWaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "start_time": 1438286400,
+                    "end_time": 1438286400,
+                    "workspace_sid": "WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                }
+            },
+            "response": {
+                "content": {
+                    "avg_task_acceptance_time": 100,
+                    "tasks_canceled": 100,
+                    "start_time": "2015-07-30T20:00:00Z",
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "tasks_moved": 100,
+                    "tasks_entered": 100,
+                    "wait_duration_until_canceled": {
+                        "avg": 0,
+                        "min": 0,
+                        "max": 0,
+                        "total": 0
+                    },
+                    "wait_duration_until_accepted": {
+                        "avg": 0,
+                        "min": 0,
+                        "max": 0,
+                        "total": 0
+                    },
+                    "split_by_wait_time": {
+                        "5": {
+                            "above": {
+                                "tasks_canceled": 0,
+                                "reservations_accepted": 0
+                            },
+                            "below": {
+                                "tasks_canceled": 0,
+                                "reservations_accepted": 0
+                            }
+                        },
+                        "10": {
+                            "above": {
+                                "tasks_canceled": 0,
+                                "reservations_accepted": 0
+                            },
+                            "below": {
+                                "tasks_canceled": 0,
+                                "reservations_accepted": 0
+                            }
+                        }
+                    },
+                    "reservations_canceled": 100,
+                    "end_time": "2015-07-30T20:00:00Z",
+                    "workflow_sid": "WWaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "reservations_created": 100,
+                    "reservations_accepted": 100,
+                    "reservations_rescinded": 100,
+                    "workspace_sid": "WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "reservations_rejected": 100,
+                    "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workflows/WWaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/CumulativeStatistics",
+                    "tasks_deleted": 100,
+                    "tasks_timed_out_in_workflow": 100,
+                    "tasks_completed": 100,
+                    "reservations_timed_out": 100
+                },
+                "status_code": 200
+            }
+        }
+    ]
+}
