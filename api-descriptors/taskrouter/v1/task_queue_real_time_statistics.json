@@ -1,0 +1,107 @@
+{
+    "fetch": [
+        {
+            "name": "fetch",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "method": "GET",
+                "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/TaskQueues/WQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/RealTimeStatistics",
+                "form_params": {},
+                "query_params": {
+                    "TaskChannel": "voice"
+                }
+            },
+            "downstream_request": {
+                "form_params": {},
+                "method": "GET",
+                "query_params": {
+                    "TaskChannelUniqueName": "voice"
+                },
+                "url": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/TaskQueues/WQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/RealTimeStatistics"
+            },
+            "downstream_response": {
+                "status_code": 200,
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "longest_task_waiting_age": 100,
+                    "total_tasks": 100,
+                    "total_eligible_workers": 100,
+                    "total_available_workers": 100,
+                    "tasks_by_status": {
+                        "reserved": 0,
+                        "pending": 0,
+                        "assigned": 0,
+                        "wrapping": 0
+                    },
+                    "tasks_by_priority": {},
+                    "activity_statistics": [
+                        {
+                            "friendly_name": "Idle",
+                            "workers": 0,
+                            "sid": "WAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        },
+                        {
+                            "friendly_name": "Busy",
+                            "workers": 9,
+                            "sid": "WAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        },
+                        {
+                            "friendly_name": "Offline",
+                            "workers": 6,
+                            "sid": "WAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        },
+                        {
+                            "friendly_name": "Reserved",
+                            "workers": 0,
+                            "sid": "WAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        }
+                    ],
+                    "task_queue_sid": "WQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "workspace_sid": "WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                }
+            },
+            "response": {
+                "status_code": 200,
+                "content": {
+                    "longest_task_waiting_age": 100,
+                    "task_queue_sid": "WQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "tasks_by_status": {
+                        "reserved": 0,
+                        "pending": 0,
+                        "assigned": 0,
+                        "wrapping": 0
+                    },
+                    "total_eligible_workers": 100,
+                    "activity_statistics": [
+                        {
+                            "friendly_name": "Idle",
+                            "workers": 0,
+                            "sid": "WAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        },
+                        {
+                            "friendly_name": "Busy",
+                            "workers": 9,
+                            "sid": "WAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        },
+                        {
+                            "friendly_name": "Offline",
+                            "workers": 6,
+                            "sid": "WAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        },
+                        {
+                            "friendly_name": "Reserved",
+                            "workers": 0,
+                            "sid": "WAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        }
+                    ],
+                    "tasks_by_priority": {},
+                    "total_tasks": 100,
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "workspace_sid": "WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "total_available_workers": 100,
+                    "url": "https://taskrouter.twilio.com/v1/Workspaces/WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/TaskQueues/WQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/RealTimeStatistics"
+                }
+            }
+        }
+    ]
+}
