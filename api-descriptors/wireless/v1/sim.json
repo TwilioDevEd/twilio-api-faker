@@ -44,7 +44,8 @@
                     "mo_voice_twiml_fallback_url": "http://www.example.com",
                     "mo_voice_twiml_method": "http_method",
                     "mo_voice_twiml_url": "http://www.example.com",
-                    "uri": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    "uri": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "ip_address": "192.168.1.1"
                 },
                 "status_code": 200
             },
@@ -75,7 +76,8 @@
                     "iccid": "iccid",
                     "e_id": "e_id",
                     "status": "new",
-                    "url": "https://wireless.twilio.com/v1/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    "url": "https://wireless.twilio.com/v1/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "ip_address": "192.168.1.1"
                 },
                 "status_code": 200
             }
@@ -189,7 +191,8 @@
                         "mo_voice_twiml_fallback_url": "http://www.example.com",
                         "mo_voice_twiml_method": "http_method",
                         "mo_voice_twiml_url": "http://www.example.com",
-                        "uri": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                        "uri": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                        "ip_address": "192.168.1.30"
                     }],
                     "meta": {
                         "direct_token": true,
@@ -232,7 +235,8 @@
                             "voice_fallback_url": "http://www.example.com",
                             "voice_method": "http_method",
                             "voice_url": "http://www.example.com",
-                            "url": "https://wireless.twilio.com/v1/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                            "url": "https://wireless.twilio.com/v1/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "ip_address": "192.168.1.30"
                         }
                     ],
                     "meta": {
@@ -329,7 +333,8 @@
                     "mo_voice_twiml_method": "http_method",
                     "mo_voice_twiml_url": "http://www.example.com",
                     "status": "new",
-                    "uri": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    "uri": "/v2/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "ip_address": "192.168.1.30"
                 },
                 "status_code": 200
             },
@@ -360,7 +365,8 @@
                     "voice_fallback_url": "http://www.example.com",
                     "voice_method": "http_method",
                     "voice_url": "http://www.example.com",
-                    "url": "https://wireless.twilio.com/v1/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    "url": "https://wireless.twilio.com/v1/Sims/DEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "ip_address": "192.168.1.30"
                 },
                 "status_code": 200
             }
