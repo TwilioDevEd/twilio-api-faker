@@ -5,7 +5,8 @@
             "request": {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                 "form_params": {
-                    "UniqueName": "unique_name"
+                    "UniqueName": "unique_name",
+                    "Ttl": 3600
                 }, 
                 "method": "POST", 
                 "query_params": {}, 
@@ -13,7 +14,8 @@
             }, 
             "downstream_request": {
                 "form_params": {
-                    "UniqueName": "unique_name"
+                    "UniqueName": "unique_name",
+                    "Ttl": 3600
                 }, 
                 "method": "POST", 
                 "query_params": {}, 
@@ -23,8 +25,9 @@
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                     "created_by": "created_by", 
-                    "date_created": "2015-07-30T20:00:00.000Z", 
-                    "date_updated": "2015-07-30T20:00:00.000Z", 
+                    "date_expires": "2015-07-30T21:00:00.000Z",
+                    "date_created": "2015-07-30T20:00:00.000Z",
+                    "date_updated": "2015-07-30T20:00:00.000Z",
                     "eventing": "reliable",
                     "last_event_id": -1,
                     "links": {
@@ -45,8 +48,9 @@
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                     "created_by": "created_by", 
-                    "date_created": "2015-07-30T20:00:00Z", 
-                    "date_updated": "2015-07-30T20:00:00Z", 
+                    "date_expires": "2015-07-30T21:00:00Z",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
                     "links": {
                         "items": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items",
                         "permissions": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Permissions"
@@ -60,7 +64,71 @@
                 "status_code": 201
             }
         }
-    ], 
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "Ttl": 3600
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {
+                    "Ttl": 3600
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "created_by": "created_by",
+                    "date_expires": "2015-07-30T21:00:00.000Z",
+                    "date_created": "2015-07-30T20:00:00.000Z",
+                    "date_updated": "2015-07-30T20:00:00.000Z",
+                    "eventing": "reliable",
+                    "last_event_id": -1,
+                    "links": {
+                        "context": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Context",
+                        "events": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Events",
+                        "items": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items"
+                    },
+                    "revision": "revision",
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "type": "map",
+                    "unique_name": "unique_name",
+                    "url": "http://www.example.com"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "created_by": "created_by",
+                    "date_expires": "2015-07-30T21:00:00Z",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "links": {
+                        "items": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items",
+                        "permissions": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Permissions"
+                    },
+                    "revision": "revision",
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "unique_name": "unique_name",
+                    "url": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ],
     "delete": [
         {
             "name": "delete", 
@@ -107,8 +175,9 @@
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                     "created_by": "created_by", 
-                    "date_created": "2015-07-30T20:00:00.000Z", 
-                    "date_updated": "2015-07-30T20:00:00.000Z", 
+                    "date_expires": "2015-07-30T21:00:00.000Z",
+                    "date_created": "2015-07-30T20:00:00.000Z",
+                    "date_updated": "2015-07-30T20:00:00.000Z",
                     "eventing": "reliable",
                     "last_event_id": -1,
                     "links": {
@@ -129,8 +198,9 @@
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                     "created_by": "created_by", 
-                    "date_created": "2015-07-30T20:00:00Z", 
-                    "date_updated": "2015-07-30T20:00:00Z", 
+                    "date_expires": "2015-07-30T21:00:00Z",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
                     "links": {
                         "items": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items",
                         "permissions": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Permissions"
@@ -210,8 +280,9 @@
                     "maps": [{
                         "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                         "created_by": "created_by", 
-                        "date_created": "2015-07-30T20:00:00.000Z", 
-                        "date_updated": "2015-07-30T20:00:00.000Z", 
+                        "date_expires": "2015-07-30T21:00:00.000Z",
+                        "date_created": "2015-07-30T20:00:00.000Z",
+                        "date_updated": "2015-07-30T20:00:00.000Z",
                         "eventing": "reliable",
                         "last_event_id": -1,
                         "links": {
@@ -242,8 +313,9 @@
                         {
                             "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                             "created_by": "created_by", 
-                            "date_created": "2015-07-30T20:00:00Z", 
-                            "date_updated": "2015-07-30T20:00:00Z", 
+                            "date_expires": "2015-07-30T21:00:00Z",
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "date_updated": "2015-07-30T20:00:00Z",
                             "links": {
                                 "items": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items",
                                 "permissions": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Permissions"

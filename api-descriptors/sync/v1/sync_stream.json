@@ -5,15 +5,17 @@
             "request": {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                 "form_params": {
-                    "UniqueName": "unique_name"
-                }, 
+                    "UniqueName": "unique_name",
+                    "Ttl": 3600
+                },
                 "method": "POST", 
                 "query_params": {}, 
                 "url": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams"
             }, 
             "downstream_request": {
                 "form_params": {
-                    "UniqueName": "unique_name"
+                    "UniqueName": "unique_name",
+                    "Ttl": 3600
                 }, 
                 "method": "POST", 
                 "query_params": {}, 
@@ -23,8 +25,9 @@
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                     "created_by": "created_by", 
-                    "date_created": "2015-07-30T20:00:00.000Z", 
-                    "date_updated": "2015-07-30T20:00:00.000Z", 
+                    "date_expires": "2015-07-30T21:00:00.000Z",
+                    "date_created": "2015-07-30T20:00:00.000Z",
+                    "date_updated": "2015-07-30T20:00:00.000Z",
                     "links": {
                         "messages": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages"
                     },
@@ -39,8 +42,9 @@
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                     "created_by": "created_by", 
-                    "date_created": "2015-07-30T20:00:00Z", 
-                    "date_updated": "2015-07-30T20:00:00Z", 
+                    "date_expires": "2015-07-30T21:00:00Z",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
                     "links": {
                         "messages": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages"
                     },
@@ -52,7 +56,63 @@
                 "status_code": 201
             }
         }
-    ], 
+    ],
+    "update": [
+        {
+            "name": "update",
+            "request": {
+                "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "form_params": {
+                    "Ttl": 3600
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_request": {
+                "form_params": {
+                    "Ttl": 3600
+                },
+                "method": "POST",
+                "query_params": {},
+                "url": "/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            "downstream_response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "created_by": "created_by",
+                    "date_expires": "2015-07-30T21:00:00.000Z",
+                    "date_created": "2015-07-30T20:00:00.000Z",
+                    "date_updated": "2015-07-30T20:00:00.000Z",
+                    "links": {
+                        "messages": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages"
+                    },
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "unique_name": "unique_name",
+                    "url": "http://www.example.com"
+                },
+                "status_code": 200
+            },
+            "response": {
+                "content": {
+                    "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "created_by": "created_by",
+                    "date_expires": "2015-07-30T21:00:00Z",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
+                    "links": {
+                        "messages": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages"
+                    },
+                    "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "sid": "TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "unique_name": "unique_name",
+                    "url": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                },
+                "status_code": 200
+            }
+        }
+    ],
     "delete": [
         {
             "name": "delete", 
@@ -99,8 +159,9 @@
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                     "created_by": "created_by", 
-                    "date_created": "2015-07-30T20:00:00.000Z", 
-                    "date_updated": "2015-07-30T20:00:00.000Z", 
+                    "date_expires": "2015-07-30T21:00:00.000Z",
+                    "date_created": "2015-07-30T20:00:00.000Z",
+                    "date_updated": "2015-07-30T20:00:00.000Z",
                     "links": {
                         "messages": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages"
                     },
@@ -115,8 +176,9 @@
                 "content": {
                     "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                     "created_by": "created_by", 
-                    "date_created": "2015-07-30T20:00:00Z", 
-                    "date_updated": "2015-07-30T20:00:00Z", 
+                    "date_expires": "2015-07-30T21:00:00Z",
+                    "date_created": "2015-07-30T20:00:00Z",
+                    "date_updated": "2015-07-30T20:00:00Z",
                     "links": {
                         "messages": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages"
                     },
@@ -194,8 +256,9 @@
                     "streams": [{
                         "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                         "created_by": "created_by", 
-                        "date_created": "2015-07-30T20:00:00.000Z", 
-                        "date_updated": "2015-07-30T20:00:00.000Z", 
+                        "date_expires": "2015-07-30T21:00:00.000Z",
+                        "date_created": "2015-07-30T20:00:00.000Z",
+                        "date_updated": "2015-07-30T20:00:00.000Z",
                         "links": {
                             "context": "https://cds.us1.twilio.com/v3/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages"
                         },
@@ -220,8 +283,9 @@
                         {
                             "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 
                             "created_by": "created_by", 
-                            "date_created": "2015-07-30T20:00:00Z", 
-                            "date_updated": "2015-07-30T20:00:00Z", 
+                            "date_expires": "2015-07-30T21:00:00Z",
+                            "date_created": "2015-07-30T20:00:00Z",
+                            "date_updated": "2015-07-30T20:00:00Z",
                             "links": {
                                 "messages": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages"
                             },
